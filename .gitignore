@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Dataset files (large files)
+way_eeg_clean/
+*.zip
+
+# Kaggle API credentials
+kaggle.json
+
+# Model checkpoints
+*.h5
+*.hdf5
+*.keras
+
+# Logs
+logs/
+tensorboard_logs/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
