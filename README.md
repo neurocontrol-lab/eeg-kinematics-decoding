@@ -49,7 +49,7 @@ The main implementation is in the Jupyter notebook `hand_motion.ipynb`. To run t
 3. Run the notebook cells sequentially
 
 ## Results
-The model demonstrates the ability to predict hand movements from EEG signals with reasonable accuracy, showing the potential for brain-computer interface applications.
+The [original P1 baseline](documentation/ORIGINAL_BASELINE.md) explains the data windows, both models, and evaluation limitations. The [published CPU and GPU runs](outputs/README.md) include per-target metrics, complete training histories, and plots. The strongest CNN–BiLSTM run reached R² of 0.834, 0.839, and 0.729 on the three unnamed targets. These are random overlapping-window test scores on one participant, not evidence of generalization to new subjects or recording series.
 
 ## Future Work
 - Experiment with more advanced architectures

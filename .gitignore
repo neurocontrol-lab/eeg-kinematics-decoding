@@ -24,6 +24,7 @@ way_eeg_clean/
 
 # Kaggle API credentials
 kaggle.json
+/.kaggle
 
 # Model checkpoints
 *.h5
@@ -43,3 +44,16 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+
+# Local experiment artifacts can contain usernames, absolute paths and data
+/outputs/_local-failed/
+*.npz
+training.log
+source_notebook.ipynb
+gpu_executed.ipynb
+gpu_environment.txt
+original_plot_1.png
+/.chart-data-*/
+/documentation/.build*/
+/documentation/output/
+/documentation/build_baseline_slides.mjs
