@@ -1,6 +1,6 @@
-# Original notebook baseline
+# Pipeline v1: Original baseline
 
-The first experiment ran the original P1 models before any scientific corrections.
+The first experiment ran the original P1 models before any scientific corrections. The root [changelog](../CHANGELOG.md) records the version history.
 The completed [CPU](../outputs/original-p1-cpu/RESULTS.md) and
 [GPU](../outputs/original-p1-gpu/RESULTS.md) runs publish metrics, full numeric
 histories and plots under `outputs/`. Model files, raw prediction arrays,
@@ -10,7 +10,7 @@ Only logging and timing were added. Model, preprocessing and split code are unch
 
 ## Run locally
 
-Open `hand_motion.ipynb` in Jupyter or VS Code and select the existing `venv`
+Open `pipeline_v1_original.ipynb` in Jupyter or VS Code and select the existing `venv`
 Python kernel. Save the notebook first. With local data already downloaded,
 skip the installation/download cells and start at **Run and save the original
 P1 baseline**. Run in order through **Save CNN–BiLSTM results**.
@@ -49,7 +49,7 @@ python -m ipykernel install --user --name eeg-tf-gpu --display-name 'Python (EEG
 TF_FORCE_GPU_ALLOW_GROWTH=true jupyter lab --no-browser
 ```
 
-Open the local Jupyter URL printed in the terminal, open `hand_motion.ipynb`,
+Open the local Jupyter URL printed in the terminal, open `pipeline_v1_original.ipynb`,
 and select **Python (EEG TensorFlow GPU)**. Follow the P1 run instructions above.
 Memory growth lets TensorFlow allocate GPU memory as needed. The GPU kernel
 runs inside WSL; selecting the existing native Windows kernel still uses CPU.
@@ -92,9 +92,15 @@ The paper gives 500 Hz for the original EEG and kinematics, making a 128-sample
 window 256 ms and the stride 128 ms. The cleaned files lack sampling-rate
 metadata; the notebook's 512 Hz comment is not independent evidence.
 
-The three target columns have not yet been traced to named original channels.
-They are called target 1, 2 and 3 in this documentation. The notebook's finger
-and glove labels should not be treated as established sensor identities.
+The three target columns have now been traced to named original channels using
+the original P1 and P6 recordings: wrist X (`Px4`), Y (`Py4`), and Z (`Pz4`).
+All nine series match the reduced recordings in sample count. The matching-axis
+correlations exceed 0.99995 in both participants. See the
+[kinematic target verification](KINEMATICS_PROVENANCE.md) for the method, exact
+values, and reproducible script. The cleaned targets span 0–1 before the
+notebook's further rescaling to [-1, 1]. The reduced dataset does not document
+the precise filtering and normalization formula. The notebook's finger and
+glove labels are incorrect for these targets.
 
 ## Model 1: CNN
 
@@ -174,7 +180,8 @@ This is one reason validation loss can be below training loss.
 2. Normalization uses all P1 samples before splitting.
 3. Windows can span concatenated recording-series boundaries.
 4. The test set is also used as validation during training.
-5. The three targets' original channel names and units remain unverified.
+5. The three targets map to wrist X/Y/Z; the reduced dataset's exact filtering,
+   scaling formula, and physical units after scaling remain undocumented.
 6. The CNN has no nonlinear activations.
 7. Later P2 demonstration cells assume incorrect EEG orientation, use 64 rather
    than 128 samples, and use different scaling. They are not part of this P1 run.
@@ -182,12 +189,13 @@ This is one reason validation loss can be below training loss.
    not show a continuous movement trajectory.
 
 These scores are an original-pipeline reproduction reference, not an estimate
-of independent-series or unseen-subject generalization. Corrections belong in
-a separate experiment after reviewing this run.
+of independent-series or unseen-subject generalization. The separate
+[Pipeline v2: Corrected Baseline](PIPELINE_V2_CORRECTED_BASELINE.md) documents the first
+evaluation corrections and their results.
 
 ## Optional Colab execution
 
-If local training becomes inconvenient, open `hand_motion.ipynb` in Colab.
+If local training becomes inconvenient, open `pipeline_v1_original.ipynb` in Colab.
 Place `way_eeg_clean/eeg_P1.mat` and `way_eeg_clean/kin_P1.mat` under the current
 working directory, select a GPU runtime, install dependencies as needed, and
 run the same setup and P1 cells through **Save CNN–BiLSTM results**. The setup

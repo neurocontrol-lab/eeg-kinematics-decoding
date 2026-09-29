@@ -1,4 +1,6 @@
-# Published original P1 baseline runs
+# Published pipeline results
+
+## Pipeline v1: Original baseline
 
 These are reproductions of the original notebook before preprocessing, model, or split corrections. The saved CPU and GPU runs are labeled by execution device; neither is a cross-subject evaluation.
 
@@ -12,3 +14,9 @@ The GPU run completed training in 189.89 seconds versus 532.20 seconds on CPU (a
 The [baseline methods and limitations](../documentation/ORIGINAL_BASELINE.md) explain window construction, architectures, the split, and why these test scores cannot yet support claims about unseen subjects. Each run page links its learning curves, target scores, and prediction scatter plot.
 
 The public `results.json` files preserve complete numeric histories. Raw predictions, model weights, logs, and notebook execution snapshots remain local.
+
+## Pipeline v2: Corrected Baseline
+
+The separate [v2 notebook](../pipeline_v2_corrected_baseline.ipynb) fixes the first evaluation issues while retaining the two original model architectures. Its `PARTICIPANT_ID` setting selects an aligned participant; the central [changelog](../CHANGELOG.md) summarizes the version differences, and the [v2 methods](../documentation/PIPELINE_V2_CORRECTED_BASELINE.md) explain each correction and its remaining limits. For the supplied nine-run participants, it trains on runs 1–6, validates on run 7, and tests on runs 8–9. EEG channels and targets are standardized from training samples only; windows never cross run boundaries.
+
+The [first GPU result for P1](pipeline-v2-corrected-baseline-p1-gpu-20260929T173627Z/RESULTS.md) reports CNN–BiLSTM R² of **0.784 / 0.757 / 0.726** and CNN R² of **0.547 / 0.399 / 0.451** for wrist X/Y/Z. Its run page includes learning curves, prediction plots, and scores for each held-out run separately. Both P1 test runs contain friction condition 3 only. These scores and the original random-window scores measure different evaluation settings.

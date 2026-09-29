@@ -1,0 +1,124 @@
+{
+  "method": "Align the nine original HS series with the reduced kin matrix using session_start; correlate each reduced column with all four same-axis original position sensors at matching sample indices. Fit an approximate affine map to wrist values, omitting 100 samples at each series edge.",
+  "limits": "High correlation and an approximate affine map identify the source channels but do not establish the exact undocumented filtering/scaling algorithm.",
+  "participants": {
+    "P1": {
+      "participant": 1,
+      "sample_count": 1538345,
+      "series_count": 9,
+      "all_series_lengths_match": true,
+      "axes": {
+        "x": {
+          "reduced_column_1_based": 1,
+          "original_channel": "Px4 - position x sensor 4",
+          "correlation_with_original_sensors_1_to_4": [
+            0.5791047871555766,
+            0.9713493886148215,
+            0.9973301985413419,
+            0.9999507565912888
+          ],
+          "clean_min": 0.0,
+          "clean_max": 1.0,
+          "clean_mean": 0.24719211193846874,
+          "clean_standard_deviation": 0.16276628818358768,
+          "approximate_affine_slope": 0.02668717305864043,
+          "approximate_affine_intercept": 2.0503488718061025,
+          "interior_mean_absolute_residual": 6.205270342554745e-05
+        },
+        "y": {
+          "reduced_column_1_based": 2,
+          "original_channel": "Py4 - position y sensor 4",
+          "correlation_with_original_sensors_1_to_4": [
+            0.40654964335782917,
+            0.99811517515942,
+            0.9975453992182798,
+            0.9999968705426425
+          ],
+          "clean_min": 0.0,
+          "clean_max": 1.0,
+          "clean_mean": 0.5458472363726233,
+          "clean_standard_deviation": 0.39204675389911203,
+          "approximate_affine_slope": 0.0357225362456252,
+          "approximate_affine_intercept": -0.2395560796104854,
+          "interior_mean_absolute_residual": 6.932421463177187e-05
+        },
+        "z": {
+          "reduced_column_1_based": 3,
+          "original_channel": "Pz4 - position z sensor 4",
+          "correlation_with_original_sensors_1_to_4": [
+            0.8735363876010149,
+            0.9344286318400026,
+            0.8571144700999292,
+            0.9999708777088483
+          ],
+          "clean_min": 0.0,
+          "clean_max": 1.0,
+          "clean_mean": 0.6721358171282841,
+          "clean_standard_deviation": 0.1299072206416331,
+          "approximate_affine_slope": 0.042432344395870666,
+          "approximate_affine_intercept": -0.6240169278129459,
+          "interior_mean_absolute_residual": 7.62298564289057e-05
+        }
+      }
+    },
+    "P6": {
+      "participant": 6,
+      "sample_count": 1656270,
+      "series_count": 9,
+      "all_series_lengths_match": true,
+      "axes": {
+        "x": {
+          "reduced_column_1_based": 1,
+          "original_channel": "Px4 - position x sensor 4",
+          "correlation_with_original_sensors_1_to_4": [
+            0.608083806453915,
+            0.9659159035300815,
+            0.9965942725435809,
+            0.9999516046675879
+          ],
+          "clean_min": 0.0,
+          "clean_max": 1.0,
+          "clean_mean": 0.25672436383510744,
+          "clean_standard_deviation": 0.14918550283013662,
+          "approximate_affine_slope": 0.02572591689420879,
+          "approximate_affine_intercept": 1.970001824682904,
+          "interior_mean_absolute_residual": 6.0476278123826834e-05
+        },
+        "y": {
+          "reduced_column_1_based": 2,
+          "original_channel": "Py4 - position y sensor 4",
+          "correlation_with_original_sensors_1_to_4": [
+            0.443779257602261,
+            0.9966775619666456,
+            0.9969622751872103,
+            0.9999974480521135
+          ],
+          "clean_min": 0.0,
+          "clean_max": 1.0,
+          "clean_mean": 0.45399216079891047,
+          "clean_standard_deviation": 0.3606501962161084,
+          "approximate_affine_slope": 0.03042113998749666,
+          "approximate_affine_intercept": -0.21413157999266486,
+          "interior_mean_absolute_residual": 5.476020570969107e-05
+        },
+        "z": {
+          "reduced_column_1_based": 3,
+          "original_channel": "Pz4 - position z sensor 4",
+          "correlation_with_original_sensors_1_to_4": [
+            0.864619876993747,
+            0.8722195769481929,
+            0.8997462437528854,
+            0.9999763361753956
+          ],
+          "clean_min": 0.0,
+          "clean_max": 1.0,
+          "clean_mean": 0.688910560398975,
+          "clean_standard_deviation": 0.13746083272384002,
+          "approximate_affine_slope": 0.04070803934150748,
+          "approximate_affine_intercept": -0.6145054279399654,
+          "interior_mean_absolute_residual": 6.837562795254582e-05
+        }
+      }
+    }
+  }
+}
