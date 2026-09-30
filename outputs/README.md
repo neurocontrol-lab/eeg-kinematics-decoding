@@ -1,5 +1,29 @@
 # Published pipeline results
 
+## Six-model P1 comparison
+
+[Run report](six-model-comparison-p1-gpu-20260930T095506Z/RESULTS.md) · [Methods](../documentation/SIX_MODEL_COMPARISON.md)
+
+This comparison uses the fixed v2 P1 run split and preprocessing. Four neural
+models trained on GPU; mean and ridge used CPU. Ridge regularization was selected
+using validation run 7; all models use test runs 8–9 only for final evaluation.
+
+| Model | Wrist X R² | Wrist Y R² | Wrist Z R² |
+| --- | ---: | ---: | ---: |
+| Training mean | -0.204 | -0.324 | -0.185 |
+| Ridge | 0.558 | 0.420 | 0.462 |
+| Original CNN | 0.547 | 0.399 | 0.451 |
+| CNN–BiLSTM | 0.809 | 0.783 | 0.748 |
+| CNN + ELU | 0.746 | 0.713 | 0.678 |
+| EEGNet regression | 0.758 | 0.683 | 0.663 |
+
+The ELU-only ablation improves all axes relative to the affine CNN in this run.
+EEGNet regression improves over the original CNN but does not consistently exceed
+the ELU-only variant. This is one participant and seed, with friction condition
+3 only in test. It does not establish statistical significance or population
+performance. CNN–BiLSTM was retrained with a per-model seed reset, so its score
+is distinct from the historical v2 run below.
+
 ## Pipeline v1: Original baseline
 
 These are reproductions of the original notebook before preprocessing, model, or split corrections. The saved CPU and GPU runs are labeled by execution device; neither is a cross-subject evaluation.

@@ -17,6 +17,7 @@ The [central changelog](CHANGELOG.md) records the changes between versions. Deta
 | --- | --- |
 | [CHANGELOG.md](CHANGELOG.md) | Central version history and links to saved runs. |
 | [documentation/](documentation/) | Pipeline methods, limitations, and [kinematics-target provenance](documentation/KINEMATICS_PROVENANCE.md). |
+| [experiments/](experiments/) | Experiment runners extending the fixed baseline, starting with the [six-model P1 comparison](experiments/compare_six_models.py). |
 | [outputs/](outputs/) | [Published run index](outputs/README.md), numeric results, and plots. Raw predictions, model weights, and executed notebooks stay local. |
 | [requirements.txt](requirements.txt) | Python dependencies; exact versions used by a saved run are recorded in its results.json. |
 | way_eeg_clean/ | Downloaded MAT files, stored locally and ignored by Git. |
@@ -53,14 +54,57 @@ The notebook writes a participant- and device-labeled directory such as `outputs
 
 ## Published results and interpretation
 
-The first [v2 P1 GPU run](outputs/pipeline-v2-corrected-baseline-p1-gpu-20260929T173627Z/RESULTS.md) produced:
+The [six-model P1 comparison](outputs/six-model-comparison-p1-gpu-20260930T095506Z/RESULTS.md)
+uses the v2 protocol: runs 1–6 train, run 7 validates, and runs 8–9 test.
+The four neural models trained on GPU with seed 42; the training-mean and ridge
+baselines used CPU. Ridge regularization was selected using validation data only.
 
 | Model | Wrist X R² | Wrist Y R² | Wrist Z R² |
 | --- | ---: | ---: | ---: |
-| CNN | 0.547 | 0.399 | 0.451 |
-| CNN–BiLSTM | 0.784 | 0.757 | 0.726 |
+| Training mean | -0.204 | -0.324 | -0.185 |
+| Ridge regression | 0.558 | 0.420 | 0.462 |
+| Original CNN | 0.547 | 0.399 | 0.451 |
+| CNN–BiLSTM | **0.809** | **0.783** | **0.748** |
+| CNN + ELU | 0.746 | 0.713 | 0.678 |
+| EEGNet regression | 0.758 | 0.683 | 0.663 |
 
-These scores are for held-out runs **of P1**, not an unseen participant. Both P1 test runs contain friction condition 3 only. P2 has passed data-loading, preprocessing, windowing, and model-build checks but has **not** been trained or evaluated. The [v1 CPU/GPU runs](outputs/README.md) use a different split and target scaling, so their scores are not a direct comparison of model quality with v2. MSE and MAE in v2 use standardized target units; R² is unchanged by that affine target scaling.
+Adding only ELU improves all three axes over the original affine CNN in this
+run. CNN–BiLSTM scores highest; EEGNet regression improves over the original CNN
+but does not consistently exceed the ELU-only variant. These are single-seed
+results for held-out runs **of P1**. Both test runs contain friction condition 3
+only; statistical significance and cross-participant transfer remain untested.
+
+The existing models were retrained for this comparison with a seed reset before
+each fit. Its CNN–BiLSTM scores therefore differ from the
+[first v2 P1 GPU run](outputs/pipeline-v2-corrected-baseline-p1-gpu-20260929T173627Z/RESULTS.md).
+P2 has passed preparation and model-build checks but has **not** been trained or
+evaluated. The [v1 CPU/GPU runs](outputs/README.md) use a different split and
+target scaling, so their scores are not a direct comparison of model quality.
+MSE and MAE use standardized target units; R² is unchanged by affine target
+scaling. The training-mean predictor can have negative R² because the R²
+reference uses the test target mean.
+
+## Experiments
+
+The [six-model P1 comparison](documentation/SIX_MODEL_COMPARISON.md) adds a
+training-mean predictor, ridge regression, an ELU-only CNN ablation, and an EEGNet
+regression architecture reference alongside the unchanged CNN and CNN–BiLSTM.
+The [experiment runner](experiments/compare_six_models.py) reuses v2 preparation
+and saves a separate result directory; it requires the existing WSL GPU environment.
+This is a single-participant, single-seed comparison. The
+[model reference audit](documentation/MODEL_REFERENCE_AUDIT.md) explains the
+existing CNN's relationship to EEGNet and outstanding validation checks.
+
+The [completed P1 comparison](outputs/six-model-comparison-p1-gpu-20260930T095506Z/RESULTS.md)
+reports all six models using the same v2 run split. The ELU-only CNN improves over
+the original CNN on all three wrist axes; CNN–BiLSTM scores highest in this single
+seed. These results do not establish cross-participant transfer.
+
+Run from the repository root in the configured WSL GPU environment:
+
+```bash
+~/.venvs/eeg-tf-gpu/bin/python experiments/compare_six_models.py
+```
 
 ## Next research steps
 

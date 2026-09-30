@@ -2,6 +2,24 @@
 
 This is the central record of pipeline versions. Version numbers identify pipeline revisions; they do not imply an improvement in model architecture or performance.
 
+## Six-model P1 reference comparison (2026-09-30)
+
+[Methods](documentation/SIX_MODEL_COMPARISON.md) · [Runner](experiments/compare_six_models.py) · [Completed run](outputs/six-model-comparison-p1-gpu-20260930T095506Z/RESULTS.md)
+
+- Added training-mean and ridge baselines, an ELU-only CNN ablation, and an
+  EEGNet regression reference alongside the two unchanged v2 architectures.
+- Reused v2 P1 train/validation/test runs and training-only scaling. Neural
+  models ran on the RTX 3060 GPU with seed 42 reset per model; mean/ridge used CPU.
+  Ridge alpha 100 was selected using validation MSE, without test tuning.
+- ELU-only CNN R² improved from 0.547/0.399/0.451 to 0.746/0.713/0.678.
+  EEGNet regression scored 0.758/0.683/0.663; retrained CNN–BiLSTM scored
+  0.809/0.783/0.748. Ridge scored 0.558/0.420/0.462.
+- Verified saved prediction metrics and reloaded-model inference within recorded
+  GPU numerical tolerances. The initial source review corrected the spatial
+  max-norm axis for time-first EEGNet kernels before that model trained.
+- Single P1 seed and friction-3 test runs limit interpretation. No cross-participant
+  claims or significance claims are made. Original notebooks/results remain unchanged.
+
 ## Repository organization (2026-09-30)
 
 - Shortened the notebook filenames to pipeline_v1.ipynb and pipeline_v2.ipynb and updated their references, including v1's source-notebook snapshot path.
