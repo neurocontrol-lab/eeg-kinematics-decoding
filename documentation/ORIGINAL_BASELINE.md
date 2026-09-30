@@ -10,7 +10,7 @@ Only logging and timing were added. Model, preprocessing and split code are unch
 
 ## Run locally
 
-Open `pipeline_v1_original.ipynb` in Jupyter or VS Code and select the existing `venv`
+Open `pipeline_v1.ipynb` in Jupyter or VS Code and select the existing `venv`
 Python kernel. Save the notebook first. With local data already downloaded,
 skip the installation/download cells and start at **Run and save the original
 P1 baseline**. Run in order through **Save CNN–BiLSTM results**.
@@ -49,7 +49,7 @@ python -m ipykernel install --user --name eeg-tf-gpu --display-name 'Python (EEG
 TF_FORCE_GPU_ALLOW_GROWTH=true jupyter lab --no-browser
 ```
 
-Open the local Jupyter URL printed in the terminal, open `pipeline_v1_original.ipynb`,
+Open the local Jupyter URL printed in the terminal, open `pipeline_v1.ipynb`,
 and select **Python (EEG TensorFlow GPU)**. Follow the P1 run instructions above.
 Memory growth lets TensorFlow allocate GPU memory as needed. The GPU kernel
 runs inside WSL; selecting the existing native Windows kernel still uses CPU.
@@ -195,7 +195,7 @@ evaluation corrections and their results.
 
 ## Optional Colab execution
 
-If local training becomes inconvenient, open `pipeline_v1_original.ipynb` in Colab.
+If local training becomes inconvenient, open `pipeline_v1.ipynb` in Colab.
 Place `way_eeg_clean/eeg_P1.mat` and `way_eeg_clean/kin_P1.mat` under the current
 working directory, select a GPU runtime, install dependencies as needed, and
 run the same setup and P1 cells through **Save CNN–BiLSTM results**. The setup

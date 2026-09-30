@@ -2,16 +2,24 @@
 
 Research baselines for decoding movement kinematics from EEG in the [WAY-EEG-GAL dataset](https://doi.org/10.1038/sdata.2014.47). The current notebooks predict the **wrist tracker's X, Y, and Z position** from 32-channel EEG. This repository was originally forked from [Thowfiq23/hand_motion_eeg](https://github.com/Thowfiq23/hand_motion_eeg); it preserves that pipeline as v1 and adds a separate, evaluation-corrected v2. The present results are within-participant baselines, not evidence of cross-participant decoding.
 
-## Pipelines and repository layout
+## Pipelines
 
-| Path | Purpose |
+| Version | Notebook | Description | Outputs |
+| --- | --- | --- | --- |
+| v1 — Original baseline | [pipeline_v1.ipynb](pipeline_v1.ipynb) | Original fork pipeline, retained as a reproduction reference. Its random overlapping-window split and preprocessing limit what its scores establish. | [P1 CPU](outputs/original-p1-cpu/) · [P1 GPU](outputs/original-p1-gpu/) |
+| v2 — Corrected baseline | [pipeline_v2.ipynb](pipeline_v2.ipynb) | Current baseline. Selects a participant at the top, holds out complete recording runs, fits scalers on training runs, and evaluates test runs after training. It retains the v1 CNN and CNN–BiLSTM architectures. | [P1 GPU](outputs/pipeline-v2-corrected-baseline-p1-gpu-20260929T173627Z/) |
+
+The [central changelog](CHANGELOG.md) records the changes between versions. Detailed methods are documented for [v1](documentation/ORIGINAL_BASELINE.md) and [v2](documentation/PIPELINE_V2_CORRECTED_BASELINE.md).
+
+## File and code structure
+
+| Path | Contents |
 | --- | --- |
-| [`pipeline_v1_original.ipynb`](pipeline_v1_original.ipynb) | Original fork pipeline, retained as a reproduction reference. Its random overlapping-window split and preprocessing limit what its scores establish. |
-| [`pipeline_v2_corrected_baseline.ipynb`](pipeline_v2_corrected_baseline.ipynb) | Current baseline. Selects a participant at the top, holds out complete recording runs, fits scalers on training runs, and evaluates test runs after training. It retains the v1 CNN and CNN–BiLSTM architectures. |
-| [`CHANGELOG.md`](CHANGELOG.md) | Central record of changes between pipeline versions. |
-| [`documentation/`](documentation/) | [V1 methods](documentation/ORIGINAL_BASELINE.md), [v2 methods](documentation/PIPELINE_V2_CORRECTED_BASELINE.md), and [kinematics-target provenance](documentation/KINEMATICS_PROVENANCE.md). |
-| [`outputs/`](outputs/) | [Published run index](outputs/README.md), numeric results, and plots. Raw predictions, model weights, and executed notebooks stay local. |
-| [`requirements.txt`](requirements.txt) | Python dependencies; exact versions used by a saved run are recorded in its `results.json`. |
+| [CHANGELOG.md](CHANGELOG.md) | Central version history and links to saved runs. |
+| [documentation/](documentation/) | Pipeline methods, limitations, and [kinematics-target provenance](documentation/KINEMATICS_PROVENANCE.md). |
+| [outputs/](outputs/) | [Published run index](outputs/README.md), numeric results, and plots. Raw predictions, model weights, and executed notebooks stay local. |
+| [requirements.txt](requirements.txt) | Python dependencies; exact versions used by a saved run are recorded in its results.json. |
+| way_eeg_clean/ | Downloaded MAT files, stored locally and ignored by Git. |
 
 ## Data and prediction target
 
@@ -32,7 +40,7 @@ The reduced files for **P1–P12** each contain nine aligned runs and can be sel
 
 1. Create a compatible Python environment and install dependencies with `python -m pip install -r requirements.txt`.
 2. Put the downloaded MAT files directly in `way_eeg_clean/`.
-3. Open [`pipeline_v2_corrected_baseline.ipynb`](pipeline_v2_corrected_baseline.ipynb) from the repository root in Jupyter or VS Code. Set `PARTICIPANT_ID = 1` in its first code cell to the participant you want, then run cells in order. The [v2 methods](documentation/PIPELINE_V2_CORRECTED_BASELINE.md) include the local CPU and WSL GPU kernel notes.
+3. Open [`pipeline_v2.ipynb`](pipeline_v2.ipynb) from the repository root in Jupyter or VS Code. Set `PARTICIPANT_ID = 1` in its first code cell to the participant you want, then run cells in order. The [v2 methods](documentation/PIPELINE_V2_CORRECTED_BASELINE.md) include the local CPU and WSL GPU kernel notes.
 
 The notebook writes a participant- and device-labeled directory such as `outputs/pipeline-v2-corrected-baseline-p1-gpu-<UTC timestamp>/`. Its `RESULTS.md`, `results.json`, and plots are publishable; model weights, raw prediction arrays, and execution snapshots are excluded from Git.
 
@@ -58,8 +66,8 @@ These scores are for held-out runs **of P1**, not an unseen participant. Both P1
 
 Repeat run-level evaluation with predeclared splits covering other friction conditions; then establish a population model and evaluate participant-specific fine-tuning without mixing target-participant test windows into training. Cross-laboratory or cross-dataset transfer remains future work. See the [changelog](CHANGELOG.md) and [v2 limitations](documentation/PIPELINE_V2_CORRECTED_BASELINE.md) before extending the pipeline.
 
-## Sources
+## Research references
 
-- [Luciw, Jarocka, and Edin, *Multi-channel EEG recordings during 3,936 grasp and lift trials with varying weight and friction*](https://doi.org/10.1038/sdata.2014.47).
-- [Cleaned WAY-EEG-GAL dataset used by the notebooks](https://www.kaggle.com/datasets/radinkh2003/way-eeg-gal-clean).
-- [Original fork source](https://github.com/Thowfiq23/hand_motion_eeg).
+- Luciw, Jarocka, and Edin, [*Multi-channel EEG recordings during 3,936 grasp and lift trials with varying weight and friction*](https://doi.org/10.1038/sdata.2014.47).
+- Cleaned [WAY-EEG-GAL dataset](https://www.kaggle.com/datasets/radinkh2003/way-eeg-gal-clean) used by the notebooks.
+- Original fork source: [Thowfiq23/hand_motion_eeg](https://github.com/Thowfiq23/hand_motion_eeg).

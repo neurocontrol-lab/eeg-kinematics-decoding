@@ -1,6 +1,6 @@
 # Pipeline v2: Corrected Baseline
 
-The [v2 notebook](../pipeline_v2_corrected_baseline.ipynb) is the first evaluation-corrected
+The [v2 notebook](../pipeline_v2.ipynb) is the first evaluation-corrected
 pipeline for decoding one participant's EEG into wrist position. Set
 `PARTICIPANT_ID` in the first code cell to select P1–P12. It is separate from the
 [original notebook baseline](ORIGINAL_BASELINE.md), whose notebook, models, and

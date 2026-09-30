@@ -1,10 +1,16 @@
 # Pipeline changelog
 
-This is the central record of pipeline versions. Version names describe the evaluation protocol; they do not imply an improvement in model architecture or performance.
+This is the central record of pipeline versions. Version numbers identify pipeline revisions; they do not imply an improvement in model architecture or performance.
+
+## Repository organization (2026-09-30)
+
+- Shortened the notebook filenames to pipeline_v1.ipynb and pipeline_v2.ipynb and updated their references, including v1's source-notebook snapshot path.
+- Separated the README's pipeline descriptions from its file and code structure.
+- This update changes naming and documentation only; training protocols and saved results are unchanged.
 
 ## v2 — Corrected baseline (2026-09-29)
 
-[Notebook](pipeline_v2_corrected_baseline.ipynb) · [Detailed methods and limitations](documentation/PIPELINE_V2_CORRECTED_BASELINE.md) · [P1 GPU run](outputs/pipeline-v2-corrected-baseline-p1-gpu-20260929T173627Z/RESULTS.md)
+[Notebook](pipeline_v2.ipynb) · [Detailed methods and limitations](documentation/PIPELINE_V2_CORRECTED_BASELINE.md) · [P1 GPU run](outputs/pipeline-v2-corrected-baseline-p1-gpu-20260929T173627Z/RESULTS.md)
 
 - Added `PARTICIPANT_ID` at the top of the notebook. It selects the matching EEG, kinematics, run-boundary, and lift-metadata files and labels each new result. The reduced P1–P12 files align; the extra P55 EEG and kinematics files have different sample counts and fail the alignment check.
 - Split complete recording runs before scaling or windowing. For each supplied nine-run participant, runs 1–6 train, run 7 validates, and runs 8–9 test.
@@ -16,6 +22,6 @@ The CNN and CNN–BiLSTM definitions and their 15/20-epoch schedules are unchang
 
 ## v1 — Original fork baseline
 
-[Notebook](pipeline_v1_original.ipynb) · [Methods and limitations](documentation/ORIGINAL_BASELINE.md) · [P1 CPU run](outputs/original-p1-cpu/RESULTS.md) · [P1 GPU run](outputs/original-p1-gpu/RESULTS.md)
+[Notebook](pipeline_v1.ipynb) · [Methods and limitations](documentation/ORIGINAL_BASELINE.md) · [P1 CPU run](outputs/original-p1-cpu/RESULTS.md) · [P1 GPU run](outputs/original-p1-gpu/RESULTS.md)
 
 The original notebook uses overlapping windows with a random window-level split, scales data before the split, and passes the test partition to training as validation data. Its saved P1 runs reproduce that protocol. The v1 and v2 scores use different evaluation settings and target scaling, so they should not be interpreted as a direct model-performance comparison.
