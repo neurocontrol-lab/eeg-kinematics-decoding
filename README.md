@@ -1,6 +1,6 @@
 # EEG-to-Kinematics Decoding
 
-Research baselines for decoding movement kinematics from EEG in the [WAY-EEG-GAL dataset](https://doi.org/10.1038/sdata.2014.47). The current notebooks predict the **wrist tracker's X, Y, and Z position** from 32-channel EEG. This repository is a fork of [Thowfiq23/hand_motion_eeg](https://github.com/Thowfiq23/hand_motion_eeg); it preserves that pipeline as v1 and adds a separate, evaluation-corrected v2. The present results are within-participant baselines, not evidence of cross-participant decoding.
+Research baselines for decoding movement kinematics from EEG in the [WAY-EEG-GAL dataset](https://doi.org/10.1038/sdata.2014.47). The current notebooks predict the **wrist tracker's X, Y, and Z position** from 32-channel EEG. This repository was originally forked from [Thowfiq23/hand_motion_eeg](https://github.com/Thowfiq23/hand_motion_eeg); it preserves that pipeline as v1 and adds a separate, evaluation-corrected v2. The present results are within-participant baselines, not evidence of cross-participant decoding.
 
 ## Pipelines and repository layout
 
