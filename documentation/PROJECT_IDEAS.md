@@ -20,6 +20,7 @@ below are planning suggestions, not verbatim meeting decisions.
 Links: [v2 methods](PIPELINE_V2_CORRECTED_BASELINE.md),
 [model audit](MODEL_REFERENCE_AUDIT.md),
 [six-model comparison](SIX_MODEL_COMPARISON.md),
+[frozen P1 transfer](FROZEN_P1_TRANSFER.md),
 [target provenance](KINEMATICS_PROVENANCE.md).
 
 ## 1. Dataset understanding and condition-aware experiments

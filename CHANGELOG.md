@@ -23,6 +23,26 @@ This is the central record of pipeline versions. Version numbers identify pipeli
   training-only scaler statistics, labels, boundaries and source snapshots.
   Keep the negative result; no test-driven tuning or C3–C6 training occurs.
 
+## Frozen P1 cross-participant evaluation (2026-09-30)
+
+[Methods](documentation/FROZEN_P1_TRANSFER.md) · [Runner](experiments/evaluate_frozen_p1.py) · [Completed run](outputs/frozen-p1-cross-participant-gpu-20260930T125956Z/RESULTS.md)
+
+- Reused all six saved P1 models and P1 training scalers without target fitting,
+  fine-tuning or batch-normalization updates. Neural inference ran on GPU.
+- Evaluated P2–P12 on weight runs 8–9 (45,389 windows, fixed sandpaper), with all
+  nine target runs as a secondary evaluation (281,267 windows). Reported each
+  participant, run and wrist axis; participant-macro averages exclude P1.
+- Every model/axis primary macro R² is negative. The frozen P1 mean has better
+  macro scores than the learned models. Only P10 Z is slightly positive for
+  ELU/EEGNet; strong within-P1 results do not transfer reliably in this protocol.
+- Extended raw/reduced wrist provenance checks to all twelve participants.
+  All nine run lengths match; minimum wrist Pearson r is 0.9999231.
+- Verified P1 replay, unchanged weights/source hashes, and saved metrics/window
+  boundaries. Independent verification covers 72 prediction files and 750 metric
+  subsets. GPU LSTM replay variation is explicitly recorded.
+- Existing upstream processing and physical coordinate units remain unresolved;
+  this is transfer from one source, not population-model evaluation.
+
 ## Six-model P1 reference comparison (2026-09-30)
 
 [Methods](documentation/SIX_MODEL_COMPARISON.md) · [Runner](experiments/compare_six_models.py) · [Completed run](outputs/six-model-comparison-p1-gpu-20260930T095506Z/RESULTS.md)

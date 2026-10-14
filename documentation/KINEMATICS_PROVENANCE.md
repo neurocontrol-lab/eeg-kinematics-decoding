@@ -29,6 +29,14 @@ comparison is in [the machine-readable results](kinematics_verification.json).
 These comparisons establish sensor identity without relying on the notebook's
 incorrect “glove” or “finger” labels.
 
+The [frozen-P1 transfer evaluation](../outputs/frozen-p1-cross-participant-gpu-20260930T125956Z/RESULTS.md)
+extends this same raw/reduced comparison to **P1–P12**. All nine run lengths
+match for each participant; each reduced axis correlates most strongly with
+the corresponding wrist channel. The minimum wrist correlation across the
+36 participant/axis comparisons is 0.9999231. Full correlations, competing
+sensor checks, ranges and affine-fit evidence are recorded per participant
+in that run's `results.json`; the original P1/P6 verification JSON is preserved.
+
 ## What the scaling evidence supports
 
 Each reduced column spans exactly **0 to 1** in both participants. Its mean is

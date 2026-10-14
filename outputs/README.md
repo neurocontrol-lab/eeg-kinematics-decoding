@@ -1,19 +1,5 @@
 # Published pipeline results
 
-## Saved-decoder analyses: P1 event-aligned diagnostics
-
-[Results and plots](saved-decoder-analysis-p1-20261013T172654Z/RESULTS.md) · [Methods](../documentation/SAVED_DECODER_ANALYSES.md)
-
-The initial P1 analysis of **Project Idea Category 2: Additional Results from
-Existing Decoders** reconstructs saved predictions for six P1 reference
-models without training or new inference.
-They align all 68 held-out trials to raw events, plot coordinates and signed
-error over time, and summarize phase, motion, density and bias. Exact sample
-matches verify a two-second trial-metadata/continuous-recording clock offset.
-CNN–BiLSTM errors are higher during reaching and return than preparation or the
-airborne interval. Pure-window counts are sparse for short phases, and reduced
-coordinates do not provide physical distance errors.
-
 ## Category 1: C1 audit and C2 classification
 
 [Condition audit](condition-audit-20261014T115618Z/RESULTS.md)
@@ -40,6 +26,46 @@ references retain predictions and shift whole-trial labels within test runs;
 they do not retrain under shuffled labels. Both two-classifier adjusted fractions
 are 1.0. The report preserves learning history, confusion matrices, all per-run
 scores and [verification](weight-classification-p1-gpu-20261014T115817Z/verification.json).
+
+## Saved-decoder analyses: P1 event-aligned diagnostics
+
+[Results and plots](saved-decoder-analysis-p1-20261013T172654Z/RESULTS.md) · [Methods](../documentation/SAVED_DECODER_ANALYSES.md)
+
+The initial P1 analysis of **Project Idea Category 2: Additional Results from
+Existing Decoders** reconstructs saved predictions for six P1 reference
+models without training or new inference.
+They align all 68 held-out trials to raw events, plot coordinates and signed
+error over time, and summarize phase, motion, density and bias. Exact sample
+matches verify a two-second trial-metadata/continuous-recording clock offset.
+CNN–BiLSTM errors are higher during reaching and return than preparation or the
+airborne interval. Pure-window counts are sparse for short phases, and reduced
+coordinates do not provide physical distance errors.
+
+## Frozen P1 cross-participant evaluation
+
+[Run report](frozen-p1-cross-participant-gpu-20260930T125956Z/RESULTS.md) · [Methods](../documentation/FROZEN_P1_TRANSFER.md)
+
+All six saved P1 models and P1 EEG/target scalers are frozen. P2–P12 receive no
+fitting or adaptation. Primary evaluation uses weight runs 8–9 (45,389 windows;
+fixed sandpaper throughout); all nine target runs are a separately labeled secondary
+evaluation. Neural inference uses GPU, with mean/ridge on CPU.
+
+| Model | Participant-macro R² X | R² Y | R² Z |
+| --- | ---: | ---: | ---: |
+| Training mean | -0.303 | -0.535 | -0.244 |
+| Ridge | -0.825 | -0.943 | -0.461 |
+| CNN | -0.722 | -0.884 | -0.418 |
+| CNN–BiLSTM | -1.060 | -1.163 | -0.585 |
+| CNN + ELU | -0.641 | -0.687 | -0.322 |
+| EEGNet regression | -0.578 | -0.698 | -0.324 |
+
+The P1 replay control preserves its positive learned-model scores, while frozen
+transfer is poor. Only P10 Z for ELU/EEGNet is slightly positive. Every model's
+macro average is negative; the P1 mean performs better than the learned models
+on these averages. All raw participant recordings confirm the wrist mapping.
+This is single-source transfer on existing reduced files, whose upstream
+processing and physical units remain unresolved. Saved source artifacts and
+neural weights are unchanged.
 
 ## Six-model P1 comparison
 

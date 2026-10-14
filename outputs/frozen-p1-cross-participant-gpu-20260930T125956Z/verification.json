@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "participants": 12,
+  "models": 6,
+  "saved_prediction_files": 72,
+  "metric_scopes_checked": 750,
+  "windows_total": 284909,
+  "target_windows": 281267,
+  "source_hashes_match": true,
+  "source_snapshot_hash_matches": true,
+  "run_boundary_indices_match": true
+}

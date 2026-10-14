@@ -1,6 +1,6 @@
 # EEG-to-Kinematics Decoding
 
-Research baselines for decoding movement kinematics from EEG in the [WAY-EEG-GAL dataset](https://doi.org/10.1038/sdata.2014.47). The current notebooks predict the **wrist tracker's X, Y, and Z position** from 32-channel EEG. This repository was originally forked from [Thowfiq23/hand_motion_eeg](https://github.com/Thowfiq23/hand_motion_eeg); it preserves that pipeline as v1 and adds a separate, evaluation-corrected v2. The present results are within-participant baselines, not evidence of cross-participant decoding.
+Research baselines for decoding movement kinematics from EEG in the [WAY-EEG-GAL dataset](https://doi.org/10.1038/sdata.2014.47). The current notebooks predict the **wrist tracker's X, Y, and Z position** from 32-channel EEG. This repository was originally forked from [Thowfiq23/hand_motion_eeg](https://github.com/Thowfiq23/hand_motion_eeg); it preserves that pipeline as v1 and adds a separate, evaluation-corrected v2. Within-P1 models achieve positive held-out-run scores; a frozen-P1 evaluation on P2–P12 finds poor transfer without adaptation.
 
 ## Pipelines
 
@@ -17,7 +17,7 @@ The [central changelog](CHANGELOG.md) records the changes between versions. Deta
 | --- | --- |
 | [CHANGELOG.md](CHANGELOG.md) | Central version history and links to saved runs. |
 | [documentation/](documentation/) | Pipeline methods, limitations, and [kinematics-target provenance](documentation/KINEMATICS_PROVENANCE.md). |
-| [experiments/](experiments/) | Experiment runners extending the fixed baseline, starting with the [six-model P1 comparison](experiments/compare_six_models.py). |
+| [experiments/](experiments/) | The [six-model P1 comparison](experiments/compare_six_models.py) and [frozen-P1 cross-participant evaluation](experiments/evaluate_frozen_p1.py). |
 | [outputs/](outputs/) | [Published run index](outputs/README.md), numeric results, and plots. Raw predictions, model weights, and executed notebooks stay local. |
 | [requirements.txt](requirements.txt) | Python dependencies; exact versions used by a saved run are recorded in its results.json. |
 | way_eeg_clean/ | Downloaded MAT files, stored locally and ignored by Git. |
@@ -71,18 +71,47 @@ baselines used CPU. Ridge regularization was selected using validation data only
 Adding only ELU improves all three axes over the original affine CNN in this
 run. CNN–BiLSTM scores highest; EEGNet regression improves over the original CNN
 but does not consistently exceed the ELU-only variant. These are single-seed
-results for held-out runs **of P1**. Both test runs contain friction condition 3
-only; statistical significance and cross-participant transfer remain untested.
+results for held-out runs **of P1**. Both test runs are weight series with a
+fixed sandpaper surface; that comparison does not test significance or cross-participant transfer.
+The separate frozen-model transfer results appear below.
 
 The existing models were retrained for this comparison with a seed reset before
 each fit. Its CNN–BiLSTM scores therefore differ from the
 [first v2 P1 GPU run](outputs/pipeline-v2-corrected-baseline-p1-gpu-20260929T173627Z/RESULTS.md).
-P2 has passed preparation and model-build checks but has **not** been trained or
-evaluated. The [v1 CPU/GPU runs](outputs/README.md) use a different split and
+P2–P12 have now been evaluated using frozen P1 models; no target-participant model
+has been trained in this experiment. The [v1 CPU/GPU runs](outputs/README.md) use a different split and
 target scaling, so their scores are not a direct comparison of model quality.
 MSE and MAE use standardized target units; R² is unchanged by affine target
 scaling. The training-mean predictor can have negative R² because the R²
 reference uses the test target mean.
+
+### Frozen P1 transfer to P2–P12
+
+The [cross-participant run](outputs/frozen-p1-cross-participant-gpu-20260930T125956Z/RESULTS.md)
+reuses all six saved P1 models and both P1 training scalers, with **no fitting or
+adaptation on P2–P12**. Neural inference used the RTX 3060 GPU; mean/ridge used
+CPU. Primary evaluation uses weight runs 8–9 (fixed sandpaper in every participant), totaling
+45,389 target-participant windows. All nine runs are also reported separately.
+
+Mean R² across the eleven target participants, giving each participant equal weight:
+
+| Frozen model | Wrist X R² | Wrist Y R² | Wrist Z R² |
+| --- | ---: | ---: | ---: |
+| P1 training mean | -0.303 | -0.535 | -0.244 |
+| Ridge regression | -0.825 | -0.943 | -0.461 |
+| Original CNN | -0.722 | -0.884 | -0.418 |
+| CNN–BiLSTM | -1.060 | -1.163 | -0.585 |
+| CNN + ELU | -0.641 | -0.687 | -0.322 |
+| EEGNet regression | -0.578 | -0.698 | -0.324 |
+
+Strong within-P1 scores did not transfer reliably under this protocol. All
+model/axis macro averages are negative; the frozen P1 mean outperforms the
+learned models on those averages. Only P10 Z is slightly positive for CNN + ELU
+(0.011) and EEGNet (0.012). This tests one source participant, not a population
+model or leave-one-participant-out training. Raw P1–P12 recordings confirm the
+wrist-target identity; undocumented upstream normalization/cleaning still limits
+physical and deployment interpretation. See the [methods](documentation/FROZEN_P1_TRANSFER.md)
+for the frozen transforms, controls and complete limitations.
 
 ## Experiments
 
@@ -132,6 +161,10 @@ Run from the repository root in the configured WSL GPU environment:
 ```bash
 ~/.venvs/eeg-tf-gpu/bin/python experiments/compare_six_models.py
 ```
+
+The [frozen-P1 runner](experiments/evaluate_frozen_p1.py) reuses those saved
+artifacts for cross-participant inference; see its
+[methods and run instructions](documentation/FROZEN_P1_TRANSFER.md).
 
 ## Next research steps
 
