@@ -2,6 +2,27 @@
 
 This is the central record of pipeline versions. Version numbers identify pipeline revisions; they do not imply an improvement in model architecture or performance.
 
+## Category 1: condition audit and P1 classification (2026-10-14)
+
+[Methods](documentation/CONDITION_CLASSIFICATION.md)
+· [C1 audit](outputs/condition-audit-20261014T115618Z/RESULTS.md)
+· [C2 results](outputs/weight-classification-p1-gpu-20261014T115817Z/RESULTS.md)
+
+- Audit named metadata columns for 3,528 supplied P1–P12 trials, including
+  current/previous weight/surface and split coverage. No held-out current joint
+  condition is absent from v2 training; series-type composition differs.
+- Fit trial-grouped P1 weight classifiers at fixed sandpaper. Runs 1/4 train,
+  7 validates, 8/9 test; full LEDOn-to-hand-stop windows stay within trials.
+  Verify all 170 trial clocks and fit scalers only on training-trial samples.
+- Compare validation-selected logistic regression and a fixed-epoch GPU CNN +
+  ELU classification head with a training-majority reference. Held-out trial
+  balanced accuracy is 32.48%, 27.73% and 33.33%, respectively.
+- Enumerate 1,156 within-run circular trial-label offsets per learned model.
+  Upper-tail fractions 0.592/0.924 do not support reliable discrimination.
+- Verify saved predictions, 21 metric subsets, 2,312 reference offsets,
+  training-only scaler statistics, labels, boundaries and source snapshots.
+  Keep the negative result; no test-driven tuning or C3–C6 training occurs.
+
 ## Six-model P1 reference comparison (2026-09-30)
 
 [Methods](documentation/SIX_MODEL_COMPARISON.md) · [Runner](experiments/compare_six_models.py) · [Completed run](outputs/six-model-comparison-p1-gpu-20260930T095506Z/RESULTS.md)

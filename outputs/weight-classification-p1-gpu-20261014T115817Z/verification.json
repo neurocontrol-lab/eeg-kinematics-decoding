@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "audit_trial_rows_checked": 3528,
+  "classifier_trials": 170,
+  "source_and_protocol_hashes_match": true,
+  "training_only_scaler_recomputed": true,
+  "trial_window_boundaries_and_labels_checked": true,
+  "saved_prediction_files_checked": 6,
+  "metric_subsets_checked": 21,
+  "circular_offsets_recomputed": 2312,
+  "validation_only_logistic_selection_checked": true,
+  "GPU_inference_probe": "/job:localhost/replica:0/task:0/device:GPU:0"
+}

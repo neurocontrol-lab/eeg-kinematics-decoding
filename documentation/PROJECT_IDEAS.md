@@ -26,8 +26,8 @@ Links: [v2 methods](PIPELINE_V2_CORRECTED_BASELINE.md),
 
 | ID | Idea | Question or deliverable | Discussion / status |
 | --- | --- | --- | --- |
-| C1 | Audit trial conditions and split coverage | Tabulate current/previous weight and surface, series type, and trial counts in train/validation/test. Establish which parameters change within a run and whether held-out conditions also occur in training. | 25:31–26:03; 28:08–30:02; 1:01:48–1:05:04. Open. |
-| C2 | Classify experimental condition from EEG | Can EEG distinguish weight, surface, or joint weight/surface conditions above an appropriate chance reference? Begin with one controlled classification question. | 27:11–28:08; 36:03–36:20. Open. |
+| C1 | Audit trial conditions and split coverage | Tabulate current/previous weight and surface, series type, and trial counts in train/validation/test. Establish which parameters change within a run and whether held-out conditions also occur in training. | 25:31–26:03; 28:08–30:02; 1:01:48–1:05:04. Completed initial P1–P12 audit: 3,528 trials; no held-out current weight/surface combinations absent from v2 training. Series-type composition still differs. |
+| C2 | Classify experimental condition from EEG | Can EEG distinguish weight, surface, or joint weight/surface conditions above an appropriate chance reference? Begin with one controlled classification question. | 27:11–28:08; 36:03–36:20. First fixed-sandpaper P1 weight experiment completed: 68 test trials, logistic balanced accuracy 32.48%, CNN + ELU 27.73%, versus 33.33% chance. No reliable discrimination in this setup; surface/joint tasks and broader validation remain open. |
 | C3 | Compare fixed-condition and pooled decoders | Compare training/testing within a defined condition with mixed-condition training/testing. Report condition-specific performance instead of relying only on an aggregate score. | 28:28–30:02; 33:26–34:16. Open. |
 | C4 | Evaluate held-out experimental conditions | Separate generalization to new recordings of known conditions from generalization to conditions absent during training. | 1:03:45–1:05:04; earlier discussion of holdouts covering other friction conditions. Open. |
 | C5 | Test whether decoding mappings differ between movement stages | Use verified event markers to plot a pooled decoder's error across stages within a held-out trial. Then compare stage-trained decoders within and across stages using a training-stage × evaluation-stage error matrix. Consistently high cross-stage error alongside low within-stage error would support stage-specific decoders, after controlling for condition, sample availability and stage difficulty. | 31:31–34:16; 43:03–43:21; 50:45–51:09. Clarified in follow-up discussion. Distinct neural control routines remain a hypothesis, not a conclusion from decoder errors alone. |
@@ -39,6 +39,14 @@ and surface. In the supplied P1–P12 files, runs 7–9 are weight series with a
 fixed surface. Local WS files label their surface as sandpaper. Runs 1–6 include
 weight, friction and mixed series, with order depending on participant. Do not
 infer trial condition from run number alone.
+
+[C1 audit](../outputs/condition-audit-20261014T115618Z/RESULTS.md)
+· [C2 classifier results](../outputs/weight-classification-p1-gpu-20261014T115817Z/RESULTS.md)
+· [Declared methods and limits](CONDITION_CLASSIFICATION.md).
+The classifier uses full LEDOn-to-hand-stop trials, not stage-specific cropping.
+All 170 selected P1 trial clocks and every trial/window boundary were verified.
+These findings do not establish whether another representation or task could
+classify condition successfully. No C3–C6 decoder training occurred.
 
 ## 2. Additional results from the existing decoders
 

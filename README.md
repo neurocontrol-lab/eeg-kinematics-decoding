@@ -86,6 +86,33 @@ reference uses the test target mean.
 
 ## Experiments
 
+### Category 1: condition audit and weight classification
+
+The [C1 audit](outputs/condition-audit-20261014T115618Z/RESULTS.md) checks all
+3,528 supplied P1–P12 trials. Current weight/surface combinations in v2
+validation/test also occur in training, but the series-type composition differs.
+Local WS labels verify sandpaper and physical weight codes for P1.
+
+The [first C2 classifier comparison](outputs/weight-classification-p1-gpu-20261014T115817Z/RESULTS.md)
+uses P1 weight runs 1/4 for training, 7 for validation and 8/9 for testing.
+Full LEDOn-to-hand-stop EEG windows remain inside individual trials. Channel
+scaling fits training trials only; mean window probabilities produce one
+prediction per trial.
+
+| Classifier | Held-out trial balanced accuracy | Circular-shift upper-tail fraction |
+| --- | ---: | ---: |
+| Training-majority reference | 33.33% | — |
+| Logistic, 64 channel mean/std features | 32.48% | 0.592 |
+| CNN + ELU, fixed 15 epochs on GPU | 27.73% | 0.924 |
+
+Both learned models fail to show reliable discrimination in this setup.
+The [methods](documentation/CONDITION_CLASSIFICATION.md) specify the 68 held-out
+trials, validation-only logistic selection and 1,156 whole-trial circular shifts
+per classifier. [Independent verification](outputs/weight-classification-p1-gpu-20261014T115817Z/verification.json)
+checks scalers, grouping, labels, metrics, reference offsets and source hashes.
+This does not establish absence of weight information in EEG. C3–C6 experiments
+remain separate from this initial condition-classification result.
+
 The [six-model P1 comparison](documentation/SIX_MODEL_COMPARISON.md) adds a
 training-mean predictor, ridge regression, an ELU-only CNN ablation, and an EEGNet
 regression architecture reference alongside the unchanged CNN and CNN–BiLSTM.

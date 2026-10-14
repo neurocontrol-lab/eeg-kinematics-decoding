@@ -1,0 +1,2433 @@
+{
+  "status": "complete",
+  "scope": "C1 trial-condition audit, P1\u2013P12",
+  "participants": {
+    "P1": {
+      "runs": {
+        "1": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "2": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 12,
+            "w2_s3": 11
+          }
+        },
+        "3": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "4": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "5": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "6": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 12,
+            "w2_s2": 11,
+            "w2_s3": 11
+          }
+        },
+        "7": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 12,
+            "w2_s3": 11,
+            "w4_s3": 11
+          }
+        },
+        "8": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "9": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        }
+      },
+      "split_trial_counts": {
+        "train": 192,
+        "validation": 34,
+        "test": 68
+      },
+      "joint_conditions_by_v2_split": {
+        "train": [
+          "w1_s1",
+          "w1_s3",
+          "w2_s1",
+          "w2_s2",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "validation": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "test": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ]
+      },
+      "heldout_conditions_absent_from_v2_train": {
+        "validation": [],
+        "test": []
+      }
+    },
+    "P2": {
+      "runs": {
+        "1": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "2": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 11,
+            "w2_s3": 12
+          }
+        },
+        "3": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 12,
+            "w2_s3": 11,
+            "w4_s3": 11
+          }
+        },
+        "4": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 12,
+            "w2_s3": 11
+          }
+        },
+        "5": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "6": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "7": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "8": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "9": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        }
+      },
+      "split_trial_counts": {
+        "train": 192,
+        "validation": 34,
+        "test": 68
+      },
+      "joint_conditions_by_v2_split": {
+        "train": [
+          "w1_s1",
+          "w1_s3",
+          "w2_s1",
+          "w2_s2",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "validation": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "test": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ]
+      },
+      "heldout_conditions_absent_from_v2_train": {
+        "validation": [],
+        "test": []
+      }
+    },
+    "P3": {
+      "runs": {
+        "1": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "2": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "3": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 12,
+            "w2_s3": 11
+          }
+        },
+        "4": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "5": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 12,
+            "w2_s2": 11,
+            "w2_s3": 11
+          }
+        },
+        "6": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "7": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 12,
+            "w2_s3": 11,
+            "w4_s3": 11
+          }
+        },
+        "8": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "9": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        }
+      },
+      "split_trial_counts": {
+        "train": 192,
+        "validation": 34,
+        "test": 68
+      },
+      "joint_conditions_by_v2_split": {
+        "train": [
+          "w1_s1",
+          "w1_s3",
+          "w2_s1",
+          "w2_s2",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "validation": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "test": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ]
+      },
+      "heldout_conditions_absent_from_v2_train": {
+        "validation": [],
+        "test": []
+      }
+    },
+    "P4": {
+      "runs": {
+        "1": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 12,
+            "w2_s2": 11,
+            "w2_s3": 11
+          }
+        },
+        "2": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "3": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "4": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "5": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 12,
+            "w2_s3": 11,
+            "w4_s3": 11
+          }
+        },
+        "6": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 11,
+            "w2_s3": 12
+          }
+        },
+        "7": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "8": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "9": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        }
+      },
+      "split_trial_counts": {
+        "train": 192,
+        "validation": 34,
+        "test": 68
+      },
+      "joint_conditions_by_v2_split": {
+        "train": [
+          "w1_s1",
+          "w1_s3",
+          "w2_s1",
+          "w2_s2",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "validation": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "test": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ]
+      },
+      "heldout_conditions_absent_from_v2_train": {
+        "validation": [],
+        "test": []
+      }
+    },
+    "P5": {
+      "runs": {
+        "1": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "2": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 12,
+            "w2_s3": 11,
+            "w4_s3": 11
+          }
+        },
+        "3": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 11,
+            "w2_s3": 12
+          }
+        },
+        "4": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "5": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 12,
+            "w2_s3": 11
+          }
+        },
+        "6": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "7": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "8": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "9": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        }
+      },
+      "split_trial_counts": {
+        "train": 192,
+        "validation": 34,
+        "test": 68
+      },
+      "joint_conditions_by_v2_split": {
+        "train": [
+          "w1_s1",
+          "w1_s3",
+          "w2_s1",
+          "w2_s2",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "validation": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "test": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ]
+      },
+      "heldout_conditions_absent_from_v2_train": {
+        "validation": [],
+        "test": []
+      }
+    },
+    "P6": {
+      "runs": {
+        "1": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "2": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 12,
+            "w2_s3": 11
+          }
+        },
+        "3": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "4": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "5": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "6": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 12,
+            "w2_s2": 11,
+            "w2_s3": 11
+          }
+        },
+        "7": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 12,
+            "w2_s3": 11,
+            "w4_s3": 11
+          }
+        },
+        "8": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "9": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        }
+      },
+      "split_trial_counts": {
+        "train": 192,
+        "validation": 34,
+        "test": 68
+      },
+      "joint_conditions_by_v2_split": {
+        "train": [
+          "w1_s1",
+          "w1_s3",
+          "w2_s1",
+          "w2_s2",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "validation": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "test": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ]
+      },
+      "heldout_conditions_absent_from_v2_train": {
+        "validation": [],
+        "test": []
+      }
+    },
+    "P7": {
+      "runs": {
+        "1": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 12,
+            "w2_s2": 11,
+            "w2_s3": 11
+          }
+        },
+        "2": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "3": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "4": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 11,
+            "w2_s3": 12
+          }
+        },
+        "5": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "6": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 12,
+            "w2_s3": 11,
+            "w4_s3": 11
+          }
+        },
+        "7": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "8": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "9": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        }
+      },
+      "split_trial_counts": {
+        "train": 192,
+        "validation": 34,
+        "test": 68
+      },
+      "joint_conditions_by_v2_split": {
+        "train": [
+          "w1_s1",
+          "w1_s3",
+          "w2_s1",
+          "w2_s2",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "validation": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "test": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ]
+      },
+      "heldout_conditions_absent_from_v2_train": {
+        "validation": [],
+        "test": []
+      }
+    },
+    "P8": {
+      "runs": {
+        "1": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "2": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 11,
+            "w2_s3": 12
+          }
+        },
+        "3": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 12,
+            "w2_s3": 11,
+            "w4_s3": 11
+          }
+        },
+        "4": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 12,
+            "w2_s3": 11
+          }
+        },
+        "5": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "6": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "7": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "8": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "9": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        }
+      },
+      "split_trial_counts": {
+        "train": 192,
+        "validation": 34,
+        "test": 68
+      },
+      "joint_conditions_by_v2_split": {
+        "train": [
+          "w1_s1",
+          "w1_s3",
+          "w2_s1",
+          "w2_s2",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "validation": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "test": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ]
+      },
+      "heldout_conditions_absent_from_v2_train": {
+        "validation": [],
+        "test": []
+      }
+    },
+    "P9": {
+      "runs": {
+        "1": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "2": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "3": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 12,
+            "w2_s3": 11
+          }
+        },
+        "4": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "5": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 12,
+            "w2_s2": 11,
+            "w2_s3": 11
+          }
+        },
+        "6": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "7": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 12,
+            "w2_s3": 11,
+            "w4_s3": 11
+          }
+        },
+        "8": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "9": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        }
+      },
+      "split_trial_counts": {
+        "train": 192,
+        "validation": 34,
+        "test": 68
+      },
+      "joint_conditions_by_v2_split": {
+        "train": [
+          "w1_s1",
+          "w1_s3",
+          "w2_s1",
+          "w2_s2",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "validation": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "test": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ]
+      },
+      "heldout_conditions_absent_from_v2_train": {
+        "validation": [],
+        "test": []
+      }
+    },
+    "P10": {
+      "runs": {
+        "1": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 12,
+            "w2_s2": 11,
+            "w2_s3": 11
+          }
+        },
+        "2": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "3": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "4": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "5": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 12,
+            "w2_s3": 11,
+            "w4_s3": 11
+          }
+        },
+        "6": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 11,
+            "w2_s3": 12
+          }
+        },
+        "7": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "8": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "9": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        }
+      },
+      "split_trial_counts": {
+        "train": 192,
+        "validation": 34,
+        "test": 68
+      },
+      "joint_conditions_by_v2_split": {
+        "train": [
+          "w1_s1",
+          "w1_s3",
+          "w2_s1",
+          "w2_s2",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "validation": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "test": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ]
+      },
+      "heldout_conditions_absent_from_v2_train": {
+        "validation": [],
+        "test": []
+      }
+    },
+    "P11": {
+      "runs": {
+        "1": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "2": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 12,
+            "w2_s3": 11,
+            "w4_s3": 11
+          }
+        },
+        "3": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 11,
+            "w2_s3": 12
+          }
+        },
+        "4": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "5": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 12,
+            "w2_s3": 11
+          }
+        },
+        "6": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "7": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "8": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "9": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        }
+      },
+      "split_trial_counts": {
+        "train": 192,
+        "validation": 34,
+        "test": 68
+      },
+      "joint_conditions_by_v2_split": {
+        "train": [
+          "w1_s1",
+          "w1_s3",
+          "w2_s1",
+          "w2_s2",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "validation": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "test": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ]
+      },
+      "heldout_conditions_absent_from_v2_train": {
+        "validation": [],
+        "test": []
+      }
+    },
+    "P12": {
+      "runs": {
+        "1": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "2": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 11,
+            "w2_s2": 12,
+            "w2_s3": 11
+          }
+        },
+        "3": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "4": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        },
+        "5": {
+          "series_type": "mixed",
+          "block_type": 3,
+          "n_trials": 28,
+          "weights": [
+            1,
+            2
+          ],
+          "surfaces": [
+            1,
+            3
+          ],
+          "conditions": {
+            "w1_s1": 7,
+            "w1_s3": 7,
+            "w2_s1": 7,
+            "w2_s3": 7
+          }
+        },
+        "6": {
+          "series_type": "friction",
+          "block_type": 2,
+          "n_trials": 34,
+          "weights": [
+            2
+          ],
+          "surfaces": [
+            1,
+            2,
+            3
+          ],
+          "conditions": {
+            "w2_s1": 12,
+            "w2_s2": 11,
+            "w2_s3": 11
+          }
+        },
+        "7": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 12,
+            "w2_s3": 11,
+            "w4_s3": 11
+          }
+        },
+        "8": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 12,
+            "w4_s3": 11
+          }
+        },
+        "9": {
+          "series_type": "weight",
+          "block_type": 1,
+          "n_trials": 34,
+          "weights": [
+            1,
+            2,
+            4
+          ],
+          "surfaces": [
+            3
+          ],
+          "conditions": {
+            "w1_s3": 11,
+            "w2_s3": 11,
+            "w4_s3": 12
+          }
+        }
+      },
+      "split_trial_counts": {
+        "train": 192,
+        "validation": 34,
+        "test": 68
+      },
+      "joint_conditions_by_v2_split": {
+        "train": [
+          "w1_s1",
+          "w1_s3",
+          "w2_s1",
+          "w2_s2",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "validation": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ],
+        "test": [
+          "w1_s3",
+          "w2_s3",
+          "w4_s3"
+        ]
+      },
+      "heldout_conditions_absent_from_v2_train": {
+        "validation": [],
+        "test": []
+      }
+    }
+  },
+  "metadata_columns": {
+    "series_type": "BlockType",
+    "weight": "CurW",
+    "surface": "CurS",
+    "previous_weight": "PrevW",
+    "previous_surface": "PrevS"
+  },
+  "weight_grams": {
+    "1": 165,
+    "2": 330,
+    "4": 660
+  },
+  "local_WS_surface_labels": {
+    "3": "sandpaper",
+    "2": "suede",
+    "1": "silk"
+  },
+  "P1_WS_trials_checked": 294,
+  "label_note": "Surface strings are verified in all P1 WS trials. Other participants' condition audit retains original codes; labels use that shared local mapping.",
+  "experiment_sha256": "4583bec7b32efd488e3fbece12dc9ab9aa7f8baa2a6e0b93f88d7a19fe1e1954",
+  "source_sha256": {
+    "../P1/P1_AllLifts.mat": "75c5766759d4eac45933923b4c95fc60300ed4dbc75b07ce13d531c42735ba27",
+    "../P2/P2_AllLifts.mat": "a89b8096fa72f1671654ec273c6720887ae8dc7f9176e686f1891a3d0d7e2e2f",
+    "../P3/P3_AllLifts.mat": "f67bb4a726ef347cc6638e9c9d3c7902cc438681785ca0d5e4b1d7b3b1e4eded",
+    "../P4/P4_AllLifts.mat": "77c083985da55367a968713c97f265e7381898fd6ad09d385e128ae6bf261963",
+    "../P5/P5_AllLifts.mat": "742ae296a826d6e0ac44dc8e1d54ed2da78b333b7afc5bcb26b3ec4347631496",
+    "../P6/P6_AllLifts.mat": "90e8d7bd27c384f110643751225a4055531ffbd2a24eb5a4aca5faf9e533b63c",
+    "../P7/P7_AllLifts.mat": "009eaa20203038b99285dca6f369605719060299d1a1dd34dbe38f40bd67dc86",
+    "../P8/P8_AllLifts.mat": "8144ae29f0c79fa293acc01e87a22d59f401ab5b3f5d4a77c4433c84d4c7d85a",
+    "../P9/P9_AllLifts.mat": "c86ad00a2278c4dbc23a0f27e8c80aba36921a5a3710b3d417f8ba0d8edebc55",
+    "../P10/P10_AllLifts.mat": "457f56cf09c2cec30ccee3f565e0439c38d6c4435c436e511cbebc73d771c8ef",
+    "../P11/P11_AllLifts.mat": "4380e987d33eeee752566f2caafbfb6049a9c749541f377197a99820e81287f6",
+    "../P12/P12_AllLifts.mat": "5e42a0360ffcb719fe03c5e7b696f21688cd2ed747797d83d69ebce88eb24081"
+  },
+  "C2_P1_plan": {
+    "train_runs": [
+      1,
+      4
+    ],
+    "validation_runs": [
+      7
+    ],
+    "test_runs": [
+      8,
+      9
+    ],
+    "classes_grams": [
+      165,
+      330,
+      660
+    ],
+    "fixed_surface": "sandpaper",
+    "surface_code": 3,
+    "all_classes_present_in_each_selected_run": true,
+    "selected_trial_counts": {
+      "train": 68,
+      "validation": 34,
+      "test": 68
+    },
+    "scope": "Within-P1 weight discrimination at a fixed surface, not surface classification or participant transfer"
+  },
+  "source_files_unchanged": true,
+  "trial_rows": 3528
+}

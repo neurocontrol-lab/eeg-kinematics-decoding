@@ -14,6 +14,33 @@ CNN–BiLSTM errors are higher during reaching and return than preparation or th
 airborne interval. Pure-window counts are sparse for short phases, and reduced
 coordinates do not provide physical distance errors.
 
+## Category 1: C1 audit and C2 classification
+
+[Condition audit](condition-audit-20261014T115618Z/RESULTS.md)
+· [Classifier results and plots](weight-classification-p1-gpu-20261014T115817Z/RESULTS.md)
+· [Methods](../documentation/CONDITION_CLASSIFICATION.md)
+
+C1 audits 3,528 supplied trials across P1–P12, retaining series types and current/
+previous trial conditions. V2's held-out current weight/surface combinations also
+appear in training; series-type composition differs across splits.
+
+C2 classifies 165/330/660 g from P1 EEG at fixed sandpaper. Whole weight runs 1/4
+train, 7 validates, and 8/9 test. Each full trial produces one prediction from
+its mean window probabilities. Training-only scaling and balanced trial/class
+training weights apply. CNN + ELU runs on GPU; logistic and majority use CPU.
+
+| Classifier | Test trials | Balanced accuracy | Macro F1 | Circular upper-tail fraction |
+| --- | ---: | ---: | ---: | ---: |
+| Training majority | 68 | 33.33% | 0.1685 | — |
+| Logistic | 68 | 32.48% | 0.3237 | 0.592 |
+| CNN + ELU | 68 | 27.73% | 0.2329 | 0.924 |
+
+No reliable weight discrimination appears in this first setup. Circular-shift
+references retain predictions and shift whole-trial labels within test runs;
+they do not retrain under shuffled labels. Both two-classifier adjusted fractions
+are 1.0. The report preserves learning history, confusion matrices, all per-run
+scores and [verification](weight-classification-p1-gpu-20261014T115817Z/verification.json).
+
 ## Six-model P1 comparison
 
 [Run report](six-model-comparison-p1-gpu-20260930T095506Z/RESULTS.md) · [Methods](../documentation/SIX_MODEL_COMPARISON.md)
