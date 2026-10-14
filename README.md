@@ -115,6 +115,16 @@ for the frozen transforms, controls and complete limitations.
 
 ## Experiments
 
+### Saved-model inference latency
+
+The [P1 CPU/GPU benchmark](outputs/inference-benchmark-p1-20261014/RESULTS.md)
+measures warmed, synchronized calls for the six saved models. Median single-window
+latency is about 1.1 ms on CPU versus 1.4–1.5 ms on GPU for the CNN variants,
+and 5.0 ms versus 4.3 ms for CNN–BiLSTM. Neural batches of 64 are faster on GPU.
+These timings exclude acquisition, preprocessing and window accumulation, so
+they do not establish end-to-end real-time operation. The report includes raw
+timing arrays, p95 values, round summaries, and source/replay checks.
+
 ### Category 1: condition audit and weight classification
 
 The [C1 audit](outputs/condition-audit-20261014T115618Z/RESULTS.md) checks all

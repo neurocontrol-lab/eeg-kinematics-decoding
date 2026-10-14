@@ -1,0 +1,191 @@
+{
+  "status": "complete",
+  "device": "gpu",
+  "utc": "2026-10-14T11:53:59.979190+00:00",
+  "source": "outputs/six-model-comparison-p1-gpu-20260930T095506Z",
+  "source_sha256": {
+    "results.json": "fd0fb14b56a3bed1360474648f883c348197980384d4765b02896fb9d04768ef",
+    "training_mean_weights.npz": "f8355390a11c9056898cb0acc225ebe44e9434c70273fb4a6be2ed6dd15a6906",
+    "ridge_weights.npz": "9a3d6d58964e42ceb8a6efc9c1c3909adbcc883cfc8fd46d6791c5d5d836b106",
+    "cnn.keras": "d666a52b1bee4b4845805f31aec3b068d1c81c1938f637e22c2ad65c2b013543",
+    "cnn_bilstm.keras": "8cd91f5edb71ea3dff41a19d737d19cf648e6662b58a72133eeb00ef617fc902",
+    "cnn_elu.keras": "d269a4c2011b95951a5cb9970eaed648c8ade4fe4ac7ca0802dcf4d01d598e45",
+    "eegnet_regression.keras": "8b0d4d45756f7e59842eeeebb43723498a09a4c2c5c9fde6fa45bd459c2c0aee"
+  },
+  "input_sha256": "bc37650a3f925c1eee08203ecfd56992a0dc88a8e0355d1c7b08a45ef2fd4ff1",
+  "input_shape": [
+    3642,
+    128,
+    32
+  ],
+  "target_indices_sha256": "88ab936860ee715de4d33d92516480faea12e4aaa160c429c3b4f8bd530bf12b",
+  "hardware": {
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "cpu": "Architecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nAddress sizes:                        39 bits physical, 48 bits virtual\nByte Order:                           Little Endian\nCPU(s):                               8\nOn-line CPU(s) list:                  0-7\nVendor ID:                            GenuineIntel\nModel name:                           11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz\nCPU family:                           6\nModel:                                141\nThread(s) per core:                   2\nCore(s) per socket:                   4\nSocket(s):                            1\nStepping:                             1\nBogoMIPS:                             4607.99\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm avx512_vp2intersect md_clear flush_l1d arch_capabilities\nHypervisor vendor:                    Microsoft\nVirtualization type:                  full\nL1d cache:                            192 KiB (4 instances)\nL1i cache:                            128 KiB (4 instances)\nL2 cache:                             5 MiB (4 instances)\nL3 cache:                             24 MiB (1 instance)\nNUMA node(s):                         1\nNUMA node0 CPU(s):                    0-7\nVulnerability Gather data sampling:   Unknown: Dependent on hypervisor status\nVulnerability Itlb multihit:          Not affected\nVulnerability L1tf:                   Not affected\nVulnerability Mds:                    Not affected\nVulnerability Meltdown:               Not affected\nVulnerability Mmio stale data:        Not affected\nVulnerability Reg file data sampling: Not affected\nVulnerability Retbleed:               Mitigation; Enhanced IBRS\nVulnerability Spec rstack overflow:   Not affected\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop\nVulnerability Srbds:                  Not affected\nVulnerability Tsx async abort:        Not affected\n",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU, 610.62, 6144 MiB"
+  },
+  "versions": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "tensorflow": "2.20.0",
+    "keras": "3.10.0",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1"
+  },
+  "protocol": {
+    "warmup_calls_per_model_batch": 20,
+    "rounds": 3,
+    "calls_per_round": 100,
+    "batch_sizes": [
+      1,
+      64
+    ],
+    "cpu_intra_threads": 4,
+    "cpu_inter_threads": 1,
+    "boundary": "already-scaled NumPy EEG windows to completed NumPy XYZ predictions",
+    "excluded": [
+      "acquisition",
+      "filtering",
+      "scaling",
+      "window construction",
+      "model loading",
+      "graph tracing",
+      "inverse target transform"
+    ],
+    "neural_api": "tf.function(model(x, training=False)), host-to-device transfer and .numpy() synchronization included",
+    "baseline_api": "saved NumPy mean and ridge, CPU only",
+    "order": "seeded randomized model order within each round, sequential calls"
+  },
+  "models": {
+    "cnn": {
+      "1": {
+        "n_calls": 300,
+        "median_ms": 1.4015005,
+        "p95_ms": 1.59908095,
+        "mean_ms": 1.4179144233333334,
+        "min_ms": 1.2352,
+        "round_median_ms": [
+          1.4431500000000002,
+          1.3708,
+          1.35575
+        ],
+        "median_ms_per_window": 1.4015005
+      },
+      "64": {
+        "n_calls": 300,
+        "median_ms": 2.0378,
+        "p95_ms": 2.31935595,
+        "mean_ms": 2.0469044666666667,
+        "min_ms": 1.7697,
+        "round_median_ms": [
+          2.0069,
+          2.05495,
+          2.04685
+        ],
+        "median_ms_per_window": 0.031840625
+      }
+    },
+    "cnn_bilstm": {
+      "1": {
+        "n_calls": 300,
+        "median_ms": 4.306100000000001,
+        "p95_ms": 5.06920595,
+        "mean_ms": 4.4503689500000005,
+        "min_ms": 3.8878,
+        "round_median_ms": [
+          4.855801,
+          4.2404,
+          4.1122005
+        ],
+        "median_ms_per_window": 4.306100000000001
+      },
+      "64": {
+        "n_calls": 300,
+        "median_ms": 5.257,
+        "p95_ms": 7.72650095,
+        "mean_ms": 5.594647363333333,
+        "min_ms": 4.7453,
+        "round_median_ms": [
+          5.7097505,
+          5.2461505,
+          5.0166505
+        ],
+        "median_ms_per_window": 0.082140625
+      }
+    },
+    "cnn_elu": {
+      "1": {
+        "n_calls": 300,
+        "median_ms": 1.41815,
+        "p95_ms": 1.7476050000000003,
+        "mean_ms": 1.45354176,
+        "min_ms": 1.1747,
+        "round_median_ms": [
+          1.44375,
+          1.42455,
+          1.3845
+        ],
+        "median_ms_per_window": 1.41815
+      },
+      "64": {
+        "n_calls": 300,
+        "median_ms": 2.1675500000000003,
+        "p95_ms": 2.47704,
+        "mean_ms": 2.1981254766666667,
+        "min_ms": 1.8693,
+        "round_median_ms": [
+          2.3122499999999997,
+          2.1246,
+          2.1375
+        ],
+        "median_ms_per_window": 0.033867968750000005
+      }
+    },
+    "eegnet_regression": {
+      "1": {
+        "n_calls": 300,
+        "median_ms": 1.46775,
+        "p95_ms": 1.839285,
+        "mean_ms": 1.5095511,
+        "min_ms": 1.2235,
+        "round_median_ms": [
+          1.45195,
+          1.5711005,
+          1.3875
+        ],
+        "median_ms_per_window": 1.46775
+      },
+      "64": {
+        "n_calls": 300,
+        "median_ms": 2.1044,
+        "p95_ms": 2.3739149999999998,
+        "mean_ms": 2.1244544666666667,
+        "min_ms": 1.8587,
+        "round_median_ms": [
+          2.1725000000000003,
+          2.0647005,
+          2.0832005000000002
+        ],
+        "median_ms_per_window": 0.03288125
+      }
+    }
+  },
+  "verification": {
+    "cnn": {
+      "first_64_max_absolute_difference": 0.00020766258239746094,
+      "first_64_mean_absolute_difference": 3.5106215364066884e-05
+    },
+    "cnn_bilstm": {
+      "first_64_max_absolute_difference": 0.0,
+      "first_64_mean_absolute_difference": 0.0
+    },
+    "cnn_elu": {
+      "first_64_max_absolute_difference": 0.0005068182945251465,
+      "first_64_mean_absolute_difference": 0.00011379501665942371
+    },
+    "eegnet_regression": {
+      "first_64_max_absolute_difference": 0.00014603137969970703,
+      "first_64_mean_absolute_difference": 4.462257493287325e-05
+    },
+    "source_files_and_neural_weights_unchanged": true
+  }
+}

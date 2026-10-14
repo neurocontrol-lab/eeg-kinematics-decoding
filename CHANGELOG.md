@@ -2,6 +2,19 @@
 
 This is the central record of pipeline versions. Version numbers identify pipeline revisions; they do not imply an improvement in model architecture or performance.
 
+## Saved-model inference benchmark (2026-10-14)
+
+[Results](outputs/inference-benchmark-p1-20261014/RESULTS.md)
+· [Runner](experiments/benchmark_inference.py)
+
+- Measure warmed, synchronized CPU/GPU inference for six frozen P1 references
+  at batch sizes 1 and 64, with 300 calls per configuration and identical inputs.
+- Preserve median/p95 timings, round medians, raw timing arrays and replay/source
+  checks. Verify all 20 timing arrays against their reported median/p95 values.
+- Single-window CPU calls are faster for CNN variants; GPU benefits batch
+  throughput and gives CNN–BiLSTM a modest single-window speedup. This is model
+  latency, not end-to-end real-time validation.
+
 ## Category 1: condition audit and P1 classification (2026-10-14)
 
 [Methods](documentation/CONDITION_CLASSIFICATION.md)

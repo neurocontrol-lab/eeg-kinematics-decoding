@@ -1,5 +1,16 @@
 # Published pipeline results
 
+## P1 inference latency
+
+[CPU/GPU benchmark](inference-benchmark-p1-20261014/RESULTS.md)
+· [Runner](../experiments/benchmark_inference.py)
+
+Warmed single-window calls favor CPU for the three CNN variants, while GPU
+modestly improves CNN–BiLSTM latency. All neural models have faster batch-64
+throughput on GPU. Timings include host/device transfer and output synchronization
+but exclude acquisition, preprocessing, loading and batch accumulation. Raw
+latency arrays retain 300 calls per model/device/batch configuration.
+
 ## Category 1: C1 audit and C2 classification
 
 [Condition audit](condition-audit-20261014T115618Z/RESULTS.md)
