@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "runs": 2,
+  "models": 6,
+  "trials_per_run": 34,
+  "curve_rows_checked": 534,
+  "source_hashes_match": true,
+  "analysis_snapshot_hash_matches": true,
+  "source_error_norms_and_trial_pairing_checked": true,
+  "coverage_and_positive_lower_bound_checked": true,
+  "original_plots_retained": true,
+  "average_plots": 12,
+  "max_difference_between_mean_norm_and_norm_of_mean": 0.27313635489824883
+}

@@ -1,5 +1,19 @@
 # Published pipeline results
 
+## Saved-decoder analyses: P1 event-aligned diagnostics
+
+[Results and plots](saved-decoder-analysis-p1-20261013T172654Z/RESULTS.md) · [Methods](../documentation/SAVED_DECODER_ANALYSES.md)
+
+The initial P1 analysis of **Project Idea Category 2: Additional Results from
+Existing Decoders** reconstructs saved predictions for six P1 reference
+models without training or new inference.
+They align all 68 held-out trials to raw events, plot coordinates and signed
+error over time, and summarize phase, motion, density and bias. Exact sample
+matches verify a two-second trial-metadata/continuous-recording clock offset.
+CNN–BiLSTM errors are higher during reaching and return than preparation or the
+airborne interval. Pure-window counts are sparse for short phases, and reduced
+coordinates do not provide physical distance errors.
+
 ## Six-model P1 comparison
 
 [Run report](six-model-comparison-p1-gpu-20260930T095506Z/RESULTS.md) · [Methods](../documentation/SIX_MODEL_COMPARISON.md)

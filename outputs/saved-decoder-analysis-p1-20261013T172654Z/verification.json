@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "prediction_rows": 21852,
+  "models": 6,
+  "aggregate_and_phase_metric_checks": 60,
+  "trial_clock_checks": 68,
+  "pure_window_counts_checked": true,
+  "source_prediction_hashes_match": true,
+  "analysis_snapshot_hash_matches": true
+}

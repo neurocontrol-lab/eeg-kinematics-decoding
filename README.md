@@ -108,6 +108,13 @@ Run from the repository root in the configured WSL GPU environment:
 
 ## Next research steps
 
+The [first saved-decoder analysis](documentation/SAVED_DECODER_ANALYSES.md)
+implements **Project Idea Category 2: Additional Results from Existing Decoders**
+from the [project backlog](documentation/PROJECT_IDEAS.md)
+for P1 runs 8–9: chronological traces, event-aligned error plots, scatter-density
+checks and motion/stationary sensitivity. It reuses the six-model P1 reference predictions
+without retraining and reports both target-phase and pure-window summaries.
+
 Repeat run-level evaluation with predeclared splits covering other friction conditions; then establish a population model and evaluate participant-specific fine-tuning without mixing target-participant test windows into training. Cross-laboratory or cross-dataset transfer remains future work. See the [changelog](CHANGELOG.md) and [v2 limitations](documentation/PIPELINE_V2_CORRECTED_BASELINE.md) before extending the pipeline.
 
 ## Research references

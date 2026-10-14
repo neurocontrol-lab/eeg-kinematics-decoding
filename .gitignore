@@ -48,6 +48,7 @@ Thumbs.db
 # Local experiment artifacts can contain usernames, absolute paths and data
 /outputs/_local-failed/
 *.npz
+/outputs/saved-decoder-analysis-*/aligned_predictions.csv
 training.log
 source_notebook.ipynb
 gpu_executed.ipynb
