@@ -1,4 +1,8 @@
 # Preserve recorded source/report byte hashes across Windows and WSL checkouts.
 *.py text eol=lf
 *.json text eol=lf
+*.ipynb text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.mjs text eol=lf
 outputs/**/declared_protocol.md text eol=lf

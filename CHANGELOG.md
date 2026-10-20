@@ -1,11 +1,19 @@
 # Pipeline changelog
 
+## 2026-10-20 — Workspace organization and coordinate-axis audit
+
+- Group experiments into stable numbered families, including original/corrected baseline notebooks, with commands and status in family READMEs.
+- Centralize raw/reduced-data paths and move local participant data, downloaded reductions, reference papers and presentation artifacts to their designated locations.
+- Organize dataset/method/reproducibility documentation and update navigation and execution references.
+- Preserve saved predictions, models, metrics, verification records and executed source/protocol snapshots. Resolve historical data identities through the shared path helper.
+- Publish the 3,528-trial axis audit: position Z is vertical (+ upward), force X is load/lift and force Z is grip. X/Y anatomical directions remain unresolved.
+
 This is the central record of pipeline versions. Version numbers identify pipeline revisions; they do not imply an improvement in model architecture or performance.
 
 ## Saved-model inference benchmark (2026-10-14)
 
 [Results](outputs/inference-benchmark-p1-20261014/RESULTS.md)
-· [Runner](experiments/benchmark_inference.py)
+· [Runner](experiments/06_inference_benchmark/benchmark_inference.py)
 
 - Measure warmed, synchronized CPU/GPU inference for six frozen P1 references
   at batch sizes 1 and 64, with 300 calls per configuration and identical inputs.
@@ -17,7 +25,7 @@ This is the central record of pipeline versions. Version numbers identify pipeli
 
 ## Category 1: condition audit and P1 classification (2026-10-14)
 
-[Methods](documentation/CONDITION_CLASSIFICATION.md)
+[Methods](documentation/methods/CONDITION_CLASSIFICATION.md)
 · [C1 audit](outputs/condition-audit-20261014T115618Z/RESULTS.md)
 · [C2 results](outputs/weight-classification-p1-gpu-20261014T115817Z/RESULTS.md)
 
@@ -38,7 +46,7 @@ This is the central record of pipeline versions. Version numbers identify pipeli
 
 ## Frozen P1 cross-participant evaluation (2026-09-30)
 
-[Methods](documentation/FROZEN_P1_TRANSFER.md) · [Runner](experiments/evaluate_frozen_p1.py) · [Completed run](outputs/frozen-p1-cross-participant-gpu-20260930T125956Z/RESULTS.md)
+[Methods](documentation/methods/FROZEN_P1_TRANSFER.md) · [Runner](experiments/03_cross_participant_decoding/evaluate_frozen_p1.py) · [Completed run](outputs/frozen-p1-cross-participant-gpu-20260930T125956Z/RESULTS.md)
 
 - Reused all six saved P1 models and P1 training scalers without target fitting,
   fine-tuning or batch-normalization updates. Neural inference ran on GPU.
@@ -58,7 +66,7 @@ This is the central record of pipeline versions. Version numbers identify pipeli
 
 ## Six-model P1 reference comparison (2026-09-30)
 
-[Methods](documentation/SIX_MODEL_COMPARISON.md) · [Runner](experiments/compare_six_models.py) · [Completed run](outputs/six-model-comparison-p1-gpu-20260930T095506Z/RESULTS.md)
+[Methods](documentation/methods/SIX_MODEL_COMPARISON.md) · [Runner](experiments/02_model_comparison/compare_six_models.py) · [Completed run](outputs/six-model-comparison-p1-gpu-20260930T095506Z/RESULTS.md)
 
 - Added training-mean and ridge baselines, an ELU-only CNN ablation, and an
   EEGNet regression reference alongside the two unchanged v2 architectures.
@@ -76,24 +84,24 @@ This is the central record of pipeline versions. Version numbers identify pipeli
 
 ## Repository organization (2026-09-30)
 
-- Shortened the notebook filenames to pipeline_v1.ipynb and pipeline_v2.ipynb and updated their references, including v1's source-notebook snapshot path.
+- Shortened the notebook filenames to experiments/01_continuous_kinematic_decoding/original_baseline_v1.ipynb and experiments/01_continuous_kinematic_decoding/corrected_baseline_v2.ipynb and updated their references, including v1's source-notebook snapshot path.
 - Separated the README's pipeline descriptions from its file and code structure.
 - This update changes naming and documentation only; training protocols and saved results are unchanged.
 
 ## v2 — Corrected baseline (2026-09-29)
 
-[Notebook](pipeline_v2.ipynb) · [Detailed methods and limitations](documentation/PIPELINE_V2_CORRECTED_BASELINE.md) · [P1 GPU run](outputs/pipeline-v2-corrected-baseline-p1-gpu-20260929T173627Z/RESULTS.md)
+[Notebook](experiments/01_continuous_kinematic_decoding/corrected_baseline_v2.ipynb) · [Detailed methods and limitations](documentation/methods/PIPELINE_V2_CORRECTED_BASELINE.md) · [P1 GPU run](outputs/pipeline-v2-corrected-baseline-p1-gpu-20260929T173627Z/RESULTS.md)
 
 - Added `PARTICIPANT_ID` at the top of the notebook. It selects the matching EEG, kinematics, run-boundary, and lift-metadata files and labels each new result. The reduced P1–P12 files align; the extra P55 EEG and kinematics files have different sample counts and fail the alignment check.
 - Split complete recording runs before scaling or windowing. For each supplied nine-run participant, runs 1–6 train, run 7 validates, and runs 8–9 test.
 - Fit separate EEG-channel and wrist-target scalers on training samples only. Keep each 128-sample, stride-64 window and its following target inside one run.
 - Use validation data during training and evaluate test runs only after both fixed training schedules finish. Set seed 42 and report aggregate and per-test-run scores.
-- Identified the three reduced kinematics columns as wrist X/Y/Z using the [source-data comparison](documentation/KINEMATICS_PROVENANCE.md).
+- Identified the three reduced kinematics columns as wrist X/Y/Z using the [source-data comparison](documentation/dataset/KINEMATICS_PROVENANCE.md).
 
 The CNN and CNN–BiLSTM definitions and their 15/20-epoch schedules are unchanged from v1. The saved P1 GPU run reports CNN–BiLSTM R² of 0.784 / 0.757 / 0.726 for wrist X/Y/Z. P2 has passed loading, preprocessing, windowing, and model-build checks but has **not** been trained or evaluated. The P1 held-out runs contain friction condition 3 only; no cross-subject or population-model result has been produced.
 
 ## v1 — Original fork baseline
 
-[Notebook](pipeline_v1.ipynb) · [Methods and limitations](documentation/ORIGINAL_BASELINE.md) · [P1 CPU run](outputs/original-p1-cpu/RESULTS.md) · [P1 GPU run](outputs/original-p1-gpu/RESULTS.md)
+[Notebook](experiments/01_continuous_kinematic_decoding/original_baseline_v1.ipynb) · [Methods and limitations](documentation/methods/ORIGINAL_BASELINE.md) · [P1 CPU run](outputs/original-p1-cpu/RESULTS.md) · [P1 GPU run](outputs/original-p1-gpu/RESULTS.md)
 
 The original notebook uses overlapping windows with a random window-level split, scales data before the split, and passes the test partition to training as validation data. Its saved P1 runs reproduce that protocol. The v1 and v2 scores use different evaluation settings and target scaling, so they should not be interpreted as a direct model-performance comparison.

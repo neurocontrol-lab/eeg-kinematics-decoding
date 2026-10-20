@@ -1,9 +1,16 @@
 # Published pipeline results
 
+## Coordinate-axis verification
+
+[20 October audit](vertical-axis-audit-20261020/REPORT.md) · [Coordinate definitions](../documentation/dataset/COORDINATE_SYSTEM.md)
+
+Position Z is vertical, positive upward. All 3,528 object trajectories rise and fall in Z across lift and set-down; the force sensors use X for lifting and Z for grip. Numeric evidence, a sample trajectory, and the exact executed audit source are retained.
+
+
 ## P1 inference latency
 
 [CPU/GPU benchmark](inference-benchmark-p1-20261014/RESULTS.md)
-· [Runner](../experiments/benchmark_inference.py)
+· [Runner](../experiments/06_inference_benchmark/benchmark_inference.py)
 
 Warmed single-window calls favor CPU for the three CNN variants, while GPU
 modestly improves CNN–BiLSTM latency. All neural models have faster batch-64
@@ -15,7 +22,7 @@ latency arrays retain 300 calls per model/device/batch configuration.
 
 [Condition audit](condition-audit-20261014T115618Z/RESULTS.md)
 · [Classifier results and plots](weight-classification-p1-gpu-20261014T115817Z/RESULTS.md)
-· [Methods](../documentation/CONDITION_CLASSIFICATION.md)
+· [Methods](../documentation/methods/CONDITION_CLASSIFICATION.md)
 
 C1 audits 3,528 supplied trials across P1–P12, retaining series types and current/
 previous trial conditions. V2's held-out current weight/surface combinations also
@@ -40,7 +47,7 @@ scores and [verification](weight-classification-p1-gpu-20261014T115817Z/verifica
 
 ## Saved-decoder analyses: P1 event-aligned diagnostics
 
-[Results and plots](saved-decoder-analysis-p1-20261013T172654Z/RESULTS.md) · [Methods](../documentation/SAVED_DECODER_ANALYSES.md)
+[Results and plots](saved-decoder-analysis-p1-20261013T172654Z/RESULTS.md) · [Methods](../documentation/methods/SAVED_DECODER_ANALYSES.md)
 
 The initial P1 analysis of **Project Idea Category 2: Additional Results from
 Existing Decoders** reconstructs saved predictions for six P1 reference
@@ -54,7 +61,7 @@ coordinates do not provide physical distance errors.
 
 ## Frozen P1 cross-participant evaluation
 
-[Run report](frozen-p1-cross-participant-gpu-20260930T125956Z/RESULTS.md) · [Methods](../documentation/FROZEN_P1_TRANSFER.md)
+[Run report](frozen-p1-cross-participant-gpu-20260930T125956Z/RESULTS.md) · [Methods](../documentation/methods/FROZEN_P1_TRANSFER.md)
 
 All six saved P1 models and P1 EEG/target scalers are frozen. P2–P12 receive no
 fitting or adaptation. Primary evaluation uses weight runs 8–9 (45,389 windows;
@@ -80,7 +87,7 @@ neural weights are unchanged.
 
 ## Six-model P1 comparison
 
-[Run report](six-model-comparison-p1-gpu-20260930T095506Z/RESULTS.md) · [Methods](../documentation/SIX_MODEL_COMPARISON.md)
+[Run report](six-model-comparison-p1-gpu-20260930T095506Z/RESULTS.md) · [Methods](../documentation/methods/SIX_MODEL_COMPARISON.md)
 
 This comparison uses the fixed v2 P1 run split and preprocessing. Four neural
 models trained on GPU; mean and ridge used CPU. Ridge regularization was selected
@@ -113,12 +120,12 @@ These are reproductions of the original notebook before preprocessing, model, or
 
 The GPU run completed training in 189.89 seconds versus 532.20 seconds on CPU (about 2.8× faster in these single runs). Python/platform environments differed and model initialization was unseeded, so this is an observed timing comparison rather than a controlled benchmark.
 
-The [baseline methods and limitations](../documentation/ORIGINAL_BASELINE.md) explain window construction, architectures, the split, and why these test scores cannot yet support claims about unseen subjects. Each run page links its learning curves, target scores, and prediction scatter plot.
+The [baseline methods and limitations](../documentation/methods/ORIGINAL_BASELINE.md) explain window construction, architectures, the split, and why these test scores cannot yet support claims about unseen subjects. Each run page links its learning curves, target scores, and prediction scatter plot.
 
 The public `results.json` files preserve complete numeric histories. Raw predictions, model weights, logs, and notebook execution snapshots remain local.
 
 ## Pipeline v2: Corrected Baseline
 
-The separate [v2 notebook](../pipeline_v2.ipynb) fixes the first evaluation issues while retaining the two original model architectures. Its `PARTICIPANT_ID` setting selects an aligned participant; the central [changelog](../CHANGELOG.md) summarizes the version differences, and the [v2 methods](../documentation/PIPELINE_V2_CORRECTED_BASELINE.md) explain each correction and its remaining limits. For the supplied nine-run participants, it trains on runs 1–6, validates on run 7, and tests on runs 8–9. EEG channels and targets are standardized from training samples only; windows never cross run boundaries.
+The separate [v2 notebook](../experiments/01_continuous_kinematic_decoding/corrected_baseline_v2.ipynb) fixes the first evaluation issues while retaining the two original model architectures. Its `PARTICIPANT_ID` setting selects an aligned participant; the central [changelog](../CHANGELOG.md) summarizes the version differences, and the [v2 methods](../documentation/methods/PIPELINE_V2_CORRECTED_BASELINE.md) explain each correction and its remaining limits. For the supplied nine-run participants, it trains on runs 1–6, validates on run 7, and tests on runs 8–9. EEG channels and targets are standardized from training samples only; windows never cross run boundaries.
 
 The [first GPU result for P1](pipeline-v2-corrected-baseline-p1-gpu-20260929T173627Z/RESULTS.md) reports CNN–BiLSTM R² of **0.784 / 0.757 / 0.726** and CNN R² of **0.547 / 0.399 / 0.451** for wrist X/Y/Z. Its run page includes learning curves, prediction plots, and scores for each held-out run separately. Both P1 test runs contain friction condition 3 only. These scores and the original random-window scores measure different evaluation settings.

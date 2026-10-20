@@ -58,3 +58,8 @@ original_plot_1.png
 /documentation/.build*/
 /documentation/output/
 /documentation/build_baseline_slides.mjs
+
+# Local configuration, exports, and disposable builds
+/configs/paths.local.toml
+/tmp/
+/presentations/exports/

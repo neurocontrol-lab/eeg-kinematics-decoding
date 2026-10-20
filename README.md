@@ -1,194 +1,83 @@
 # EEG-to-Kinematics Decoding
 
-Research baselines for decoding movement kinematics from EEG in the [WAY-EEG-GAL dataset](https://doi.org/10.1038/sdata.2014.47). The current notebooks predict the **wrist tracker's X, Y, and Z position** from 32-channel EEG. This repository was originally forked from [Thowfiq23/hand_motion_eeg](https://github.com/Thowfiq23/hand_motion_eeg); it preserves that pipeline as v1 and adds a separate, evaluation-corrected v2. Within-P1 models achieve positive held-out-run scores; a frozen-P1 evaluation on P2–P12 finds poor transfer without adaptation.
+Research on decoding **wrist X/Y/Z position from 32-channel EEG** using [WAY-EEG-GAL](https://doi.org/10.1038/sdata.2014.47). The project preserves the original fork as a reference, corrects its evaluation pipeline, compares model variants, and investigates participant transfer, movement-stage errors and experimental conditions.
 
-## Pipelines
+Model training so far centres on **P1**. Frozen-model transfer and dataset audits also cover **P2–P12**. Most model comparisons use one seed; the completed experiments do not establish population-level generalization.
 
-| Version | Notebook | Description | Outputs |
-| --- | --- | --- | --- |
-| v1 — Original baseline | [pipeline_v1.ipynb](pipeline_v1.ipynb) | Original fork pipeline, retained as a reproduction reference. Its random overlapping-window split and preprocessing limit what its scores establish. | [P1 CPU](outputs/original-p1-cpu/) · [P1 GPU](outputs/original-p1-gpu/) |
-| v2 — Corrected baseline | [pipeline_v2.ipynb](pipeline_v2.ipynb) | Current baseline. Selects a participant at the top, holds out complete recording runs, fits scalers on training runs, and evaluates test runs after training. It retains the v1 CNN and CNN–BiLSTM architectures. | [P1 GPU](outputs/pipeline-v2-corrected-baseline-p1-gpu-20260929T173627Z/) |
+## Experiment status
 
-The [central changelog](CHANGELOG.md) records the changes between versions. Detailed methods are documented for [v1](documentation/ORIGINAL_BASELINE.md) and [v2](documentation/PIPELINE_V2_CORRECTED_BASELINE.md).
+Updated **20 October 2026**. “Complete” refers to the stated scope, including experiments with negative findings. Full metrics, plots, protocols and limitations live in the linked reports.
 
-## File and code structure
+| Family | Experiment | Status | Outcome / scope | Evidence |
+|---|---|---|---|---|
+| [00 · Dataset audits](experiments/00_dataset_audits/README.md) | Kinematic-target provenance | Complete | Raw/reduced matching identifies wrist X/Y/Z across P1–P12; exact upstream processing remains unresolved. | [Provenance](documentation/dataset/KINEMATICS_PROVENANCE.md) |
+| 00 · Dataset audits | Vertical-axis verification | Complete | Position Z is vertical, positive upward. Force X is load/lift; force Z is grip. | [Axis audit](outputs/vertical-axis-audit-20261020/REPORT.md) |
+| 00 · Dataset audits | Trial conditions and split coverage (C1) | Complete | Held-out current weight/surface combinations occur in training, but series-type composition differs. | [Condition audit](outputs/condition-audit-20261014T115618Z/RESULTS.md) |
+| [01 · Continuous kinematic decoding](experiments/01_continuous_kinematic_decoding/README.md) | Original baseline v1, CPU/GPU | Complete · reference | Reproduction retained with its overlapping-window split and preprocessing limitations. | [CPU](outputs/original-p1-cpu/RESULTS.md), [GPU](outputs/original-p1-gpu/RESULTS.md) |
+| 01 · Continuous kinematic decoding | Corrected baseline v2 | Complete · P1 | Whole-run splits, training-only scalers and independent validation establish the current reference protocol. | [v2 report](outputs/pipeline-v2-corrected-baseline-p1-gpu-20260929T173627Z/RESULTS.md) |
+| [02 · Model comparison](experiments/02_model_comparison/README.md) | Six-model P1 comparison | Complete · single seed | ELU improves the original CNN; CNN–BiLSTM leads within P1 in this comparison. | [Six-model report](outputs/six-model-comparison-p1-gpu-20260930T095506Z/RESULTS.md) |
+| [03 · Cross-participant decoding](experiments/03_cross_participant_decoding/README.md) | Frozen P1 models on P2–P12 | Complete | Poor transfer without adaptation; this evaluates one source participant, not population training. | [Transfer report](outputs/frozen-p1-cross-participant-gpu-20260930T125956Z/RESULTS.md) |
+| [04 · Stage decoding](experiments/04_stage_decoding/README.md) | Saved-decoder movement-stage and error analyses (R1–R5) | Complete · initial P1 analysis | Event-aligned trajectories, stage errors, bias, density and low-speed sensitivity; no stage-specific training. | [Decoder analysis](outputs/saved-decoder-analysis-p1-20261013T172654Z/RESULTS.md) |
+| 04 · Stage decoding | Trial averages and error timing | Complete · P1 runs 8–9 | Trial-average trajectories and exploratory simultaneous bands locate elevated error relative to preparation. | [Trial-average report](outputs/saved-decoder-analysis-p1-20261013T172654Z/trial_averages/RESULTS.md) |
+| [05 · Condition decoding](experiments/05_condition_decoding/README.md) | Weight classification at fixed sandpaper (first C2 task) | Complete · initial P1 experiment | Logistic and CNN + ELU classifiers show no reliable held-out weight discrimination in this setup. | [Classification report](outputs/weight-classification-p1-gpu-20261014T115817Z/RESULTS.md) |
+| [06 · Inference benchmark](experiments/06_inference_benchmark/README.md) | Saved-model CPU/GPU latency | Complete | Single-window and batch inference measured; acquisition and preprocessing are outside the timing scope. | [Latency report](outputs/inference-benchmark-p1-20261014/RESULTS.md) |
 
-| Path | Contents |
-| --- | --- |
-| [CHANGELOG.md](CHANGELOG.md) | Central version history and links to saved runs. |
-| [documentation/](documentation/) | Pipeline methods, limitations, and [kinematics-target provenance](documentation/KINEMATICS_PROVENANCE.md). |
-| [experiments/](experiments/) | The [six-model P1 comparison](experiments/compare_six_models.py) and [frozen-P1 cross-participant evaluation](experiments/evaluate_frozen_p1.py). |
-| [outputs/](outputs/) | [Published run index](outputs/README.md), numeric results, and plots. Raw predictions, model weights, and executed notebooks stay local. |
-| [requirements.txt](requirements.txt) | Python dependencies; exact versions used by a saved run are recorded in its results.json. |
-| way_eeg_clean/ | Downloaded MAT files, stored locally and ignored by Git. |
+Stage-specific/cross-stage decoder training, fixed-condition versus pooled decoding, held-out-condition experiments, broader condition classification, and participant adaptation/population training remain **planned**. See the [project backlog](documentation/PROJECT_IDEAS.md) for individual ideas and status.
 
-## Data and prediction target
+## Project navigation
 
-The notebooks use the [cleaned WAY-EEG-GAL files on Kaggle](https://www.kaggle.com/datasets/radinkh2003/way-eeg-gal-clean). Download them separately and place the MAT files directly under `way_eeg_clean/` at the repository root. This directory is ignored by Git.
+| Location | Contents |
+|---|---|
+| [experiments/](experiments/README.md) | Numbered experiment families, entry points, commands and family READMEs. Both baseline notebooks live under `01_continuous_kinematic_decoding/`. |
+| [src/eeg_kinematics/](src/eeg_kinematics) | Shared configurable data paths and resolution of historical source identities. |
+| [configs/](configs/paths.example.toml) | Example data-path configuration; local overrides stay outside Git. |
+| [documentation/](documentation/README.md) | Dataset definitions, methods, reproducibility guidance and research backlog. |
+| [outputs/](outputs/README.md) | Saved execution reports, numerical results, plots and verification evidence. Weights and prediction arrays remain local. |
+| [presentations/](presentations/README.md) | Links to native Google Slides decks and local export conventions. |
+| [tests/](tests) and [scripts/](scripts/check_project_layout.py) | Path/notebook-startup tests and project navigation checks. |
+| [CHANGELOG.md](CHANGELOG.md) | Version history and significant changes. |
 
-For participant `P<n>`, v2 reads:
+## Data and coordinate definitions
 
-| File | Role |
-| --- | --- |
-| `eeg_P<n>.mat` | `eeg`: 32 channels × samples; transposed to samples × channels in the notebook. |
-| `kin_P<n>.mat` | `kin`: samples × 3 wrist-position targets. |
-| `session_start_P<n>.mat` | One-based start sample of each recording run; converted to zero-based boundaries. |
-| `P<n>_AllLifts.mat` | Lift-trial metadata, including run and friction-condition labels. |
+The default workspace layout keeps datasets and reference papers outside this Git repository:
 
-The reduced files for **P1–P12** each contain nine aligned runs and can be selected in v2. The extra P55 EEG and kinematics files have unequal sample counts; v2 stops with an alignment error for that participant. A [sample-aligned comparison](documentation/KINEMATICS_PROVENANCE.md) with original P1 and P6 recordings identifies the three reduced target columns as wrist position X, Y, and Z (`Px4`, `Py4`, `Pz4`). Their exact upstream filtering, scaling formula, and physical units in the reduced files are not documented.
-
-## Run the corrected baseline
-
-1. Create a compatible Python environment and install dependencies with `python -m pip install -r requirements.txt`.
-2. Put the downloaded MAT files directly in `way_eeg_clean/`.
-3. Open [`pipeline_v2.ipynb`](pipeline_v2.ipynb) from the repository root in Jupyter or VS Code. Set `PARTICIPANT_ID = 1` in its first code cell to the participant you want, then run cells in order. The [v2 methods](documentation/PIPELINE_V2_CORRECTED_BASELINE.md) include the local CPU and WSL GPU kernel notes.
-
-The notebook writes a participant- and device-labeled directory such as `outputs/pipeline-v2-corrected-baseline-p1-gpu-<UTC timestamp>/`. Its `RESULTS.md`, `results.json`, and plots are publishable; model weights, raw prediction arrays, and execution snapshots are excluded from Git.
-
-### V2 evaluation protocol
-
-- For the supplied nine-run participants, runs **1–6 train**, run **7 validates**, and runs **8–9 test**. No run appears in more than one split.
-- Separate `StandardScaler` instances fit EEG channels and wrist targets using **training samples only**.
-- Each input has **128 EEG samples**; starts advance by **64 samples** within a run. The target is the immediately following wrist-position sample. Windows and targets never cross a run boundary.
-- The CNN and CNN–BiLSTM keep the original model definitions and fixed 15/20-epoch schedules. The test set is evaluated only after both fits finish. Scores are reported overall and per test run.
-
-## Published results and interpretation
-
-The [six-model P1 comparison](outputs/six-model-comparison-p1-gpu-20260930T095506Z/RESULTS.md)
-uses the v2 protocol: runs 1–6 train, run 7 validates, and runs 8–9 test.
-The four neural models trained on GPU with seed 42; the training-mean and ridge
-baselines used CPU. Ridge regularization was selected using validation data only.
-
-| Model | Wrist X R² | Wrist Y R² | Wrist Z R² |
-| --- | ---: | ---: | ---: |
-| Training mean | -0.204 | -0.324 | -0.185 |
-| Ridge regression | 0.558 | 0.420 | 0.462 |
-| Original CNN | 0.547 | 0.399 | 0.451 |
-| CNN–BiLSTM | **0.809** | **0.783** | **0.748** |
-| CNN + ELU | 0.746 | 0.713 | 0.678 |
-| EEGNet regression | 0.758 | 0.683 | 0.663 |
-
-Adding only ELU improves all three axes over the original affine CNN in this
-run. CNN–BiLSTM scores highest; EEGNet regression improves over the original CNN
-but does not consistently exceed the ELU-only variant. These are single-seed
-results for held-out runs **of P1**. Both test runs are weight series with a
-fixed sandpaper surface; that comparison does not test significance or cross-participant transfer.
-The separate frozen-model transfer results appear below.
-
-The existing models were retrained for this comparison with a seed reset before
-each fit. Its CNN–BiLSTM scores therefore differ from the
-[first v2 P1 GPU run](outputs/pipeline-v2-corrected-baseline-p1-gpu-20260929T173627Z/RESULTS.md).
-P2–P12 have now been evaluated using frozen P1 models; no target-participant model
-has been trained in this experiment. The [v1 CPU/GPU runs](outputs/README.md) use a different split and
-target scaling, so their scores are not a direct comparison of model quality.
-MSE and MAE use standardized target units; R² is unchanged by affine target
-scaling. The training-mean predictor can have negative R² because the R²
-reference uses the test target mean.
-
-### Frozen P1 transfer to P2–P12
-
-The [cross-participant run](outputs/frozen-p1-cross-participant-gpu-20260930T125956Z/RESULTS.md)
-reuses all six saved P1 models and both P1 training scalers, with **no fitting or
-adaptation on P2–P12**. Neural inference used the RTX 3060 GPU; mean/ridge used
-CPU. Primary evaluation uses weight runs 8–9 (fixed sandpaper in every participant), totaling
-45,389 target-participant windows. All nine runs are also reported separately.
-
-Mean R² across the eleven target participants, giving each participant equal weight:
-
-| Frozen model | Wrist X R² | Wrist Y R² | Wrist Z R² |
-| --- | ---: | ---: | ---: |
-| P1 training mean | -0.303 | -0.535 | -0.244 |
-| Ridge regression | -0.825 | -0.943 | -0.461 |
-| Original CNN | -0.722 | -0.884 | -0.418 |
-| CNN–BiLSTM | -1.060 | -1.163 | -0.585 |
-| CNN + ELU | -0.641 | -0.687 | -0.322 |
-| EEGNet regression | -0.578 | -0.698 | -0.324 |
-
-Strong within-P1 scores did not transfer reliably under this protocol. All
-model/axis macro averages are negative; the frozen P1 mean outperforms the
-learned models on those averages. Only P10 Z is slightly positive for CNN + ELU
-(0.011) and EEGNet (0.012). This tests one source participant, not a population
-model or leave-one-participant-out training. Raw P1–P12 recordings confirm the
-wrist-target identity; undocumented upstream normalization/cleaning still limits
-physical and deployment interpretation. See the [methods](documentation/FROZEN_P1_TRANSFER.md)
-for the frozen transforms, controls and complete limitations.
-
-## Experiments
-
-### Saved-model inference latency
-
-The [P1 CPU/GPU benchmark](outputs/inference-benchmark-p1-20261014/RESULTS.md)
-measures warmed, synchronized calls for the six saved models. Median single-window
-latency is about 1.1 ms on CPU versus 1.4–1.5 ms on GPU for the CNN variants,
-and 5.0 ms versus 4.3 ms for CNN–BiLSTM. Neural batches of 64 are faster on GPU.
-These timings exclude acquisition, preprocessing and window accumulation, so
-they do not establish end-to-end real-time operation. The report includes raw
-timing arrays, p95 values, round summaries, and source/replay checks.
-
-### Category 1: condition audit and weight classification
-
-The [C1 audit](outputs/condition-audit-20261014T115618Z/RESULTS.md) checks all
-3,528 supplied P1–P12 trials. Current weight/surface combinations in v2
-validation/test also occur in training, but the series-type composition differs.
-Local WS labels verify sandpaper and physical weight codes for P1.
-
-The [first C2 classifier comparison](outputs/weight-classification-p1-gpu-20261014T115817Z/RESULTS.md)
-uses P1 weight runs 1/4 for training, 7 for validation and 8/9 for testing.
-Full LEDOn-to-hand-stop EEG windows remain inside individual trials. Channel
-scaling fits training trials only; mean window probabilities produce one
-prediction per trial.
-
-| Classifier | Held-out trial balanced accuracy | Circular-shift upper-tail fraction |
-| --- | ---: | ---: |
-| Training-majority reference | 33.33% | — |
-| Logistic, 64 channel mean/std features | 32.48% | 0.592 |
-| CNN + ELU, fixed 15 epochs on GPU | 27.73% | 0.924 |
-
-Both learned models fail to show reliable discrimination in this setup.
-The [methods](documentation/CONDITION_CLASSIFICATION.md) specify the 68 held-out
-trials, validation-only logistic selection and 1,156 whole-trial circular shifts
-per classifier. [Independent verification](outputs/weight-classification-p1-gpu-20261014T115817Z/verification.json)
-checks scalers, grouping, labels, metrics, reference offsets and source hashes.
-This does not establish absence of weight information in EEG. C3–C6 experiments
-remain separate from this initial condition-classification result.
-
-The [six-model P1 comparison](documentation/SIX_MODEL_COMPARISON.md) adds a
-training-mean predictor, ridge regression, an ELU-only CNN ablation, and an EEGNet
-regression architecture reference alongside the unchanged CNN and CNN–BiLSTM.
-The [experiment runner](experiments/compare_six_models.py) reuses v2 preparation
-and saves a separate result directory; it requires the existing WSL GPU environment.
-This is a single-participant, single-seed comparison. The
-[model reference audit](documentation/MODEL_REFERENCE_AUDIT.md) explains the
-existing CNN's relationship to EEGNet and outstanding validation checks.
-
-The [completed P1 comparison](outputs/six-model-comparison-p1-gpu-20260930T095506Z/RESULTS.md)
-reports all six models using the same v2 run split. The ELU-only CNN improves over
-the original CNN on all three wrist axes; CNN–BiLSTM scores highest in this single
-seed. These results do not establish cross-participant transfer.
-
-Run from the repository root in the configured WSL GPU environment:
-
-```bash
-~/.venvs/eeg-tf-gpu/bin/python experiments/compare_six_models.py
+```text
+EEG-EMG-Kinematics/
+├── data/
+│   ├── raw/way-eeg-gal/P1/ … P12/     # Original HS, WS and AllLifts files
+│   └── external/way_eeg_clean/        # Downloaded reduced MAT files
+├── references/papers/
+└── hand_motion_eeg/                   # This repository
 ```
 
-The [frozen-P1 runner](experiments/evaluate_frozen_p1.py) reuses those saved
-artifacts for cross-participant inference; see its
-[methods and run instructions](documentation/FROZEN_P1_TRANSFER.md).
+The baselines read `eeg_P<n>.mat`, `kin_P<n>.mat`, `session_start_P<n>.mat` and `P<n>_AllLifts.mat` from the reduced-data directory. The [Kaggle download](https://www.kaggle.com/datasets/radinkh2003/way-eeg-gal-clean) has partly undocumented upstream processing, so it is treated as external data. P1–P12 have aligned reduced recordings; the extra P55 files have mismatched sample counts.
 
-## Next research steps
+Reduced target columns correspond to wrist `Px4`, `Py4`, `Pz4`. **Z is vertical (+ upward)**; X/Y anatomical directions remain unresolved. Reduced coordinates are normalized values, not physical distances. Position and contact-plate force axes use different frames. See [target provenance](documentation/dataset/KINEMATICS_PROVENANCE.md) and [coordinate definitions](documentation/dataset/COORDINATE_SYSTEM.md).
 
-The [first saved-decoder analysis](documentation/SAVED_DECODER_ANALYSES.md)
-implements **Project Idea Category 2: Additional Results from Existing Decoders**
-from the [project backlog](documentation/PROJECT_IDEAS.md)
-for P1 runs 8–9: chronological traces, event-aligned error plots, scatter-density
-checks and motion/stationary sensitivity. It reuses the six-model P1 reference predictions
-without retraining and reports both target-phase and pure-window summaries.
+## Getting started
 
-Repeat run-level evaluation with predeclared splits covering other friction conditions; then establish a population model and evaluate participant-specific fine-tuning without mixing target-participant test windows into training. Cross-laboratory or cross-dataset transfer remains future work. See the [changelog](CHANGELOG.md) and [v2 limitations](documentation/PIPELINE_V2_CORRECTED_BASELINE.md) before extending the pipeline.
+1. Use Python 3.9+ and install dependencies from the repository root:
 
-## Research references
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
 
-- Luciw, Jarocka, and Edin, [*Multi-channel EEG recordings during 3,936 grasp and lift trials with varying weight and friction*](https://doi.org/10.1038/sdata.2014.47).
-- Cleaned [WAY-EEG-GAL dataset](https://www.kaggle.com/datasets/radinkh2003/way-eeg-gal-clean) used by the notebooks.
-- Original fork source: [Thowfiq23/hand_motion_eeg](https://github.com/Thowfiq23/hand_motion_eeg).
+2. Place data in the workspace locations above, or copy [configs/paths.example.toml](configs/paths.example.toml) to `configs/paths.local.toml` and set the locations. Environment-variable overrides and Windows/WSL guidance are documented in [layout and path configuration](documentation/reproducibility/PROJECT_LAYOUT.md).
+3. Open the [corrected baseline v2 notebook](experiments/01_continuous_kinematic_decoding/corrected_baseline_v2.ipynb), set `PARTICIPANT_ID`, select the intended Python kernel, and run cells in order. For another experiment, use its family README in the status table.
+
+The v2 reference uses runs **1–6 for training, 7 for validation, and 8–9 for testing**, with training-only EEG/target scalers. Input windows contain 128 EEG samples, advance by 64 samples and predict the next wrist sample without crossing run boundaries. [Full v2 protocol](documentation/methods/PIPELINE_V2_CORRECTED_BASELINE.md).
+
+For repository checks:
+
+```bash
+python -m unittest discover -s tests
+python scripts/check_project_layout.py
+```
+
+Fresh executions write separate result directories under `outputs/`. Saved-result verifiers accept `--report-dir` to write new checks without replacing published verification records. Existing executed snapshots retain their original provenance. See the [restructure verification](documentation/reproducibility/RESTRUCTURE_VERIFICATION.md).
+
+## Sources
+
+- Dataset: Luciw, Jarocka & Edin (2014), [Multi-channel EEG recordings during 3,936 grasp and lift trials with varying weight and friction](https://doi.org/10.1038/sdata.2014.47).
+- Reduced data: [WAY-EEG-GAL Clean on Kaggle](https://www.kaggle.com/datasets/radinkh2003/way-eeg-gal-clean).
+- Original fork: [Thowfiq23/hand_motion_eeg](https://github.com/Thowfiq23/hand_motion_eeg).

@@ -1,0 +1,1798 @@
+{
+  "method": {
+    "baseline": "median in [tLiftOff-0.25,tLiftOff-0.05) s",
+    "hold": "median in [LEDOff-0.6,LEDOff-0.2) s",
+    "postreplace": "median in [tReplace+0.2,tReplace+0.4) s",
+    "clock": "WS trial-relative events and t=(index+1)/500. No continuous HS clock conversion needed. WS LED/start times checked against AllLifts.",
+    "position_units": "raw tracker cm, per dataset paper Figures 2 and hand-velocity cm/s; reduced model targets remain normalized",
+    "force_check": "derived LF must match FX1+FX2 per sample within 2e-5 N",
+    "caution": "lift/replace landmarks were derived using object Z; displacement corroborates author convention and sign but is not an independent inference of the axis."
+  },
+  "all": {
+    "trials": 3528,
+    "object": {
+      "x": {
+        "hold_minus_prelift_cm_median": 0.5700000000000003,
+        "hold_minus_prelift_cm_IQR": [
+          0.4200000000000017,
+          0.7000000000000028
+        ],
+        "positive_lift_count": 3443,
+        "postreplace_minus_hold_cm_median": -0.46999999999999886,
+        "negative_lower_count": 3444,
+        "dominant_lift_displacement_count": 3
+      },
+      "y": {
+        "hold_minus_prelift_cm_median": -0.2328,
+        "hold_minus_prelift_cm_IQR": [
+          -0.39949999999999997,
+          -0.07917499999999994
+        ],
+        "positive_lift_count": 508,
+        "postreplace_minus_hold_cm_median": 0.15890000000000004,
+        "negative_lower_count": 840,
+        "dominant_lift_displacement_count": 1
+      },
+      "z": {
+        "hold_minus_prelift_cm_median": 6.244,
+        "hold_minus_prelift_cm_IQR": [
+          5.86275,
+          6.540249999999999
+        ],
+        "positive_lift_count": 3528,
+        "postreplace_minus_hold_cm_median": -6.249500000000001,
+        "negative_lower_count": 3528,
+        "dominant_lift_displacement_count": 3524
+      }
+    },
+    "wrist": {
+      "x": {
+        "hold_minus_prelift_cm_median": -0.23000000000000398,
+        "hold_minus_prelift_cm_IQR": [
+          -0.46000000000000085,
+          -0.03999999999999915
+        ],
+        "positive_lift_count": 712,
+        "postreplace_minus_hold_cm_median": -0.060000000000002274,
+        "negative_lower_count": 1999,
+        "dominant_lift_displacement_count": 2
+      },
+      "y": {
+        "hold_minus_prelift_cm_median": -0.4358000000000004,
+        "hold_minus_prelift_cm_IQR": [
+          -0.6838999999999986,
+          -0.1374999999999993
+        ],
+        "positive_lift_count": 582,
+        "postreplace_minus_hold_cm_median": 0.5135999999999998,
+        "negative_lower_count": 650,
+        "dominant_lift_displacement_count": 2
+      },
+      "z": {
+        "hold_minus_prelift_cm_median": 5.228999999999999,
+        "hold_minus_prelift_cm_IQR": [
+          4.790749999999999,
+          5.616249999999999
+        ],
+        "positive_lift_count": 3526,
+        "postreplace_minus_hold_cm_median": -4.915500000000003,
+        "negative_lower_count": 3524,
+        "dominant_lift_displacement_count": 3524
+      }
+    },
+    "force_by_weight": {
+      "165": {
+        "n": 1008,
+        "sum_FX_hold_N_median": 1.639,
+        "expected_mg_N": 1.61809725
+      },
+      "330": {
+        "n": 1836,
+        "sum_FX_hold_N_median": 3.3689999999999998,
+        "expected_mg_N": 3.2361945
+      },
+      "660": {
+        "n": 684,
+        "sum_FX_hold_N_median": 6.641,
+        "expected_mg_N": 6.472389
+      }
+    }
+  },
+  "P1": {
+    "trials": 294,
+    "object": {
+      "x": {
+        "hold_minus_prelift_cm_median": 0.6499999999999986,
+        "hold_minus_prelift_cm_IQR": [
+          0.559999999999997,
+          0.7299999999999969
+        ],
+        "positive_lift_count": 294,
+        "postreplace_minus_hold_cm_median": -0.5799999999999983,
+        "negative_lower_count": 294,
+        "dominant_lift_displacement_count": 0
+      },
+      "y": {
+        "hold_minus_prelift_cm_median": -0.05510000000000004,
+        "hold_minus_prelift_cm_IQR": [
+          -0.1556450000000001,
+          0.036625000000000074
+        ],
+        "positive_lift_count": 100,
+        "postreplace_minus_hold_cm_median": 0.015600000000000058,
+        "negative_lower_count": 137,
+        "dominant_lift_displacement_count": 0
+      },
+      "z": {
+        "hold_minus_prelift_cm_median": 5.830500000000001,
+        "hold_minus_prelift_cm_IQR": [
+          5.692,
+          5.952250000000003
+        ],
+        "positive_lift_count": 294,
+        "postreplace_minus_hold_cm_median": -5.830000000000002,
+        "negative_lower_count": 294,
+        "dominant_lift_displacement_count": 294
+      }
+    },
+    "wrist": {
+      "x": {
+        "hold_minus_prelift_cm_median": -0.00999999999999801,
+        "hold_minus_prelift_cm_IQR": [
+          -0.1574999999999971,
+          0.10874999999999879
+        ],
+        "positive_lift_count": 139,
+        "postreplace_minus_hold_cm_median": -1.6549999999999976,
+        "negative_lower_count": 283,
+        "dominant_lift_displacement_count": 0
+      },
+      "y": {
+        "hold_minus_prelift_cm_median": -0.20749999999999957,
+        "hold_minus_prelift_cm_IQR": [
+          -0.3576000000000006,
+          -0.02069999999999972
+        ],
+        "positive_lift_count": 66,
+        "postreplace_minus_hold_cm_median": 1.592825,
+        "negative_lower_count": 6,
+        "dominant_lift_displacement_count": 0
+      },
+      "z": {
+        "hold_minus_prelift_cm_median": 4.647500000000001,
+        "hold_minus_prelift_cm_IQR": [
+          4.481500000000002,
+          4.821499999999996
+        ],
+        "positive_lift_count": 294,
+        "postreplace_minus_hold_cm_median": -3.418000000000001,
+        "negative_lower_count": 293,
+        "dominant_lift_displacement_count": 294
+      }
+    },
+    "force_by_weight": {
+      "165": {
+        "n": 84,
+        "sum_FX_hold_N_median": 1.7389999999999999,
+        "expected_mg_N": 1.61809725
+      },
+      "330": {
+        "n": 153,
+        "sum_FX_hold_N_median": 3.4850000000000003,
+        "expected_mg_N": 3.2361945
+      },
+      "660": {
+        "n": 57,
+        "sum_FX_hold_N_median": 6.7495,
+        "expected_mg_N": 6.472389
+      }
+    }
+  },
+  "P1_runs8_9": {
+    "trials": 68,
+    "object": {
+      "x": {
+        "hold_minus_prelift_cm_median": 0.6799999999999997,
+        "hold_minus_prelift_cm_IQR": [
+          0.6099999999999994,
+          0.7399999999999967
+        ],
+        "positive_lift_count": 68,
+        "postreplace_minus_hold_cm_median": -0.6600000000000037,
+        "negative_lower_count": 68,
+        "dominant_lift_displacement_count": 0
+      },
+      "y": {
+        "hold_minus_prelift_cm_median": 0.01427999999999996,
+        "hold_minus_prelift_cm_IQR": [
+          -0.059660000000000046,
+          0.09630000000000002
+        ],
+        "positive_lift_count": 40,
+        "postreplace_minus_hold_cm_median": -0.05446999999999996,
+        "negative_lower_count": 45,
+        "dominant_lift_displacement_count": 0
+      },
+      "z": {
+        "hold_minus_prelift_cm_median": 5.837500000000002,
+        "hold_minus_prelift_cm_IQR": [
+          5.692749999999998,
+          5.9735
+        ],
+        "positive_lift_count": 68,
+        "postreplace_minus_hold_cm_median": -5.847999999999999,
+        "negative_lower_count": 68,
+        "dominant_lift_displacement_count": 68
+      }
+    },
+    "wrist": {
+      "x": {
+        "hold_minus_prelift_cm_median": 0.09250000000000469,
+        "hold_minus_prelift_cm_IQR": [
+          0.047499999999997655,
+          0.21250000000000036
+        ],
+        "positive_lift_count": 54,
+        "postreplace_minus_hold_cm_median": -2.8625000000000007,
+        "negative_lower_count": 67,
+        "dominant_lift_displacement_count": 0
+      },
+      "y": {
+        "hold_minus_prelift_cm_median": 0.0460499999999997,
+        "hold_minus_prelift_cm_IQR": [
+          -0.1219749999999995,
+          0.12449999999999961
+        ],
+        "positive_lift_count": 38,
+        "postreplace_minus_hold_cm_median": 3.2432,
+        "negative_lower_count": 0,
+        "dominant_lift_displacement_count": 0
+      },
+      "z": {
+        "hold_minus_prelift_cm_median": 4.691000000000001,
+        "hold_minus_prelift_cm_IQR": [
+          4.558500000000002,
+          4.890999999999998
+        ],
+        "positive_lift_count": 68,
+        "postreplace_minus_hold_cm_median": -3.0147499999999994,
+        "negative_lower_count": 68,
+        "dominant_lift_displacement_count": 68
+      }
+    },
+    "force_by_weight": {
+      "165": {
+        "n": 22,
+        "sum_FX_hold_N_median": 1.7289999999999999,
+        "expected_mg_N": 1.61809725
+      },
+      "330": {
+        "n": 23,
+        "sum_FX_hold_N_median": 3.426,
+        "expected_mg_N": 3.2361945
+      },
+      "660": {
+        "n": 23,
+        "sum_FX_hold_N_median": 6.704000000000001,
+        "expected_mg_N": 6.472389
+      }
+    }
+  },
+  "participants": {
+    "P1": {
+      "trials": 294,
+      "object": {
+        "x": {
+          "hold_minus_prelift_cm_median": 0.6499999999999986,
+          "hold_minus_prelift_cm_IQR": [
+            0.559999999999997,
+            0.7299999999999969
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -0.5799999999999983,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.05510000000000004,
+          "hold_minus_prelift_cm_IQR": [
+            -0.1556450000000001,
+            0.036625000000000074
+          ],
+          "positive_lift_count": 100,
+          "postreplace_minus_hold_cm_median": 0.015600000000000058,
+          "negative_lower_count": 137,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 5.830500000000001,
+          "hold_minus_prelift_cm_IQR": [
+            5.692,
+            5.952250000000003
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -5.830000000000002,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "wrist": {
+        "x": {
+          "hold_minus_prelift_cm_median": -0.00999999999999801,
+          "hold_minus_prelift_cm_IQR": [
+            -0.1574999999999971,
+            0.10874999999999879
+          ],
+          "positive_lift_count": 139,
+          "postreplace_minus_hold_cm_median": -1.6549999999999976,
+          "negative_lower_count": 283,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.20749999999999957,
+          "hold_minus_prelift_cm_IQR": [
+            -0.3576000000000006,
+            -0.02069999999999972
+          ],
+          "positive_lift_count": 66,
+          "postreplace_minus_hold_cm_median": 1.592825,
+          "negative_lower_count": 6,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 4.647500000000001,
+          "hold_minus_prelift_cm_IQR": [
+            4.481500000000002,
+            4.821499999999996
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -3.418000000000001,
+          "negative_lower_count": 293,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "force_by_weight": {
+        "165": {
+          "n": 84,
+          "sum_FX_hold_N_median": 1.7389999999999999,
+          "expected_mg_N": 1.61809725
+        },
+        "330": {
+          "n": 153,
+          "sum_FX_hold_N_median": 3.4850000000000003,
+          "expected_mg_N": 3.2361945
+        },
+        "660": {
+          "n": 57,
+          "sum_FX_hold_N_median": 6.7495,
+          "expected_mg_N": 6.472389
+        }
+      }
+    },
+    "P2": {
+      "trials": 294,
+      "object": {
+        "x": {
+          "hold_minus_prelift_cm_median": 0.6999999999999993,
+          "hold_minus_prelift_cm_IQR": [
+            0.6099999999999994,
+            0.8200000000000003
+          ],
+          "positive_lift_count": 293,
+          "postreplace_minus_hold_cm_median": -0.5,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.2853000000000001,
+          "hold_minus_prelift_cm_IQR": [
+            -0.398775,
+            -0.17120000000000002
+          ],
+          "positive_lift_count": 20,
+          "postreplace_minus_hold_cm_median": 0.20750000000000002,
+          "negative_lower_count": 40,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 5.577999999999996,
+          "hold_minus_prelift_cm_IQR": [
+            5.487000000000002,
+            5.668500000000002
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -5.567999999999998,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "wrist": {
+        "x": {
+          "hold_minus_prelift_cm_median": -0.020000000000003126,
+          "hold_minus_prelift_cm_IQR": [
+            -0.10000000000000142,
+            0.0737500000000022
+          ],
+          "positive_lift_count": 124,
+          "postreplace_minus_hold_cm_median": 0.01999999999999602,
+          "negative_lower_count": 127,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.7510000000000003,
+          "hold_minus_prelift_cm_IQR": [
+            -0.8734750000000004,
+            -0.6190249999999997
+          ],
+          "positive_lift_count": 1,
+          "postreplace_minus_hold_cm_median": 0.5064500000000001,
+          "negative_lower_count": 9,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 5.411500000000002,
+          "hold_minus_prelift_cm_IQR": [
+            5.276749999999997,
+            5.552750000000002
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -4.834499999999997,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "force_by_weight": {
+        "165": {
+          "n": 84,
+          "sum_FX_hold_N_median": 1.64975,
+          "expected_mg_N": 1.61809725
+        },
+        "330": {
+          "n": 153,
+          "sum_FX_hold_N_median": 3.3825000000000003,
+          "expected_mg_N": 3.2361945
+        },
+        "660": {
+          "n": 57,
+          "sum_FX_hold_N_median": 6.668,
+          "expected_mg_N": 6.472389
+        }
+      }
+    },
+    "P3": {
+      "trials": 294,
+      "object": {
+        "x": {
+          "hold_minus_prelift_cm_median": 0.5,
+          "hold_minus_prelift_cm_IQR": [
+            0.37999999999999545,
+            0.6000000000000014
+          ],
+          "positive_lift_count": 292,
+          "postreplace_minus_hold_cm_median": -0.509999999999998,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.36830000000000007,
+          "hold_minus_prelift_cm_IQR": [
+            -0.5129675000000001,
+            -0.262
+          ],
+          "positive_lift_count": 5,
+          "postreplace_minus_hold_cm_median": 0.35795,
+          "negative_lower_count": 4,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 6.367000000000001,
+          "hold_minus_prelift_cm_IQR": [
+            6.199500000000002,
+            6.543999999999997
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -6.375999999999998,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "wrist": {
+        "x": {
+          "hold_minus_prelift_cm_median": -0.42249999999999943,
+          "hold_minus_prelift_cm_IQR": [
+            -0.7000000000000028,
+            -0.11500000000000021
+          ],
+          "positive_lift_count": 55,
+          "postreplace_minus_hold_cm_median": -1.7875000000000014,
+          "negative_lower_count": 291,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.5214000000000008,
+          "hold_minus_prelift_cm_IQR": [
+            -0.7256750000000003,
+            -0.35595
+          ],
+          "positive_lift_count": 9,
+          "postreplace_minus_hold_cm_median": 3.8457500000000007,
+          "negative_lower_count": 0,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 5.103499999999997,
+          "hold_minus_prelift_cm_IQR": [
+            4.619499999999997,
+            5.470749999999997
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -3.866499999999995,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "force_by_weight": {
+        "165": {
+          "n": 84,
+          "sum_FX_hold_N_median": 1.613,
+          "expected_mg_N": 1.61809725
+        },
+        "330": {
+          "n": 153,
+          "sum_FX_hold_N_median": 3.3095,
+          "expected_mg_N": 3.2361945
+        },
+        "660": {
+          "n": 57,
+          "sum_FX_hold_N_median": 6.5424999999999995,
+          "expected_mg_N": 6.472389
+        }
+      }
+    },
+    "P4": {
+      "trials": 294,
+      "object": {
+        "x": {
+          "hold_minus_prelift_cm_median": 0.46999999999999886,
+          "hold_minus_prelift_cm_IQR": [
+            0.34250000000000114,
+            0.6000000000000014
+          ],
+          "positive_lift_count": 290,
+          "postreplace_minus_hold_cm_median": -0.3999999999999986,
+          "negative_lower_count": 291,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.14915000000000012,
+          "hold_minus_prelift_cm_IQR": [
+            -0.26457499999999995,
+            -0.042150000000000076
+          ],
+          "positive_lift_count": 58,
+          "postreplace_minus_hold_cm_median": 0.057050000000000045,
+          "negative_lower_count": 101,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 6.584,
+          "hold_minus_prelift_cm_IQR": [
+            6.461999999999998,
+            6.695
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -6.577500000000001,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "wrist": {
+        "x": {
+          "hold_minus_prelift_cm_median": -0.519999999999996,
+          "hold_minus_prelift_cm_IQR": [
+            -0.6787499999999991,
+            -0.36999999999999744
+          ],
+          "positive_lift_count": 4,
+          "postreplace_minus_hold_cm_median": -0.019999999999999574,
+          "negative_lower_count": 157,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.5084750000000011,
+          "hold_minus_prelift_cm_IQR": [
+            -0.6615000000000006,
+            -0.35732500000000034
+          ],
+          "positive_lift_count": 3,
+          "postreplace_minus_hold_cm_median": 0.062299999999999134,
+          "negative_lower_count": 122,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 6.005499999999998,
+          "hold_minus_prelift_cm_IQR": [
+            5.757249999999997,
+            6.211250000000003
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -5.567999999999998,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "force_by_weight": {
+        "165": {
+          "n": 84,
+          "sum_FX_hold_N_median": 1.6367500000000001,
+          "expected_mg_N": 1.61809725
+        },
+        "330": {
+          "n": 153,
+          "sum_FX_hold_N_median": 3.37,
+          "expected_mg_N": 3.2361945
+        },
+        "660": {
+          "n": 57,
+          "sum_FX_hold_N_median": 6.589,
+          "expected_mg_N": 6.472389
+        }
+      }
+    },
+    "P5": {
+      "trials": 294,
+      "object": {
+        "x": {
+          "hold_minus_prelift_cm_median": 0.5,
+          "hold_minus_prelift_cm_IQR": [
+            0.3400000000000034,
+            0.6187499999999968
+          ],
+          "positive_lift_count": 281,
+          "postreplace_minus_hold_cm_median": -0.447499999999998,
+          "negative_lower_count": 287,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.22177500000000006,
+          "hold_minus_prelift_cm_IQR": [
+            -0.41955,
+            -0.09665000000000007
+          ],
+          "positive_lift_count": 42,
+          "postreplace_minus_hold_cm_median": 0.25355000000000005,
+          "negative_lower_count": 19,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 6.309000000000005,
+          "hold_minus_prelift_cm_IQR": [
+            6.173000000000002,
+            6.450000000000001
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -6.319750000000003,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "wrist": {
+        "x": {
+          "hold_minus_prelift_cm_median": -0.3999999999999986,
+          "hold_minus_prelift_cm_IQR": [
+            -0.5600000000000023,
+            -0.26250000000000284
+          ],
+          "positive_lift_count": 13,
+          "postreplace_minus_hold_cm_median": -0.07000000000000028,
+          "negative_lower_count": 161,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": 0.029150000000000453,
+          "hold_minus_prelift_cm_IQR": [
+            -0.19394999999999962,
+            0.2636250000000002
+          ],
+          "positive_lift_count": 158,
+          "postreplace_minus_hold_cm_median": 0.33852500000000063,
+          "negative_lower_count": 77,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 5.297499999999999,
+          "hold_minus_prelift_cm_IQR": [
+            5.0395,
+            5.5945
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -5.2649999999999935,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "force_by_weight": {
+        "165": {
+          "n": 84,
+          "sum_FX_hold_N_median": 1.62,
+          "expected_mg_N": 1.61809725
+        },
+        "330": {
+          "n": 153,
+          "sum_FX_hold_N_median": 3.3005,
+          "expected_mg_N": 3.2361945
+        },
+        "660": {
+          "n": 57,
+          "sum_FX_hold_N_median": 6.587,
+          "expected_mg_N": 6.472389
+        }
+      }
+    },
+    "P6": {
+      "trials": 294,
+      "object": {
+        "x": {
+          "hold_minus_prelift_cm_median": 0.5500000000000007,
+          "hold_minus_prelift_cm_IQR": [
+            0.41124999999999723,
+            0.6600000000000037
+          ],
+          "positive_lift_count": 290,
+          "postreplace_minus_hold_cm_median": -0.4299999999999997,
+          "negative_lower_count": 287,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.2587499999999998,
+          "hold_minus_prelift_cm_IQR": [
+            -0.370915,
+            -0.1375
+          ],
+          "positive_lift_count": 20,
+          "postreplace_minus_hold_cm_median": 0.15304500000000004,
+          "negative_lower_count": 60,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 5.820999999999998,
+          "hold_minus_prelift_cm_IQR": [
+            5.648749999999998,
+            5.996499999999999
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -5.817999999999998,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "wrist": {
+        "x": {
+          "hold_minus_prelift_cm_median": -0.21999999999999886,
+          "hold_minus_prelift_cm_IQR": [
+            -0.36999999999999744,
+            -0.09000000000000341
+          ],
+          "positive_lift_count": 36,
+          "postreplace_minus_hold_cm_median": 0.03499999999999659,
+          "negative_lower_count": 129,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.5401500000000006,
+          "hold_minus_prelift_cm_IQR": [
+            -0.7875499999999995,
+            -0.33077500000000026
+          ],
+          "positive_lift_count": 4,
+          "postreplace_minus_hold_cm_median": 0.3948999999999989,
+          "negative_lower_count": 45,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 5.3835000000000015,
+          "hold_minus_prelift_cm_IQR": [
+            5.1512500000000045,
+            5.647999999999999
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -5.172499999999999,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "force_by_weight": {
+        "165": {
+          "n": 84,
+          "sum_FX_hold_N_median": 1.6225,
+          "expected_mg_N": 1.61809725
+        },
+        "330": {
+          "n": 153,
+          "sum_FX_hold_N_median": 3.3405000000000005,
+          "expected_mg_N": 3.2361945
+        },
+        "660": {
+          "n": 57,
+          "sum_FX_hold_N_median": 6.5705,
+          "expected_mg_N": 6.472389
+        }
+      }
+    },
+    "P7": {
+      "trials": 294,
+      "object": {
+        "x": {
+          "hold_minus_prelift_cm_median": 0.6125000000000043,
+          "hold_minus_prelift_cm_IQR": [
+            0.39000000000000057,
+            0.8000000000000025
+          ],
+          "positive_lift_count": 280,
+          "postreplace_minus_hold_cm_median": -0.6049999999999969,
+          "negative_lower_count": 283,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.13815,
+          "hold_minus_prelift_cm_IQR": [
+            -0.3378500000000001,
+            0.016874999999999973
+          ],
+          "positive_lift_count": 78,
+          "postreplace_minus_hold_cm_median": 0.19065,
+          "negative_lower_count": 51,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 6.436999999999998,
+          "hold_minus_prelift_cm_IQR": [
+            6.224999999999996,
+            6.643000000000001
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -6.446999999999996,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "wrist": {
+        "x": {
+          "hold_minus_prelift_cm_median": -0.10000000000000142,
+          "hold_minus_prelift_cm_IQR": [
+            -0.36749999999999794,
+            0.12875000000000192
+          ],
+          "positive_lift_count": 114,
+          "postreplace_minus_hold_cm_median": 0.07000000000000028,
+          "negative_lower_count": 128,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.37934999999999963,
+          "hold_minus_prelift_cm_IQR": [
+            -0.5729750000000013,
+            -0.1786749999999997
+          ],
+          "positive_lift_count": 34,
+          "postreplace_minus_hold_cm_median": 0.4098999999999995,
+          "negative_lower_count": 52,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 6.108000000000004,
+          "hold_minus_prelift_cm_IQR": [
+            5.747250000000001,
+            6.463
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -5.097000000000001,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "force_by_weight": {
+        "165": {
+          "n": 84,
+          "sum_FX_hold_N_median": 1.6184999999999998,
+          "expected_mg_N": 1.61809725
+        },
+        "330": {
+          "n": 153,
+          "sum_FX_hold_N_median": 3.362,
+          "expected_mg_N": 3.2361945
+        },
+        "660": {
+          "n": 57,
+          "sum_FX_hold_N_median": 6.6834999999999996,
+          "expected_mg_N": 6.472389
+        }
+      }
+    },
+    "P8": {
+      "trials": 294,
+      "object": {
+        "x": {
+          "hold_minus_prelift_cm_median": 0.509999999999998,
+          "hold_minus_prelift_cm_IQR": [
+            0.34125000000000405,
+            0.6499999999999986
+          ],
+          "positive_lift_count": 273,
+          "postreplace_minus_hold_cm_median": -0.5,
+          "negative_lower_count": 290,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.11545000000000005,
+          "hold_minus_prelift_cm_IQR": [
+            -0.231875,
+            0.04344999999999999
+          ],
+          "positive_lift_count": 84,
+          "postreplace_minus_hold_cm_median": 0.09079999999999999,
+          "negative_lower_count": 91,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 5.897499999999997,
+          "hold_minus_prelift_cm_IQR": [
+            5.777750000000001,
+            6.01825
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -5.900500000000001,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "wrist": {
+        "x": {
+          "hold_minus_prelift_cm_median": -0.28500000000000014,
+          "hold_minus_prelift_cm_IQR": [
+            -0.5575000000000028,
+            -0.10624999999999751
+          ],
+          "positive_lift_count": 42,
+          "postreplace_minus_hold_cm_median": -0.827499999999997,
+          "negative_lower_count": 225,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.06424999999999947,
+          "hold_minus_prelift_cm_IQR": [
+            -0.23900000000000032,
+            0.11187499999999906
+          ],
+          "positive_lift_count": 113,
+          "postreplace_minus_hold_cm_median": 0.9897499999999999,
+          "negative_lower_count": 68,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 4.362000000000002,
+          "hold_minus_prelift_cm_IQR": [
+            4.1277500000000025,
+            4.5717500000000015
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -3.3105000000000047,
+          "negative_lower_count": 293,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "force_by_weight": {
+        "165": {
+          "n": 84,
+          "sum_FX_hold_N_median": 1.634,
+          "expected_mg_N": 1.61809725
+        },
+        "330": {
+          "n": 153,
+          "sum_FX_hold_N_median": 3.36,
+          "expected_mg_N": 3.2361945
+        },
+        "660": {
+          "n": 57,
+          "sum_FX_hold_N_median": 6.618,
+          "expected_mg_N": 6.472389
+        }
+      }
+    },
+    "P9": {
+      "trials": 294,
+      "object": {
+        "x": {
+          "hold_minus_prelift_cm_median": 0.4725000000000037,
+          "hold_minus_prelift_cm_IQR": [
+            0.32124999999999915,
+            0.6199999999999974
+          ],
+          "positive_lift_count": 278,
+          "postreplace_minus_hold_cm_median": -0.39750000000000085,
+          "negative_lower_count": 271,
+          "dominant_lift_displacement_count": 2
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.2594000000000001,
+          "hold_minus_prelift_cm_IQR": [
+            -0.42215999999999987,
+            -0.12034999999999996
+          ],
+          "positive_lift_count": 30,
+          "postreplace_minus_hold_cm_median": 0.22308499999999998,
+          "negative_lower_count": 37,
+          "dominant_lift_displacement_count": 1
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 6.170000000000002,
+          "hold_minus_prelift_cm_IQR": [
+            5.977499999999997,
+            6.345499999999996
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -6.176500000000001,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 291
+        }
+      },
+      "wrist": {
+        "x": {
+          "hold_minus_prelift_cm_median": -0.23499999999999943,
+          "hold_minus_prelift_cm_IQR": [
+            -0.4487499999999969,
+            -0.07249999999999979
+          ],
+          "positive_lift_count": 46,
+          "postreplace_minus_hold_cm_median": -0.05249999999999844,
+          "negative_lower_count": 165,
+          "dominant_lift_displacement_count": 1
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.6854749999999994,
+          "hold_minus_prelift_cm_IQR": [
+            -0.8761499999999995,
+            -0.5122999999999998
+          ],
+          "positive_lift_count": 2,
+          "postreplace_minus_hold_cm_median": 0.5926999999999989,
+          "negative_lower_count": 16,
+          "dominant_lift_displacement_count": 2
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 5.158500000000004,
+          "hold_minus_prelift_cm_IQR": [
+            4.929499999999999,
+            5.360750000000002
+          ],
+          "positive_lift_count": 292,
+          "postreplace_minus_hold_cm_median": -5.109500000000002,
+          "negative_lower_count": 293,
+          "dominant_lift_displacement_count": 291
+        }
+      },
+      "force_by_weight": {
+        "165": {
+          "n": 84,
+          "sum_FX_hold_N_median": 1.6252499999999999,
+          "expected_mg_N": 1.61809725
+        },
+        "330": {
+          "n": 153,
+          "sum_FX_hold_N_median": 3.3525,
+          "expected_mg_N": 3.2361945
+        },
+        "660": {
+          "n": 57,
+          "sum_FX_hold_N_median": 6.547000000000001,
+          "expected_mg_N": 6.472389
+        }
+      }
+    },
+    "P10": {
+      "trials": 294,
+      "object": {
+        "x": {
+          "hold_minus_prelift_cm_median": 0.5100000000000051,
+          "hold_minus_prelift_cm_IQR": [
+            0.38999999999999524,
+            0.6200000000000028
+          ],
+          "positive_lift_count": 288,
+          "postreplace_minus_hold_cm_median": -0.3400000000000034,
+          "negative_lower_count": 284,
+          "dominant_lift_displacement_count": 1
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.13230000000000008,
+          "hold_minus_prelift_cm_IQR": [
+            -0.2811625000000001,
+            -0.020762499999999934
+          ],
+          "positive_lift_count": 57,
+          "postreplace_minus_hold_cm_median": -0.16990499999999997,
+          "negative_lower_count": 225,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 6.3664999999999985,
+          "hold_minus_prelift_cm_IQR": [
+            6.120499999999998,
+            6.514750000000001
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -6.361999999999998,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 293
+        }
+      },
+      "wrist": {
+        "x": {
+          "hold_minus_prelift_cm_median": -0.19000000000000483,
+          "hold_minus_prelift_cm_IQR": [
+            -0.3400000000000034,
+            -0.020000000000003126
+          ],
+          "positive_lift_count": 63,
+          "postreplace_minus_hold_cm_median": 0.10999999999999943,
+          "negative_lower_count": 83,
+          "dominant_lift_displacement_count": 1
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": 0.10114999999999919,
+          "hold_minus_prelift_cm_IQR": [
+            -0.13977499999999932,
+            0.3021999999999996
+          ],
+          "positive_lift_count": 184,
+          "postreplace_minus_hold_cm_median": -0.23279999999999923,
+          "negative_lower_count": 205,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 4.839499999999999,
+          "hold_minus_prelift_cm_IQR": [
+            4.575249999999997,
+            5.033999999999997
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -4.649999999999999,
+          "negative_lower_count": 293,
+          "dominant_lift_displacement_count": 293
+        }
+      },
+      "force_by_weight": {
+        "165": {
+          "n": 84,
+          "sum_FX_hold_N_median": 1.6567500000000002,
+          "expected_mg_N": 1.61809725
+        },
+        "330": {
+          "n": 153,
+          "sum_FX_hold_N_median": 3.41,
+          "expected_mg_N": 3.2361945
+        },
+        "660": {
+          "n": 57,
+          "sum_FX_hold_N_median": 6.7355,
+          "expected_mg_N": 6.472389
+        }
+      }
+    },
+    "P11": {
+      "trials": 294,
+      "object": {
+        "x": {
+          "hold_minus_prelift_cm_median": 0.5574999999999974,
+          "hold_minus_prelift_cm_IQR": [
+            0.43499999999999517,
+            0.6700000000000017
+          ],
+          "positive_lift_count": 290,
+          "postreplace_minus_hold_cm_median": -0.3299999999999983,
+          "negative_lower_count": 275,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.3865,
+          "hold_minus_prelift_cm_IQR": [
+            -0.5194399999999998,
+            -0.23153249999999992
+          ],
+          "positive_lift_count": 12,
+          "postreplace_minus_hold_cm_median": 0.22110000000000002,
+          "negative_lower_count": 47,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 6.559999999999999,
+          "hold_minus_prelift_cm_IQR": [
+            6.397,
+            6.678500000000001
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -6.560000000000002,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "wrist": {
+        "x": {
+          "hold_minus_prelift_cm_median": -0.34499999999999886,
+          "hold_minus_prelift_cm_IQR": [
+            -0.6037500000000033,
+            -0.1525000000000034
+          ],
+          "positive_lift_count": 20,
+          "postreplace_minus_hold_cm_median": 0.15749999999999886,
+          "negative_lower_count": 103,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.5655000000000001,
+          "hold_minus_prelift_cm_IQR": [
+            -0.7827499999999994,
+            -0.38974999999999915
+          ],
+          "positive_lift_count": 7,
+          "postreplace_minus_hold_cm_median": 0.5200749999999998,
+          "negative_lower_count": 35,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 5.219999999999997,
+          "hold_minus_prelift_cm_IQR": [
+            4.938500000000003,
+            5.512749999999999
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -5.1534999999999975,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "force_by_weight": {
+        "165": {
+          "n": 84,
+          "sum_FX_hold_N_median": 1.694,
+          "expected_mg_N": 1.61809725
+        },
+        "330": {
+          "n": 153,
+          "sum_FX_hold_N_median": 3.416,
+          "expected_mg_N": 3.2361945
+        },
+        "660": {
+          "n": 57,
+          "sum_FX_hold_N_median": 6.74,
+          "expected_mg_N": 6.472389
+        }
+      }
+    },
+    "P12": {
+      "trials": 294,
+      "object": {
+        "x": {
+          "hold_minus_prelift_cm_median": 0.75,
+          "hold_minus_prelift_cm_IQR": [
+            0.6600000000000037,
+            0.8399999999999963
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -0.5600000000000023,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.45909500000000003,
+          "hold_minus_prelift_cm_IQR": [
+            -0.5726075,
+            -0.32745000000000013
+          ],
+          "positive_lift_count": 2,
+          "postreplace_minus_hold_cm_median": 0.289275,
+          "negative_lower_count": 28,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 6.742000000000001,
+          "hold_minus_prelift_cm_IQR": [
+            6.602250000000003,
+            6.863000000000005
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -6.737000000000002,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "wrist": {
+        "x": {
+          "hold_minus_prelift_cm_median": -0.17499999999999716,
+          "hold_minus_prelift_cm_IQR": [
+            -0.34000000000000163,
+            -0.03999999999999915
+          ],
+          "positive_lift_count": 56,
+          "postreplace_minus_hold_cm_median": -0.0024999999999977263,
+          "negative_lower_count": 147,
+          "dominant_lift_displacement_count": 0
+        },
+        "y": {
+          "hold_minus_prelift_cm_median": -0.6686499999999995,
+          "hold_minus_prelift_cm_IQR": [
+            -0.8138499999999997,
+            -0.46982500000000016
+          ],
+          "positive_lift_count": 1,
+          "postreplace_minus_hold_cm_median": 0.46169999999999956,
+          "negative_lower_count": 15,
+          "dominant_lift_displacement_count": 0
+        },
+        "z": {
+          "hold_minus_prelift_cm_median": 5.379999999999999,
+          "hold_minus_prelift_cm_IQR": [
+            5.087249999999999,
+            5.584499999999999
+          ],
+          "positive_lift_count": 294,
+          "postreplace_minus_hold_cm_median": -5.674499999999998,
+          "negative_lower_count": 294,
+          "dominant_lift_displacement_count": 294
+        }
+      },
+      "force_by_weight": {
+        "165": {
+          "n": 84,
+          "sum_FX_hold_N_median": 1.63075,
+          "expected_mg_N": 1.61809725
+        },
+        "330": {
+          "n": 153,
+          "sum_FX_hold_N_median": 3.3890000000000002,
+          "expected_mg_N": 3.2361945
+        },
+        "660": {
+          "n": 57,
+          "sum_FX_hold_N_median": 6.705,
+          "expected_mg_N": 6.472389
+        }
+      }
+    }
+  },
+  "source_files": [
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P1/WS_P1_S1.mat",
+      "size_bytes": 50960640
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P1/WS_P1_S2.mat",
+      "size_bytes": 50074253
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P1/WS_P1_S3.mat",
+      "size_bytes": 40489513
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P1/WS_P1_S4.mat",
+      "size_bytes": 49614257
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P1/WS_P1_S5.mat",
+      "size_bytes": 39438571
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P1/WS_P1_S6.mat",
+      "size_bytes": 49424803
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P1/WS_P1_S7.mat",
+      "size_bytes": 49955122
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P1/WS_P1_S8.mat",
+      "size_bytes": 48872353
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P1/WS_P1_S9.mat",
+      "size_bytes": 49152724
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P2/WS_P2_S1.mat",
+      "size_bytes": 50513325
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P2/WS_P2_S2.mat",
+      "size_bytes": 62110744
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P2/WS_P2_S3.mat",
+      "size_bytes": 55737414
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P2/WS_P2_S4.mat",
+      "size_bytes": 53686335
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P2/WS_P2_S5.mat",
+      "size_bytes": 54533514
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P2/WS_P2_S6.mat",
+      "size_bytes": 43942053
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P2/WS_P2_S7.mat",
+      "size_bytes": 53622524
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P2/WS_P2_S8.mat",
+      "size_bytes": 54173894
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P2/WS_P2_S9.mat",
+      "size_bytes": 53923794
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P3/WS_P3_S1.mat",
+      "size_bytes": 44926850
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P3/WS_P3_S2.mat",
+      "size_bytes": 37402100
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P3/WS_P3_S3.mat",
+      "size_bytes": 45592174
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P3/WS_P3_S4.mat",
+      "size_bytes": 37239229
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P3/WS_P3_S5.mat",
+      "size_bytes": 45787468
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P3/WS_P3_S6.mat",
+      "size_bytes": 43954673
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P3/WS_P3_S7.mat",
+      "size_bytes": 44036221
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P3/WS_P3_S8.mat",
+      "size_bytes": 44971220
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P3/WS_P3_S9.mat",
+      "size_bytes": 45763941
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P4/WS_P4_S1.mat",
+      "size_bytes": 49560214
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P4/WS_P4_S2.mat",
+      "size_bytes": 40546357
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P4/WS_P4_S3.mat",
+      "size_bytes": 48765518
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P4/WS_P4_S4.mat",
+      "size_bytes": 39280581
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P4/WS_P4_S5.mat",
+      "size_bytes": 47722675
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P4/WS_P4_S6.mat",
+      "size_bytes": 48362654
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P4/WS_P4_S7.mat",
+      "size_bytes": 47048282
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P4/WS_P4_S8.mat",
+      "size_bytes": 46948948
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P4/WS_P4_S9.mat",
+      "size_bytes": 46519015
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P5/WS_P5_S1.mat",
+      "size_bytes": 42951665
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P5/WS_P5_S2.mat",
+      "size_bytes": 50272895
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P5/WS_P5_S3.mat",
+      "size_bytes": 51212865
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P5/WS_P5_S4.mat",
+      "size_bytes": 50768008
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P5/WS_P5_S5.mat",
+      "size_bytes": 50572586
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P5/WS_P5_S6.mat",
+      "size_bytes": 41084865
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P5/WS_P5_S7.mat",
+      "size_bytes": 50356779
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P5/WS_P5_S8.mat",
+      "size_bytes": 48247325
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P5/WS_P5_S9.mat",
+      "size_bytes": 48834426
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P6/WS_P6_S1.mat",
+      "size_bytes": 54223268
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P6/WS_P6_S2.mat",
+      "size_bytes": 52776580
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P6/WS_P6_S3.mat",
+      "size_bytes": 43238606
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P6/WS_P6_S4.mat",
+      "size_bytes": 51106844
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P6/WS_P6_S5.mat",
+      "size_bytes": 41903219
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P6/WS_P6_S6.mat",
+      "size_bytes": 51477468
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P6/WS_P6_S7.mat",
+      "size_bytes": 49849823
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P6/WS_P6_S8.mat",
+      "size_bytes": 49814356
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P6/WS_P6_S9.mat",
+      "size_bytes": 50269466
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P7/WS_P7_S1.mat",
+      "size_bytes": 71473688
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P7/WS_P7_S2.mat",
+      "size_bytes": 78702919
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P7/WS_P7_S3.mat",
+      "size_bytes": 53723758
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P7/WS_P7_S4.mat",
+      "size_bytes": 65744188
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P7/WS_P7_S5.mat",
+      "size_bytes": 52904531
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P7/WS_P7_S6.mat",
+      "size_bytes": 64200956
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P7/WS_P7_S7.mat",
+      "size_bytes": 63479715
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P7/WS_P7_S8.mat",
+      "size_bytes": 62836128
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P7/WS_P7_S9.mat",
+      "size_bytes": 61420534
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P8/WS_P8_S1.mat",
+      "size_bytes": 40110756
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P8/WS_P8_S2.mat",
+      "size_bytes": 49857684
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P8/WS_P8_S3.mat",
+      "size_bytes": 47005961
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P8/WS_P8_S4.mat",
+      "size_bytes": 48211583
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P8/WS_P8_S5.mat",
+      "size_bytes": 46575805
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P8/WS_P8_S6.mat",
+      "size_bytes": 39225021
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P8/WS_P8_S7.mat",
+      "size_bytes": 46659957
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P8/WS_P8_S8.mat",
+      "size_bytes": 47375965
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P8/WS_P8_S9.mat",
+      "size_bytes": 47146958
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P9/WS_P9_S1.mat",
+      "size_bytes": 51831852
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P9/WS_P9_S2.mat",
+      "size_bytes": 41973745
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P9/WS_P9_S3.mat",
+      "size_bytes": 52291871
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P9/WS_P9_S4.mat",
+      "size_bytes": 41910143
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P9/WS_P9_S5.mat",
+      "size_bytes": 51334463
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P9/WS_P9_S6.mat",
+      "size_bytes": 49620971
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P9/WS_P9_S7.mat",
+      "size_bytes": 48961432
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P9/WS_P9_S8.mat",
+      "size_bytes": 48027468
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P9/WS_P9_S9.mat",
+      "size_bytes": 47914829
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P10/WS_P10_S1.mat",
+      "size_bytes": 54462306
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P10/WS_P10_S2.mat",
+      "size_bytes": 43740511
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P10/WS_P10_S3.mat",
+      "size_bytes": 51857806
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P10/WS_P10_S4.mat",
+      "size_bytes": 42945123
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P10/WS_P10_S5.mat",
+      "size_bytes": 51512968
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P10/WS_P10_S6.mat",
+      "size_bytes": 53597390
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P10/WS_P10_S7.mat",
+      "size_bytes": 50398632
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P10/WS_P10_S8.mat",
+      "size_bytes": 48833207
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P10/WS_P10_S9.mat",
+      "size_bytes": 49129319
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P11/WS_P11_S1.mat",
+      "size_bytes": 45446134
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P11/WS_P11_S2.mat",
+      "size_bytes": 54971210
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P11/WS_P11_S3.mat",
+      "size_bytes": 55572137
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P11/WS_P11_S4.mat",
+      "size_bytes": 52049344
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P11/WS_P11_S5.mat",
+      "size_bytes": 53596239
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P11/WS_P11_S6.mat",
+      "size_bytes": 44541847
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P11/WS_P11_S7.mat",
+      "size_bytes": 52692451
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P11/WS_P11_S8.mat",
+      "size_bytes": 49648607
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P11/WS_P11_S9.mat",
+      "size_bytes": 51087152
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P12/WS_P12_S1.mat",
+      "size_bytes": 54308344
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P12/WS_P12_S2.mat",
+      "size_bytes": 53448062
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P12/WS_P12_S3.mat",
+      "size_bytes": 43702459
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P12/WS_P12_S4.mat",
+      "size_bytes": 55252733
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P12/WS_P12_S5.mat",
+      "size_bytes": 44575006
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P12/WS_P12_S6.mat",
+      "size_bytes": 53352382
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P12/WS_P12_S7.mat",
+      "size_bytes": 52751660
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P12/WS_P12_S8.mat",
+      "size_bytes": 54133648
+    },
+    {
+      "path": "/mnt/c/Users/satya/OneDrive/Documents/[S. Nasuto] EEG-EMG-Kinematics/P12/WS_P12_S9.mat",
+      "size_bytes": 52462944
+    }
+  ],
+  "runner_sha256": "961d7579241f2bc9548351fffd24197069a30035d5ea23b4271b901f382830a8"
+}

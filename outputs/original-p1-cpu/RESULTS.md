@@ -33,4 +33,4 @@ Each point represents one randomly selected test window; the dashed line is perf
 
 The CNN–BiLSTM has higher R² than the CNN on all three targets in this run. These scores are an original-pipeline reproduction: overlapping windows were randomly split, normalization used the full recording before the split, and the test set was reused for validation. They do not establish performance on independent recording series or unseen subjects. The model training is unseeded, so CPU/GPU score differences do not measure a hardware effect.
 
-`results.json` contains the complete epoch histories, metrics, package versions, and device detection. Private local artifacts such as model weights, raw prediction arrays, notebook snapshots, and logs are excluded from Git. See [baseline methods and limitations](../../documentation/ORIGINAL_BASELINE.md).
+`results.json` contains the complete epoch histories, metrics, package versions, and device detection. Private local artifacts such as model weights, raw prediction arrays, notebook snapshots, and logs are excluded from Git. See [baseline methods and limitations](../../documentation/methods/ORIGINAL_BASELINE.md).

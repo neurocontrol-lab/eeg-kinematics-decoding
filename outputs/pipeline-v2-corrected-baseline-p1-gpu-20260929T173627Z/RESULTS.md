@@ -27,8 +27,8 @@ The CNN validation loss on run 7 remains much higher than its training loss at t
 
 ![Prediction scatter](prediction_scatter.png)
 
-MSE and MAE use standardized target units. The three target columns are wrist X/Y/Z; see [kinematics provenance](../../documentation/KINEMATICS_PROVENANCE.md).
+MSE and MAE use standardized target units. The three target columns are wrist X/Y/Z; see [kinematics provenance](../../documentation/dataset/KINEMATICS_PROVENANCE.md).
 Random windows from the original baseline and these held-out runs measure different tasks; compare their protocols before comparing scores.
 Model weights and raw predictions are local artifacts excluded from Git.
 
-[Pipeline changes and limitations](../../documentation/PIPELINE_V2_CORRECTED_BASELINE.md).
+[Pipeline changes and limitations](../../documentation/methods/PIPELINE_V2_CORRECTED_BASELINE.md).

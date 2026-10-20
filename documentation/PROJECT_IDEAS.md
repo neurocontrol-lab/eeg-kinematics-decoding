@@ -17,11 +17,11 @@ below are planning suggestions, not verbatim meeting decisions.
 | Test frozen P1 transfer | All six models and P1 scalers evaluated on P2–P12 without adaptation. Primary runs 8–9 and secondary all-run results show poor transfer. |
 | Document results | Repository reports, numeric results, plots, and three Drive decks with linked indices. Deck condition labels now distinguish weight-series tests from trial surface codes. |
 
-Links: [v2 methods](PIPELINE_V2_CORRECTED_BASELINE.md),
-[model audit](MODEL_REFERENCE_AUDIT.md),
-[six-model comparison](SIX_MODEL_COMPARISON.md),
-[frozen P1 transfer](FROZEN_P1_TRANSFER.md),
-[target provenance](KINEMATICS_PROVENANCE.md).
+Links: [v2 methods](methods/PIPELINE_V2_CORRECTED_BASELINE.md),
+[model audit](methods/MODEL_REFERENCE_AUDIT.md),
+[six-model comparison](methods/SIX_MODEL_COMPARISON.md),
+[frozen P1 transfer](methods/FROZEN_P1_TRANSFER.md),
+[target provenance](dataset/KINEMATICS_PROVENANCE.md).
 
 ## 1. Dataset understanding and condition-aware experiments
 
@@ -43,7 +43,7 @@ infer trial condition from run number alone.
 
 [C1 audit](../outputs/condition-audit-20261014T115618Z/RESULTS.md)
 · [C2 classifier results](../outputs/weight-classification-p1-gpu-20261014T115817Z/RESULTS.md)
-· [Declared methods and limits](CONDITION_CLASSIFICATION.md).
+· [Declared methods and limits](methods/CONDITION_CLASSIFICATION.md).
 The classifier uses full LEDOn-to-hand-stop trials, not stage-specific cropping.
 All 170 selected P1 trial clocks and every trial/window boundary were verified.
 These findings do not establish whether another representation or task could
@@ -64,7 +64,7 @@ the original training protocol or treating interpolated predictions as newly
 decoded samples.
 
 [Initial P1 results and plots](../outputs/saved-decoder-analysis-p1-20261013T172654Z/RESULTS.md)
-· [Methods and limits](SAVED_DECODER_ANALYSES.md).
+· [Methods and limits](methods/SAVED_DECODER_ANALYSES.md).
 The analysis verifies all 68 held-out trial clocks, reports both target-phase
 and pure-window metrics, and retains trial-level phase summaries. It does not
 train stage-specific decoders or cover P2–P12 phase analysis yet.

@@ -1,0 +1,6 @@
+# Copy to paths.local.toml only if the workspace layout differs.
+# Relative paths resolve against the workspace containing hand_motion_eeg/.
+# Windows and WSL can use the defaults without separate local settings.
+[data]
+raw = "data/raw/way-eeg-gal"
+reduced = "data/external/way_eeg_clean"

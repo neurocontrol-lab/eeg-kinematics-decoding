@@ -50,7 +50,7 @@ Every measured one-window p95 is below 128 ms, the current stride at 500 Hz. Thi
 
 Source hashes and all in-memory neural weights remained unchanged. The first 64 predictions match the saved predictions within declared replay tolerances (absolute 0.01, relative 0.001, mean absolute difference below 0.001); maximum observed difference is 0.0005068182945251465. This is a numerical replay check, not accuracy reevaluation.
 
-`cpu_results.json` and `gpu_results.json` retain hardware/software, source hashes, raw-input hashes, settings, round summaries and replay checks. Per-model/batch `*_latency_ms.npy` files retain raw timings. `experiment_source.py` snapshots the script. Reproduce using `experiments/benchmark_inference.py --repo <repo> --output <new-output> --device cpu` and then `--device gpu`.
+`cpu_results.json` and `gpu_results.json` retain hardware/software, source hashes, raw-input hashes, settings, round summaries and replay checks. Per-model/batch `*_latency_ms.npy` files retain raw timings. `experiment_source.py` snapshots the script. Reproduce using `experiments/06_inference_benchmark/benchmark_inference.py --repo <repo> --output <new-output> --device cpu` and then `--device gpu`.
 
 The published device JSON uses a repository-relative source path instead of the
 local absolute path. Numeric measurements and the executed-source snapshot are
