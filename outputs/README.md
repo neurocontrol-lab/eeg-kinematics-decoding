@@ -1,5 +1,11 @@
 # Published pipeline results
 
+## T1: matched-target timing alignment
+
+[P1 timing report](timing-alignment-p1-gpu-20261027T120222Z/RESULTS.md) · [Protocol](../documentation/methods/TIMING_ALIGNMENT.md) · [Verification](timing-alignment-p1-gpu-20261027T120222Z/verification.json)
+
+Ridge and CNN + ELU compared 2/50/100/200-ms gaps with fixed 256-ms input windows and identical target timestamps. Validation selected 2 ms for ridge and 100 ms for CNN. The selected CNN gap worsened held-out mean MSE by 13.15% relative to its retrained 2-ms reference, despite improving validation MSE. Stage effects differ. This is a verified exploratory negative result for adopting an earlier-ending window, not proof of an optimal physiological lag.
+
 ## Coordinate-axis verification
 
 [20 October audit](vertical-axis-audit-20261020/REPORT.md) · [Coordinate definitions](../documentation/dataset/COORDINATE_SYSTEM.md)

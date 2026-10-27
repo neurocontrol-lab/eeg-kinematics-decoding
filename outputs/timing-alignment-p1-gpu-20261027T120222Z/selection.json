@@ -1,0 +1,16 @@
+{
+  "frozen_at": "2026-10-27T12:05:49.594683+00:00",
+  "models": {
+    "ridge": {
+      "gap_samples": 1,
+      "gap_ms": 2,
+      "validation_mse": 2.1142367528046857
+    },
+    "cnn_elu": {
+      "gap_samples": 50,
+      "gap_ms": 100,
+      "validation_mse": 0.48154627177880177
+    }
+  },
+  "criterion": "minimum validation mean axis MSE; shorter-gap tie break"
+}

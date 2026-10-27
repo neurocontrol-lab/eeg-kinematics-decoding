@@ -1,6 +1,8 @@
 # Experiment index
 
-Stable numbers identify experiment families; C1–C6 and R1–R5 remain backlog identifiers. Execute commands from the repository root.
+The public [experiment registry and roadmap](https://docs.google.com/spreadsheets/d/1Q2nJqr66ftuz7CP9dMiYRdE2RGwavmGbMGDkOS7yiWg/edit) owns experiment status, execution priority and run links. Update that Sheet directly; no local status table is maintained.
+
+Stable numbers identify experiment families; C1–C7 and R1–R5 remain backlog identifiers. Execute commands from the repository root.
 
 | Family | Question / scope |
 |---|---|
@@ -11,5 +13,6 @@ Stable numbers identify experiment families; C1–C6 and R1–R5 remain backlog 
 | [04_stage_decoding](04_stage_decoding/README.md) | Describe existing decoder errors by movement stage and timing, then assess the need for stage-specific training. |
 | [05_condition_decoding](05_condition_decoding/README.md) | Test whether EEG distinguishes experimental conditions. Weight classification is the first controlled task. |
 | [06_inference_benchmark](06_inference_benchmark/README.md) | Measure warmed, synchronized CPU/GPU model-call latency. |
+| [07_timing_alignment](07_timing_alignment/README.md) | Compare input-to-target gaps with matched target timestamps and fixed model/window settings. |
 
 Shared path utilities live in `src/eeg_kinematics/`. Numerical models and preprocessing have not been extracted merely to create empty modules. Saved executions stay under [outputs](../outputs/README.md).

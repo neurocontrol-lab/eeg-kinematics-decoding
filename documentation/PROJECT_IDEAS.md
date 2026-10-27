@@ -6,7 +6,11 @@ every experiment. Meeting timestamps locate the discussion; speakers are not
 assigned reliably by the automatic transcript. Proposed implementation details
 below are planning suggestions, not verbatim meeting decisions.
 
-## Work already completed
+## Experiment tracking
+
+The public [experiment registry and roadmap](https://docs.google.com/spreadsheets/d/1Q2nJqr66ftuz7CP9dMiYRdE2RGwavmGbMGDkOS7yiWg/edit) is the single maintained record of defined experiments, statuses, priorities, runs and findings. Update the Sheet directly. This document retains the ideas and discussion context; dated outcomes below are historical notes, not a second live status tracker.
+
+## Work completed at the 13 October discussion
 
 | Work | Current outcome |
 | --- | --- |
@@ -15,7 +19,7 @@ below are planning suggestions, not verbatim meeting decisions.
 | Identify the kinematic targets | Raw/reduced checks identify wrist X/Y/Z; the check was extended to P1–P12. Exact upstream processing and reduced physical units remain unresolved. |
 | Establish six P1 references | Training mean, ridge, original CNN, CNN–BiLSTM, CNN + ELU, and EEGNet regression. ELU improves the original CNN in this single-seed experiment; CNN–BiLSTM leads within P1. |
 | Test frozen P1 transfer | All six models and P1 scalers evaluated on P2–P12 without adaptation. Primary runs 8–9 and secondary all-run results show poor transfer. |
-| Document results | Repository reports, numeric results, plots, and three Drive decks with linked indices. Deck condition labels now distinguish weight-series tests from trial surface codes. |
+| Document results | Repository reports, numeric results, plots, and five Drive decks with linked indices. Deck condition labels now distinguish weight-series tests from trial surface codes. |
 
 Links: [v2 methods](methods/PIPELINE_V2_CORRECTED_BASELINE.md),
 [model audit](methods/MODEL_REFERENCE_AUDIT.md),
@@ -33,6 +37,7 @@ Links: [v2 methods](methods/PIPELINE_V2_CORRECTED_BASELINE.md),
 | C4 | Evaluate held-out experimental conditions | Separate generalization to new recordings of known conditions from generalization to conditions absent during training. | 1:03:45–1:05:04; earlier discussion of holdouts covering other friction conditions. Open. |
 | C5 | Test whether decoding mappings differ between movement stages | Use verified event markers to plot a pooled decoder's error across stages within a held-out trial. Then compare stage-trained decoders within and across stages using a training-stage × evaluation-stage error matrix. Consistently high cross-stage error alongside low within-stage error would support stage-specific decoders, after controlling for condition, sample availability and stage difficulty. | 31:31–34:16; 43:03–43:21; 50:45–51:09. Clarified in follow-up discussion. Distinct neural control routines remain a hypothesis, not a conclusion from decoder errors alone. |
 | C6 | Examine changed versus repeated conditions | Check whether trials following unexpected weight/surface changes have different EEG or prediction errors from repeated-condition trials. | 30:23–31:00. A discussion concern, not a finalized experiment. |
+| C7 | Retrospective movement-stage classification | Classify full event-defined EEG stage intervals using channel × time-bin features. Compare shrinkage LDA and CNN on matched inputs, with an elapsed-time-since-LED-on control. | Agreed 27 October 2026. Queued after T1. Exact verified markers define labels; event identities are not classifier features. Online detection is deferred. Classifier success is not a prerequisite for C5. |
 
 Working definitions: a run here is a dataset series containing multiple trials.
 `BlockType` identifies the series type; `CurW` and `CurS` identify trial weight
@@ -73,7 +78,7 @@ train stage-specific decoders or cover P2–P12 phase analysis yet.
 
 | ID | Idea | Question or deliverable | Discussion / status |
 | --- | --- | --- | --- |
-| T1 | Optimize the EEG-to-kinematics lag | Sweep a declared prediction horizon/alignment, selecting it on validation data. Compare with a literature-informed hypothesis about delay. | 07:42–10:33. Open. A physiological conduction delay is not automatically the optimal wrist-kinematics lag. |
+| T1 | Optimize the EEG-to-kinematics lag | Sweep a declared prediction horizon/alignment, selecting it on validation data. Compare with a literature-informed hypothesis about delay. | Initial EXP-012 pilot verified 27 October 2026: fixed 256-ms windows and 2/50/100/200-ms gaps. Ridge selected 2 ms; CNN selected 100 ms but test MSE worsened. No adopted improvement; broader timing/robustness questions remain open. A predictive lag is not a physiological conduction delay. |
 | T2 | Vary input-window length | Test whether more or less EEG history changes accuracy and latency. | 13:27–13:40. Open. |
 | T3 | Vary stride and output frequency | Compare the current 64-sample stride with denser sampling, potentially one sample. Distinguish more frequent predictions from a model that explicitly learns trajectory dynamics. | 13:27–13:40; 40:01–41:07; 1:29:14–1:29:49. Open. |
 | T4 | Predict a sequence rather than one point | Use sequence outputs to estimate several future positions or a trajectory segment; consider whether state should persist across windows. | 10:43–12:03; 1:29:33–1:30:00. Open. |
@@ -120,25 +125,16 @@ target kinematic labels were used.
 | E5 | Add condition/phase/trajectory reporting | Extend the current numeric reports and decks with condition coverage, chronological trajectories, stage-specific errors and inference timing. | Multiple meeting requests above. Open reporting features. |
 | E6 | Propagate metadata-label corrections | Replace ambiguous “friction 3” descriptions with explicit series type and surface-code labels in repository documentation/metadata where still needed. Keep the term “run” when it already means a dataset series. | Follow-up chat clarification. Deck corrections complete; repository consistency needs checking. |
 
-## Suggested order, without starting new experiments
+## Agreed next sequence, 27 October 2026
 
-1. C1 and the initial P1 R1/R4/R5 analyses are complete. Establish what
-   the decoder is getting right and whether rest or experimental composition
-   dominates aggregate scores.
-2. The first C2 experiment is complete: weight classification at fixed sandpaper,
-   using runs 1 and 4 for training, 7 for validation, and 8–9 for testing.
-   Neither learned classifier reliably exceeds chance on held-out trials.
-   Retain this result before proposing a separate condition or representation
-   experiment; do not retune against these test labels.
-3. Use the audit to choose C3/C5 or T1 next, changing one factor at a time.
-4. Address P1/P2/P3 before interpreting the frozen transfer result as evidence
-   about shared encoding. Then broaden to P4/P5/P6.
-5. Develop T4/T5/T6 and M1/M2 after the current evaluation and target definitions
-   are established. E1 can be measured in parallel with analyses of saved models.
+The registry is in place before new execution. Proceed one experiment at a time:
 
-The order is a recommendation, not a claim that the meeting fixed every step.
-In particular, it discussed several possible branches rather than one final
-architecture or one mandatory event interval.
+1. **EXP-012 / T1:** ridge versus CNN + ELU at declared input-to-target gaps. Fixed 256-ms windows and common targets; validation-only selection. Historical runs 8–9 remain exploratory evaluation.
+2. **EXP-013 / C7:** retrospective stage classification. Use verified event-defined full-stage intervals, channel × time-bin features, shrinkage LDA versus CNN, and a timing-only baseline. Finalize coarse stage/bin definitions before execution.
+3. **EXP-014 / C5:** compare pooled and stage-specific kinematics regressors and a training-stage × evaluation-stage error matrix, controlling sample availability and stage difficulty. A positive stage classifier is not required.
+4. **EXP-015 / C3:** compare pooled and condition-specific kinematics regressors on matched held-out trials and training budgets. A positive weight classifier is not required.
+
+Review each verified result before finalizing the next protocol. The remaining ideas stay in the registry as proposed work, including calibration/population decoding, window/stride changes and modality extensions. See the [live registry and roadmap](https://docs.google.com/spreadsheets/d/1Q2nJqr66ftuz7CP9dMiYRdE2RGwavmGbMGDkOS7yiWg/edit).
 
 ## Clarifications to retain when planning
 
@@ -151,8 +147,7 @@ architecture or one mandatory event interval.
   next window or a trajectory sequence.
 - Window-to-point prediction is still regression. The relevant distinction is
   independent window predictions versus explicit trajectory/dynamical modeling.
-- The three reduced targets are wrist X/Y/Z, not glove/finger outputs. Their
-  upstream transformation and physical-coordinate interpretation remain open.
+- The three reduced targets are wrist X/Y/Z, not glove/finger outputs. Z is vertical (+ upward); X/Y anatomical orientation and the exact upstream transformation remain unresolved.
 - Experimental weight/surface can vary between trials within one run. Distinguish
   current/previous trial parameters from `BlockType` and from participant identity.
 

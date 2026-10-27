@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-27T12:06:56.835160+00:00",
+  "source_input_and_protocol_hashes_match": true,
+  "train_only_scalers_recomputed": true,
+  "common_targets_and_run_boundaries_checked": true,
+  "validation_metric_sets": 24,
+  "saved_weight_replay_checks": 7,
+  "permitted_test_configurations": 3,
+  "test_metric_subsets_checked": 59,
+  "paired_trial_rows_checked": 136,
+  "validation_only_gap_and_alpha_selection": true,
+  "identical_cnn_initializations_recorded": true,
+  "models_trained_by_verifier": 0
+}

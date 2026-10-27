@@ -1,5 +1,13 @@
 # Pipeline changelog
 
+## 2026-10-27 — Experiment registry and first timing study
+
+- Create a public [Google Sheets experiment registry](https://docs.google.com/spreadsheets/d/1Q2nJqr66ftuz7CP9dMiYRdE2RGwavmGbMGDkOS7yiWg/edit) covering 35 experiments, with idea links, protocols, dependencies, findings and evidence links. Make it the single maintained status/priority record; repository navigation links to it without local CSV or generated status copies.
+- Record the agreed sequence: T1 timing, retrospective stage classification with shrinkage LDA and CNN, C5 stage-specific regression, then C3 condition-specific regression. Register remaining ideas without starting them.
+- Complete EXP-012 on P1: ridge and GPU CNN + ELU at 2/50/100/200-ms gaps, fixed 128-sample windows and common targets. Fit 20 ridge candidates and four CNNs before freezing validation selections.
+- Ridge selects 2 ms. CNN selects 100 ms but its test MSE increases by 13.15% versus the paired 2-ms reference. Retain the negative finding and frozen selections; no test-driven retuning or next-stage training.
+- Verify input/source/protocol hashes, train-only scalers, run boundaries, 24 validation metric sets, seven saved-weight replays, 59 test metric subsets and 136 paired-trial rows. Add synthetic indexing tests.
+
 ## 2026-10-20 — Workspace organization and coordinate-axis audit
 
 - Group experiments into stable numbered families, including original/corrected baseline notebooks, with commands and status in family READMEs.
