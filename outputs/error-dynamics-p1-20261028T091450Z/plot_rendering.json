@@ -1,0 +1,11 @@
+{
+  "operation": "plot-only layout repair and summary figure from verified saved summaries",
+  "source_sha256": "d938ceb06f72ea49c6fa845f0203354b1f32c8d0dfe593f729a42b8e0380a4ab",
+  "replaced_plots": [
+    "within_stage_speed.png",
+    "explanatory_comparison.png",
+    "incremental_dynamics.png"
+  ],
+  "new_summary_plot": "meeting_summary.png",
+  "models_fitted": 0
+}

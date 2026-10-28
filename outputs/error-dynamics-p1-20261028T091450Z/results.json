@@ -1,0 +1,5400 @@
+{
+  "experiment_id": "EXP-036",
+  "status": "complete",
+  "created_at": "2026-10-28T09:13:03.655627+00:00",
+  "participant": "P1",
+  "series": [
+    8,
+    9
+  ],
+  "models": [
+    "training_mean",
+    "ridge",
+    "cnn",
+    "cnn_bilstm",
+    "cnn_elu",
+    "eegnet_regression"
+  ],
+  "lead_model": "cnn_bilstm",
+  "smoothing_windows_samples": [
+    21,
+    41,
+    81
+  ],
+  "primary_window_samples": 41,
+  "sampling_hz": 500,
+  "ridge_alpha": 10,
+  "feature_specs": {
+    "constant": "",
+    "position": "P",
+    "stage": "S",
+    "dynamics": "D",
+    "position_stage": "PS",
+    "position_dynamics": "PD",
+    "stage_dynamics": "SD",
+    "combined": "PSD",
+    "combined_jerk": "PSDJ"
+  },
+  "n_saved_targets_per_model": 3642,
+  "n_eligible_targets": 3641,
+  "n_primary_targets": 2657,
+  "n_primary_trials": 68,
+  "decoder_training_or_inference": false,
+  "explanatory_fit_count": 324,
+  "trial_balanced_metrics": true,
+  "source_hashes": {
+    "outputs/six-model-comparison-p1-gpu-20260930T095506Z/results.json": "fd0fb14b56a3bed1360474648f883c348197980384d4765b02896fb9d04768ef",
+    "outputs/saved-decoder-analysis-p1-20261013T172654Z/results.json": "e189b5fa81aef3c28a6a59921b8d81decf20ed375ec3978426c746a1b49f7802",
+    "outputs/saved-decoder-analysis-p1-20261013T172654Z/verification.json": "f29a549b4a63b84d19a233a94d49b9772d3f145bd4e81eef60810148448727ce",
+    "outputs/saved-decoder-analysis-p1-20261013T172654Z/trial_events.json": "770d3b3b789344a3f99bdc7d14ea6191f713dbad080e1cf39899858303a526c5",
+    "outputs/saved-decoder-analysis-p1-20261013T172654Z/aligned_predictions.csv": "60002c877eeaa3890b49d713f2e88ba9551a1986cd0815abd9b96aef2955da84",
+    "../data/external/way_eeg_clean/kin_P1.mat": "70af5ffb0d99ce1288ed110cf799bf1e82d58b67cc76b717940db6ee08d27b40",
+    "../data/external/way_eeg_clean/session_start_P1.mat": "bbf0b4ab0964a9e10ec9c8435e6f0d0eacc24dbefe245dd459411907bfa8622b",
+    "outputs/six-model-comparison-p1-gpu-20260930T095506Z/training_mean_predictions.npz": "5ee3dfba111910a1e9a4e4713db792d52ae023625be48416d1dde7b823ff0a58",
+    "outputs/six-model-comparison-p1-gpu-20260930T095506Z/ridge_predictions.npz": "4f934f0863def04f4cefe6c72fe7a245e04f5380e57d418682fb1bdfb8286a3f",
+    "outputs/six-model-comparison-p1-gpu-20260930T095506Z/cnn_predictions.npz": "82360fdcf71fd25ddffdb74c06b38b42ab2009f291a93ddfcd910134ea72382b",
+    "outputs/six-model-comparison-p1-gpu-20260930T095506Z/cnn_bilstm_predictions.npz": "a9e53e9076c0f51a7c16f28148299fbc3c0c267bd9d0abc882d25d8a6585e838",
+    "outputs/six-model-comparison-p1-gpu-20260930T095506Z/cnn_elu_predictions.npz": "6e006f68e79969333170160b36f552e7c8320a180d1f01e5c4d8b59c93ee89be",
+    "outputs/six-model-comparison-p1-gpu-20260930T095506Z/eegnet_regression_predictions.npz": "570e797db35ee81fd1c259bb580f20c25471287b20ed8ca362d9aa933c97a90e"
+  },
+  "snapshot_hashes": {
+    "analysis_source.py": "4c5a31096153345a2df998b447b5520a1594fe0f33f7c30e6853f8a3bcc4481e",
+    "feature_source.py": "7cdf2e535f0d23d3818c876b6a21f35f4126c23fc1865be65a38369a3744325d",
+    "declared_protocol.md": "4b8f59c71c7c922ed471bb51deb05743763a20bab52d949403edcd8443d1be23"
+  },
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "sklearn": "1.6.1"
+  },
+  "train_colour_bounds": {
+    "21": [
+      [
+        0.0037841579082058554,
+        0.17049852100032492,
+        9.292130029208094
+      ],
+      [
+        2.3635152857872153,
+        16.97836044681419,
+        927.2587869270047
+      ]
+    ],
+    "41": [
+      [
+        0.0036915578588949866,
+        0.11800859131081691,
+        8.001910574332303
+      ],
+      [
+        2.362317699593826,
+        14.798705077611288,
+        498.9370573936864
+      ]
+    ],
+    "81": [
+      [
+        0.0030834479871513403,
+        0.05025904300229265,
+        2.332511163734418
+      ],
+      [
+        2.358846153923423,
+        12.953460829353563,
+        208.46854848955024
+      ]
+    ]
+  },
+  "anchors_by_axis": [
+    [
+      5,
+      23,
+      6,
+      4,
+      21
+    ],
+    [
+      44,
+      43,
+      3,
+      4,
+      45
+    ],
+    [
+      28,
+      27,
+      29,
+      43,
+      44
+    ]
+  ],
+  "scores": {
+    "21": {
+      "training_mean": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023651662516771647,
+            "mae": 0.12147401191143749,
+            "r2_error_target": -0.002124035516654299,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02355084698752364,
+              "mae": 0.12485163755699932,
+              "r2_error_target": -0.0028462203345587245,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.023752478046019657,
+              "mae": 0.11809638626587567,
+              "r2_error_target": -0.0028219910343574295,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.0004818534626467236,
+            "mae": 0.01227493816446465,
+            "r2_error_target": 0.9795838057399646,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0004902196896372466,
+              "mae": 0.012870330394027428,
+              "r2_error_target": 0.9791253807921757,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.00047348723565620064,
+              "mae": 0.011679545934901869,
+              "r2_error_target": 0.9800095210499659,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.00728500350524743,
+            "mae": 0.04985998529652697,
+            "r2_error_target": 0.6913334482827717,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.00726796392903017,
+              "mae": 0.05043308759538925,
+              "r2_error_target": 0.6905143089071459,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.007302043081464689,
+              "mae": 0.049286882997664705,
+              "r2_error_target": 0.6917100873691715,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.006885693204285897,
+            "mae": 0.05302954802039263,
+            "r2_error_target": 0.7082522779819179,
+            "negative_prediction_fraction": 0.0030109145652992097
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.006788882554880388,
+              "mae": 0.05703339264980978,
+              "r2_error_target": 0.7109146344475954,
+              "negative_prediction_fraction": 0.006060606060606061
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.006982503853691406,
+              "mae": 0.04902570339097548,
+              "r2_error_target": 0.7052009308924594,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.00040437301894020316,
+            "mae": 0.011588337384762023,
+            "r2_error_target": 0.9828666622776706,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0004121500756305566,
+              "mae": 0.011899441742289175,
+              "r2_error_target": 0.9824497545342777,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0003965959622498498,
+              "mae": 0.01127723302723487,
+              "r2_error_target": 0.9832558459067293,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.00026341585958915455,
+            "mae": 0.00886012468722965,
+            "r2_error_target": 0.9888390355627904,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0002627703444903104,
+              "mae": 0.008647927670208987,
+              "r2_error_target": 0.9888106679590879,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0002640613746879986,
+              "mae": 0.009072321704250314,
+              "r2_error_target": 0.9888514136080103,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.001246544352161931,
+            "mae": 0.02417638262518292,
+            "r2_error_target": 0.9471837526958964,
+            "negative_prediction_fraction": 0.0003763643206624012
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0012349950563169784,
+              "mae": 0.024989400322482626,
+              "r2_error_target": 0.9474112279267296,
+              "negative_prediction_fraction": 0.0007575757575757576
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.001258093648006883,
+              "mae": 0.023363364927883212,
+              "r2_error_target": 0.9468836904276874,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.0002643387709517014,
+            "mae": 0.008921726065669591,
+            "r2_error_target": 0.9887999316876017,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.00026102701791305254,
+              "mae": 0.00862618903221243,
+              "r2_error_target": 0.9888849025914872,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.00026765052399035016,
+              "mae": 0.00921726309912675,
+              "r2_error_target": 0.9886998808777188,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.0002715125269431523,
+            "mae": 0.008979363368387408,
+            "r2_error_target": 0.9884959787076002,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.00027022136394148953,
+              "mae": 0.008803294982650471,
+              "r2_error_target": 0.9884933873662407,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.00027280368994481516,
+              "mae": 0.009155431754124341,
+              "r2_error_target": 0.9884823158669197,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        }
+      },
+      "ridge": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.027141773043968098,
+            "mae": 0.13285368093346633,
+            "r2_error_target": -0.049559043769116906,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.029068427258831395,
+              "mae": 0.13687087423937616,
+              "r2_error_target": -0.06245725999052265,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0252151188291048,
+              "mae": 0.1288364876275565,
+              "r2_error_target": -0.07269566265262073,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.022135029946563016,
+            "mae": 0.11803250312073801,
+            "r2_error_target": 0.14404925474540964,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.021458703803997198,
+              "mae": 0.1155986802053933,
+              "r2_error_target": 0.2156797667952116,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.022811356089128834,
+              "mae": 0.1204663260360827,
+              "r2_error_target": 0.029564647231064334,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02470605115735693,
+            "mae": 0.1256368473181809,
+            "r2_error_target": 0.04462912625418458,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024838324893453213,
+              "mae": 0.12490425807953491,
+              "r2_error_target": 0.09215389005832286,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024573777421260642,
+              "mae": 0.12636943655682686,
+              "r2_error_target": -0.04541186711960643,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023756582357967643,
+            "mae": 0.12298631619602864,
+            "r2_error_target": 0.08134461877419497,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024787765886997413,
+              "mae": 0.12451936555303922,
+              "r2_error_target": 0.09400183260397788,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02272539882893788,
+              "mae": 0.12145326683901807,
+              "r2_error_target": 0.03322142080430279,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02113040204795596,
+            "mae": 0.11473614329604472,
+            "r2_error_target": 0.18289772256281067,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02026951025431326,
+              "mae": 0.11095312296690021,
+              "r2_error_target": 0.2591450464660181,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02199129384159867,
+              "mae": 0.11851916362518922,
+              "r2_error_target": 0.06445154274770926,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.021240900554571274,
+            "mae": 0.11531855137727569,
+            "r2_error_target": 0.17862479953920385,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.020624254833839395,
+              "mae": 0.11230190492859797,
+              "r2_error_target": 0.24617905588786182,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.021857546275303157,
+              "mae": 0.11833519782595339,
+              "r2_error_target": 0.07014140029816984,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.022746421912883594,
+            "mae": 0.11956900467553656,
+            "r2_error_target": 0.12040702744876097,
+            "negative_prediction_fraction": 0.0011290929619872036
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.022024153919114206,
+              "mae": 0.11604070967435162,
+              "r2_error_target": 0.19501244363323966,
+              "negative_prediction_fraction": 0.0007575757575757576
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.023468689906652976,
+              "mae": 0.12309729967672152,
+              "r2_error_target": 0.0016005063617718918,
+              "negative_prediction_fraction": 0.0014958863126402393
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02127507633486152,
+            "mae": 0.11560691908030526,
+            "r2_error_target": 0.17730323888716426,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02045090432740556,
+              "mae": 0.11174652811316049,
+              "r2_error_target": 0.2525150541324076,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.022099248342317482,
+              "mae": 0.11946731004745006,
+              "r2_error_target": 0.05985896773468846,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02137716154189055,
+            "mae": 0.1156531058465933,
+            "r2_error_target": 0.1733556540297274,
+            "negative_prediction_fraction": 0.0007527286413248024
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.020570104776803662,
+              "mae": 0.11170862598207063,
+              "r2_error_target": 0.24815825210354414,
+              "negative_prediction_fraction": 0.0015151515151515152
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02218421830697744,
+              "mae": 0.11959758571111595,
+              "r2_error_target": 0.056244195456031765,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        }
+      },
+      "cnn": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.026994661323300858,
+            "mae": 0.1324666612884295,
+            "r2_error_target": -0.047405850391347704,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.029038859511752547,
+              "mae": 0.137126665563471,
+              "r2_error_target": -0.05943297885860055,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024950463134849173,
+              "mae": 0.12780665701338795,
+              "r2_error_target": -0.06985196765997648,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.020036559137854633,
+            "mae": 0.11272725698446859,
+            "r2_error_target": 0.2225718629562351,
+            "negative_prediction_fraction": 0.0011290929619872036
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.01914331753092177,
+              "mae": 0.10973613709270133,
+              "r2_error_target": 0.3015888964643253,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.020929800744787504,
+              "mae": 0.11571837687623591,
+              "r2_error_target": 0.1025501856008929,
+              "negative_prediction_fraction": 0.002243829468960359
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023086462017866183,
+            "mae": 0.12091525536899024,
+            "r2_error_target": 0.10423416346110759,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023198594004726614,
+              "mae": 0.12013134258298527,
+              "r2_error_target": 0.15363909034334178,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.022974330031005748,
+              "mae": 0.1216991681549952,
+              "r2_error_target": 0.014882727567061993,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.022256800967763175,
+            "mae": 0.1189845109033085,
+            "r2_error_target": 0.136425411475382,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023348290114299865,
+              "mae": 0.1207305743534425,
+              "r2_error_target": 0.1481776845596694,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.021165311821226482,
+              "mae": 0.11723844745317451,
+              "r2_error_target": 0.09245169615914639,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.018592712568508057,
+            "mae": 0.10809677475504549,
+            "r2_error_target": 0.2785938046909039,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.017595631470703487,
+              "mae": 0.10347537182878261,
+              "r2_error_target": 0.3580535676216544,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019589793666312624,
+              "mae": 0.11271817768130836,
+              "r2_error_target": 0.16000840598888544,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.01871085482440651,
+            "mae": 0.10851154877006666,
+            "r2_error_target": 0.27400982830666754,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.017968241864850163,
+              "mae": 0.10537910657671062,
+              "r2_error_target": 0.34445951653074547,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019453467783962862,
+              "mae": 0.1116439909634227,
+              "r2_error_target": 0.16585392928384834,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.020093734037817133,
+            "mae": 0.11240778849294328,
+            "r2_error_target": 0.2203534493225522,
+            "negative_prediction_fraction": 0.0011290929619872036
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.01923092659119352,
+              "mae": 0.1084972759955844,
+              "r2_error_target": 0.29839263017634865,
+              "negative_prediction_fraction": 0.0007575757575757576
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02095654148444075,
+              "mae": 0.1163183009903022,
+              "r2_error_target": 0.10140356829042096,
+              "negative_prediction_fraction": 0.0014958863126402393
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.018469396023885597,
+            "mae": 0.10813528441434558,
+            "r2_error_target": 0.2833785459677327,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.017525821045868438,
+              "mae": 0.10384578515290313,
+              "r2_error_target": 0.3606004812257665,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019412971001902757,
+              "mae": 0.11242478367578802,
+              "r2_error_target": 0.16759039252049213,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.01847252045844489,
+            "mae": 0.10789193726003983,
+            "r2_error_target": 0.2832573164032135,
+            "negative_prediction_fraction": 0.0007527286413248024
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.01753299201251605,
+              "mae": 0.10348664229722791,
+              "r2_error_target": 0.36033886080800515,
+              "negative_prediction_fraction": 0.0015151515151515152
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.01941204890437372,
+              "mae": 0.11229723222285178,
+              "r2_error_target": 0.1676299311795737,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        }
+      },
+      "cnn_bilstm": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.0315319555481265,
+            "mae": 0.1183205769918316,
+            "r2_error_target": -0.010506614101976286,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.03251876684259407,
+              "mae": 0.11309889488721646,
+              "r2_error_target": -0.013625635936497016,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.03054514425365894,
+              "mae": 0.12354225909644675,
+              "r2_error_target": -0.014518815573947741,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025205482046429153,
+            "mae": 0.09860332007399131,
+            "r2_error_target": 0.19223829043300122,
+            "negative_prediction_fraction": 0.008656379375235227
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02562377576468767,
+              "mae": 0.0937990035010572,
+              "r2_error_target": 0.20129455922185768,
+              "negative_prediction_fraction": 0.015151515151515152
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02478718832817063,
+              "mae": 0.10340763664692544,
+              "r2_error_target": 0.17672449881811458,
+              "negative_prediction_fraction": 0.002243829468960359
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025578322853620643,
+            "mae": 0.09881390287917427,
+            "r2_error_target": 0.1802898370267707,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.025289055408837354,
+              "mae": 0.09557463524140924,
+              "r2_error_target": 0.21172795404282196,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.025867590298403926,
+              "mae": 0.10205317051693931,
+              "r2_error_target": 0.14084029679626475,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025990409460327227,
+            "mae": 0.09903476333584219,
+            "r2_error_target": 0.16708367095108045,
+            "negative_prediction_fraction": 0.004892736168611215
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.026936370404915914,
+              "mae": 0.0961608606074789,
+              "r2_error_target": 0.16038035163925368,
+              "negative_prediction_fraction": 0.008333333333333333
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02504444851573853,
+              "mae": 0.10190866606420546,
+              "r2_error_target": 0.1681799230053992,
+              "negative_prediction_fraction": 0.0014958863126402393
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.024420528154900836,
+            "mae": 0.09489588806752315,
+            "r2_error_target": 0.2173937584452469,
+            "negative_prediction_fraction": 0.006774557771923222
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02420408179533169,
+              "mae": 0.0919452134955815,
+              "r2_error_target": 0.2455471045132973,
+              "negative_prediction_fraction": 0.013636363636363636
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02463697451446998,
+              "mae": 0.09784656263946478,
+              "r2_error_target": 0.18171366302349157,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.0253700212598404,
+            "mae": 0.09673269728909373,
+            "r2_error_target": 0.18696529164364828,
+            "negative_prediction_fraction": 0.003387278885961611
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.025804312832914556,
+              "mae": 0.09382029341058197,
+              "r2_error_target": 0.19566713178964967,
+              "negative_prediction_fraction": 0.003787878787878788
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024935729686766248,
+              "mae": 0.09964510116760544,
+              "r2_error_target": 0.171790883120159,
+              "negative_prediction_fraction": 0.0029917726252804786
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025090052478832572,
+            "mae": 0.09599977090548166,
+            "r2_error_target": 0.1959374692340511,
+            "negative_prediction_fraction": 0.0041400075272864136
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.025097360590674384,
+              "mae": 0.09271788756879765,
+              "r2_error_target": 0.21770317391836969,
+              "negative_prediction_fraction": 0.006818181818181818
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.025082744366990758,
+              "mae": 0.09928165424216565,
+              "r2_error_target": 0.16690797413748204,
+              "negative_prediction_fraction": 0.0014958863126402393
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.024884913818948865,
+            "mae": 0.09497447072136918,
+            "r2_error_target": 0.20251156110425284,
+            "negative_prediction_fraction": 0.002258185923974407
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024825418649102687,
+              "mae": 0.09270657543154744,
+              "r2_error_target": 0.2261797353082181,
+              "negative_prediction_fraction": 0.003787878787878788
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024944408988795033,
+              "mae": 0.09724236601119095,
+              "r2_error_target": 0.17150261094370012,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025069375713759227,
+            "mae": 0.09552405037384112,
+            "r2_error_target": 0.19660009885855878,
+            "negative_prediction_fraction": 0.004892736168611215
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.025091944524300937,
+              "mae": 0.09402425046665891,
+              "r2_error_target": 0.21787199531767532,
+              "negative_prediction_fraction": 0.00909090909090909
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02504680690321751,
+              "mae": 0.0970238502810233,
+              "r2_error_target": 0.16810159211090514,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        }
+      },
+      "cnn_elu": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.027036948461399764,
+            "mae": 0.1268110285202684,
+            "r2_error_target": -0.04528863136072525,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.03124541529934467,
+              "mae": 0.1284789459539288,
+              "r2_error_target": -0.05261794048105317,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02282848162345485,
+              "mae": 0.12514311108660803,
+              "r2_error_target": -0.07344316923665617,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023256797290453945,
+            "mae": 0.11539728601516616,
+            "r2_error_target": 0.10085763397894054,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02655797953774885,
+              "mae": 0.11724365909060265,
+              "r2_error_target": 0.10529575438386063,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019955615043159035,
+              "mae": 0.11355091293972962,
+              "r2_error_target": 0.06164505334483794,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023721920045884755,
+            "mae": 0.11566646906654968,
+            "r2_error_target": 0.08287529661815729,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.026627322485713804,
+              "mae": 0.116942932301338,
+              "r2_error_target": 0.10295967946296547,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.020816517606055705,
+              "mae": 0.1143900058317614,
+              "r2_error_target": 0.02116360605618972,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023040584074315074,
+            "mae": 0.11321640793664783,
+            "r2_error_target": 0.10921675842312717,
+            "negative_prediction_fraction": 0.001881821603312006
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02635184332829668,
+              "mae": 0.11463952086933289,
+              "r2_error_target": 0.1122402187212147,
+              "negative_prediction_fraction": 0.0030303030303030303
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019729324820333464,
+              "mae": 0.11179329500396278,
+              "r2_error_target": 0.07228569506441573,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.021960800986329347,
+            "mae": 0.11034265457884612,
+            "r2_error_target": 0.15096277823813942,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024455545805816808,
+              "mae": 0.11181287752397273,
+              "r2_error_target": 0.17612404850964303,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019466056166841886,
+              "mae": 0.1088724316337195,
+              "r2_error_target": 0.08466514028666428,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.022098664951986337,
+            "mae": 0.11066772440053521,
+            "r2_error_target": 0.14563275232262984,
+            "negative_prediction_fraction": 0.0015054572826496049
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.025095181349924604,
+              "mae": 0.11239617352078908,
+              "r2_error_target": 0.15457554794894313,
+              "negative_prediction_fraction": 0.0022727272727272726
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019102148554048067,
+              "mae": 0.10893927528028131,
+              "r2_error_target": 0.10177684082067573,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02223808744669388,
+            "mae": 0.11050862221438719,
+            "r2_error_target": 0.14024247135649892,
+            "negative_prediction_fraction": 0.0026345502446368085
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024766935955379456,
+              "mae": 0.11067652745106753,
+              "r2_error_target": 0.16563371401485405,
+              "negative_prediction_fraction": 0.004545454545454545
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019709238938008303,
+              "mae": 0.11034071697770687,
+              "r2_error_target": 0.07323017545236599,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02172956007410403,
+            "mae": 0.10906638733530898,
+            "r2_error_target": 0.15990289575915684,
+            "negative_prediction_fraction": 0.0015054572826496049
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024262496031577787,
+              "mae": 0.11070046461153181,
+              "r2_error_target": 0.18262764764004313,
+              "negative_prediction_fraction": 0.0022727272727272726
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.01919662411663027,
+              "mae": 0.10743231005908614,
+              "r2_error_target": 0.0973344013721642,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.021816901962887898,
+            "mae": 0.10941401840698409,
+            "r2_error_target": 0.15652612846170488,
+            "negative_prediction_fraction": 0.0015054572826496049
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024275881981864696,
+              "mae": 0.1109647520574788,
+              "r2_error_target": 0.1821766921546576,
+              "negative_prediction_fraction": 0.0030303030303030303
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019357921943911095,
+              "mae": 0.1078632847564894,
+              "r2_error_target": 0.0897498386420078,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        }
+      },
+      "eegnet_regression": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.03125688842650539,
+            "mae": 0.14054183030828532,
+            "r2_error_target": -0.06263386741551003,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.03304849867970198,
+              "mae": 0.13425977111297313,
+              "r2_error_target": -0.08029743333620853,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02946527817330882,
+              "mae": 0.1468238895035975,
+              "r2_error_target": -0.0909503774767535,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025576494532226282,
+            "mae": 0.12402795429315348,
+            "r2_error_target": 0.13048129011253962,
+            "negative_prediction_fraction": 0.007903650733910425
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.026687688222726526,
+              "mae": 0.11966722060264094,
+              "r2_error_target": 0.1276262995149039,
+              "negative_prediction_fraction": 0.013636363636363636
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024465300841726045,
+              "mae": 0.12838868798366604,
+              "r2_error_target": 0.09417352073258412,
+              "negative_prediction_fraction": 0.002243829468960359
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02663790679234402,
+            "mae": 0.12557314797915756,
+            "r2_error_target": 0.09439668055381234,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0273322195590921,
+              "mae": 0.1206018400581686,
+              "r2_error_target": 0.10655770105514584,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02594359402559594,
+              "mae": 0.13054445590014652,
+              "r2_error_target": 0.03943979320833224,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.026040276725395096,
+            "mae": 0.12467689276940402,
+            "r2_error_target": 0.11471418435202152,
+            "negative_prediction_fraction": 0.002258185923974407
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.027239114578498706,
+              "mae": 0.11898758960206532,
+              "r2_error_target": 0.10960113950421635,
+              "negative_prediction_fraction": 0.003787878787878788
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024841438872291483,
+              "mae": 0.13036619593674273,
+              "r2_error_target": 0.08024702989767185,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023880813184956204,
+            "mae": 0.11855348076790474,
+            "r2_error_target": 0.18812901253989323,
+            "negative_prediction_fraction": 0.0011290929619872036
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02409686118398411,
+              "mae": 0.11321415756811537,
+              "r2_error_target": 0.21231588942025448,
+              "negative_prediction_fraction": 0.0022727272727272726
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02366476518592829,
+              "mae": 0.12389280396769412,
+              "r2_error_target": 0.12381331136138196,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.024087722229506295,
+            "mae": 0.1182456617187752,
+            "r2_error_target": 0.18109476923283818,
+            "negative_prediction_fraction": 0.0026345502446368085
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024763667308516174,
+              "mae": 0.11317724780342463,
+              "r2_error_target": 0.1905191672197606,
+              "negative_prediction_fraction": 0.003787878787878788
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.023411777150496416,
+              "mae": 0.1233140756341258,
+              "r2_error_target": 0.13318018009169386,
+              "negative_prediction_fraction": 0.0014958863126402393
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02440413149405869,
+            "mae": 0.11888082874848997,
+            "r2_error_target": 0.170337869957084,
+            "negative_prediction_fraction": 0.003387278885961611
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024555669749227117,
+              "mae": 0.11147792080033694,
+              "r2_error_target": 0.1973182424702854,
+              "negative_prediction_fraction": 0.005303030303030303
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024252593238890258,
+              "mae": 0.126283736696643,
+              "r2_error_target": 0.10204900856069787,
+              "negative_prediction_fraction": 0.0014958863126402393
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023388730629032684,
+            "mae": 0.11579100344941974,
+            "r2_error_target": 0.20485823978585627,
+            "negative_prediction_fraction": 0.002258185923974407
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023522147191280537,
+              "mae": 0.11031331178461493,
+              "r2_error_target": 0.23110228142060885,
+              "negative_prediction_fraction": 0.004545454545454545
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.023255314066784834,
+              "mae": 0.12126869511422458,
+              "r2_error_target": 0.13897321755200032,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023486378613090872,
+            "mae": 0.116210747564668,
+            "r2_error_target": 0.20153852179188314,
+            "negative_prediction_fraction": 0.003387278885961611
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023516337625389946,
+              "mae": 0.11061771445659478,
+              "r2_error_target": 0.23129218593582535,
+              "negative_prediction_fraction": 0.006818181818181818
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02345641960079179,
+              "mae": 0.12180378067274122,
+              "r2_error_target": 0.13152729571318,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        }
+      }
+    },
+    "41": {
+      "training_mean": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023651662516771647,
+            "mae": 0.12147401191143749,
+            "r2_error_target": -0.002124035516654299,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02355084698752364,
+              "mae": 0.12485163755699932,
+              "r2_error_target": -0.0028462203345587245,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.023752478046019657,
+              "mae": 0.11809638626587567,
+              "r2_error_target": -0.0028219910343574295,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.0004818534626467236,
+            "mae": 0.01227493816446465,
+            "r2_error_target": 0.9795838057399646,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0004902196896372466,
+              "mae": 0.012870330394027428,
+              "r2_error_target": 0.9791253807921757,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.00047348723565620064,
+              "mae": 0.011679545934901869,
+              "r2_error_target": 0.9800095210499659,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.00728500350524743,
+            "mae": 0.04985998529652697,
+            "r2_error_target": 0.6913334482827717,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.00726796392903017,
+              "mae": 0.05043308759538925,
+              "r2_error_target": 0.6905143089071459,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.007302043081464689,
+              "mae": 0.049286882997664705,
+              "r2_error_target": 0.6917100873691715,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.006680423604053392,
+            "mae": 0.05179871064452469,
+            "r2_error_target": 0.71694957780209,
+            "negative_prediction_fraction": 0.002258185923974407
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0065963193957552235,
+              "mae": 0.05592864758219277,
+              "r2_error_target": 0.7191143920362144,
+              "negative_prediction_fraction": 0.004545454545454545
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0067645278123515595,
+              "mae": 0.047668773706856585,
+              "r2_error_target": 0.7144038093184788,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.00040437301894020316,
+            "mae": 0.011588337384762023,
+            "r2_error_target": 0.9828666622776706,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0004121500756305566,
+              "mae": 0.011899441742289175,
+              "r2_error_target": 0.9824497545342777,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0003965959622498498,
+              "mae": 0.01127723302723487,
+              "r2_error_target": 0.9832558459067293,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.0002481948720770238,
+            "mae": 0.008662831046990171,
+            "r2_error_target": 0.9894839507952561,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0002522249042798309,
+              "mae": 0.00854571334784295,
+              "r2_error_target": 0.9892597157093639,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0002441648398742166,
+              "mae": 0.008779948746137394,
+              "r2_error_target": 0.9896914389147586,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.0011640732573243472,
+            "mae": 0.023243856312038354,
+            "r2_error_target": 0.950678063775023,
+            "negative_prediction_fraction": 0.0003763643206624012
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0011683780164499715,
+              "mae": 0.024063341101664616,
+              "r2_error_target": 0.9502479261854333,
+              "negative_prediction_fraction": 0.0007575757575757576
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0011597684981987226,
+              "mae": 0.022424371522412084,
+              "r2_error_target": 0.9510349466590722,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.0002484024746059894,
+            "mae": 0.00869898179275704,
+            "r2_error_target": 0.9894751546489403,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.00024923787239283356,
+              "mae": 0.008521026828381273,
+              "r2_error_target": 0.9893869100153471,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0002475670768191452,
+              "mae": 0.008876936757132812,
+              "r2_error_target": 0.9895477975641395,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.0002609873506341186,
+            "mae": 0.008838282156589482,
+            "r2_error_target": 0.9889419318049714,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.00025934265054358604,
+              "mae": 0.00860627490961843,
+              "r2_error_target": 0.9889566266127514,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0002626320507246512,
+              "mae": 0.009070289403560538,
+              "r2_error_target": 0.9889117592064771,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        }
+      },
+      "ridge": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.027141773043968098,
+            "mae": 0.13285368093346633,
+            "r2_error_target": -0.049559043769116906,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.029068427258831395,
+              "mae": 0.13687087423937616,
+              "r2_error_target": -0.06245725999052265,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0252151188291048,
+              "mae": 0.1288364876275565,
+              "r2_error_target": -0.07269566265262073,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.022135029946563016,
+            "mae": 0.11803250312073801,
+            "r2_error_target": 0.14404925474540964,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.021458703803997198,
+              "mae": 0.1155986802053933,
+              "r2_error_target": 0.2156797667952116,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.022811356089128834,
+              "mae": 0.1204663260360827,
+              "r2_error_target": 0.029564647231064334,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02470605115735693,
+            "mae": 0.1256368473181809,
+            "r2_error_target": 0.04462912625418458,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024838324893453213,
+              "mae": 0.12490425807953491,
+              "r2_error_target": 0.09215389005832286,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024573777421260642,
+              "mae": 0.12636943655682686,
+              "r2_error_target": -0.04541186711960643,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023740165518579777,
+            "mae": 0.12265424365025972,
+            "r2_error_target": 0.0819794498967501,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024869698124661492,
+              "mae": 0.12439332814613886,
+              "r2_error_target": 0.09100719171892546,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02261063291249806,
+              "mae": 0.12091515915438056,
+              "r2_error_target": 0.03810376546504857,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02113040204795596,
+            "mae": 0.11473614329604472,
+            "r2_error_target": 0.18289772256281067,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02026951025431326,
+              "mae": 0.11095312296690021,
+              "r2_error_target": 0.2591450464660181,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02199129384159867,
+              "mae": 0.11851916362518922,
+              "r2_error_target": 0.06445154274770926,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02136658086858954,
+            "mae": 0.11556513961597345,
+            "r2_error_target": 0.17376480347380574,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.020819287762261187,
+              "mae": 0.11285654033165263,
+              "r2_error_target": 0.23905056046243456,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0219138739749179,
+              "mae": 0.11827373890029425,
+              "r2_error_target": 0.06774512053151682,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02274209636528478,
+            "mae": 0.11942325481366678,
+            "r2_error_target": 0.12057429425164201,
+            "negative_prediction_fraction": 0.0003763643206624012
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.022111748035262103,
+              "mae": 0.11611807804609216,
+              "r2_error_target": 0.19181085987347468,
+              "negative_prediction_fraction": 0.0007575757575757576
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.023372444695307457,
+              "mae": 0.1227284315812414,
+              "r2_error_target": 0.005694947536574291,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.021348362385498358,
+            "mae": 0.11570945780647086,
+            "r2_error_target": 0.1744693032742104,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02060358287696392,
+              "mae": 0.11222624111508529,
+              "r2_error_target": 0.24693462035184177,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.022093141894032792,
+              "mae": 0.11919267449785642,
+              "r2_error_target": 0.06011874682332152,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.021523023644523496,
+            "mae": 0.11608245100506447,
+            "r2_error_target": 0.16771523810282418,
+            "negative_prediction_fraction": 0.0003763643206624012
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02064686501889805,
+              "mae": 0.1123162721519004,
+              "r2_error_target": 0.24535264876746976,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.022399182270148945,
+              "mae": 0.11984862985822853,
+              "r2_error_target": 0.047099249025934764,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        }
+      },
+      "cnn": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.026994661323300858,
+            "mae": 0.1324666612884295,
+            "r2_error_target": -0.047405850391347704,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.029038859511752547,
+              "mae": 0.137126665563471,
+              "r2_error_target": -0.05943297885860055,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024950463134849173,
+              "mae": 0.12780665701338795,
+              "r2_error_target": -0.06985196765997648,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.020036559137854633,
+            "mae": 0.11272725698446859,
+            "r2_error_target": 0.2225718629562351,
+            "negative_prediction_fraction": 0.0011290929619872036
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.01914331753092177,
+              "mae": 0.10973613709270133,
+              "r2_error_target": 0.3015888964643253,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.020929800744787504,
+              "mae": 0.11571837687623591,
+              "r2_error_target": 0.1025501856008929,
+              "negative_prediction_fraction": 0.002243829468960359
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023086462017866183,
+            "mae": 0.12091525536899024,
+            "r2_error_target": 0.10423416346110759,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023198594004726614,
+              "mae": 0.12013134258298527,
+              "r2_error_target": 0.15363909034334178,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.022974330031005748,
+              "mae": 0.1216991681549952,
+              "r2_error_target": 0.014882727567061993,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.022177985953861213,
+            "mae": 0.11873439158464565,
+            "r2_error_target": 0.1394834719441138,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023436185900262547,
+              "mae": 0.12102486575220942,
+              "r2_error_target": 0.14497095757668055,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.020919786007459876,
+              "mae": 0.11644391741708188,
+              "r2_error_target": 0.10297960794779093,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.018592712568508057,
+            "mae": 0.10809677475504549,
+            "r2_error_target": 0.2785938046909039,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.017595631470703487,
+              "mae": 0.10347537182878261,
+              "r2_error_target": 0.3580535676216544,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019589793666312624,
+              "mae": 0.11271817768130836,
+              "r2_error_target": 0.16000840598888544,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.018777321751907685,
+            "mae": 0.10867128965559851,
+            "r2_error_target": 0.2714308795327417,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.018131327366679256,
+              "mae": 0.10573818873627687,
+              "r2_error_target": 0.33850962173747656,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019423316137136118,
+              "mae": 0.11160439057492018,
+              "r2_error_target": 0.16714680302777196,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02002000963600338,
+            "mae": 0.11205046579807221,
+            "r2_error_target": 0.2232139915924296,
+            "negative_prediction_fraction": 0.0015054572826496049
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.01926068195626796,
+              "mae": 0.10864175813952104,
+              "r2_error_target": 0.2973070567210593,
+              "negative_prediction_fraction": 0.0015151515151515152
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.020779337315738798,
+              "mae": 0.11545917345662336,
+              "r2_error_target": 0.10900191336075915,
+              "negative_prediction_fraction": 0.0014958863126402393
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.018501302029764983,
+            "mae": 0.10812589941738834,
+            "r2_error_target": 0.282140577585005,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.017645440195338733,
+              "mae": 0.1041431780749982,
+              "r2_error_target": 0.3562363817403663,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019357163864191226,
+              "mae": 0.11210862075977851,
+              "r2_error_target": 0.16998334914688684,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.01851187252648251,
+            "mae": 0.10816309826645722,
+            "r2_error_target": 0.2817304372253656,
+            "negative_prediction_fraction": 0.0003763643206624012
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.017534301813722713,
+              "mae": 0.10397247218091096,
+              "r2_error_target": 0.3602910749576853,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0194894432392423,
+              "mae": 0.11235372435200346,
+              "r2_error_target": 0.1643113362101185,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        }
+      },
+      "cnn_bilstm": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.0315319555481265,
+            "mae": 0.1183205769918316,
+            "r2_error_target": -0.010506614101976286,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.03251876684259407,
+              "mae": 0.11309889488721646,
+              "r2_error_target": -0.013625635936497016,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.03054514425365894,
+              "mae": 0.12354225909644675,
+              "r2_error_target": -0.014518815573947741,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025205482046429153,
+            "mae": 0.09860332007399131,
+            "r2_error_target": 0.19223829043300122,
+            "negative_prediction_fraction": 0.008656379375235227
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02562377576468767,
+              "mae": 0.0937990035010572,
+              "r2_error_target": 0.20129455922185768,
+              "negative_prediction_fraction": 0.015151515151515152
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02478718832817063,
+              "mae": 0.10340763664692544,
+              "r2_error_target": 0.17672449881811458,
+              "negative_prediction_fraction": 0.002243829468960359
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025578322853620643,
+            "mae": 0.09881390287917427,
+            "r2_error_target": 0.1802898370267707,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.025289055408837354,
+              "mae": 0.09557463524140924,
+              "r2_error_target": 0.21172795404282196,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.025867590298403926,
+              "mae": 0.10205317051693931,
+              "r2_error_target": 0.14084029679626475,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025831356709242567,
+            "mae": 0.09873079455484292,
+            "r2_error_target": 0.17218084472823025,
+            "negative_prediction_fraction": 0.003763643206624012
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.026730126783382706,
+              "mae": 0.09588002873845505,
+              "r2_error_target": 0.16680906472810975,
+              "negative_prediction_fraction": 0.006818181818181818
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024932586635102425,
+              "mae": 0.10158156037123077,
+              "r2_error_target": 0.17189527565550888,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.024420528154900836,
+            "mae": 0.09489588806752315,
+            "r2_error_target": 0.2173937584452469,
+            "negative_prediction_fraction": 0.006774557771923222
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02420408179533169,
+              "mae": 0.0919452134955815,
+              "r2_error_target": 0.2455471045132973,
+              "negative_prediction_fraction": 0.013636363636363636
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02463697451446998,
+              "mae": 0.09784656263946478,
+              "r2_error_target": 0.18171366302349157,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025257806084698485,
+            "mae": 0.09655312516824271,
+            "r2_error_target": 0.19056145860228957,
+            "negative_prediction_fraction": 0.002258185923974407
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.025702336670499037,
+              "mae": 0.09385044635769313,
+              "r2_error_target": 0.1988457779227928,
+              "negative_prediction_fraction": 0.0030303030303030303
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024813275498897926,
+              "mae": 0.0992558039787923,
+              "r2_error_target": 0.1758580460252207,
+              "negative_prediction_fraction": 0.0014958863126402393
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.024868422878165018,
+            "mae": 0.09576922515001174,
+            "r2_error_target": 0.2030400473476578,
+            "negative_prediction_fraction": 0.003763643206624012
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0248153839240068,
+              "mae": 0.09267748447846935,
+              "r2_error_target": 0.22649252252601149,
+              "negative_prediction_fraction": 0.007575757575757576
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024921461832323247,
+              "mae": 0.09886096582155413,
+              "r2_error_target": 0.1722647720849675,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.024714003384346775,
+            "mae": 0.09468673227823794,
+            "r2_error_target": 0.2079887388302223,
+            "negative_prediction_fraction": 0.002258185923974407
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024644278645012212,
+              "mae": 0.09262041422475842,
+              "r2_error_target": 0.2318259565418982,
+              "negative_prediction_fraction": 0.004545454545454545
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024783728123681344,
+              "mae": 0.09675305033171748,
+              "r2_error_target": 0.1768394251884392,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.024866083400662726,
+            "mae": 0.09519753007530685,
+            "r2_error_target": 0.20311502073413235,
+            "negative_prediction_fraction": 0.004516371847948814
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02483017507267282,
+              "mae": 0.09367581589637035,
+              "r2_error_target": 0.2260314752930277,
+              "negative_prediction_fraction": 0.007575757575757576
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024901991728652623,
+              "mae": 0.09671924425424337,
+              "r2_error_target": 0.17291144726027485,
+              "negative_prediction_fraction": 0.0014958863126402393
+            }
+          ]
+        }
+      },
+      "cnn_elu": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.027036948461399764,
+            "mae": 0.1268110285202684,
+            "r2_error_target": -0.04528863136072525,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.03124541529934467,
+              "mae": 0.1284789459539288,
+              "r2_error_target": -0.05261794048105317,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02282848162345485,
+              "mae": 0.12514311108660803,
+              "r2_error_target": -0.07344316923665617,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023256797290453945,
+            "mae": 0.11539728601516616,
+            "r2_error_target": 0.10085763397894054,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02655797953774885,
+              "mae": 0.11724365909060265,
+              "r2_error_target": 0.10529575438386063,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019955615043159035,
+              "mae": 0.11355091293972962,
+              "r2_error_target": 0.06164505334483794,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023721920045884755,
+            "mae": 0.11566646906654968,
+            "r2_error_target": 0.08287529661815729,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.026627322485713804,
+              "mae": 0.116942932301338,
+              "r2_error_target": 0.10295967946296547,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.020816517606055705,
+              "mae": 0.1143900058317614,
+              "r2_error_target": 0.02116360605618972,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02286819137457211,
+            "mae": 0.11298335583334511,
+            "r2_error_target": 0.11588171654250123,
+            "negative_prediction_fraction": 0.0015054572826496049
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.026002336741317023,
+              "mae": 0.11427161058385471,
+              "r2_error_target": 0.12401464707322984,
+              "negative_prediction_fraction": 0.0022727272727272726
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019734046007827195,
+              "mae": 0.11169510108283548,
+              "r2_error_target": 0.07206369490910869,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.021960800986329347,
+            "mae": 0.11034265457884612,
+            "r2_error_target": 0.15096277823813942,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024455545805816808,
+              "mae": 0.11181287752397273,
+              "r2_error_target": 0.17612404850964303,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019466056166841886,
+              "mae": 0.1088724316337195,
+              "r2_error_target": 0.08466514028666428,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.021916130003069224,
+            "mae": 0.11018961252611813,
+            "r2_error_target": 0.15268982487656368,
+            "negative_prediction_fraction": 0.0011290929619872036
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024771596950694374,
+              "mae": 0.11156614200153929,
+              "r2_error_target": 0.16547669106470353,
+              "negative_prediction_fraction": 0.0015151515151515152
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019060663055444065,
+              "mae": 0.10881308305069695,
+              "r2_error_target": 0.10372757612727135,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.021978567833440273,
+            "mae": 0.11010319795755938,
+            "r2_error_target": 0.1502758855095947,
+            "negative_prediction_fraction": 0.001881821603312006
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02430047854662507,
+              "mae": 0.11001020239653886,
+              "r2_error_target": 0.1813480654555747,
+              "negative_prediction_fraction": 0.003787878787878788
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019656657120255477,
+              "mae": 0.11019619351857994,
+              "r2_error_target": 0.0757026829990276,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02154201967082486,
+            "mae": 0.10861471088922357,
+            "r2_error_target": 0.16715348662182017,
+            "negative_prediction_fraction": 0.0007527286413248024
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023925291137185313,
+              "mae": 0.10997426247385848,
+              "r2_error_target": 0.1939876477570197,
+              "negative_prediction_fraction": 0.0015151515151515152
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019158748204464403,
+              "mae": 0.10725515930458866,
+              "r2_error_target": 0.09911540634059302,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02160721791814592,
+            "mae": 0.10889719247090997,
+            "r2_error_target": 0.1646328254308338,
+            "negative_prediction_fraction": 0.0011290929619872036
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023907535985092484,
+              "mae": 0.11028229810206512,
+              "r2_error_target": 0.19458579604373094,
+              "negative_prediction_fraction": 0.0022727272727272726
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019306899851199353,
+              "mae": 0.1075120868397548,
+              "r2_error_target": 0.09214900464021014,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        }
+      },
+      "eegnet_regression": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.03125688842650539,
+            "mae": 0.14054183030828532,
+            "r2_error_target": -0.06263386741551003,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.03304849867970198,
+              "mae": 0.13425977111297313,
+              "r2_error_target": -0.08029743333620853,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02946527817330882,
+              "mae": 0.1468238895035975,
+              "r2_error_target": -0.0909503774767535,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025576494532226282,
+            "mae": 0.12402795429315348,
+            "r2_error_target": 0.13048129011253962,
+            "negative_prediction_fraction": 0.007903650733910425
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.026687688222726526,
+              "mae": 0.11966722060264094,
+              "r2_error_target": 0.1276262995149039,
+              "negative_prediction_fraction": 0.013636363636363636
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024465300841726045,
+              "mae": 0.12838868798366604,
+              "r2_error_target": 0.09417352073258412,
+              "negative_prediction_fraction": 0.002243829468960359
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02663790679234402,
+            "mae": 0.12557314797915756,
+            "r2_error_target": 0.09439668055381234,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0273322195590921,
+              "mae": 0.1206018400581686,
+              "r2_error_target": 0.10655770105514584,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02594359402559594,
+              "mae": 0.13054445590014652,
+              "r2_error_target": 0.03943979320833224,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025905097758229002,
+            "mae": 0.12429485383120664,
+            "r2_error_target": 0.11930983529183581,
+            "negative_prediction_fraction": 0.0026345502446368085
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02702390325720032,
+              "mae": 0.11851593287697187,
+              "r2_error_target": 0.1166360199772084,
+              "negative_prediction_fraction": 0.004545454545454545
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024786292259257686,
+              "mae": 0.1300737747854414,
+              "r2_error_target": 0.08228883035012047,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023880813184956204,
+            "mae": 0.11855348076790474,
+            "r2_error_target": 0.18812901253989323,
+            "negative_prediction_fraction": 0.0011290929619872036
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02409686118398411,
+              "mae": 0.11321415756811537,
+              "r2_error_target": 0.21231588942025448,
+              "negative_prediction_fraction": 0.0022727272727272726
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02366476518592829,
+              "mae": 0.12389280396769412,
+              "r2_error_target": 0.12381331136138196,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023974249687180517,
+            "mae": 0.11782518490354234,
+            "r2_error_target": 0.18495247140881244,
+            "negative_prediction_fraction": 0.001881821603312006
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02458226785083505,
+              "mae": 0.11261161377276052,
+              "r2_error_target": 0.19644879719904496,
+              "negative_prediction_fraction": 0.0015151515151515152
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02336623152352599,
+              "mae": 0.12303875603432413,
+              "r2_error_target": 0.1348665045391857,
+              "negative_prediction_fraction": 0.002243829468960359
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02417212355696527,
+            "mae": 0.11828897242820002,
+            "r2_error_target": 0.17822539503957469,
+            "negative_prediction_fraction": 0.004516371847948814
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02414672796096507,
+              "mae": 0.11065893323229642,
+              "r2_error_target": 0.21068583197941926,
+              "negative_prediction_fraction": 0.00909090909090909
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024197519152965457,
+              "mae": 0.12591901162410366,
+              "r2_error_target": 0.10408812370074338,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023258110988258848,
+            "mae": 0.11528062562690518,
+            "r2_error_target": 0.2092988882644241,
+            "negative_prediction_fraction": 0.0015054572826496049
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023279774540726172,
+              "mae": 0.10947044993306472,
+              "r2_error_target": 0.2390250180883895,
+              "negative_prediction_fraction": 0.0030303030303030303
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02323644743579152,
+              "mae": 0.1210908013207456,
+              "r2_error_target": 0.13967175357405326,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02332015048405077,
+            "mae": 0.11552492663481265,
+            "r2_error_target": 0.20718974456315997,
+            "negative_prediction_fraction": 0.002258185923974407
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023284303945969406,
+              "mae": 0.10979215768599795,
+              "r2_error_target": 0.23887695977850287,
+              "negative_prediction_fraction": 0.004545454545454545
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.023355997022132133,
+              "mae": 0.12125769558362738,
+              "r2_error_target": 0.13524543641599496,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        }
+      }
+    },
+    "81": {
+      "training_mean": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023651662516771647,
+            "mae": 0.12147401191143749,
+            "r2_error_target": -0.002124035516654299,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02355084698752364,
+              "mae": 0.12485163755699932,
+              "r2_error_target": -0.0028462203345587245,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.023752478046019657,
+              "mae": 0.11809638626587567,
+              "r2_error_target": -0.0028219910343574295,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.0004818534626467236,
+            "mae": 0.01227493816446465,
+            "r2_error_target": 0.9795838057399646,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0004902196896372466,
+              "mae": 0.012870330394027428,
+              "r2_error_target": 0.9791253807921757,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.00047348723565620064,
+              "mae": 0.011679545934901869,
+              "r2_error_target": 0.9800095210499659,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.00728500350524743,
+            "mae": 0.04985998529652697,
+            "r2_error_target": 0.6913334482827717,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.00726796392903017,
+              "mae": 0.05043308759538925,
+              "r2_error_target": 0.6905143089071459,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.007302043081464689,
+              "mae": 0.049286882997664705,
+              "r2_error_target": 0.6917100873691715,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.006202880663577621,
+            "mae": 0.049469117261868485,
+            "r2_error_target": 0.7371831346737356,
+            "negative_prediction_fraction": 0.0015054572826496049
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.006132829754604439,
+              "mae": 0.05348443981467234,
+              "r2_error_target": 0.7388507877182263,
+              "negative_prediction_fraction": 0.0030303030303030303
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.006272931572550802,
+              "mae": 0.04545379470906463,
+              "r2_error_target": 0.7351588446047701,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.00040437301894020316,
+            "mae": 0.011588337384762023,
+            "r2_error_target": 0.9828666622776706,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0004121500756305566,
+              "mae": 0.011899441742289175,
+              "r2_error_target": 0.9824497545342777,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0003965959622498498,
+              "mae": 0.01127723302723487,
+              "r2_error_target": 0.9832558459067293,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.00022499540456330733,
+            "mae": 0.008361997888589882,
+            "r2_error_target": 0.9904669152693263,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.00023241871738646083,
+              "mae": 0.008269549488983756,
+              "r2_error_target": 0.9901031061689842,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.00021757209174015383,
+              "mae": 0.00845444628819601,
+              "r2_error_target": 0.9908141761962839,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.001119103042017327,
+            "mae": 0.022730116452144733,
+            "r2_error_target": 0.9525834576816697,
+            "negative_prediction_fraction": 0.0007527286413248024
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0011602641661849994,
+              "mae": 0.023719393143045126,
+              "r2_error_target": 0.9505934315540894,
+              "negative_prediction_fraction": 0.0015151515151515152
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0010779419178496548,
+              "mae": 0.021740839761244347,
+              "r2_error_target": 0.9544896385891606,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.00022557645146214621,
+            "mae": 0.008417814204804377,
+            "r2_error_target": 0.990442296236196,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.00023023667543169786,
+              "mae": 0.00822646261723408,
+              "r2_error_target": 0.9901960222551065,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0002209162274925946,
+              "mae": 0.008609165792374671,
+              "r2_error_target": 0.9906729878593427,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.00022372097379258303,
+            "mae": 0.00835828242749096,
+            "r2_error_target": 0.9905209130678336,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.00022687374788141573,
+              "mae": 0.008069020871414366,
+              "r2_error_target": 0.9903392230149283,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.00022056819970375045,
+              "mae": 0.008647543983567553,
+              "r2_error_target": 0.9906876814807605,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        }
+      },
+      "ridge": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.027141773043968098,
+            "mae": 0.13285368093346633,
+            "r2_error_target": -0.049559043769116906,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.029068427258831395,
+              "mae": 0.13687087423937616,
+              "r2_error_target": -0.06245725999052265,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0252151188291048,
+              "mae": 0.1288364876275565,
+              "r2_error_target": -0.07269566265262073,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.022135029946563016,
+            "mae": 0.11803250312073801,
+            "r2_error_target": 0.14404925474540964,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.021458703803997198,
+              "mae": 0.1155986802053933,
+              "r2_error_target": 0.2156797667952116,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.022811356089128834,
+              "mae": 0.1204663260360827,
+              "r2_error_target": 0.029564647231064334,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02470605115735693,
+            "mae": 0.1256368473181809,
+            "r2_error_target": 0.04462912625418458,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024838324893453213,
+              "mae": 0.12490425807953491,
+              "r2_error_target": 0.09215389005832286,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024573777421260642,
+              "mae": 0.12636943655682686,
+              "r2_error_target": -0.04541186711960643,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02325743669782238,
+            "mae": 0.12122401410351824,
+            "r2_error_target": 0.1006463364959852,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024333847459500676,
+              "mae": 0.1229210883456596,
+              "r2_error_target": 0.1105926486272586,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02218102593614408,
+              "mae": 0.11952693986137687,
+              "r2_error_target": 0.05638000454619441,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02113040204795596,
+            "mae": 0.11473614329604472,
+            "r2_error_target": 0.18289772256281067,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02026951025431326,
+              "mae": 0.11095312296690021,
+              "r2_error_target": 0.2591450464660181,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02199129384159867,
+              "mae": 0.11851916362518922,
+              "r2_error_target": 0.06445154274770926,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02110363333163346,
+            "mae": 0.11472662252606171,
+            "r2_error_target": 0.1839328556862384,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.020634622266750207,
+              "mae": 0.1125035842371932,
+              "r2_error_target": 0.24580012398812479,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.021572644396516714,
+              "mae": 0.11694966081493018,
+              "r2_error_target": 0.08226162910720658,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02254801697545388,
+            "mae": 0.11888549399802756,
+            "r2_error_target": 0.12807924901182788,
+            "negative_prediction_fraction": 0.0003763643206624012
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.022025956339632263,
+              "mae": 0.11586384228573146,
+              "r2_error_target": 0.19494656477615835,
+              "negative_prediction_fraction": 0.0007575757575757576
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0230700776112755,
+              "mae": 0.12190714571032364,
+              "r2_error_target": 0.01855817700490492,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.021193232346169495,
+            "mae": 0.11521345607604377,
+            "r2_error_target": 0.18046810576489924,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.020517115090819955,
+              "mae": 0.11220569326831681,
+              "r2_error_target": 0.2500950365080359,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02186934960151904,
+              "mae": 0.11822121888377077,
+              "r2_error_target": 0.06963926596668146,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.021262042216000542,
+            "mae": 0.1156830812721685,
+            "r2_error_target": 0.17780726186701679,
+            "negative_prediction_fraction": 0.0007527286413248024
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.020578091862291946,
+              "mae": 0.1123494903721887,
+              "r2_error_target": 0.24786632241338125,
+              "negative_prediction_fraction": 0.0007575757575757576
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02194599256970914,
+              "mae": 0.11901667217214831,
+              "r2_error_target": 0.06637873881598466,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        }
+      },
+      "cnn": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.026994661323300858,
+            "mae": 0.1324666612884295,
+            "r2_error_target": -0.047405850391347704,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.029038859511752547,
+              "mae": 0.137126665563471,
+              "r2_error_target": -0.05943297885860055,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024950463134849173,
+              "mae": 0.12780665701338795,
+              "r2_error_target": -0.06985196765997648,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.020036559137854633,
+            "mae": 0.11272725698446859,
+            "r2_error_target": 0.2225718629562351,
+            "negative_prediction_fraction": 0.0011290929619872036
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.01914331753092177,
+              "mae": 0.10973613709270133,
+              "r2_error_target": 0.3015888964643253,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.020929800744787504,
+              "mae": 0.11571837687623591,
+              "r2_error_target": 0.1025501856008929,
+              "negative_prediction_fraction": 0.002243829468960359
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023086462017866183,
+            "mae": 0.12091525536899024,
+            "r2_error_target": 0.10423416346110759,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023198594004726614,
+              "mae": 0.12013134258298527,
+              "r2_error_target": 0.15363909034334178,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.022974330031005748,
+              "mae": 0.1216991681549952,
+              "r2_error_target": 0.014882727567061993,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.021611689137371083,
+            "mae": 0.11728115352210093,
+            "r2_error_target": 0.16145606095147347,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02267278757268499,
+              "mae": 0.11920625969571715,
+              "r2_error_target": 0.17282223609930436,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.020550590702057184,
+              "mae": 0.11535604734848473,
+              "r2_error_target": 0.11881034911684796,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.018592712568508057,
+            "mae": 0.10809677475504549,
+            "r2_error_target": 0.2785938046909039,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.017595631470703487,
+              "mae": 0.10347537182878261,
+              "r2_error_target": 0.3580535676216544,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019589793666312624,
+              "mae": 0.11271817768130836,
+              "r2_error_target": 0.16000840598888544,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.01846351317242862,
+            "mae": 0.10764968208759666,
+            "r2_error_target": 0.2836068034353565,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.01778102856203073,
+              "mae": 0.10486775056759728,
+              "r2_error_target": 0.3512896727566702,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019145997782826517,
+              "mae": 0.11043161360759607,
+              "r2_error_target": 0.17903794851163912,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.019791470999921828,
+            "mae": 0.1114456949494039,
+            "r2_error_target": 0.23208140065548233,
+            "negative_prediction_fraction": 0.0011290929619872036
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.019039122637070013,
+              "mae": 0.10805342946562985,
+              "r2_error_target": 0.305390268440747,
+              "negative_prediction_fraction": 0.0015151515151515152
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02054381936277364,
+              "mae": 0.11483796043317793,
+              "r2_error_target": 0.11910069766136355,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.018318315078021157,
+            "mae": 0.10753422587740236,
+            "r2_error_target": 0.2892405593742311,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.017423544901803846,
+              "mae": 0.10369941633412534,
+              "r2_error_target": 0.3643318509074397,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.01921308525423846,
+              "mae": 0.1113690354206794,
+              "r2_error_target": 0.17616130197776558,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.018351359555657067,
+            "mae": 0.10766662572975448,
+            "r2_error_target": 0.2879584177394663,
+            "negative_prediction_fraction": 0.0003763643206624012
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.01745199863021114,
+              "mae": 0.10363667871782015,
+              "r2_error_target": 0.3632937654332504,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.01925072048110299,
+              "mae": 0.11169657274168882,
+              "r2_error_target": 0.17454753948779778,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        }
+      },
+      "cnn_bilstm": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.0315319555481265,
+            "mae": 0.1183205769918316,
+            "r2_error_target": -0.010506614101976286,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.03251876684259407,
+              "mae": 0.11309889488721646,
+              "r2_error_target": -0.013625635936497016,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.03054514425365894,
+              "mae": 0.12354225909644675,
+              "r2_error_target": -0.014518815573947741,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025205482046429153,
+            "mae": 0.09860332007399131,
+            "r2_error_target": 0.19223829043300122,
+            "negative_prediction_fraction": 0.008656379375235227
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02562377576468767,
+              "mae": 0.0937990035010572,
+              "r2_error_target": 0.20129455922185768,
+              "negative_prediction_fraction": 0.015151515151515152
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02478718832817063,
+              "mae": 0.10340763664692544,
+              "r2_error_target": 0.17672449881811458,
+              "negative_prediction_fraction": 0.002243829468960359
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025578322853620643,
+            "mae": 0.09881390287917427,
+            "r2_error_target": 0.1802898370267707,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.025289055408837354,
+              "mae": 0.09557463524140924,
+              "r2_error_target": 0.21172795404282196,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.025867590298403926,
+              "mae": 0.10205317051693931,
+              "r2_error_target": 0.14084029679626475,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025533749733590745,
+            "mae": 0.09767043833695732,
+            "r2_error_target": 0.1817182746805226,
+            "negative_prediction_fraction": 0.0030109145652992097
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.026535107487033322,
+              "mae": 0.09502101822549222,
+              "r2_error_target": 0.17288791019106597,
+              "negative_prediction_fraction": 0.006060606060606061
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024532391980148175,
+              "mae": 0.1003198584484224,
+              "r2_error_target": 0.18518724127765773,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.024420528154900836,
+            "mae": 0.09489588806752315,
+            "r2_error_target": 0.2173937584452469,
+            "negative_prediction_fraction": 0.006774557771923222
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02420408179533169,
+              "mae": 0.0919452134955815,
+              "r2_error_target": 0.2455471045132973,
+              "negative_prediction_fraction": 0.013636363636363636
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02463697451446998,
+              "mae": 0.09784656263946478,
+              "r2_error_target": 0.18171366302349157,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.024934077584844356,
+            "mae": 0.09546793581388606,
+            "r2_error_target": 0.20093600672622736,
+            "negative_prediction_fraction": 0.001881821603312006
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02552292236208693,
+              "mae": 0.09324774978986934,
+              "r2_error_target": 0.20443820839042426,
+              "negative_prediction_fraction": 0.0030303030303030303
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024345232807601782,
+              "mae": 0.09768812183790279,
+              "r2_error_target": 0.19140349943243207,
+              "negative_prediction_fraction": 0.0007479431563201197
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02447536471806136,
+            "mae": 0.0945979381112966,
+            "r2_error_target": 0.21563640756722235,
+            "negative_prediction_fraction": 0.0041400075272864136
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024518726454725543,
+              "mae": 0.09144656143369297,
+              "r2_error_target": 0.23573947882700075,
+              "negative_prediction_fraction": 0.008333333333333333
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02443200298139717,
+              "mae": 0.09774931478890023,
+              "r2_error_target": 0.18852153648555559,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.024377270657147572,
+            "mae": 0.09372804559348917,
+            "r2_error_target": 0.21878003426700676,
+            "negative_prediction_fraction": 0.001881821603312006
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02442090174945755,
+              "mae": 0.09169837430334954,
+              "r2_error_target": 0.23878872203992885,
+              "negative_prediction_fraction": 0.003787878787878788
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0243336395648376,
+              "mae": 0.0957577168836288,
+              "r2_error_target": 0.19178855451091215,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02444212150489103,
+            "mae": 0.09397149315756605,
+            "r2_error_target": 0.21670175496476485,
+            "negative_prediction_fraction": 0.0026345502446368085
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024415308549924925,
+              "mae": 0.09181865330505963,
+              "r2_error_target": 0.23896306476518092,
+              "negative_prediction_fraction": 0.0030303030303030303
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024468934459857122,
+              "mae": 0.09612433301007245,
+              "r2_error_target": 0.18729490355583556,
+              "negative_prediction_fraction": 0.002243829468960359
+            }
+          ]
+        }
+      },
+      "cnn_elu": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.027036948461399764,
+            "mae": 0.1268110285202684,
+            "r2_error_target": -0.04528863136072525,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.03124541529934467,
+              "mae": 0.1284789459539288,
+              "r2_error_target": -0.05261794048105317,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02282848162345485,
+              "mae": 0.12514311108660803,
+              "r2_error_target": -0.07344316923665617,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023256797290453945,
+            "mae": 0.11539728601516616,
+            "r2_error_target": 0.10085763397894054,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02655797953774885,
+              "mae": 0.11724365909060265,
+              "r2_error_target": 0.10529575438386063,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019955615043159035,
+              "mae": 0.11355091293972962,
+              "r2_error_target": 0.06164505334483794,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023721920045884755,
+            "mae": 0.11566646906654968,
+            "r2_error_target": 0.08287529661815729,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.026627322485713804,
+              "mae": 0.116942932301338,
+              "r2_error_target": 0.10295967946296547,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.020816517606055705,
+              "mae": 0.1143900058317614,
+              "r2_error_target": 0.02116360605618972,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.0227214931171028,
+            "mae": 0.11253628634638102,
+            "r2_error_target": 0.1215532893160346,
+            "negative_prediction_fraction": 0.0007527286413248024
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02573397136662344,
+              "mae": 0.11382154225341871,
+              "r2_error_target": 0.13305553212148546,
+              "negative_prediction_fraction": 0.0015151515151515152
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019709014867582156,
+              "mae": 0.1112510304393433,
+              "r2_error_target": 0.07324071171458191,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.021960800986329347,
+            "mae": 0.11034265457884612,
+            "r2_error_target": 0.15096277823813942,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024455545805816808,
+              "mae": 0.11181287752397273,
+              "r2_error_target": 0.17612404850964303,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019466056166841886,
+              "mae": 0.1088724316337195,
+              "r2_error_target": 0.08466514028666428,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02169356205683794,
+            "mae": 0.10968406369225112,
+            "r2_error_target": 0.1612946326355833,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024498456140735623,
+              "mae": 0.11126070942137219,
+              "r2_error_target": 0.17467845439815932,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.018888667972940257,
+              "mae": 0.10810741796313006,
+              "r2_error_target": 0.11181514627325584,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02174261713933492,
+            "mae": 0.10962387153559586,
+            "r2_error_target": 0.15939809020152262,
+            "negative_prediction_fraction": 0.0007527286413248024
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02395602302189011,
+              "mae": 0.1096711363035916,
+              "r2_error_target": 0.19295233000319412,
+              "negative_prediction_fraction": 0.0015151515151515152
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019529211256779727,
+              "mae": 0.10957660676760009,
+              "r2_error_target": 0.08169545526711186,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.021309738698465586,
+            "mae": 0.10822051004981215,
+            "r2_error_target": 0.17613381441418208,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023596758487011545,
+              "mae": 0.10940256553103103,
+              "r2_error_target": 0.20505549109638954,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019022718909919616,
+              "mae": 0.10703845456859329,
+              "r2_error_target": 0.10551178957158092,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02160322661765163,
+            "mae": 0.10875764151143423,
+            "r2_error_target": 0.16478713504299214,
+            "negative_prediction_fraction": 0.0015054572826496049
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023896413201119873,
+              "mae": 0.10968241014202602,
+              "r2_error_target": 0.194960508360578,
+              "negative_prediction_fraction": 0.0030303030303030303
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.019310040034183393,
+              "mae": 0.10783287288084242,
+              "r2_error_target": 0.09200134663868509,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        }
+      },
+      "eegnet_regression": {
+        "constant": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.03125688842650539,
+            "mae": 0.14054183030828532,
+            "r2_error_target": -0.06263386741551003,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.03304849867970198,
+              "mae": 0.13425977111297313,
+              "r2_error_target": -0.08029743333620853,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02946527817330882,
+              "mae": 0.1468238895035975,
+              "r2_error_target": -0.0909503774767535,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025576494532226282,
+            "mae": 0.12402795429315348,
+            "r2_error_target": 0.13048129011253962,
+            "negative_prediction_fraction": 0.007903650733910425
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.026687688222726526,
+              "mae": 0.11966722060264094,
+              "r2_error_target": 0.1276262995149039,
+              "negative_prediction_fraction": 0.013636363636363636
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024465300841726045,
+              "mae": 0.12838868798366604,
+              "r2_error_target": 0.09417352073258412,
+              "negative_prediction_fraction": 0.002243829468960359
+            }
+          ]
+        },
+        "stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02663790679234402,
+            "mae": 0.12557314797915756,
+            "r2_error_target": 0.09439668055381234,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.0273322195590921,
+              "mae": 0.1206018400581686,
+              "r2_error_target": 0.10655770105514584,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02594359402559594,
+              "mae": 0.13054445590014652,
+              "r2_error_target": 0.03943979320833224,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.025668843013293526,
+            "mae": 0.12376547987757416,
+            "r2_error_target": 0.12734173820809547,
+            "negative_prediction_fraction": 0.0015054572826496049
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02669874847852375,
+              "mae": 0.11792545745611535,
+              "r2_error_target": 0.12726475915975544,
+              "negative_prediction_fraction": 0.0030303030303030303
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024638937548063292,
+              "mae": 0.129605502299033,
+              "r2_error_target": 0.08774463079615602,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_stage": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023880813184956204,
+            "mae": 0.11855348076790474,
+            "r2_error_target": 0.18812901253989323,
+            "negative_prediction_fraction": 0.0011290929619872036
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.02409686118398411,
+              "mae": 0.11321415756811537,
+              "r2_error_target": 0.21231588942025448,
+              "negative_prediction_fraction": 0.0022727272727272726
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.02366476518592829,
+              "mae": 0.12389280396769412,
+              "r2_error_target": 0.12381331136138196,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "position_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.02372287544517293,
+            "mae": 0.11718287705275117,
+            "r2_error_target": 0.1934983886897741,
+            "negative_prediction_fraction": 0.0
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.024342046990352893,
+              "mae": 0.11234020718205644,
+              "r2_error_target": 0.2043011956250006,
+              "negative_prediction_fraction": 0.0
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.023103703899992972,
+              "mae": 0.12202554692344587,
+              "r2_error_target": 0.14458657601812608,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "stage_dynamics": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023920761472139753,
+            "mae": 0.11804528735664827,
+            "r2_error_target": 0.18677089901537225,
+            "negative_prediction_fraction": 0.003763643206624012
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023807684543208682,
+              "mae": 0.11046372923385188,
+              "r2_error_target": 0.22176856640380394,
+              "negative_prediction_fraction": 0.007575757575757576
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.024033838401070835,
+              "mae": 0.12562684547944464,
+              "r2_error_target": 0.11014839494660844,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023062825672257495,
+            "mae": 0.1149417521631671,
+            "r2_error_target": 0.21593796211465432,
+            "negative_prediction_fraction": 0.001881821603312006
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023013037763970737,
+              "mae": 0.10899332369308361,
+              "r2_error_target": 0.24774417529120218,
+              "negative_prediction_fraction": 0.003787878787878788
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.023112613580544252,
+              "mae": 0.12089018063325059,
+              "r2_error_target": 0.144256695563462,
+              "negative_prediction_fraction": 0.0
+            }
+          ]
+        },
+        "combined_jerk": {
+          "combined": {
+            "n": 2657,
+            "trials": 68,
+            "mse": 0.023246799826229094,
+            "mae": 0.11531095072509437,
+            "r2_error_target": 0.20968343146298662,
+            "negative_prediction_fraction": 0.0030109145652992097
+          },
+          "folds": [
+            {
+              "train_series": 8,
+              "eval_series": 9,
+              "n": 1320,
+              "trials": 34,
+              "mse": 0.023167093223540897,
+              "mae": 0.10926436921243371,
+              "r2_error_target": 0.24270837263105616,
+              "negative_prediction_fraction": 0.004545454545454545
+            },
+            {
+              "train_series": 9,
+              "eval_series": 8,
+              "n": 1337,
+              "trials": 34,
+              "mse": 0.0233265064289173,
+              "mae": 0.12135753223775503,
+              "r2_error_target": 0.13633732408155508,
+              "negative_prediction_fraction": 0.0014958863126402393
+            }
+          ]
+        }
+      }
+    }
+  },
+  "primary_contrast": {
+    "description": "combined minus position_stage explanatory MSE; negative favours dynamics",
+    "mean_paired_trial_delta": 0.0002934752294459395,
+    "trials_improved": 34,
+    "mse_reduction_percent": -1.2017562748209571,
+    "intervals": [
+      {
+        "block_trials": 4,
+        "replicates": 5000,
+        "seed": 42,
+        "mean": 0.0002934752294459395,
+        "lower_95": -0.00033197588994630435,
+        "upper_95": 0.0008875804342362909
+      },
+      {
+        "block_trials": 2,
+        "replicates": 2000,
+        "seed": 42,
+        "mean": 0.0002934752294459395,
+        "lower_95": -0.0003166567329825174,
+        "upper_95": 0.0008641318807784629
+      },
+      {
+        "block_trials": 8,
+        "replicates": 2000,
+        "seed": 42,
+        "mean": 0.0002934752294459395,
+        "lower_95": -0.00028886316099037396,
+        "upper_95": 0.000886108882785859
+      }
+    ]
+  },
+  "limits": [
+    "Retrospective use of observed kinematics and familiar P1 test series.",
+    "Explanatory fits train on one series and evaluate on the other; they do not retrain or correct wrist decoders.",
+    "Conditional pointwise trial-block intervals omit fitting/population uncertainty.",
+    "Symmetric derivatives and unknown upstream scaling/filtering do not establish real-time or physical/neural causality.",
+    "Jerk and exact geometric region thresholds are exploratory diagnostics."
+  ],
+  "source_files_unchanged": true
+}

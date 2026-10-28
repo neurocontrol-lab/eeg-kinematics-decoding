@@ -1,0 +1,31 @@
+{
+  "experiment_id": "EXP-036",
+  "sha256": {
+    "analysis_data.npz": "db13afb9082057b303392a20bd60336f98b1e091aa2f2089cebc538f116ccc5f",
+    "analysis_source.py": "4c5a31096153345a2df998b447b5520a1594fe0f33f7c30e6853f8a3bcc4481e",
+    "declared_protocol.md": "4b8f59c71c7c922ed471bb51deb05743763a20bab52d949403edcd8443d1be23",
+    "error_vs_dynamics.png": "43f793d7fad008142849379d82badc6cfe76d902117421d643be10c48843e972",
+    "explanatory_comparison.png": "3697c4e48b8642b06ca2cb70a604bb1f1ff05c89e0a61258d8b64f48f69dba5b",
+    "explanatory_folds.csv": "49c63fc69ffb01ed1b455a236fb6dc778a879620a4489b53b1fa3b331199f99c",
+    "explanatory_trials.csv": "11dd75677f68f5ec8c090611b90feb6ca7ba51244059391e2f92d233dc3307bb",
+    "feature_source.py": "7cdf2e535f0d23d3818c876b6a21f35f4126c23fc1865be65a38369a3744325d",
+    "fitted_explainers.npz": "7e1e06e705d658fadd47267b60f45e8cfa9f8eb850a0bdb9c45686e4416db3e2",
+    "incremental_dynamics.png": "37ed7ea83d4ee082dc866f489cabb48e6746d5d5275401243a689501ce204b88",
+    "meeting_summary.png": "b7ec891b39e4feb1a3189977ae5dc877f8176957b170fbad5f6882f33b2866f0",
+    "plot_rendering.json": "f2900eb77b45db4f568bb476ed7c0725b95dd7c0abe743a1a496b3b3a4c3f56e",
+    "primary_paired_trials.csv": "88a33aae07824f45effcb16562f27090dc267427f46948ca63f52b8c0d9eb6d7",
+    "render_source.py": "d938ceb06f72ea49c6fa845f0203354b1f32c8d0dfe593f729a42b8e0380a4ab",
+    "results.json": "89ccd5791bd1b6054797fa0938c75893e803e3136ebe4e6de509a4a97fa3ff3c",
+    "RESULTS.md": "b0240d2db5b8728e070614d1547a62efd5ff13705dc6f5f92015b32fa2dfec46",
+    "scatter_by_dynamics.png": "fdedaa5993c248c4da8a4b2212a987fdf028d7688a0c61b6e13ac438ad1db413",
+    "scatter_regions.csv": "53194c876682dbdcfa6c81923209646b3b3eefb40f2890c9224d40ec07c4d507",
+    "scatter_regions.png": "8b90a5a3f858745f467eaa4f17860a6dd5cf7f000383251458edab41c9b25248",
+    "scatter_region_trials.csv": "a1223b2e262fe8ce06c00b482655d939fd87c80aa50f56cbb571a05388d4d9ca",
+    "speed_bins.csv": "b1d33a2310b80d52aef727e6a4a23a739068155246b37e84c9d54b689a6710f9",
+    "stage_trial_dynamics.csv": "0b6cb2b5300135a2a33d96fc425081686b8cdb5fabaceafb87b943f44ca06639",
+    "verification.json": "93d335b179e1683d2ee2621db4df5bcb45503f4a60718c45d52cda6f59211348",
+    "verification_source.py": "b2bb2ecff4dacb48c25c46509d4080c3eeb78f482581b6dab6f442acac9d3331",
+    "within_stage_correlations.csv": "58a07d64db8a6d2433b5e21c599065104b33989a9d1a38cd425d9ec3926766e1",
+    "within_stage_speed.png": "04fcf1cde71124e094235456834489484c0bbf0a14921bdef36acecf40100080"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP-036",
+  "status": "passed",
+  "checked_at": "2026-10-28T09:21:00.377538+00:00",
+  "source_models_checked": 6,
+  "saved_prediction_targets_per_model": 3642,
+  "trial_event_assignments_checked": 68,
+  "derivative_values_checked": 98307,
+  "coefficient_replays_and_ridge_stationarity_checks": 324,
+  "weighted_metric_sets_checked": 486,
+  "trial_metric_rows_checked": 11016,
+  "within_stage_correlations_checked": 864,
+  "stage_trial_rows_checked": 9054,
+  "speed_bin_summaries_checked": 816,
+  "scatter_region_summaries_checked": 108,
+  "anchor_and_region_definitions_recomputed": true,
+  "bootstrap_intervals_recomputed": 3,
+  "source_and_protocol_hashes_match": true,
+  "verifier_sha256": "b2bb2ecff4dacb48c25c46509d4080c3eeb78f482581b6dab6f442acac9d3331",
+  "new_models_fitted_by_verifier": 0
+}

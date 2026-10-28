@@ -1,6 +1,6 @@
 # Documentation index
 
-- [Public experiment registry and roadmap](https://docs.google.com/spreadsheets/d/1Q2nJqr66ftuz7CP9dMiYRdE2RGwavmGbMGDkOS7yiWg/edit) — single maintained record of statuses, priorities, findings and run links
+- [Public experiment registry and roadmap](https://docs.google.com/spreadsheets/d/1Q2nJqr66ftuz7CP9dMiYRdE2RGwavmGbMGDkOS7yiWg/edit) â€” single maintained record of statuses, priorities, findings and run links
 - [Project ideas and discussion context](PROJECT_IDEAS.md)
 - Dataset: [target provenance](dataset/KINEMATICS_PROVENANCE.md), [coordinate system](dataset/COORDINATE_SYSTEM.md), [original provenance values](dataset/kinematics_verification.json)
 - Baselines: [original v1](methods/ORIGINAL_BASELINE.md), [corrected v2](methods/PIPELINE_V2_CORRECTED_BASELINE.md)
@@ -10,3 +10,4 @@
 - Navigation: [experiment index](../experiments/README.md), [results](../outputs/README.md), [presentations](../presentations/README.md)
 
 - Timing: [T1 protocol](methods/TIMING_ALIGNMENT.md)
+- Error dynamics: [R6 protocol](methods/ERROR_DYNAMICS.md)
