@@ -24,4 +24,17 @@ class TimingTests(unittest.TestCase):
         self.assertTrue(np.all(ids==2))
         with self.assertRaises(AssertionError):make_windows(np.zeros((1030,1)),np.array([640]),np.array([2]),bounds,100)
 
+    def test_population_long_gaps_share_targets_and_stay_inside_series(self):
+        gaps=(1,25,50,100,250,500)
+        bounds={1:(0,1024),2:(1024,2048)}
+        x=np.arange(2048,dtype=np.float32)[:,None]
+        targets,ids=matched_targets(bounds,[1,2],gaps=gaps)
+        np.testing.assert_array_equal(targets,[640,704,768,832,896,960,1664,1728,1792,1856,1920,1984])
+        for gap in gaps:
+            windows=make_windows(x,targets,ids,bounds,gap)
+            np.testing.assert_array_equal(windows[:,0,0],targets-gap-127)
+            np.testing.assert_array_equal(windows[:,-1,0],targets-gap)
+        short,_=matched_targets({1:(0,627)},[1],gaps=gaps)
+        self.assertEqual(len(short),0)
+
 if __name__=='__main__':unittest.main()

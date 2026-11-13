@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "participants": 12,
+  "checked_alignment_series": 24,
+  "trial_targets": 36811,
+  "trials": 804,
+  "seed_level_error_model_fits": 2592,
+  "participant_metric_sets": 648
+}

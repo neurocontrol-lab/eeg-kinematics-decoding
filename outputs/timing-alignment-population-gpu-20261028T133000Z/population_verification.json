@@ -1,0 +1,13 @@
+{
+  "experiment_id": "EXP-042",
+  "status": "passed",
+  "checked_at": "2026-10-28T17:29:28.086439+00:00",
+  "participant_model_comparisons": 24,
+  "saved_prediction_array_reads": 96,
+  "population_bootstrap_intervals_recomputed": 4,
+  "candidate_csv_rows": 576,
+  "seed_csv_rows": 48,
+  "participant_csv_rows": 24,
+  "models_fitted": 0,
+  "verifier_sha256": "326cb7a4e96110112f3c278b5dae82cd90e317f3f758ab40db9b6cfee3a6e45d"
+}

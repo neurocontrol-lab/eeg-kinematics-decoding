@@ -1,0 +1,17 @@
+{
+  "interruption": "WSL memory exhaustion followed by WSL restart while two separate training jobs were active.",
+  "retained_completed_participants": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P7"
+  ],
+  "resume": "User chose T2 to finish before the separate T1 job; resumed with unchanged source/protocol and existing fit checkpoints.",
+  "test_evaluations_before_resume": 0,
+  "models_discarded_or_reselected": 0,
+  "additional_interruption": "WSL restarted again after P8 256-ms fitting completed. No new out-of-memory diagnosis was established for this restart. Resumed the same run from P8 512 ms; saved completed fits were retained.",
+  "further_restart_and_resume": "A third WSL restart interrupted progress after P8 512-ms fitting completed. User confirmed other WSL activity is paused; resumed at P8 1024 ms with the same protocol and saved fits."
+}

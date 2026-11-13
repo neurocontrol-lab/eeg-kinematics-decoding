@@ -1,0 +1,18 @@
+{
+  "experiment_id": "EXP-018",
+  "status": "passed",
+  "checked_at": "2026-10-28T14:25:39.589622+00:00",
+  "participants": 12,
+  "validation_metric_sets": 216,
+  "total_metric_sets": 432,
+  "saved_weight_replays": 288,
+  "independently_built_windows": 220890,
+  "participant_contrasts": 4,
+  "participant_effect_rows": 48,
+  "train_only_scalers_and_common_targets_recomputed": true,
+  "frozen_validation_selections_checked": true,
+  "source_input_and_protocol_hashes_checked": true,
+  "macro_group_checks": 8,
+  "models_fitted_by_verifier": 0,
+  "verifier_sha256": "83b811990a92e215b603e704cde9b6b7558434d65b8cd9e2d9dc214fc3cb4d78"
+}

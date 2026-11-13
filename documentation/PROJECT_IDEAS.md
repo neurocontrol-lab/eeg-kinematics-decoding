@@ -90,7 +90,7 @@ train stage-specific decoders or cover P2–P12 phase analysis yet.
 | ID | Idea | Question or deliverable | Discussion / status |
 | --- | --- | --- | --- |
 | T1 | Optimize the EEG-to-kinematics lag | Sweep a declared prediction horizon/alignment, selecting it on validation data. Compare with a literature-informed hypothesis about delay. | Initial EXP-012 pilot verified 27 October 2026: fixed 256-ms windows and 2/50/100/200-ms gaps. Ridge selected 2 ms; CNN selected 100 ms but test MSE worsened. No adopted improvement; broader timing/robustness questions remain open. A predictive lag is not a physiological conduction delay. |
-| T2 | Vary input-window length | Test whether more or less EEG history changes accuracy and latency. | Open. |
+| T2 | Vary EEG history with fixed temporal bins | Compare 256/512/1,024-ms histories represented by 128 channel-wise mean bins, with matched target timestamps and a fixed 2-ms end gap. Repeat separate ridge and CNN models for P1–P12 and summarize paired participant effects. | EXP-018 implements the user-requested history-plus-averaging comparison. Equal input dimensions do not isolate context from smoothing or temporal resolution; full-resolution controls remain future work. [Declared protocol](methods/HISTORY_DURATION.md). Live progress is in the shared registry. |
 | T3 | Vary stride and output frequency | Compare the current 64-sample stride with denser sampling, potentially one sample. Distinguish more frequent predictions from a model that explicitly learns trajectory dynamics. | Open. |
 | T4 | Predict a sequence rather than one point | Use sequence outputs to estimate several future positions or a trajectory segment; consider whether state should persist across windows. | Open. |
 | T5 | Combine EEG with past kinematics | Compare a kinematics-only autoregressive reference with a decoder that also receives EEG. Determine what extra information EEG contributes. | Open. |
@@ -187,10 +187,10 @@ reserved runs/participants.
 
 ## Sources
 
-- Meeting transcript: `C:/Users/satya/Music/Meeting Notes/transcripts/nasuto_2nd_biweekly.mkv/transcript.txt`.
+- Second biweekly meeting transcript (local meeting notes).
   Automatic transcription contains technical-term errors; consult the source
   when checking the original discussion.
-- Third biweekly transcript: `C:/Users/satya/Music/Meeting Notes/transcripts/nasuto_3rd_biweekly.mkv/transcript.txt`.
+- Third biweekly meeting transcript (local meeting notes).
   M3 references concern this source. Review date is 28 October 2026; the file
   modification date is not used to infer the meeting date. Methodological
   controls and suggested algorithms above are our planning interpretations.

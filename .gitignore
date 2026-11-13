@@ -50,6 +50,8 @@ Thumbs.db
 *.npz
 /outputs/saved-decoder-analysis-*/aligned_predictions.csv
 training.log
+/outputs/timing-alignment-population-*/supervisor.log
+/outputs/timing-decoder-preferences-*/heldout/evaluation.log
 source_notebook.ipynb
 gpu_executed.ipynb
 gpu_environment.txt

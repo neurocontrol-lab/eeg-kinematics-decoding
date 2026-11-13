@@ -1,0 +1,110 @@
+{
+  "ridge_position": {
+    "mean_skill": 0.2304874462010216,
+    "interval": [
+      0.06826567719419668,
+      0.34586242853635013
+    ],
+    "beat_training_mean": 11,
+    "axis_r2": [
+      0.06456187838246397,
+      -0.01529848677084969,
+      0.09677793492353519
+    ],
+    "mean_test_mse": 0.8969900718722239,
+    "mean_train_mean_baseline_mse": 1.1777688539771887,
+    "mean_skill_by_series": [
+      0.1771712125827829,
+      0.2851798849256002
+    ]
+  },
+  "ridge_velocity": {
+    "mean_skill": 0.07951784346386463,
+    "interval": [
+      0.05223712078018507,
+      0.11154225375012501
+    ],
+    "beat_training_mean": 12,
+    "axis_r2": [
+      0.09607601296809824,
+      0.11657483432064837,
+      0.03915839350202744
+    ],
+    "mean_test_mse": 2.2157740100949392,
+    "mean_train_mean_baseline_mse": 2.3580552284641163,
+    "mean_skill_by_series": [
+      0.1000899095008807,
+      0.07093519670743362
+    ],
+    "zero_velocity_comparison": {
+      "mean_skill": 0.07951392685901552,
+      "interval": [
+        0.052232208996702945,
+        0.11154150230222269
+      ],
+      "count_positive": 12
+    }
+  },
+  "ridge_velocity_minus_position": {
+    "mean_delta": -0.15096960273715698,
+    "interval": [
+      -0.24319886752554518,
+      -0.009839112911517033
+    ],
+    "velocity_higher_skill": 1
+  },
+  "cnn_elu_position": {
+    "mean_skill": 0.3624750507287046,
+    "interval": [
+      0.19779686977902933,
+      0.5013321616016039
+    ],
+    "beat_training_mean": 10,
+    "axis_r2": [
+      0.21991735071472943,
+      0.16329716970126898,
+      0.25965172263938646
+    ],
+    "mean_test_mse": 0.7389341916604916,
+    "mean_train_mean_baseline_mse": 1.1777688539771887,
+    "mean_skill_by_series": [
+      0.33892717140813167,
+      0.3865919355864769
+    ]
+  },
+  "cnn_elu_velocity": {
+    "mean_skill": 0.08864409471646305,
+    "interval": [
+      0.04627759149932245,
+      0.14201985603991957
+    ],
+    "beat_training_mean": 11,
+    "axis_r2": [
+      0.10781444998660471,
+      0.12994323147647951,
+      0.03895223968265335
+    ],
+    "mean_test_mse": 2.2071780430458365,
+    "mean_train_mean_baseline_mse": 2.3580552284641163,
+    "mean_skill_by_series": [
+      0.10910904392524612,
+      0.07671245957694535
+    ],
+    "zero_velocity_comparison": {
+      "mean_skill": 0.08864013866091276,
+      "interval": [
+        0.046268396388964364,
+        0.14202011036661452
+      ],
+      "count_positive": 11
+    }
+  },
+  "cnn_elu_velocity_minus_position": {
+    "mean_delta": -0.27383095601224156,
+    "interval": [
+      -0.3825055614117657,
+      -0.13722471637963396
+    ],
+    "velocity_higher_skill": 2
+  }
+}

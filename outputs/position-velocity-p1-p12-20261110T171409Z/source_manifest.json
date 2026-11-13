@@ -1,0 +1,12 @@
+{
+  "runner_source.py": "2ac781d0d76536aa8467d5b5359dcbe64980defc3466f12a993811b5cebb2484",
+  "report_source.py": "124eaa75f19fc269eeb4f7811ed652e011283081d7d64f2f92c5b6f19d161e46",
+  "declared_protocol.md": "7b0832af02aa362b1e502e1fada213ccb9d6dbf2082a97f05c8b19ca88f32e56",
+  "t1_runner_source.py": "32f443ff31ca9195393536d8116e5c2d70761b1962268664475ce2fad2681e54",
+  "cnn_reference_source.py": "59ca311a29f463d83ba2261afc634891af78bdf5fc442ab07d924c401e6bbc79",
+  "window_reference_source.py": "d2dd1d44edafcf7adef67062d2cf8fb682dfdcec3e6fbf54603e357fe424a528",
+  "paths_source.py": "c29d73ce2505ca4d8b4758cf19351fe24499328761aedbcb22611bb3c7792663",
+  "t1_verification.json": "a8ebb8b2ea2157e7f7be4ecf81eb89b6c57e0cb2f6d4c68b0ce3d74b47e927bf",
+  "t1_population_verification.json": "39abae11e5a8c5611d892b159b0b97600af1b37f2874114c9406667833ae6ae7",
+  "t1_results.json": "9f9feb8f27396886ea35bff025674998a2f603a6843a5f2571789191948b335e"
+}

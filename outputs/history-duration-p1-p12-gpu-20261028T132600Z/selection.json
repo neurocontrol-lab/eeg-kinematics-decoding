@@ -1,0 +1,54 @@
+{
+  "frozen_at": "2026-10-28T14:20:57.461586+00:00",
+  "models": {
+    "P1": {
+      "ridge": 256,
+      "cnn_elu": 512
+    },
+    "P2": {
+      "ridge": 512,
+      "cnn_elu": 512
+    },
+    "P3": {
+      "ridge": 512,
+      "cnn_elu": 512
+    },
+    "P4": {
+      "ridge": 512,
+      "cnn_elu": 512
+    },
+    "P5": {
+      "ridge": 256,
+      "cnn_elu": 512
+    },
+    "P6": {
+      "ridge": 512,
+      "cnn_elu": 256
+    },
+    "P7": {
+      "ridge": 256,
+      "cnn_elu": 512
+    },
+    "P8": {
+      "ridge": 512,
+      "cnn_elu": 512
+    },
+    "P9": {
+      "ridge": 512,
+      "cnn_elu": 512
+    },
+    "P10": {
+      "ridge": 256,
+      "cnn_elu": 512
+    },
+    "P11": {
+      "ridge": 512,
+      "cnn_elu": 512
+    },
+    "P12": {
+      "ridge": 512,
+      "cnn_elu": 128
+    }
+  },
+  "scope": "All 12 fitting phases complete before any test prediction; every history test is predeclared."
+}

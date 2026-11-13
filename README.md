@@ -2,7 +2,7 @@
 
 Research on decoding **wrist X/Y/Z position from 32-channel EEG** using [WAY-EEG-GAL](https://doi.org/10.1038/sdata.2014.47). The project preserves the original fork as a reference, corrects its evaluation pipeline, compares model variants, and investigates participant transfer, movement-stage errors and experimental conditions.
 
-Model training so far centres on **P1**. Frozen-model transfer and dataset audits also cover **P2–P12**. Most model comparisons use one seed; the completed experiments do not establish population-level generalization.
+The six-model references and initial stage analyses use **P1**. Timing, history-duration, and position-versus-velocity experiments train separate models for **P1–P12**. The main timing comparison repeats CNN + ELU training across three seeds. Frozen-model transfer and dataset audits also cover P2–P12. These within-participant studies do not establish performance on unseen participants.
 
 ## Experiment status
 

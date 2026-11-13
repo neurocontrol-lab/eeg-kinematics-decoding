@@ -9,5 +9,6 @@
 - Reproducibility: [layout and paths](reproducibility/PROJECT_LAYOUT.md), [restructure checks](reproducibility/RESTRUCTURE_VERIFICATION.md)
 - Navigation: [experiment index](../experiments/README.md), [results](../outputs/README.md), [presentations](../presentations/README.md)
 
-- Timing: [T1 protocol](methods/TIMING_ALIGNMENT.md)
+- EEG history: [T2 fixed-bin duration protocol](methods/HISTORY_DURATION.md)
+- Timing: [T1 P1 protocol](methods/TIMING_ALIGNMENT.md), [population extension](methods/POPULATION_TIMING_ALIGNMENT.md)
 - Error dynamics: [R6 protocol](methods/ERROR_DYNAMICS.md)

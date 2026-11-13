@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP-042",
+  "status": "passed",
+  "checked_at": "2026-10-28T17:27:22.244661+00:00",
+  "participants_checked": 12,
+  "input_files_hashed": 36,
+  "validation_metric_sets_checked": 576,
+  "ridge_validation_weight_replays": 360,
+  "cnn_validation_weight_replays": 216,
+  "test_weight_replays": 81,
+  "test_metric_sets_checked": 243,
+  "ridge_axis_fits_at_iteration_cap": 0,
+  "all_six_gaps_both_models_checked": true,
+  "train_only_scalers_recomputed": true,
+  "global_validation_selection_recomputed": true,
+  "permitted_test_files_only": true,
+  "models_trained_by_verifier": 0,
+  "verifier_sha256": "172913b9d51b5e1a6cc3695286387b841832fd0ba16e7b078e293877e7584b07"
+}

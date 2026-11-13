@@ -1,0 +1,66 @@
+{
+  "frozen_at": "2026-11-10T17:25:45.830861+00:00",
+  "participants": {
+    "P1": {
+      "velocity_alpha": 1.0,
+      "fits_sha256": "8ddb5c6610c405d0b7efa58aa44beb46d3789abe73d49061000cbd9e50cf81e0",
+      "position_alpha": 1.0
+    },
+    "P2": {
+      "velocity_alpha": 10000.0,
+      "fits_sha256": "c670a2710f6240d95467862c82d96de82a5b1f50b1b14468ebbe9ff1cb7f1a4a",
+      "position_alpha": 10000.0
+    },
+    "P3": {
+      "velocity_alpha": 1000.0,
+      "fits_sha256": "def278cf7b356afc95760c00a514e1ce046d81d1d539f91a92709ce6f0c8dd1f",
+      "position_alpha": 10000.0
+    },
+    "P4": {
+      "velocity_alpha": 1000.0,
+      "fits_sha256": "909eeae961b75c8a9f8fece37ddd7b35c721a25f2c66670a5be2e74818962599",
+      "position_alpha": 10000.0
+    },
+    "P5": {
+      "velocity_alpha": 1000.0,
+      "fits_sha256": "9c4d18e1a66ecb8cd85d7de7ee1c72d03447562e9dc42b76b8780460b796a32d",
+      "position_alpha": 1000.0
+    },
+    "P6": {
+      "velocity_alpha": 10000.0,
+      "fits_sha256": "e403a093f4ffc39ad07e6a0aba2a07b1eb47055ee63c79fa0d4fff366031920c",
+      "position_alpha": 10000.0
+    },
+    "P7": {
+      "velocity_alpha": 1000.0,
+      "fits_sha256": "af32e6202f350228ad8f31e7b258bacc6172b894d25258ec3d57a6928acf5352",
+      "position_alpha": 10000.0
+    },
+    "P8": {
+      "velocity_alpha": 10000.0,
+      "fits_sha256": "4e6412ce0d0e2ac65bc86847105f5f9d9daa7606053df304eb56f6e00f6ac97c",
+      "position_alpha": 10000.0
+    },
+    "P9": {
+      "velocity_alpha": 10000.0,
+      "fits_sha256": "4485cae78733164970184bbf708376bffa7330f8874e2fb48b8a85233a8f7564",
+      "position_alpha": 10000.0
+    },
+    "P10": {
+      "velocity_alpha": 1000.0,
+      "fits_sha256": "ca40dbac5fc2ef241868200e0e587a720c8aac759890ace75abd907311032c42",
+      "position_alpha": 10000.0
+    },
+    "P11": {
+      "velocity_alpha": 10000.0,
+      "fits_sha256": "c895e5c9bf720bf6ca4750ec16ed5b7744ea3ac9b66e32b8b99cce0e5ca14f4b",
+      "position_alpha": 10000.0
+    },
+    "P12": {
+      "velocity_alpha": 10000.0,
+      "fits_sha256": "48bcec46eaa6d25836552c2b5277cc42d8007e0cf3ed69685c0152aa7971380b",
+      "position_alpha": 10000.0
+    }
+  },
+  "cnn_seed": 42
+}

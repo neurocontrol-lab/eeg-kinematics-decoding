@@ -1,0 +1,8 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "numpy": "2.0.2",
+  "scipy": "1.13.1",
+  "sklearn": "1.6.1",
+  "tensorflow": "2.20.0",
+  "execution_environment": "Existing WSL Ubuntu eeg-tf-gpu environment; CNN GPU, ridge CPU"
+}

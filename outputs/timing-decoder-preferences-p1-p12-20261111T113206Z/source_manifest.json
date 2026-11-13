@@ -1,0 +1,12 @@
+{
+  "sources": {
+    "runner_source.py": "44d16ee5ed6b3ea9449d4cc4578e33d8342071a32926d66854a9b8dc5e61d93e",
+    "declared_protocol.md": "9b2f2b072a0e2dac390e8685ee312a0ba60d11f3e37cd7eb2a14f20aff2d4943",
+    "t1_population_runner.py": "32f443ff31ca9195393536d8116e5c2d70761b1962268664475ce2fad2681e54",
+    "t1_pilot_runner.py": "59ca311a29f463d83ba2261afc634891af78bdf5fc442ab07d924c401e6bbc79",
+    "timing_alignment_source.py": "d2dd1d44edafcf7adef67062d2cf8fb682dfdcec3e6fbf54603e357fe424a528",
+    "six_model_source.py": "02ee6207d51c957fc8c30475e534ef08026908fe87dc755015da290d642fddd4",
+    "corrected_baseline_v2.ipynb": "37f28a4bbe78cadd8e56f91c3b53ad1557ef5954da23510592b397ac99e3d6d0"
+  },
+  "reference_results_sha256": "9f9feb8f27396886ea35bff025674998a2f603a6843a5f2571789191948b335e"
+}

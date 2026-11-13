@@ -1,5 +1,35 @@
 # Published pipeline results
 
+## T1 — Timing preferences and held-out comparisons across decoders
+
+[Validation gap preferences](timing-decoder-preferences-p1-p12-20261111T113206Z/RESULTS.md) · [Held-out summary](timing-decoder-preferences-p1-p12-20261111T113206Z/heldout/population_summary.json) · [Held-out verification](timing-decoder-preferences-p1-p12-20261111T113206Z/heldout/verification.json)
+
+The validation analysis compares four decoder families across six end gaps. A separate held-out analysis compares validation-selected gaps with the matched 2-ms reference. For the added decoders, EEGNet regression has lower mean test MSE with the selected gap; the CNN–BiLSTM paired interval spans zero. Both added neural decoders use one seed.
+
+## R6 — Movement dynamics and error across P1–P12
+
+[Error models](r6-population-error-models-20261111/RESULTS.md) · [Verification](r6-population-error-models-20261111/verification.json) · [Timing curves and scatter follow-up](t1-r6-followup-20261110/RESULTS.md)
+
+Adding velocity and acceleration to position and stage did not improve average held-out error explanation for ridge or CNN + ELU under the primary setup. The scatter follow-up describes movement composition within error regions; it does not establish a causal explanation or an improved wrist decoder.
+
+## T7 — Wrist position and velocity across P1–P12
+
+[Results and paired plot](position-velocity-p1-p12-20261110T171409Z/RESULTS.md) · [Protocol](../documentation/methods/POSITION_VELOCITY.md) · [Verification](position-velocity-p1-p12-20261110T171409Z/verification.json)
+
+Separate participant models use identical EEG windows and target timestamps for position and velocity. Mean test skill relative to each target’s training mean is 0.230 / 0.080 for ridge and 0.362 / 0.089 for CNN + ELU. The report also gives per-axis R², which uses a different reference.
+
+## Population T1: timing across P1–P12
+
+[Report and plots](timing-alignment-population-gpu-20261028T133000Z/RESULTS.md) · [Protocol](../documentation/methods/POPULATION_TIMING_ALIGNMENT.md) · [Saved-weight verification](timing-alignment-population-gpu-20261028T133000Z/verification.json) · [Population-summary verification](timing-alignment-population-gpu-20261028T133000Z/population_verification.json)
+
+Both ridge and CNN + ELU cover six end gaps with fixed 256-ms inputs. CNN mean test MSE falls 3.42%, with 9/12 participants improving; ridge's paired interval spans zero. CNN seeds are averaged within participant before equal-participant reporting. This is within-participant replication across the dataset, with exploratory participant-bootstrap intervals.
+
+## T2: fixed-bin EEG histories across P1–P12
+
+[Results](history-duration-p1-p12-gpu-20261028T132600Z/RESULTS.md) · [Group summary](history-duration-p1-p12-gpu-20261028T132600Z/group_summary.json) · [Verification](history-duration-p1-p12-gpu-20261028T132600Z/verification.json)
+
+Separate ridge and CNN + ELU models compare 256/512/1,024-ms histories at fixed 128 × 32 input dimensions and a 2-ms end gap. Equal-weight participant effects are reported; this is not a pooled population model. Context and averaging change together.
+
 ## R6: movement dynamics and decoder error
 
 [Report and plots](error-dynamics-p1-20261028T091450Z/RESULTS.md) · [Protocol](../documentation/methods/ERROR_DYNAMICS.md) · [Verification](error-dynamics-p1-20261028T091450Z/verification.json)

@@ -14,5 +14,7 @@ Stable numbers identify experiment families; C1–C7 and R1–R5 remain backlog 
 | [05_condition_decoding](05_condition_decoding/README.md) | Test whether EEG distinguishes experimental conditions. Weight classification is the first controlled task. |
 | [06_inference_benchmark](06_inference_benchmark/README.md) | Measure warmed, synchronized CPU/GPU model-call latency. |
 | [07_timing_alignment](07_timing_alignment/README.md) | Compare input-to-target gaps with matched target timestamps and fixed model/window settings. |
+| [08_history_duration](08_history_duration/README.md) | Compare 256/512/1,024-ms EEG histories as 128 temporal bins across independently trained P1–P12 decoders. |
+| [09_movement_targets](09_movement_targets/README.md) | Compare wrist position and signed velocity decoding from matched EEG windows across P1–P12. |
 
 Shared path utilities live in `src/eeg_kinematics/`. Numerical models and preprocessing have not been extracted merely to create empty modules. Saved executions stay under [outputs](../outputs/README.md).

@@ -1,0 +1,9 @@
+{
+  "source_sha256": "a23edad1247ce3872b8b257b662bed3287790fd54b9e85bbf6a19a6619a54a23",
+  "results_sha256": "ddcee69c0b5a83943d6cc9d75c69332aa8d61e41935b94314a01303734f2fab3",
+  "artifacts": {
+    "group_summary.json": "22058a488a4105b29640a20ab3be59cfcb9180957d98ad64397f504cb14c9054",
+    "group_metrics.csv": "6d48e77321ade1b593d2c455c29e9d5fd5875489959a1178fa3c90437a157a8d",
+    "group_effects.png": "a3363886f8899208d6813537975ad394251ea4fe4c14eb760cc945f5e4fb55ec"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "cnn_bilstm": {
+    "2": {
+      "file": "cnn_bilstm_2ms_test.npz",
+      "sha256": "cfb6fa18eb82703d94df217ffe50d9544e02bf9ed2689136223226c9d8f277dd",
+      "weights_sha256": "cc766038a6147dd9cc92b44620070f96e77859218375363d79cd5e731face94a"
+    },
+    "100": {
+      "file": "cnn_bilstm_100ms_test.npz",
+      "sha256": "e826924aad6f6851dfb85daaaf59292357b185b3e33fed470e189807e0400210",
+      "weights_sha256": "051dc697a44a5ff554b9b6e07758e64f52e295eff50feca7e5b70fcbc74b6dea"
+    }
+  },
+  "eegnet_regression": {
+    "2": {
+      "file": "eegnet_regression_2ms_test.npz",
+      "sha256": "90c59064268354774d6e09c533402354814a0b1ea80a98185a2c76cbeb07cdb3",
+      "weights_sha256": "b41b38c9674087378b0c133c419820615825d5357a01b3c0d25b3f1f1f5d7f05"
+    },
+    "200": {
+      "file": "eegnet_regression_200ms_test.npz",
+      "sha256": "10629e9dc3b7bece81799ac7e29070ecedb2a5358958b355a660529fec8ea638",
+      "weights_sha256": "8f4b0c506ea022b1caf7d2b5773192e30c10b52679bf0ad4f25a5629db0cd754"
+    }
+  }
+}

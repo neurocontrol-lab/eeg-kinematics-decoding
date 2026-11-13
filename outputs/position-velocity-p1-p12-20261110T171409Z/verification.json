@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "experiment_id": "EXP-040",
+  "participants_checked": 12,
+  "test_prediction_arrays_checked": 84,
+  "test_metric_sets_checked": 252,
+  "edge_labels": {
+    "train": 26,
+    "validation": 7,
+    "test": 11
+  },
+  "derivative_targets_checked": 304428,
+  "input_files_checked": 36,
+  "validation_fits_replayed": 72,
+  "t1_test_replays": 24,
+  "velocity_test_predictions": 24,
+  "ridge_axis_fits_at_budget": 0
+}

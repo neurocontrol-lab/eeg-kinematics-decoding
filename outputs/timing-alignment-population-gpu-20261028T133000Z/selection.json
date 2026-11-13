@@ -1,0 +1,150 @@
+{
+  "frozen_at": "2026-10-28T17:15:51.248715+00:00",
+  "participants": {
+    "P1": {
+      "ridge": {
+        "gap_samples": 500,
+        "gap_ms": 1000,
+        "alpha": 1.0
+      },
+      "cnn_elu": {
+        "gap_samples": 50,
+        "gap_ms": 100,
+        "validation_mse_seed_mean": 0.4460503790005083
+      }
+    },
+    "P2": {
+      "ridge": {
+        "gap_samples": 1,
+        "gap_ms": 2,
+        "alpha": 10000.0
+      },
+      "cnn_elu": {
+        "gap_samples": 25,
+        "gap_ms": 50,
+        "validation_mse_seed_mean": 0.5880013402280612
+      }
+    },
+    "P3": {
+      "ridge": {
+        "gap_samples": 1,
+        "gap_ms": 2,
+        "alpha": 10000.0
+      },
+      "cnn_elu": {
+        "gap_samples": 1,
+        "gap_ms": 2,
+        "validation_mse_seed_mean": 0.7944437334698966
+      }
+    },
+    "P4": {
+      "ridge": {
+        "gap_samples": 1,
+        "gap_ms": 2,
+        "alpha": 10000.0
+      },
+      "cnn_elu": {
+        "gap_samples": 1,
+        "gap_ms": 2,
+        "validation_mse_seed_mean": 0.4814708770843497
+      }
+    },
+    "P5": {
+      "ridge": {
+        "gap_samples": 1,
+        "gap_ms": 2,
+        "alpha": 1000.0
+      },
+      "cnn_elu": {
+        "gap_samples": 100,
+        "gap_ms": 200,
+        "validation_mse_seed_mean": 0.7240705194223183
+      }
+    },
+    "P6": {
+      "ridge": {
+        "gap_samples": 1,
+        "gap_ms": 2,
+        "alpha": 10000.0
+      },
+      "cnn_elu": {
+        "gap_samples": 50,
+        "gap_ms": 100,
+        "validation_mse_seed_mean": 0.9033939812777495
+      }
+    },
+    "P7": {
+      "ridge": {
+        "gap_samples": 1,
+        "gap_ms": 2,
+        "alpha": 10000.0
+      },
+      "cnn_elu": {
+        "gap_samples": 50,
+        "gap_ms": 100,
+        "validation_mse_seed_mean": 0.40653860884202225
+      }
+    },
+    "P8": {
+      "ridge": {
+        "gap_samples": 250,
+        "gap_ms": 500,
+        "alpha": 10000.0
+      },
+      "cnn_elu": {
+        "gap_samples": 50,
+        "gap_ms": 100,
+        "validation_mse_seed_mean": 0.931670274867651
+      }
+    },
+    "P9": {
+      "ridge": {
+        "gap_samples": 100,
+        "gap_ms": 200,
+        "alpha": 10000.0
+      },
+      "cnn_elu": {
+        "gap_samples": 50,
+        "gap_ms": 100,
+        "validation_mse_seed_mean": 0.7396024657046261
+      }
+    },
+    "P10": {
+      "ridge": {
+        "gap_samples": 1,
+        "gap_ms": 2,
+        "alpha": 10000.0
+      },
+      "cnn_elu": {
+        "gap_samples": 25,
+        "gap_ms": 50,
+        "validation_mse_seed_mean": 0.41424321847750595
+      }
+    },
+    "P11": {
+      "ridge": {
+        "gap_samples": 1,
+        "gap_ms": 2,
+        "alpha": 10000.0
+      },
+      "cnn_elu": {
+        "gap_samples": 250,
+        "gap_ms": 500,
+        "validation_mse_seed_mean": 1.2091226820210033
+      }
+    },
+    "P12": {
+      "ridge": {
+        "gap_samples": 1,
+        "gap_ms": 2,
+        "alpha": 10000.0
+      },
+      "cnn_elu": {
+        "gap_samples": 25,
+        "gap_ms": 50,
+        "validation_mse_seed_mean": 0.9473084456073648
+      }
+    }
+  },
+  "criterion": "validation-only mean standardized XYZ MSE; CNN mean of seeds42/43/44; shorter-gap tie break; all participants before test"
+}

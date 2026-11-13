@@ -1,0 +1,21 @@
+{
+  "cnn_bilstm": {
+    "2": {
+      "file": "cnn_bilstm_2ms_test.npz",
+      "sha256": "ae2c1adf39eedd2047053720aad2204524ba21ae4ced32be0cfedc3cd0ce4068",
+      "weights_sha256": "ee5f84e16d9a1a22ae807ca617dfee6f92758c0929d59b9b2983c18c6e8b949c"
+    }
+  },
+  "eegnet_regression": {
+    "2": {
+      "file": "eegnet_regression_2ms_test.npz",
+      "sha256": "f1984c84f58029996ad76c8b2a1f2f3245ae88a3b4f15783b021bbcf75cb17aa",
+      "weights_sha256": "37f60a116df5c5398a3d0e2e7e3c51db51883d77677ead0a0c50868751ab42de"
+    },
+    "200": {
+      "file": "eegnet_regression_200ms_test.npz",
+      "sha256": "7a2feafd9638e48ea190787b542f8a13dcfd42a2feed329763ece75eba56b566",
+      "weights_sha256": "9606e169a1fdecdf420bf2995c9b5ed6a6c5bddfcc164e63b6823cac5d25d6af"
+    }
+  }
+}

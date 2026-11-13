@@ -1,0 +1,12 @@
+{
+  "experiment_id": "EXP-042",
+  "supervisor_pid": 10870,
+  "created_at": "2026-10-28T14:21:23.917010+00:00",
+  "runtime_policy": "Wait for separate T2 jobs, then one newly completed gap per process. Resume unchanged source/protocol and checkpoints. No model or analysis changes.",
+  "queue_sha256": "8f4f451cb5152d9f15de85900d4734d9f32fbab79ae8bccd491ca0d6422113f3",
+  "stage": "verified",
+  "updated_at": "2026-10-28T17:29:28.183074+00:00",
+  "completed_gap_conditions": 72,
+  "report": "RESULTS.md",
+  "population_plot": "meeting_summary.png"
+}

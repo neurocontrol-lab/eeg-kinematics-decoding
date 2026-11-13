@@ -1,5 +1,17 @@
 # Pipeline changelog
 
+## 2026-11-13 — Within-participant follow-up reports
+
+- Publish the P1–P12 timing comparisons, including validation gap preferences and the matched held-out comparisons for CNN–BiLSTM and EEGNet regression.
+- Publish the matched position-versus-velocity study and the retrospective movement-dynamics follow-ups across all 12 participants.
+- Retain experiment code, plots, metrics, and verification records. Model weights, prediction arrays, and runtime logs stay local.
+
+## 2026-10-28 — Fixed-bin EEG history study
+
+- Complete EXP-018 / T2 across independently trained P1–P12 ridge and GPU CNN + ELU models, comparing 256/512/1,024-ms histories as 128 channel-wise mean bins.
+- Fix the end gap, eligible targets, model dimensions and training budget. Freeze validation choices before every predeclared test comparison, and report paired participant effects and bootstrap intervals.
+- Verify 288 saved-weight replays and 432 metric sets without fitting; retain interruption/resume provenance and the context-versus-averaging limitation.
+
 ## 2026-10-27 — Experiment registry and first timing study
 
 - Create a public [Google Sheets experiment registry](https://docs.google.com/spreadsheets/d/1Q2nJqr66ftuz7CP9dMiYRdE2RGwavmGbMGDkOS7yiWg/edit) covering 35 experiments, with idea links, protocols, dependencies, findings and evidence links. Make it the single maintained status/priority record; repository navigation links to it without local CSV or generated status copies.

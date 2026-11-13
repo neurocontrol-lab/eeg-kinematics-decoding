@@ -9,3 +9,20 @@ outputs/**/declared_protocol.md text eol=lf
 
 # Preserve exact CSV bytes recorded by R6 artifact manifests.
 /outputs/error-dynamics-*/*.csv -text
+
+# Preserve exact population timing tables.
+/outputs/timing-alignment-population-*/*.csv -text
+
+# Preserve EEG-history tables recorded by the summary receipt.
+/outputs/history-duration-*/*.csv -text
+
+# Preserve the byte hashes of executed Windows snapshots.
+/outputs/position-velocity-p1-p12-20261110T171409Z/declared_protocol.md -text
+/outputs/position-velocity-p1-p12-20261110T171409Z/report_source.py -text
+/outputs/position-velocity-p1-p12-20261110T171409Z/runner_source.py -text
+/outputs/r6-population-error-models-20261111/analysis_source.py -text
+/outputs/t1-r6-followup-20261110/r6_population_followup.py -text
+/outputs/t1-r6-followup-20261110/report_t1_r6_followup.py -text
+/outputs/timing-decoder-preferences-p1-p12-20261111T113206Z/declared_protocol.md -text
+/outputs/timing-decoder-preferences-p1-p12-20261111T113206Z/heldout/evaluation_source.py -text
+/outputs/timing-decoder-preferences-p1-p12-20261111T113206Z/runner_source.py -text

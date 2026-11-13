@@ -1,0 +1,56 @@
+{
+  "choices": {
+    "P1": {
+      "cnn_bilstm": 50,
+      "eegnet_regression": 50
+    },
+    "P2": {
+      "cnn_bilstm": 100,
+      "eegnet_regression": 200
+    },
+    "P3": {
+      "cnn_bilstm": 50,
+      "eegnet_regression": 50
+    },
+    "P4": {
+      "cnn_bilstm": 100,
+      "eegnet_regression": 2
+    },
+    "P5": {
+      "cnn_bilstm": 2,
+      "eegnet_regression": 200
+    },
+    "P6": {
+      "cnn_bilstm": 100,
+      "eegnet_regression": 2
+    },
+    "P7": {
+      "cnn_bilstm": 100,
+      "eegnet_regression": 2
+    },
+    "P8": {
+      "cnn_bilstm": 200,
+      "eegnet_regression": 50
+    },
+    "P9": {
+      "cnn_bilstm": 2,
+      "eegnet_regression": 100
+    },
+    "P10": {
+      "cnn_bilstm": 100,
+      "eegnet_regression": 100
+    },
+    "P11": {
+      "cnn_bilstm": 100,
+      "eegnet_regression": 50
+    },
+    "P12": {
+      "cnn_bilstm": 2,
+      "eegnet_regression": 2
+    }
+  },
+  "validation_scores_sha256": "6d62982584c65b36b1d63c9b7824ed31084696c28e011de2f903ffbbba55d084",
+  "selected_gaps_sha256": "6ede328c0a675372050a7e72815a853bb14c547891db541e15ab53959ccb4ce9",
+  "validation_verification_sha256": "b583d349feaf5808bf30ca5c43105011fa4ff1580c6424748b8b7ba98cd7777a",
+  "original_population_summary_sha256": "0f5ade62dc630a0ab51a1cb1c7cd5b785228b17edd37ede5442f009b63645808"
+}
