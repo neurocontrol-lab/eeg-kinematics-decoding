@@ -15,7 +15,7 @@ GITHUB = "https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/
 CAT = [
     ("dataset-audits", "Dataset audits", "Trial conditions, split coverage and coordinate checks."),
     ("continuous-decoding", "Continuous kinematics decoding", "Original and corrected P1 baselines."),
-    ("model-comparison", "Model comparison", "Six P1 regressors on the corrected protocol."),
+    ("model-comparison", "Model comparison", "Four wrist-position decoders evaluated across P1–P12 at a fixed 2 ms prediction lead."),
     ("participant-transfer", "Cross-participant decoding", "Frozen P1 fits evaluated across P2–P12."),
     ("movement-stages", "Movement-stage errors", "Specialist and pooled decoders, plus retrospective error analysis."),
     ("condition-decoding", "Condition decoding", "Weight decoding across stages, repeats and switches."),
@@ -84,11 +84,12 @@ def build_data(root):
               [("Example lift and lowering traces",f"{axes}/axis_check_example.png")]),
     ]
 
+    def model_scores(run):
+        return {name: val.get("test", val) for name, val in data(run)["models"].items()}
+
     def model_view(run):
-        saved = data(run)["models"]
         rec = []
-        for name, val in saved.items():
-            score = val.get("test",val)
+        for name, score in model_scores(run).items():
             for i, axis in enumerate("XYZ"):
                 rec.append((label(name),axis,score["r2"][i],score["mse"][i],score["mae"][i]))
             rec.append((label(name),"Mean XYZ",mean(score["r2"]),mean(score["mse"]),mean(score["mae"])))
@@ -105,10 +106,6 @@ def build_data(root):
               [("Training and validation learning curves",f"{correct}/learning_curves.png")],
               "The displayed errors use training-standardized targets."),
     ]
-    comparison = [study("Six corrected P1 reference models", "Compare the training mean, ridge, CNN, CNN + ELU, CNN–BiLSTM and EEGNet on the same P1 test split.",
-                        [source(six), source(correct, caption="Corrected P1 baseline")], [model_view(six)],
-                        limits="These fits use P1 and a single seed for the neural models. The plain CNN has identical test scores in the corrected P1 baseline.")]
-
     frozen = "frozen-p1-cross-participant-gpu-20260930T125956Z"
     r_transfer = [(r["participant"],label(r["model"]),{"all_evaluated_runs":"All evaluated series","primary_runs_8_9":"Test series 8–9"}[r["scope"]],int(r["windows"]),
                    *(float(r[f"r2_{a}"]) for a in "xyz"),mean(float(r[f"r2_{a}"]) for a in "xyz"))
@@ -167,6 +164,16 @@ def build_data(root):
     timing = "timing-decoder-preferences-p1-p12-20261111T113206Z"
     old_timing = "timing-alignment-population-gpu-20261028T133000Z"
     held = data(timing + "/heldout","population_summary.json")
+    comparison = [
+        study("Fixed-lead model comparison across P1–P12",
+              "Each decoder is fit within each participant and evaluated on the same wrist targets in held-out series 8–9 at a fixed 2 ms prediction lead.",
+              [source(timing, caption="Timing study and protocol"),
+               source(timing + "/heldout", "population_summary.json", "Held-out scores"),
+               source(timing + "/heldout", "verification.json", "Verification"),
+               source(six, caption="Archived six-model P1 benchmark")],
+              model_comparison_views(population_model_scores(held), view, "Cohort (P1–P12)"),
+              limits="Cohort scores give each participant equal weight. CNN + ELU scores average three seeds within each participant. CNN–BiLSTM and EEGNet use one seed each."),
+    ]
     val_rows = [(r["participant"],label(r["decoder"]),int(r["gap_ms"]),float(r["validation_mse"]))
                 for r in rows(timing,"validation_scores.csv")]
     assert len(val_rows)==288
@@ -211,8 +218,9 @@ def build_data(root):
         (("Recording series", "A series contains multiple trials. Series type describes whether weight, surface friction, or both vary within it."),),
         (("R²", "The fraction of observed variation explained by prediction. Zero matches the constant held-out mean. Negative values score worse than that reference."),
          ("MSE and MAE", "Mean squared error gives larger misses more weight. Mean absolute error averages the size of misses.")),
-        (("R²", "Zero matches the constant held-out mean. Negative values score worse than that reference."),
-         ("Mean XYZ", "The arithmetic mean of the three separately calculated wrist-axis scores.")),
+        (("R²", "Zero matches a constant prediction of the held-out mean for that axis. Higher is better."),
+         ("MSE and MAE", "Mean squared error and mean absolute error use training-standardized targets. Lower is better."),
+         ("Mean XYZ", "The arithmetic mean of the three wrist-axis scores.")),
         (("Frozen model", "The P1-trained model and scalers are reused as-is for each participant. P1 is the source reference."),),
         (),
         (),
@@ -226,6 +234,57 @@ def build_data(root):
         if terms:
             next(s for s in studies if not s["terms"])["terms"] = terms
     return categories
+
+
+MODEL_METRICS = ("r2", "mse", "mae")
+MODEL_AXES = ("Mean XYZ", "X", "Y", "Z")
+
+
+def population_model_scores(held):
+    people = tuple(f"P{i}" for i in range(1, 13))
+    models = ("ridge", "cnn_elu", "cnn_bilstm", "eegnet_regression")
+    scores = {person: {} for person in people}
+    target_counts = {}
+    for row in held["participant_metrics"]:
+        person, model = row["participant"], row["model"]
+        if model in scores[person]:
+            raise ValueError(f"Duplicate model comparison scores for {person}, {model}.")
+        if target_counts.setdefault(person, row["test_targets"]) != row["test_targets"]:
+            raise ValueError(f"Held-out target counts differ across decoders for {person}.")
+        scores[person][model] = {metric: row[f"baseline_axis_{metric}"] for metric in MODEL_METRICS}
+    if any(set(group) != set(models) for group in scores.values()):
+        raise ValueError("The model comparison needs all four decoders for P1–P12.")
+
+    cohort = {}
+    for model in models:
+        cohort[model] = {
+            metric: [mean(scores[person][model][metric][i] for person in people) for i in range(3)]
+            for metric in MODEL_METRICS
+        }
+        if not isclose(mean(cohort[model]["mse"]), held["population"][model]["mean_baseline_mse"], abs_tol=1e-12):
+            raise ValueError(f"Cohort MSE differs from the saved fixed-lead summary for {model}.")
+    return {"Cohort (P1–P12)": cohort, **scores}
+
+
+def model_comparison_views(scores, view, default_participant):
+    records = []
+    for person, models in scores.items():
+        for model, metrics in models.items():
+            axes = tuple(metrics[metric] for metric in MODEL_METRICS)
+            records.append((person, label(model), "Mean XYZ", *(mean(values) for values in axes)))
+            records.extend((person, label(model), axis, *values) for axis, values in zip("XYZ", zip(*axes)))
+    headers = ["Participant", "Model", "Axis", "R²", "MSE", "MAE"]
+    filters = [0, 1, 2]
+    metrics = [(3, 0, None, None), (4, None, None, None), (5, None, None, None)]
+    initial = {"Participant": default_participant}
+    return [
+        view("Model comparison", headers, records, filters, default_chart(1, 3, 2, connect=False), 0,
+             "Compare models with X, Y, Z and their mean on the same plot. For R², the dashed line marks the held-out mean reference at zero.",
+             initial=initial, selectors=(0,), metrics=metrics),
+        view("Axis breakdown", headers, records, filters, default_chart(2, 3, 1, connect=False), 0,
+             "Compare the models on each wrist axis or select a model to inspect its axis profile.",
+             order=MODEL_AXES, initial=initial, selectors=(0,), metrics=metrics),
+    ]
 
 
 def condition_studies(crop, full, data, rows, view, study, source):
