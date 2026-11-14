@@ -1,6 +1,6 @@
 # T1: EEG-to-kinematics timing alignment
 
-Experiment **EXP-012**, declared 27 October 2026 before its execution. Question: does a window ending earlier improve wrist prediction relative to the current one-sample alignment? This is exploratory P1 analysis: historical test runs 8–9 have already informed the hypotheses. No population, neural-conduction-delay or independent-confirmation claim follows.
+Experiment **T_1**, declared 27 October 2026 before its execution. Question: does a window ending earlier improve wrist prediction relative to the current one-sample alignment? This is exploratory P1 analysis: historical test runs 8–9 have already informed the hypotheses. No population, neural-conduction-delay or independent-confirmation claim follows.
 
 ## Fixed comparison
 
@@ -27,4 +27,4 @@ Exact source/protocol snapshots, input hashes, split indices, model weights, val
 
 Timing affects the effective input history, not necessarily physiology. The current window already contains earlier EEG, so larger gaps may help, hurt or leave performance unchanged. Validation is one run, neural arithmetic can vary despite seeding, and ridge uses the existing bounded solver budget. Supplied reduced preprocessing is not fully documented; causal indexing does not establish causal upstream filtering or real-time suitability. Test-stage R² may be unstable for short stages.
 
-After verification, retain the result whether positive, negative or inconclusive. Review it before finalizing EXP-013: retrospective stage classification using shrinkage LDA and CNN on the same binned full-stage representation, with exact event labels and a timing-only control. C5 and C3 remain queued. A negative classifier result is not a reason to skip their regression questions.
+After verification, retain the result whether positive, negative or inconclusive. Review it before finalizing C_7: retrospective stage classification using shrinkage LDA and CNN on the same binned full-stage representation, with exact event labels and a timing-only control. C5 and C3 remain queued. A negative classifier result is not a reason to skip their regression questions.

@@ -1,6 +1,6 @@
 # T2: EEG history duration with fixed temporal bins
 
-**EXP-018. Declared 28 October 2026 before execution.** The user requested
+**T_2. Declared 28 October 2026 before execution.** The user requested
 256/512/1,024-ms EEG histories represented by 128 channel-wise mean bins, then
 explicitly chose independent within-participant repetitions for P1–P12 and a
 paired participant-level summary. This supersedes the registry's earlier T2

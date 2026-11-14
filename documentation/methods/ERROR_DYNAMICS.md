@@ -1,6 +1,6 @@
 # R6: movement dynamics and saved-decoder error
 
-**EXP-036. Declared 28 October 2026 before computing the new dynamics results.**
+**R_6. Declared 28 October 2026 before computing the new dynamics results.**
 Question: do observed movement dynamics explain the saved decoders' errors beyond
 observed position and experimental event stages? This is retrospective P1
 analysis of familiar series 8–9, not a new independent decoder test.

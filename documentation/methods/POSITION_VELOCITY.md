@@ -1,4 +1,4 @@
-# T7 / EXP-040 — EEG decoding of wrist position and velocity
+# T_7 — EEG decoding of wrist position and velocity
 
 Declared 10 November 2026 before T7 fitting. Does EEG improve held-out
 estimates of wrist position and signed wrist velocity over simple references?
@@ -6,7 +6,7 @@ Compare P1–P12 with independently fitted participant models.
 
 ## Matched comparison
 
-- Use verified EXP-042 T1 inputs, recording boundaries, split indices, EEG
+- Use verified T_8 inputs, recording boundaries, split indices, EEG
   scaling, and its fixed 2 ms position reference. Train on series 1–6,
   select ridge penalties on series 7, and evaluate series 8–9. The test
   series are weight series at surface code 3. Use the T1 common grid

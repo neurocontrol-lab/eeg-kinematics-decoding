@@ -1,7 +1,7 @@
-# EXP-042 / T1: population EEG-to-kinematics timing alignment
+# T_8: population EEG-to-kinematics timing alignment
 
 Declared 28 October 2026 before computing the new validation or test results.
-User-authorized extension of EXP-012. Question: does validation-selected EEG
+User-authorized extension of T_1. Question: does validation-selected EEG
 history alignment improve within-participant wrist decoding across P1–P12?
 This trains separate participant decoders, not a population-trained or
 leave-one-participant-out model. Historical P1 tests and prior cross-participant
@@ -29,7 +29,7 @@ reports have informed planning; all results remain exploratory.
   maximum 200 iterations. Select alpha separately at each gap by validation
   XYZ mean MSE, breaking ties toward lower alpha. Record solver iterations
   and budget saturation. CPU fits, retaining the pilot's bounded solver.
-- CNN + ELU: same 3235-parameter model as EXP-012, Adam/MSE, batch64,
+- CNN + ELU: same 3235-parameter model as T_1, Adam/MSE, batch64,
   final15 epochs, no early stopping. Seeds42/43/44. Match initial weights
   across gaps within each seed and record hashes. Require a working GPU
   probe and record runtime versions. No extra training or test-selected
@@ -46,7 +46,7 @@ model/seed. If selected gap is2ms, evaluate once. Do not inspect test scores
 of other gaps or use test results to change any choice.
 
 Checkpoint every completed fit; resume only with unchanged source/protocol
-hashes and verified weight/prediction files. Preserve original EXP-012 outputs.
+hashes and verified weight/prediction files. Preserve original T_1 outputs.
 Do not reuse old P1 fits because its common targets and gap grid differ.
 
 ## Population reporting
@@ -86,4 +86,4 @@ population R6 and phase reports are separate work. No physiological-delay,
 causal upstream preprocessing, unseen-participant generalization or full
 condition-generalization claim follows. Supplied reduced data have partially
 undocumented preprocessing. Longer EEG histories and temporal mean bins are
-EXP-018 / T2, deferred until after this fixed-duration T1 study.
+T_2, deferred until after this fixed-duration T1 study.

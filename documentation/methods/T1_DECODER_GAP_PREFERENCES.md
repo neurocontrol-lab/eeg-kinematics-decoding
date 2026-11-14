@@ -1,7 +1,7 @@
 # T1 validation gap preferences across decoder architectures
 
 Compare ridge, CNN + ELU, CNN–BiLSTM, and EEGNet regression across the
-same 12 within-participant train and validation splits used in EXP-042.
+same 12 within-participant train and validation splits used in T_8.
 
 - Use series 1–6 to train and series 7 to select end gaps. Use the
   original T1 common target indices, 128 × 32 windows, training-only
