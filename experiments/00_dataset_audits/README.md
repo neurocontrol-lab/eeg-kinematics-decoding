@@ -1,5 +1,7 @@
 # Dataset audits
 
+**Interactive results:** [Open online](https://htmlpreview.github.io/?https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/outputs/reports/dataset-audits/index.html) · [Open locally](../../outputs/reports/dataset-audits/index.html)
+
 Identify source channels, coordinate axes, trial conditions, and split coverage.
 
 **Status:** Completed: target provenance, 3,528-trial condition audit, and 20 October vertical-axis audit.

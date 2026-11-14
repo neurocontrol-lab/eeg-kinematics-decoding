@@ -1,6 +1,8 @@
 # Movement dynamics and saved-decoder error
 
-EXP-036 / R6 asks whether observed position, event stages and movement dynamics
+**Interactive results:** [Open the movement-stage report online](https://htmlpreview.github.io/?https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/outputs/reports/movement-stages/index.html) · [Open locally](../../../outputs/reports/movement-stages/index.html)
+
+R_6 asks whether observed position, event stages and movement dynamics
 explain the errors of the six existing P1 decoders. It reuses their predictions;
 the small ridge models predict error magnitude, not wrist position.
 

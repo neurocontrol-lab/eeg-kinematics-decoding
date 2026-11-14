@@ -1,5 +1,7 @@
 # Cross-participant decoding
 
+**Interactive results:** [Open online](https://htmlpreview.github.io/?https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/outputs/reports/participant-transfer/index.html) · [Open locally](../../outputs/reports/participant-transfer/index.html)
+
 Evaluate frozen P1 models and P1 scalers on P2–P12 with zero adaptation.
 
 **Status:** Completed. This is single-source transfer, not leave-one-participant-out population training.

@@ -1,5 +1,23 @@
 # Published pipeline results
 
+## Interactive reports
+
+Open the [report index](reports/index.html) from a local checkout. The family pages embed their charts, figures and aggregate tables, so they work directly in a browser. Once the generated pages are pushed to GitHub, open the [online report index](https://htmlpreview.github.io/?https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/outputs/reports/index.html).
+
+Regenerate the reports from the repository root after saving new results:
+
+```bash
+python scripts/build_web_reports.py
+```
+
+The [generator](../scripts/build_web_reports.py) reads saved results and the [HTML template](../scripts/web_report.html). The [experiment registry](../documentation/EXPERIMENT_REGISTRY.md) tracks experiment status.
+
+## C_10 — Stage-specific EEG weight decoding across P1–P12
+
+[64 ms crop](c10-stage-weight-20261114/RESULTS.md) · [Full-stage comparison](c10-stage-weight-full-stage-20261114/RESULTS.md)
+
+Compare repeat and switch trials at fixed sandpaper on the same 769 held-out trials. On loading-stage switches, full-stage EEG raised balanced accuracy to 55.0% for shrinkage LDA and 55.7% for logistic regression. Loading duration alone reached 80.3%. The reports include all four stages, both CNNs, trial-history controls and independent verification.
+
 ## T1 — Timing preferences and held-out comparisons across decoders
 
 [Validation gap preferences](timing-decoder-preferences-p1-p12-20261111T113206Z/RESULTS.md) · [Held-out summary](timing-decoder-preferences-p1-p12-20261111T113206Z/heldout/population_summary.json) · [Held-out verification](timing-decoder-preferences-p1-p12-20261111T113206Z/heldout/verification.json)

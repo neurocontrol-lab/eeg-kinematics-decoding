@@ -1,5 +1,7 @@
 # Continuous kinematic decoding
 
+**Interactive results:** [Open online](https://htmlpreview.github.io/?https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/outputs/reports/continuous-decoding/index.html) · [Open locally](../../outputs/reports/continuous-decoding/index.html)
+
 Reproduce the original baseline and evaluate the corrected whole-run split.
 
 **Status:** Original v1 and corrected v2 retained. Numerical methods, split definitions, architectures, and epoch schedules are unchanged by the folder migration.

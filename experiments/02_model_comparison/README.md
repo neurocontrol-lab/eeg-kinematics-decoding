@@ -1,5 +1,7 @@
 # Model comparison
 
+**Interactive results:** [Open online](https://htmlpreview.github.io/?https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/outputs/reports/model-comparison/index.html) · [Open locally](../../outputs/reports/model-comparison/index.html)
+
 Compare six P1 reference regressors under the corrected v2 protocol.
 
 **Status:** Completed, single participant and seed. Training scripts require a working TensorFlow GPU.

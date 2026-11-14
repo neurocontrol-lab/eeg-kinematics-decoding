@@ -1,6 +1,8 @@
 # EEG history duration and temporal binning
 
-EXP-018 / T2 compares 256/512/1,024-ms histories as 128 channel-wise mean bins
+**Interactive results:** [Open online](https://htmlpreview.github.io/?https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/outputs/reports/history-duration/index.html) · [Open locally](../../outputs/reports/history-duration/index.html)
+
+T_2 compares 256/512/1,024-ms histories as 128 channel-wise mean bins
 for ridge and CNN + ELU. Each participant P1–P12 is trained separately; paired
 participant effects form the group summary. This does not test a pooled decoder.
 

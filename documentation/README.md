@@ -1,5 +1,9 @@
 # Documentation index
 
+**[Interactive experiment reports](https://htmlpreview.github.io/?https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/outputs/reports/index.html)** · [Local report index](../outputs/reports/index.html)
+
+Use the reports to explore saved results. The experiment registry below tracks status, priorities, and next steps.
+
 - [Public experiment registry and roadmap](https://docs.google.com/spreadsheets/d/1Q2nJqr66ftuz7CP9dMiYRdE2RGwavmGbMGDkOS7yiWg/edit) â€” single maintained record of statuses, priorities, findings and run links
 - [Project ideas and discussion context](PROJECT_IDEAS.md)
 - Dataset: [target provenance](dataset/KINEMATICS_PROVENANCE.md), [coordinate system](dataset/COORDINATE_SYSTEM.md), [original provenance values](dataset/kinematics_verification.json)

@@ -2,6 +2,12 @@
 
 Research on decoding **wrist X/Y/Z position from 32-channel EEG** using [WAY-EEG-GAL](https://doi.org/10.1038/sdata.2014.47). The project preserves the original fork as a reference, corrects its evaluation pipeline, compares model variants, and investigates participant transfer, movement-stage errors and experimental conditions.
 
+## Interactive experiment reports
+
+**[Browse all ten experiment families online](https://htmlpreview.github.io/?https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/outputs/reports/index.html)** · [Open from a local checkout](outputs/reports/index.html)
+
+Use the charts and tables to filter by participant, model, or movement stage where available. Each report links to its detailed results and explains how to read the metrics.
+
 The six-model references and initial stage analyses use **P1**. Timing, history-duration, and position-versus-velocity experiments train separate models for **P1–P12**. The main timing comparison repeats CNN + ELU training across three seeds. Frozen-model transfer and dataset audits also cover P2–P12. These within-participant studies do not establish performance on unseen participants.
 
 ## Experiment status

@@ -1,6 +1,8 @@
 # EEG-to-kinematics timing alignment
 
-EXP-012 / T1: compare ridge and CNN + ELU at 2/50/100/200-ms gaps between final EEG input and wrist target. The 256-ms input window, 128-ms stride, v2 P1 run split and eligible target timestamps remain fixed. Ridge alpha and each model's gap are selected using validation MSE only. CNN requires GPU; ridge uses CPU.
+**Interactive results:** [Open online](https://htmlpreview.github.io/?https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/outputs/reports/timing-alignment/index.html) · [Open locally](../../outputs/reports/timing-alignment/index.html)
+
+T_1: compare ridge and CNN + ELU at 2/50/100/200-ms gaps between final EEG input and wrist target. The 256-ms input window, 128-ms stride, v2 P1 run split and eligible target timestamps remain fixed. Ridge alpha and each model's gap are selected using validation MSE only. CNN requires GPU; ridge uses CPU.
 
 - [Declared protocol](../../documentation/methods/TIMING_ALIGNMENT.md)
 - [Public experiment registry and roadmap](https://docs.google.com/spreadsheets/d/1Q2nJqr66ftuz7CP9dMiYRdE2RGwavmGbMGDkOS7yiWg/edit)
@@ -23,10 +25,10 @@ python experiments/07_timing_alignment/verify_timing_alignment.py outputs/<timin
 
 [Results and interpretation](../../outputs/timing-alignment-p1-gpu-20261027T120222Z/RESULTS.md) · [Independent checks](../../outputs/timing-alignment-p1-gpu-20261027T120222Z/verification.json)
 
-Ridge selected 2 ms. CNN selected 100 ms on validation, but test MSE increased by 13.15% against the 2-ms common-target reference. The frozen selection is retained; no post-test retuning occurred. Phase effects differ, and the result remains exploratory P1/single seed. EXP-013 stage classification is next, with its protocol still to finalize.
+Ridge selected 2 ms. CNN selected 100 ms on validation, but test MSE increased by 13.15% against the 2-ms common-target reference. The frozen selection is retained; no post-test retuning occurred. Phase effects differ, and the result remains exploratory P1/single seed. C_7 stage classification is next, with its protocol still to finalize.
 
 
-## Population extension: EXP-042
+## Population extension: T_8
 
 [Declared population protocol](../../documentation/methods/POPULATION_TIMING_ALIGNMENT.md).
 P1–P12 each receive ridge and CNN + ELU fits at every 2/50/100/200/500/1000-ms
@@ -35,7 +37,7 @@ end gap, using fixed 256-ms windows and shared eligible targets. CNN seeds
 validation MSE across seeds. All choices freeze before population test scoring.
 This is within-participant replication across the dataset, not pooled or
 unseen-participant training. Longer histories and temporal bins belong to the separately executed
-EXP-018 / T2 and are outside this fixed-duration comparison.
+T_2 and are outside this fixed-duration comparison.
 
 ```bash
 python experiments/07_timing_alignment/run_population_timing.py --output-dir outputs/<new-population-run>
@@ -47,7 +49,7 @@ and protocol. Candidate weights and predictions remain local under Git ignores.
 
 ### Memory-bounded resume
 
-A WSL host-RAM exhaustion event interrupted EXP-042 during P2. Completed
+A WSL host-RAM exhaustion event interrupted T_8 during P2. Completed
 checkpoints and all executed source hashes remain intact. The runtime queue
 waits for the separate T2 job, resumes the unchanged runner, and releases its
 owned process after each newly completed gap condition. No gaps, seeds, model

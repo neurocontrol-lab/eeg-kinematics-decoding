@@ -1,5 +1,7 @@
 # Inference benchmark
 
+**Interactive results:** [Open online](https://htmlpreview.github.io/?https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/outputs/reports/inference-latency/index.html) · [Open locally](../../outputs/reports/inference-latency/index.html)
+
 Measure warmed, synchronized CPU/GPU model-call latency.
 
 **Status:** Completed. Timing excludes acquisition, preprocessing, window accumulation, and model loading.

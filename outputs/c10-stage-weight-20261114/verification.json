@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "eligible_trial_labels_verified": 1980,
+  "test_trial_count": 769,
+  "test_predictions_verified": 21532,
+  "test_counts": {
+    "repeat": 494,
+    "switch": 275
+  },
+  "test_keys_sha256": "32f83095ee02cdca49c5faab97930d926352bc5c8bd46ffa1fe9a2013b58c4e6",
+  "stage_count": 4,
+  "participant_count": 12,
+  "fit_scope": [
+    "shrinkage_lda",
+    "logistic",
+    "cnn_elu",
+    "cnn_bilstm",
+    "timing_only",
+    "previous_weight",
+    "schedule"
+  ]
+}

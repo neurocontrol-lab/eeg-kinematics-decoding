@@ -1,8 +1,10 @@
 # Condition decoding
 
+**Interactive results:** [Open online](https://htmlpreview.github.io/?https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/outputs/reports/condition-decoding/index.html) · [Open locally](../../outputs/reports/condition-decoding/index.html)
+
 Test whether EEG distinguishes experimental conditions. Weight classification is the first controlled task.
 
-**Status:** P1 fixed-sandpaper weight classification completed. Surface and joint-condition classification remain open.
+**Status:** Fixed-sandpaper weight classification covers the P1 full-trial pilot and P1-P12 stage-specific fits (C_10). Surface and joint-condition classification remain open.
 
 Run commands from the repository root, with dependencies installed and data paths configured:
 
@@ -17,3 +19,5 @@ Methods: [documentation index](../../documentation/README.md). Data paths: [repr
 
 Saved results:
 - [weight-classification-p1-gpu-20261014T115817Z](../../outputs/weight-classification-p1-gpu-20261014T115817Z/RESULTS.md)
+- [C_10 centered 64 ms results](../../outputs/c10-stage-weight-20261114/RESULTS.md)
+- [C_10 full-stage results](../../outputs/c10-stage-weight-full-stage-20261114/RESULTS.md)

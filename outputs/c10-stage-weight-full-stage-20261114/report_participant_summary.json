@@ -1,0 +1,6914 @@
+[
+  {
+    "participant": "P1",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 21.428571428571427,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 21.428571428571427,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 31.428571428571427,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.85714285714286,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 26.190476190476193,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 47.61904761904762,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 49.06759906759907,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 25.595238095238095,
+    "switch_preference_pp": 0.4208584034928427,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 39.285714285714285,
+    "switch_preference_pp": 8.311482284785363,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -18.062083712766185,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.83333333333333,
+    "switch_preference_pp": 24.010989388762706,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 25.0,
+    "switch_preference_pp": -17.7186966253856,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": 4.856172566017434,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 44.44444444444444,
+    "switch_preference_pp": -9.886092741255137,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": 0.7720272700206847,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 12.5,
+    "switch_preference_pp": -44.32562922382265,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 40.27777777777778,
+    "switch_preference_pp": 3.4988503054891265,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -5.5204922861481664,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "shrinkage_lda",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 35.11904761904761,
+    "switch_preference_pp": -10.287988642650573,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.23809523809524,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.71428571428571,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.23809523809524,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 32.77000777000777,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": 15.931172137097724,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 42.857142857142854,
+    "switch_preference_pp": -4.673510557716716,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 12.5,
+    "switch_preference_pp": -20.292725829834822,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": 10.531483858956177,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 6.478613877472797,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 22.906638754355093,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 43.05555555555555,
+    "switch_preference_pp": 0.34429525065644806,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": 12.640597724513547,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -3.289436217829097,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 25.0,
+    "switch_preference_pp": -10.894812608411764,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": -5.8703938045319575,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "shrinkage_lda",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 44.642857142857146,
+    "switch_preference_pp": 22.08458658205233,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 64.28571428571429,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.23809523809524,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.23809523809524,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 47.61904761904761,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 34.285714285714285,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 61.904761904761905,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 57.14285714285714,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 54.761904761904766,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 55.82750582750583,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 47.61904761904761,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 74.40476190476191,
+    "switch_preference_pp": 60.62165271358603,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 47.61904761904761,
+    "switch_preference_pp": 5.141205123336166,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 58.333333333333336,
+    "switch_preference_pp": 36.86282448828958,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 62.5,
+    "switch_preference_pp": 42.96507301416532,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 70.83333333333334,
+    "switch_preference_pp": 53.01188511724509,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 58.333333333333336,
+    "switch_preference_pp": 24.649418470538897,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 59.72222222222222,
+    "switch_preference_pp": 49.89391242937597,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 54.166666666666664,
+    "switch_preference_pp": 29.03902919887403,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": 5.670640833652298,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 55.55555555555556,
+    "switch_preference_pp": 33.79273551574099,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 17.477631326750775,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "shrinkage_lda",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 52.38095238095239,
+    "switch_preference_pp": 18.001459065625696,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.71428571428571,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.857142857142854,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.857142857142854,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.85714285714286,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 43.74514374514374,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": 2.100903024940398,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 49.4047619047619,
+    "switch_preference_pp": 21.712722654523077,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -0.8955335000033218,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": 6.250296679983709,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": -4.963387249741798,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 12.963071477158792,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 52.77777777777778,
+    "switch_preference_pp": 25.74385900394651,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 27.193941174209872,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": 13.977910476821014,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 51.388888888888886,
+    "switch_preference_pp": 25.903941538590903,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 16.797113358767177,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "shrinkage_lda",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 44.642857142857146,
+    "switch_preference_pp": 32.56328259921243,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 21.428571428571427,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 23.809523809523807,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.8095238095238,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 47.61904761904761,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.23809523809524,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 51.63170163170163,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 30.357142857142854,
+    "switch_preference_pp": 2.055612532267452,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 42.857142857142854,
+    "switch_preference_pp": 1.2259116723173888,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 25.0,
+    "switch_preference_pp": -17.312820670352266,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 54.166666666666664,
+    "switch_preference_pp": 7.79705411651815,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 20.833333333333336,
+    "switch_preference_pp": -16.200159510107266,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.83333333333333,
+    "switch_preference_pp": 7.064908118948798,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 48.61111111111111,
+    "switch_preference_pp": -3.1187705523288773,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": 4.799970880833202,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 20.833333333333336,
+    "switch_preference_pp": -9.986311446312907,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 36.11111111111111,
+    "switch_preference_pp": -2.7335775046449786,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -2.429492045656671,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "logistic",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": -3.789483667778202,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.857142857142854,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 23.809523809523807,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.238095238095234,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 32.30380730380731,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": 3.5116741926422392,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 47.61904761904761,
+    "switch_preference_pp": -0.5892511372452021,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 16.666666666666664,
+    "switch_preference_pp": -15.068559898017334,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.83333333333333,
+    "switch_preference_pp": 5.091400145960527,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": 5.98450470678495,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": -0.34732362128708294,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 44.44444444444445,
+    "switch_preference_pp": -0.19454749426136494,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.83333333333333,
+    "switch_preference_pp": 14.715780507466942,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -9.493493609556333,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 36.11111111111111,
+    "switch_preference_pp": 0.3333065101456039,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -9.29434823205925,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "logistic",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 44.642857142857146,
+    "switch_preference_pp": 15.749715726668857,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 66.66666666666666,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.85714285714286,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 47.61904761904762,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 47.61904761904761,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 57.14285714285714,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 52.38095238095239,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 46.950271950271954,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 52.38095238095239,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 70.23809523809523,
+    "switch_preference_pp": 31.862692208155398,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 43.452380952380956,
+    "switch_preference_pp": 6.125714899301117,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 66.66666666666666,
+    "switch_preference_pp": 16.047300160308602,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 28.63171482179418,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 75.0,
+    "switch_preference_pp": 20.60451708729231,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 54.166666666666664,
+    "switch_preference_pp": 25.95907384875052,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 69.44444444444444,
+    "switch_preference_pp": 33.22316579507025,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 66.66666666666666,
+    "switch_preference_pp": 23.86033191736107,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": 4.65088592558174,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 8.385463618768577,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 14.058658478534031,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "logistic",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 51.78571428571428,
+    "switch_preference_pp": 9.706150457460021,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.71428571428571,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.23809523809524,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.85714285714286,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.92851592851593,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 39.88095238095238,
+    "switch_preference_pp": 10.026962448253968,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 13.207626173283499,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": 1.748207187516984,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": 6.725073294139149,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -3.735198475314768,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": 0.49204715229356133,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 52.77777777777778,
+    "switch_preference_pp": 20.82884965367639,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 19.72637671996714,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 4.332054041594838,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 56.94444444444444,
+    "switch_preference_pp": 12.418415840238433,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 17.56177857783271,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "logistic",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": 21.675448269789612,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 23.80952380952381,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.57142857142858,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.85714285714286,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 34.88733488733489,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": 0.18751021060678696,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 52.38095238095239,
+    "switch_preference_pp": 4.035477195349005,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": -1.939925675590833,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 0.4102914283672969,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -1.193185026446978,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": -1.2632975975672402,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 38.88888888888889,
+    "switch_preference_pp": -1.261966240902742,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": 0.007681424419085185,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 25.0,
+    "switch_preference_pp": -0.7979795336723328,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 16.666666666666664,
+    "switch_preference_pp": -0.02011958923604755,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": 1.341229366759459,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_elu",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 31.547619047619047,
+    "switch_preference_pp": -0.6600319097439449,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.71428571428571,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 47.61904761904762,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.857142857142854,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.333333333333336,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 39.8018648018648,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 44.047619047619044,
+    "switch_preference_pp": 0.6275514347685709,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.23809523809524,
+    "switch_preference_pp": 4.420399624440405,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 20.833333333333336,
+    "switch_preference_pp": -1.9124218573172886,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 54.166666666666664,
+    "switch_preference_pp": 1.7467549691597621,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.83333333333333,
+    "switch_preference_pp": 0.7263143857320149,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 20.833333333333336,
+    "switch_preference_pp": 0.19620917737483978,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 56.94444444444444,
+    "switch_preference_pp": 0.8121634109152688,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 20.833333333333336,
+    "switch_preference_pp": -0.43430464963118237,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -1.10713429749012,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 27.77777777777778,
+    "switch_preference_pp": -2.007890658246146,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -1.2488955010970435,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_elu",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 27.38095238095238,
+    "switch_preference_pp": -1.3897711411118507,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 47.61904761904761,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.85714285714286,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.857142857142854,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 26.666666666666668,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 48.174048174048174,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 59.523809523809526,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.83333333333333,
+    "switch_preference_pp": 1.1094169484244454,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 36.9047619047619,
+    "switch_preference_pp": 1.5064937786923516,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -0.7000848030050595,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 25.0,
+    "switch_preference_pp": 1.3821300119161606,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.83333333333333,
+    "switch_preference_pp": 3.3762862284978232,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": -0.24890688558419546,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 51.388888888888886,
+    "switch_preference_pp": 1.1697013138069046,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": 2.5236236552397413,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 0.13428131739298504,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 40.27777777777778,
+    "switch_preference_pp": 4.324461995727487,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 2.554296577970187,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_elu",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 31.547619047619047,
+    "switch_preference_pp": 0.39255335513088435,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.23809523809524,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 47.61904761904761,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.0,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 39.976689976689975,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.857142857142854,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 35.11904761904761,
+    "switch_preference_pp": 1.0744067115916145,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 66.07142857142857,
+    "switch_preference_pp": 3.471659082505438,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": 0.8300103868047396,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 58.333333333333336,
+    "switch_preference_pp": 3.4237088014682135,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": -0.9511157249410948,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": -0.6281534830729167,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 31.944444444444443,
+    "switch_preference_pp": 1.3411418431335025,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 2.391313264767329,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 2.9652145380775137,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 1.0761375642485087,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 0.08101668208837509,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_elu",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 39.88095238095238,
+    "switch_preference_pp": 2.534174318942759,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 19.047619047619047,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 47.61904761904761,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 37.61904761904762,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.238095238095234,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 48.38772338772339,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": -0.7596361036929821,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.23809523809524,
+    "switch_preference_pp": 8.578753223021824,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 20.833333333333336,
+    "switch_preference_pp": -16.7145809934785,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 54.166666666666664,
+    "switch_preference_pp": 17.982892272993922,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": -2.9815779998898506,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": 3.924493150164684,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 27.77777777777778,
+    "switch_preference_pp": -15.99718507172333,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": 2.4539382817844553,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 25.0,
+    "switch_preference_pp": -4.880219014982382,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 31.944444444444446,
+    "switch_preference_pp": 5.120305018499493,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": 0.27568895990649855,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_bilstm",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 21.428571428571427,
+    "switch_preference_pp": -5.783026520576742,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 23.809523809523807,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 24.76190476190476,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.333333333333336,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 44.67754467754468,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.0952380952381,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 35.11904761904761,
+    "switch_preference_pp": -3.0128693311578694,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 43.452380952380956,
+    "switch_preference_pp": 2.257683122944501,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 20.833333333333336,
+    "switch_preference_pp": -5.487471120432019,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 54.166666666666664,
+    "switch_preference_pp": 8.784923593824107,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -0.9298151669402918,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": 1.6186800474921863,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 13.88888888888889,
+    "switch_preference_pp": -7.858725057707892,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": 6.335830005506675,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": 0.7846619312961897,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 38.88888888888889,
+    "switch_preference_pp": 0.4582961503830224,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.83333333333333,
+    "switch_preference_pp": -3.171525771419207,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_bilstm",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 17.857142857142858,
+    "switch_preference_pp": -7.188706337991688,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.23809523809524,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.85714285714286,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 47.61904761904761,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 53.26340326340326,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 21.428571428571427,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 43.452380952380956,
+    "switch_preference_pp": 9.657372927500143,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 32.142857142857146,
+    "switch_preference_pp": 1.7288352259331274,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": -1.6597609656552474,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": 12.726188388963541,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": 0.7222382817417383,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": -8.089306360731523,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": 4.307767324563529,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 6.973513246824344,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 16.666666666666664,
+    "switch_preference_pp": -3.396758995950222,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 47.22222222222222,
+    "switch_preference_pp": 5.781367897159524,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 3.5698822621876993,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_bilstm",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 35.11904761904761,
+    "switch_preference_pp": -3.1398810239301786,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.857142857142854,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 39.523809523809526,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 47.61904761904762,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.752913752913756,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 30.357142857142854,
+    "switch_preference_pp": -0.7638734144469101,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 39.285714285714285,
+    "switch_preference_pp": 3.828749102022913,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -3.3126693529387317,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 4.4942982494831085,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.83333333333333,
+    "switch_preference_pp": -0.9484662635562321,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": -5.947957343111435,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 43.05555555555555,
+    "switch_preference_pp": -0.011502470200260479,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 6.207508283356825,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 9.445382530490559,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 48.61111111111111,
+    "switch_preference_pp": 2.793189096781943,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": 1.9998760583500068,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "cnn_bilstm",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 48.80952380952381,
+    "switch_preference_pp": 3.5643637697729798,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.333333333333336,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 26.190476190476193,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.333333333333336,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 21.428571428571427,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.333333333333336,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 35.11904761904761,
+    "switch_preference_pp": 0.15642864030033773,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": -0.46466728578725325,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": 0.02624496441519797,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.83333333333333,
+    "switch_preference_pp": 0.527190714839194,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": 0.031408538063420574,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 25.0,
+    "switch_preference_pp": -0.953026185896483,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 0.22261345624955473,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 4.755916707686479,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 0.08119009009449388,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": 0.0004451358955813503,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -0.4343445409846239,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "timing_only",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": 0.03824198059997773,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.333333333333336,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.85714285714286,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.0,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 23.80952380952381,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.95493395493395,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 35.11904761904761,
+    "switch_preference_pp": 0.04799196528658678,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": 0.11007882390286401,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 0.91486057595302,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": 0.018167169572190035,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": 0.18190927026627948,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": 1.2396950693102804,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 0.527250752903107,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": 0.5424860834531013,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 0.029311519851534424,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": -0.23316909894923804,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": -0.15358065623265724,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "timing_only",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": -0.004218029191281614,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 92.85714285714286,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 52.38095238095239,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 64.28571428571428,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 76.19047619047619,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 71.42857142857143,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 64.28571428571428,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 80.95238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 71.42857142857143,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 71.42857142857143,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.46153846153847,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 76.1904761904762,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 66.66666666666666,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 91.07142857142857,
+    "switch_preference_pp": 67.04748009654568,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 70.23809523809523,
+    "switch_preference_pp": 38.3018121767614,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 83.33333333333334,
+    "switch_preference_pp": 66.05747730354665,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 79.16666666666666,
+    "switch_preference_pp": 32.7078513977304,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 79.16666666666666,
+    "switch_preference_pp": 52.392931313580426,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 75.0,
+    "switch_preference_pp": 45.30380315253385,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 87.5,
+    "switch_preference_pp": 50.421657600141565,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 87.5,
+    "switch_preference_pp": 55.1654167517042,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 79.16666666666666,
+    "switch_preference_pp": 49.301876916195496,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 61.111111111111114,
+    "switch_preference_pp": 21.461205370576483,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 79.16666666666666,
+    "switch_preference_pp": 33.44594368002316,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "timing_only",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 91.66666666666666,
+    "switch_preference_pp": 59.73270210525071,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 47.61904761904761,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.23809523809524,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 39.523809523809526,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.23809523809524,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.857142857142854,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 44.230769230769226,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 75.0,
+    "switch_preference_pp": 20.142672295994878,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 66.66666666666666,
+    "switch_preference_pp": 6.4872490082783285,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 58.333333333333336,
+    "switch_preference_pp": 15.50529876461283,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 66.66666666666666,
+    "switch_preference_pp": 18.718468279849567,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 3.562407877993754,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 58.333333333333336,
+    "switch_preference_pp": 3.5773253736630783,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": 25.084166605423704,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": 3.9291521567469623,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 10.235752908416373,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 79.16666666666666,
+    "switch_preference_pp": 31.92718523662786,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 62.5,
+    "switch_preference_pp": 7.616486636550972,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "timing_only",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.83333333333333,
+    "switch_preference_pp": 13.866459548718796,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "previous_weight",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "previous_weight",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "previous_weight",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "previous_weight",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 0,
+    "switch_preference_pp": -100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "schedule",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "schedule",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "schedule",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "schedule",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 100,
+    "switch_preference_pp": 100.0,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 21.428571428571427,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 23.809523809523807,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.57142857142858,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.23809523809524,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 28.57142857142857,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.23809523809524,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 48.60139860139861,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 30.357142857142854,
+    "switch_preference_pp": 2.5417642481958964,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 42.857142857142854,
+    "switch_preference_pp": 1.1653237284876858,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 25.0,
+    "switch_preference_pp": -16.775732086888752,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 54.166666666666664,
+    "switch_preference_pp": 7.845356744905619,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 20.833333333333336,
+    "switch_preference_pp": -17.43832094280766,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.83333333333333,
+    "switch_preference_pp": 5.847100206272154,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 48.61111111111111,
+    "switch_preference_pp": -3.175570697237906,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": 5.9849799589661385,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 20.833333333333336,
+    "switch_preference_pp": -9.9065626444675,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 36.11111111111111,
+    "switch_preference_pp": -2.6914249793724907,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": -2.718528532516857,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "logistic_plus_duration",
+    "stage": "Preparation",
+    "group": "Switch",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": -3.756809792383968,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.238095238095234,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 23.809523809523807,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.238095238095234,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.58663558663559,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": 3.548059346375153,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 38.69047619047619,
+    "switch_preference_pp": 1.9930485390334194,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 16.666666666666664,
+    "switch_preference_pp": -14.390159995455102,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.83333333333333,
+    "switch_preference_pp": 5.097232031677423,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 41.66666666666667,
+    "switch_preference_pp": 7.44084813255922,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": -0.33051139008772357,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 38.88888888888889,
+    "switch_preference_pp": 0.7009196612587878,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.83333333333333,
+    "switch_preference_pp": 15.478339129383645,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -4.208344973237144,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 36.11111111111111,
+    "switch_preference_pp": 1.0010225200342502,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": -9.545959186101769,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "logistic_plus_duration",
+    "stage": "Reach",
+    "group": "Switch",
+    "balanced_accuracy_pct": 44.642857142857146,
+    "switch_preference_pp": 15.681360037795521,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 66.66666666666666,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 47.61904761904762,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 52.38095238095239,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 57.14285714285714,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 52.38095238095239,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 59.523809523809526,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 46.950271950271954,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 54.761904761904766,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 70.23809523809523,
+    "switch_preference_pp": 33.68854914749836,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 52.38095238095239,
+    "switch_preference_pp": 10.722647103186958,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 58.333333333333336,
+    "switch_preference_pp": 30.547183464373934,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 45.83333333333333,
+    "switch_preference_pp": 32.61059291660906,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 79.16666666666666,
+    "switch_preference_pp": 40.39089432679111,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 26.422158283975545,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 69.44444444444444,
+    "switch_preference_pp": 34.3968811890773,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 66.66666666666666,
+    "switch_preference_pp": 25.76978183006841,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 7.346139185215682,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 8.589602120559153,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 19.1722190081865,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "logistic_plus_duration",
+    "stage": "Loading",
+    "group": "Switch",
+    "balanced_accuracy_pct": 60.71428571428571,
+    "switch_preference_pp": 11.078721675765122,
+    "trial_count": 23
+  },
+  {
+    "participant": "P1",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P10",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 42.857142857142854,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P11",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P12",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 23.809523809523807,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P2",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P3",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 31.428571428571427,
+    "switch_preference_pp": null,
+    "trial_count": 38
+  },
+  {
+    "participant": "P4",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 40.476190476190474,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P5",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.23809523809524,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P6",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 45.23809523809524,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P7",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.61693861693862,
+    "switch_preference_pp": null,
+    "trial_count": 36
+  },
+  {
+    "participant": "P8",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 30.952380952380953,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P9",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Repeat",
+    "balanced_accuracy_pct": 38.095238095238095,
+    "switch_preference_pp": null,
+    "trial_count": 42
+  },
+  {
+    "participant": "P1",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 35.714285714285715,
+    "switch_preference_pp": 6.754226814750037,
+    "trial_count": 23
+  },
+  {
+    "participant": "P10",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 15.685178314961345,
+    "trial_count": 23
+  },
+  {
+    "participant": "P11",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 25.0,
+    "switch_preference_pp": 2.6317442840995744,
+    "trial_count": 24
+  },
+  {
+    "participant": "P12",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 10.017828032392195,
+    "trial_count": 24
+  },
+  {
+    "participant": "P2",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 33.33333333333333,
+    "switch_preference_pp": 2.3919144352460697,
+    "trial_count": 24
+  },
+  {
+    "participant": "P3",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 29.166666666666668,
+    "switch_preference_pp": 0.5821735434899459,
+    "trial_count": 20
+  },
+  {
+    "participant": "P4",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 48.61111111111111,
+    "switch_preference_pp": 23.516176109898662,
+    "trial_count": 22
+  },
+  {
+    "participant": "P5",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 50.0,
+    "switch_preference_pp": 24.45826430156226,
+    "trial_count": 24
+  },
+  {
+    "participant": "P6",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 4.731252628253459,
+    "trial_count": 24
+  },
+  {
+    "participant": "P7",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 51.388888888888886,
+    "switch_preference_pp": 21.841594310479884,
+    "trial_count": 20
+  },
+  {
+    "participant": "P8",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 37.5,
+    "switch_preference_pp": 11.630064259519726,
+    "trial_count": 24
+  },
+  {
+    "participant": "P9",
+    "model": "logistic_plus_duration",
+    "stage": "Lift/hold",
+    "group": "Switch",
+    "balanced_accuracy_pct": 49.4047619047619,
+    "switch_preference_pp": 14.620350160949878,
+    "trial_count": 23
+  }
+]

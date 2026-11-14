@@ -1,5 +1,7 @@
 # Stage decoding
 
+**Interactive results:** [Open online](https://htmlpreview.github.io/?https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/outputs/reports/movement-stages/index.html) · [Open locally](../../outputs/reports/movement-stages/index.html)
+
 Describe existing decoder errors by movement stage and timing, then assess the need for stage-specific training.
 
 Saved-model diagnostics, trial averages and the first R6 dynamics analysis have reports below. The shared registry maintains execution status and priority.

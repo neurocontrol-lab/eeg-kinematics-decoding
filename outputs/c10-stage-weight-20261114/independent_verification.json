@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "matched_heldout_trials": 769,
+  "verified_prediction_groups": 28,
+  "verified_prediction_rows": 21532,
+  "independently_recomputed_population_means": 84,
+  "verified_neural_fit_records": 96
+}
