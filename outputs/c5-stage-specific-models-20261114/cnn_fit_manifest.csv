@@ -1,0 +1,529 @@
+participant,architecture,scope,train_stage,n_train,n_train_trials,parameters,seed,epochs,batch_size,device
+P1,cnn_elu,Pooled,,5102,191,3235,42,15,64,GPU:0
+P1,cnn_elu,Specialist,Preparation,116,96,3235,42,15,64,GPU:0
+P1,cnn_elu,Matched pooled,Preparation,116,88,3235,42,15,64,GPU:0
+P1,cnn_elu,Specialist,Reach,728,191,3235,42,15,64,GPU:0
+P1,cnn_elu,Matched pooled,Reach,728,186,3235,42,15,64,GPU:0
+P1,cnn_elu,Specialist,Loading,38,23,3235,42,15,64,GPU:0
+P1,cnn_elu,Matched pooled,Loading,38,23,3235,42,15,64,GPU:0
+P1,cnn_elu,Specialist,Lift/hold,3004,191,3235,42,15,64,GPU:0
+P1,cnn_elu,Matched pooled,Lift/hold,3004,191,3235,42,15,64,GPU:0
+P1,cnn_elu,Specialist,Lowering,776,191,3235,42,15,64,GPU:0
+P1,cnn_elu,Matched pooled,Lowering,776,189,3235,42,15,64,GPU:0
+P1,cnn_elu,Specialist,Release,34,31,3235,42,15,64,GPU:0
+P1,cnn_elu,Specialist,Return,406,191,3235,42,15,64,GPU:0
+P1,cnn_elu,Matched pooled,Return,406,168,3235,42,15,64,GPU:0
+P1,eegnet_regression,Pooled,,5102,191,1891,42,15,64,GPU:0
+P1,eegnet_regression,Specialist,Preparation,116,96,1891,42,15,64,GPU:0
+P1,eegnet_regression,Matched pooled,Preparation,116,88,1891,42,15,64,GPU:0
+P1,eegnet_regression,Specialist,Reach,728,191,1891,42,15,64,GPU:0
+P1,eegnet_regression,Matched pooled,Reach,728,186,1891,42,15,64,GPU:0
+P1,eegnet_regression,Specialist,Loading,38,23,1891,42,15,64,GPU:0
+P1,eegnet_regression,Matched pooled,Loading,38,23,1891,42,15,64,GPU:0
+P1,eegnet_regression,Specialist,Lift/hold,3004,191,1891,42,15,64,GPU:0
+P1,eegnet_regression,Matched pooled,Lift/hold,3004,191,1891,42,15,64,GPU:0
+P1,eegnet_regression,Specialist,Lowering,776,191,1891,42,15,64,GPU:0
+P1,eegnet_regression,Matched pooled,Lowering,776,189,1891,42,15,64,GPU:0
+P1,eegnet_regression,Specialist,Release,34,31,1891,42,15,64,GPU:0
+P1,eegnet_regression,Specialist,Return,406,191,1891,42,15,64,GPU:0
+P1,eegnet_regression,Matched pooled,Return,406,168,1891,42,15,64,GPU:0
+P1,cnn_bilstm,Pooled,,5102,191,61347,42,15,64,GPU:0
+P1,cnn_bilstm,Specialist,Preparation,116,96,61347,42,15,64,GPU:0
+P1,cnn_bilstm,Matched pooled,Preparation,116,88,61347,42,15,64,GPU:0
+P1,cnn_bilstm,Specialist,Reach,728,191,61347,42,15,64,GPU:0
+P1,cnn_bilstm,Matched pooled,Reach,728,186,61347,42,15,64,GPU:0
+P1,cnn_bilstm,Specialist,Loading,38,23,61347,42,15,64,GPU:0
+P1,cnn_bilstm,Matched pooled,Loading,38,23,61347,42,15,64,GPU:0
+P1,cnn_bilstm,Specialist,Lift/hold,3004,191,61347,42,15,64,GPU:0
+P1,cnn_bilstm,Matched pooled,Lift/hold,3004,191,61347,42,15,64,GPU:0
+P1,cnn_bilstm,Specialist,Lowering,776,191,61347,42,15,64,GPU:0
+P1,cnn_bilstm,Matched pooled,Lowering,776,189,61347,42,15,64,GPU:0
+P1,cnn_bilstm,Specialist,Release,34,31,61347,42,15,64,GPU:0
+P1,cnn_bilstm,Specialist,Return,406,191,61347,42,15,64,GPU:0
+P1,cnn_bilstm,Matched pooled,Return,406,168,61347,42,15,64,GPU:0
+P2,cnn_elu,Pooled,,8486,192,3235,42,15,64,GPU:0
+P2,cnn_elu,Specialist,Preparation,1066,192,3235,42,15,64,GPU:0
+P2,cnn_elu,Matched pooled,Preparation,1066,189,3235,42,15,64,GPU:0
+P2,cnn_elu,Specialist,Reach,1443,192,3235,42,15,64,GPU:0
+P2,cnn_elu,Matched pooled,Reach,1443,192,3235,42,15,64,GPU:0
+P2,cnn_elu,Specialist,Preload,38,30,3235,42,15,64,GPU:0
+P2,cnn_elu,Specialist,Loading,492,161,3235,42,15,64,GPU:0
+P2,cnn_elu,Matched pooled,Loading,492,146,3235,42,15,64,GPU:0
+P2,cnn_elu,Specialist,Lift/hold,3333,192,3235,42,15,64,GPU:0
+P2,cnn_elu,Matched pooled,Lift/hold,3333,192,3235,42,15,64,GPU:0
+P2,cnn_elu,Specialist,Lowering,1101,192,3235,42,15,64,GPU:0
+P2,cnn_elu,Matched pooled,Lowering,1101,192,3235,42,15,64,GPU:0
+P2,cnn_elu,Specialist,Release,119,73,3235,42,15,64,GPU:0
+P2,cnn_elu,Matched pooled,Release,119,82,3235,42,15,64,GPU:0
+P2,cnn_elu,Specialist,Return,894,192,3235,42,15,64,GPU:0
+P2,cnn_elu,Matched pooled,Return,894,188,3235,42,15,64,GPU:0
+P2,eegnet_regression,Pooled,,8486,192,1891,42,15,64,GPU:0
+P2,eegnet_regression,Specialist,Preparation,1066,192,1891,42,15,64,GPU:0
+P2,eegnet_regression,Matched pooled,Preparation,1066,189,1891,42,15,64,GPU:0
+P2,eegnet_regression,Specialist,Reach,1443,192,1891,42,15,64,GPU:0
+P2,eegnet_regression,Matched pooled,Reach,1443,192,1891,42,15,64,GPU:0
+P2,eegnet_regression,Specialist,Preload,38,30,1891,42,15,64,GPU:0
+P2,eegnet_regression,Specialist,Loading,492,161,1891,42,15,64,GPU:0
+P2,eegnet_regression,Matched pooled,Loading,492,146,1891,42,15,64,GPU:0
+P2,eegnet_regression,Specialist,Lift/hold,3333,192,1891,42,15,64,GPU:0
+P2,eegnet_regression,Matched pooled,Lift/hold,3333,192,1891,42,15,64,GPU:0
+P2,eegnet_regression,Specialist,Lowering,1101,192,1891,42,15,64,GPU:0
+P2,eegnet_regression,Matched pooled,Lowering,1101,192,1891,42,15,64,GPU:0
+P2,eegnet_regression,Specialist,Release,119,73,1891,42,15,64,GPU:0
+P2,eegnet_regression,Matched pooled,Release,119,82,1891,42,15,64,GPU:0
+P2,eegnet_regression,Specialist,Return,894,192,1891,42,15,64,GPU:0
+P2,eegnet_regression,Matched pooled,Return,894,188,1891,42,15,64,GPU:0
+P2,cnn_bilstm,Pooled,,8486,192,61347,42,15,64,GPU:0
+P2,cnn_bilstm,Specialist,Preparation,1066,192,61347,42,15,64,GPU:0
+P2,cnn_bilstm,Matched pooled,Preparation,1066,189,61347,42,15,64,GPU:0
+P2,cnn_bilstm,Specialist,Reach,1443,192,61347,42,15,64,GPU:0
+P2,cnn_bilstm,Matched pooled,Reach,1443,192,61347,42,15,64,GPU:0
+P2,cnn_bilstm,Specialist,Preload,38,30,61347,42,15,64,GPU:0
+P2,cnn_bilstm,Specialist,Loading,492,161,61347,42,15,64,GPU:0
+P2,cnn_bilstm,Matched pooled,Loading,492,146,61347,42,15,64,GPU:0
+P2,cnn_bilstm,Specialist,Lift/hold,3333,192,61347,42,15,64,GPU:0
+P2,cnn_bilstm,Matched pooled,Lift/hold,3333,192,61347,42,15,64,GPU:0
+P2,cnn_bilstm,Specialist,Lowering,1101,192,61347,42,15,64,GPU:0
+P2,cnn_bilstm,Matched pooled,Lowering,1101,192,61347,42,15,64,GPU:0
+P2,cnn_bilstm,Specialist,Release,119,73,61347,42,15,64,GPU:0
+P2,cnn_bilstm,Matched pooled,Release,119,82,61347,42,15,64,GPU:0
+P2,cnn_bilstm,Specialist,Return,894,192,61347,42,15,64,GPU:0
+P2,cnn_bilstm,Matched pooled,Return,894,188,61347,42,15,64,GPU:0
+P3,cnn_elu,Pooled,,5031,191,3235,42,15,64,GPU:0
+P3,cnn_elu,Specialist,Preparation,119,113,3235,42,15,64,GPU:0
+P3,cnn_elu,Matched pooled,Preparation,119,85,3235,42,15,64,GPU:0
+P3,cnn_elu,Specialist,Reach,718,191,3235,42,15,64,GPU:0
+P3,cnn_elu,Matched pooled,Reach,718,188,3235,42,15,64,GPU:0
+P3,cnn_elu,Specialist,Lift/hold,2991,191,3235,42,15,64,GPU:0
+P3,cnn_elu,Matched pooled,Lift/hold,2991,191,3235,42,15,64,GPU:0
+P3,cnn_elu,Specialist,Lowering,633,191,3235,42,15,64,GPU:0
+P3,cnn_elu,Matched pooled,Lowering,633,187,3235,42,15,64,GPU:0
+P3,cnn_elu,Specialist,Return,555,191,3235,42,15,64,GPU:0
+P3,cnn_elu,Matched pooled,Return,555,180,3235,42,15,64,GPU:0
+P3,eegnet_regression,Pooled,,5031,191,1891,42,15,64,GPU:0
+P3,eegnet_regression,Specialist,Preparation,119,113,1891,42,15,64,GPU:0
+P3,eegnet_regression,Matched pooled,Preparation,119,85,1891,42,15,64,GPU:0
+P3,eegnet_regression,Specialist,Reach,718,191,1891,42,15,64,GPU:0
+P3,eegnet_regression,Matched pooled,Reach,718,188,1891,42,15,64,GPU:0
+P3,eegnet_regression,Specialist,Lift/hold,2991,191,1891,42,15,64,GPU:0
+P3,eegnet_regression,Matched pooled,Lift/hold,2991,191,1891,42,15,64,GPU:0
+P3,eegnet_regression,Specialist,Lowering,633,191,1891,42,15,64,GPU:0
+P3,eegnet_regression,Matched pooled,Lowering,633,187,1891,42,15,64,GPU:0
+P3,eegnet_regression,Specialist,Return,555,191,1891,42,15,64,GPU:0
+P3,eegnet_regression,Matched pooled,Return,555,180,1891,42,15,64,GPU:0
+P3,cnn_bilstm,Pooled,,5031,191,61347,42,15,64,GPU:0
+P3,cnn_bilstm,Specialist,Preparation,119,113,61347,42,15,64,GPU:0
+P3,cnn_bilstm,Matched pooled,Preparation,119,85,61347,42,15,64,GPU:0
+P3,cnn_bilstm,Specialist,Reach,718,191,61347,42,15,64,GPU:0
+P3,cnn_bilstm,Matched pooled,Reach,718,188,61347,42,15,64,GPU:0
+P3,cnn_bilstm,Specialist,Lift/hold,2991,191,61347,42,15,64,GPU:0
+P3,cnn_bilstm,Matched pooled,Lift/hold,2991,191,61347,42,15,64,GPU:0
+P3,cnn_bilstm,Specialist,Lowering,633,191,61347,42,15,64,GPU:0
+P3,cnn_bilstm,Matched pooled,Lowering,633,187,61347,42,15,64,GPU:0
+P3,cnn_bilstm,Specialist,Return,555,191,61347,42,15,64,GPU:0
+P3,cnn_bilstm,Matched pooled,Return,555,180,61347,42,15,64,GPU:0
+P4,cnn_elu,Pooled,,5838,191,3235,42,15,64,GPU:0
+P4,cnn_elu,Specialist,Preparation,114,96,3235,42,15,64,GPU:0
+P4,cnn_elu,Matched pooled,Preparation,114,87,3235,42,15,64,GPU:0
+P4,cnn_elu,Specialist,Reach,803,191,3235,42,15,64,GPU:0
+P4,cnn_elu,Matched pooled,Reach,803,188,3235,42,15,64,GPU:0
+P4,cnn_elu,Specialist,Loading,48,31,3235,42,15,64,GPU:0
+P4,cnn_elu,Matched pooled,Loading,48,28,3235,42,15,64,GPU:0
+P4,cnn_elu,Specialist,Lift/hold,3052,191,3235,42,15,64,GPU:0
+P4,cnn_elu,Matched pooled,Lift/hold,3052,191,3235,42,15,64,GPU:0
+P4,cnn_elu,Specialist,Lowering,1063,191,3235,42,15,64,GPU:0
+P4,cnn_elu,Matched pooled,Lowering,1063,191,3235,42,15,64,GPU:0
+P4,cnn_elu,Specialist,Release,78,63,3235,42,15,64,GPU:0
+P4,cnn_elu,Matched pooled,Release,78,60,3235,42,15,64,GPU:0
+P4,cnn_elu,Specialist,Return,680,191,3235,42,15,64,GPU:0
+P4,cnn_elu,Matched pooled,Return,680,184,3235,42,15,64,GPU:0
+P4,eegnet_regression,Pooled,,5838,191,1891,42,15,64,GPU:0
+P4,eegnet_regression,Specialist,Preparation,114,96,1891,42,15,64,GPU:0
+P4,eegnet_regression,Matched pooled,Preparation,114,87,1891,42,15,64,GPU:0
+P4,eegnet_regression,Specialist,Reach,803,191,1891,42,15,64,GPU:0
+P4,eegnet_regression,Matched pooled,Reach,803,188,1891,42,15,64,GPU:0
+P4,eegnet_regression,Specialist,Loading,48,31,1891,42,15,64,GPU:0
+P4,eegnet_regression,Matched pooled,Loading,48,28,1891,42,15,64,GPU:0
+P4,eegnet_regression,Specialist,Lift/hold,3052,191,1891,42,15,64,GPU:0
+P4,eegnet_regression,Matched pooled,Lift/hold,3052,191,1891,42,15,64,GPU:0
+P4,eegnet_regression,Specialist,Lowering,1063,191,1891,42,15,64,GPU:0
+P4,eegnet_regression,Matched pooled,Lowering,1063,191,1891,42,15,64,GPU:0
+P4,eegnet_regression,Specialist,Release,78,63,1891,42,15,64,GPU:0
+P4,eegnet_regression,Matched pooled,Release,78,60,1891,42,15,64,GPU:0
+P4,eegnet_regression,Specialist,Return,680,191,1891,42,15,64,GPU:0
+P4,eegnet_regression,Matched pooled,Return,680,184,1891,42,15,64,GPU:0
+P4,cnn_bilstm,Pooled,,5838,191,61347,42,15,64,GPU:0
+P4,cnn_bilstm,Specialist,Preparation,114,96,61347,42,15,64,GPU:0
+P4,cnn_bilstm,Matched pooled,Preparation,114,87,61347,42,15,64,GPU:0
+P4,cnn_bilstm,Specialist,Reach,803,191,61347,42,15,64,GPU:0
+P4,cnn_bilstm,Matched pooled,Reach,803,188,61347,42,15,64,GPU:0
+P4,cnn_bilstm,Specialist,Loading,48,31,61347,42,15,64,GPU:0
+P4,cnn_bilstm,Matched pooled,Loading,48,28,61347,42,15,64,GPU:0
+P4,cnn_bilstm,Specialist,Lift/hold,3052,191,61347,42,15,64,GPU:0
+P4,cnn_bilstm,Matched pooled,Lift/hold,3052,191,61347,42,15,64,GPU:0
+P4,cnn_bilstm,Specialist,Lowering,1063,191,61347,42,15,64,GPU:0
+P4,cnn_bilstm,Matched pooled,Lowering,1063,191,61347,42,15,64,GPU:0
+P4,cnn_bilstm,Specialist,Release,78,63,61347,42,15,64,GPU:0
+P4,cnn_bilstm,Matched pooled,Release,78,60,61347,42,15,64,GPU:0
+P4,cnn_bilstm,Specialist,Return,680,191,61347,42,15,64,GPU:0
+P4,cnn_bilstm,Matched pooled,Return,680,184,61347,42,15,64,GPU:0
+P5,cnn_elu,Pooled,,6749,192,3235,42,15,64,GPU:0
+P5,cnn_elu,Specialist,Preparation,452,182,3235,42,15,64,GPU:0
+P5,cnn_elu,Matched pooled,Preparation,452,172,3235,42,15,64,GPU:0
+P5,cnn_elu,Specialist,Reach,1314,192,3235,42,15,64,GPU:0
+P5,cnn_elu,Matched pooled,Reach,1314,192,3235,42,15,64,GPU:0
+P5,cnn_elu,Specialist,Loading,173,102,3235,42,15,64,GPU:0
+P5,cnn_elu,Matched pooled,Loading,173,97,3235,42,15,64,GPU:0
+P5,cnn_elu,Specialist,Lift/hold,3149,192,3235,42,15,64,GPU:0
+P5,cnn_elu,Matched pooled,Lift/hold,3149,192,3235,42,15,64,GPU:0
+P5,cnn_elu,Specialist,Lowering,917,192,3235,42,15,64,GPU:0
+P5,cnn_elu,Matched pooled,Lowering,917,191,3235,42,15,64,GPU:0
+P5,cnn_elu,Specialist,Release,33,29,3235,42,15,64,GPU:0
+P5,cnn_elu,Matched pooled,Release,33,28,3235,42,15,64,GPU:0
+P5,cnn_elu,Specialist,Return,710,192,3235,42,15,64,GPU:0
+P5,cnn_elu,Matched pooled,Return,710,192,3235,42,15,64,GPU:0
+P5,eegnet_regression,Pooled,,6749,192,1891,42,15,64,GPU:0
+P5,eegnet_regression,Specialist,Preparation,452,182,1891,42,15,64,GPU:0
+P5,eegnet_regression,Matched pooled,Preparation,452,172,1891,42,15,64,GPU:0
+P5,eegnet_regression,Specialist,Reach,1314,192,1891,42,15,64,GPU:0
+P5,eegnet_regression,Matched pooled,Reach,1314,192,1891,42,15,64,GPU:0
+P5,eegnet_regression,Specialist,Loading,173,102,1891,42,15,64,GPU:0
+P5,eegnet_regression,Matched pooled,Loading,173,97,1891,42,15,64,GPU:0
+P5,eegnet_regression,Specialist,Lift/hold,3149,192,1891,42,15,64,GPU:0
+P5,eegnet_regression,Matched pooled,Lift/hold,3149,192,1891,42,15,64,GPU:0
+P5,eegnet_regression,Specialist,Lowering,917,192,1891,42,15,64,GPU:0
+P5,eegnet_regression,Matched pooled,Lowering,917,191,1891,42,15,64,GPU:0
+P5,eegnet_regression,Specialist,Release,33,29,1891,42,15,64,GPU:0
+P5,eegnet_regression,Matched pooled,Release,33,28,1891,42,15,64,GPU:0
+P5,eegnet_regression,Specialist,Return,710,192,1891,42,15,64,GPU:0
+P5,eegnet_regression,Matched pooled,Return,710,192,1891,42,15,64,GPU:0
+P5,cnn_bilstm,Pooled,,6749,192,61347,42,15,64,GPU:0
+P5,cnn_bilstm,Specialist,Preparation,452,182,61347,42,15,64,GPU:0
+P5,cnn_bilstm,Matched pooled,Preparation,452,172,61347,42,15,64,GPU:0
+P5,cnn_bilstm,Specialist,Reach,1314,192,61347,42,15,64,GPU:0
+P5,cnn_bilstm,Matched pooled,Reach,1314,192,61347,42,15,64,GPU:0
+P5,cnn_bilstm,Specialist,Loading,173,102,61347,42,15,64,GPU:0
+P5,cnn_bilstm,Matched pooled,Loading,173,97,61347,42,15,64,GPU:0
+P5,cnn_bilstm,Specialist,Lift/hold,3149,192,61347,42,15,64,GPU:0
+P5,cnn_bilstm,Matched pooled,Lift/hold,3149,192,61347,42,15,64,GPU:0
+P5,cnn_bilstm,Specialist,Lowering,917,192,61347,42,15,64,GPU:0
+P5,cnn_bilstm,Matched pooled,Lowering,917,191,61347,42,15,64,GPU:0
+P5,cnn_bilstm,Specialist,Release,33,29,61347,42,15,64,GPU:0
+P5,cnn_bilstm,Matched pooled,Release,33,28,61347,42,15,64,GPU:0
+P5,cnn_bilstm,Specialist,Return,710,192,61347,42,15,64,GPU:0
+P5,cnn_bilstm,Matched pooled,Return,710,192,61347,42,15,64,GPU:0
+P6,cnn_elu,Pooled,,6857,191,3235,42,15,64,GPU:0
+P6,cnn_elu,Specialist,Preparation,378,166,3235,42,15,64,GPU:0
+P6,cnn_elu,Matched pooled,Preparation,378,145,3235,42,15,64,GPU:0
+P6,cnn_elu,Specialist,Reach,1188,191,3235,42,15,64,GPU:0
+P6,cnn_elu,Matched pooled,Reach,1188,190,3235,42,15,64,GPU:0
+P6,cnn_elu,Specialist,Loading,246,135,3235,42,15,64,GPU:0
+P6,cnn_elu,Matched pooled,Loading,246,118,3235,42,15,64,GPU:0
+P6,cnn_elu,Specialist,Lift/hold,3193,191,3235,42,15,64,GPU:0
+P6,cnn_elu,Matched pooled,Lift/hold,3193,191,3235,42,15,64,GPU:0
+P6,cnn_elu,Specialist,Lowering,952,191,3235,42,15,64,GPU:0
+P6,cnn_elu,Matched pooled,Lowering,952,189,3235,42,15,64,GPU:0
+P6,cnn_elu,Specialist,Release,65,55,3235,42,15,64,GPU:0
+P6,cnn_elu,Matched pooled,Release,65,56,3235,42,15,64,GPU:0
+P6,cnn_elu,Specialist,Return,831,191,3235,42,15,64,GPU:0
+P6,cnn_elu,Matched pooled,Return,831,188,3235,42,15,64,GPU:0
+P6,eegnet_regression,Pooled,,6857,191,1891,42,15,64,GPU:0
+P6,eegnet_regression,Specialist,Preparation,378,166,1891,42,15,64,GPU:0
+P6,eegnet_regression,Matched pooled,Preparation,378,145,1891,42,15,64,GPU:0
+P6,eegnet_regression,Specialist,Reach,1188,191,1891,42,15,64,GPU:0
+P6,eegnet_regression,Matched pooled,Reach,1188,190,1891,42,15,64,GPU:0
+P6,eegnet_regression,Specialist,Loading,246,135,1891,42,15,64,GPU:0
+P6,eegnet_regression,Matched pooled,Loading,246,118,1891,42,15,64,GPU:0
+P6,eegnet_regression,Specialist,Lift/hold,3193,191,1891,42,15,64,GPU:0
+P6,eegnet_regression,Matched pooled,Lift/hold,3193,191,1891,42,15,64,GPU:0
+P6,eegnet_regression,Specialist,Lowering,952,191,1891,42,15,64,GPU:0
+P6,eegnet_regression,Matched pooled,Lowering,952,189,1891,42,15,64,GPU:0
+P6,eegnet_regression,Specialist,Release,65,55,1891,42,15,64,GPU:0
+P6,eegnet_regression,Matched pooled,Release,65,56,1891,42,15,64,GPU:0
+P6,eegnet_regression,Specialist,Return,831,191,1891,42,15,64,GPU:0
+P6,eegnet_regression,Matched pooled,Return,831,188,1891,42,15,64,GPU:0
+P6,cnn_bilstm,Pooled,,6857,191,61347,42,15,64,GPU:0
+P6,cnn_bilstm,Specialist,Preparation,378,166,61347,42,15,64,GPU:0
+P6,cnn_bilstm,Matched pooled,Preparation,378,145,61347,42,15,64,GPU:0
+P6,cnn_bilstm,Specialist,Reach,1188,191,61347,42,15,64,GPU:0
+P6,cnn_bilstm,Matched pooled,Reach,1188,190,61347,42,15,64,GPU:0
+P6,cnn_bilstm,Specialist,Loading,246,135,61347,42,15,64,GPU:0
+P6,cnn_bilstm,Matched pooled,Loading,246,118,61347,42,15,64,GPU:0
+P6,cnn_bilstm,Specialist,Lift/hold,3193,191,61347,42,15,64,GPU:0
+P6,cnn_bilstm,Matched pooled,Lift/hold,3193,191,61347,42,15,64,GPU:0
+P6,cnn_bilstm,Specialist,Lowering,952,191,61347,42,15,64,GPU:0
+P6,cnn_bilstm,Matched pooled,Lowering,952,189,61347,42,15,64,GPU:0
+P6,cnn_bilstm,Specialist,Release,65,55,61347,42,15,64,GPU:0
+P6,cnn_bilstm,Matched pooled,Release,65,56,61347,42,15,64,GPU:0
+P6,cnn_bilstm,Specialist,Return,831,191,61347,42,15,64,GPU:0
+P6,cnn_bilstm,Matched pooled,Return,831,188,61347,42,15,64,GPU:0
+P7,cnn_elu,Pooled,,9245,187,3235,42,15,64,GPU:0
+P7,cnn_elu,Specialist,Preparation,1414,185,3235,42,15,64,GPU:0
+P7,cnn_elu,Matched pooled,Preparation,1414,181,3235,42,15,64,GPU:0
+P7,cnn_elu,Specialist,Reach,1386,187,3235,42,15,64,GPU:0
+P7,cnn_elu,Matched pooled,Reach,1386,187,3235,42,15,64,GPU:0
+P7,cnn_elu,Specialist,Preload,72,46,3235,42,15,64,GPU:0
+P7,cnn_elu,Specialist,Loading,388,125,3235,42,15,64,GPU:0
+P7,cnn_elu,Matched pooled,Loading,388,132,3235,42,15,64,GPU:0
+P7,cnn_elu,Specialist,Lift/hold,3253,187,3235,42,15,64,GPU:0
+P7,cnn_elu,Matched pooled,Lift/hold,3253,187,3235,42,15,64,GPU:0
+P7,cnn_elu,Specialist,Lowering,1420,187,3235,42,15,64,GPU:0
+P7,cnn_elu,Matched pooled,Lowering,1420,187,3235,42,15,64,GPU:0
+P7,cnn_elu,Specialist,Release,98,57,3235,42,15,64,GPU:0
+P7,cnn_elu,Matched pooled,Release,98,69,3235,42,15,64,GPU:0
+P7,cnn_elu,Specialist,Return,1214,187,3235,42,15,64,GPU:0
+P7,cnn_elu,Matched pooled,Return,1214,183,3235,42,15,64,GPU:0
+P7,eegnet_regression,Pooled,,9245,187,1891,42,15,64,GPU:0
+P7,eegnet_regression,Specialist,Preparation,1414,185,1891,42,15,64,GPU:0
+P7,eegnet_regression,Matched pooled,Preparation,1414,181,1891,42,15,64,GPU:0
+P7,eegnet_regression,Specialist,Reach,1386,187,1891,42,15,64,GPU:0
+P7,eegnet_regression,Matched pooled,Reach,1386,187,1891,42,15,64,GPU:0
+P7,eegnet_regression,Specialist,Preload,72,46,1891,42,15,64,GPU:0
+P7,eegnet_regression,Specialist,Loading,388,125,1891,42,15,64,GPU:0
+P7,eegnet_regression,Matched pooled,Loading,388,132,1891,42,15,64,GPU:0
+P7,eegnet_regression,Specialist,Lift/hold,3253,187,1891,42,15,64,GPU:0
+P7,eegnet_regression,Matched pooled,Lift/hold,3253,187,1891,42,15,64,GPU:0
+P7,eegnet_regression,Specialist,Lowering,1420,187,1891,42,15,64,GPU:0
+P7,eegnet_regression,Matched pooled,Lowering,1420,187,1891,42,15,64,GPU:0
+P7,eegnet_regression,Specialist,Release,98,57,1891,42,15,64,GPU:0
+P7,eegnet_regression,Matched pooled,Release,98,69,1891,42,15,64,GPU:0
+P7,eegnet_regression,Specialist,Return,1214,187,1891,42,15,64,GPU:0
+P7,eegnet_regression,Matched pooled,Return,1214,183,1891,42,15,64,GPU:0
+P7,cnn_bilstm,Pooled,,9245,187,61347,42,15,64,GPU:0
+P7,cnn_bilstm,Specialist,Preparation,1414,185,61347,42,15,64,GPU:0
+P7,cnn_bilstm,Matched pooled,Preparation,1414,181,61347,42,15,64,GPU:0
+P7,cnn_bilstm,Specialist,Reach,1386,187,61347,42,15,64,GPU:0
+P7,cnn_bilstm,Matched pooled,Reach,1386,187,61347,42,15,64,GPU:0
+P7,cnn_bilstm,Specialist,Preload,72,46,61347,42,15,64,GPU:0
+P7,cnn_bilstm,Specialist,Loading,388,125,61347,42,15,64,GPU:0
+P7,cnn_bilstm,Matched pooled,Loading,388,132,61347,42,15,64,GPU:0
+P7,cnn_bilstm,Specialist,Lift/hold,3253,187,61347,42,15,64,GPU:0
+P7,cnn_bilstm,Matched pooled,Lift/hold,3253,187,61347,42,15,64,GPU:0
+P7,cnn_bilstm,Specialist,Lowering,1420,187,61347,42,15,64,GPU:0
+P7,cnn_bilstm,Matched pooled,Lowering,1420,187,61347,42,15,64,GPU:0
+P7,cnn_bilstm,Specialist,Release,98,57,61347,42,15,64,GPU:0
+P7,cnn_bilstm,Matched pooled,Release,98,69,61347,42,15,64,GPU:0
+P7,cnn_bilstm,Specialist,Return,1214,187,61347,42,15,64,GPU:0
+P7,cnn_bilstm,Matched pooled,Return,1214,183,61347,42,15,64,GPU:0
+P8,cnn_elu,Pooled,,5497,189,3235,42,15,64,GPU:0
+P8,cnn_elu,Specialist,Preparation,224,155,3235,42,15,64,GPU:0
+P8,cnn_elu,Matched pooled,Preparation,224,133,3235,42,15,64,GPU:0
+P8,cnn_elu,Specialist,Reach,851,189,3235,42,15,64,GPU:0
+P8,cnn_elu,Matched pooled,Reach,851,187,3235,42,15,64,GPU:0
+P8,cnn_elu,Specialist,Loading,93,55,3235,42,15,64,GPU:0
+P8,cnn_elu,Matched pooled,Loading,93,62,3235,42,15,64,GPU:0
+P8,cnn_elu,Specialist,Lift/hold,3046,189,3235,42,15,64,GPU:0
+P8,cnn_elu,Matched pooled,Lift/hold,3046,189,3235,42,15,64,GPU:0
+P8,cnn_elu,Specialist,Lowering,758,188,3235,42,15,64,GPU:0
+P8,cnn_elu,Matched pooled,Lowering,758,187,3235,42,15,64,GPU:0
+P8,cnn_elu,Specialist,Release,51,41,3235,42,15,64,GPU:0
+P8,cnn_elu,Specialist,Return,474,189,3235,42,15,64,GPU:0
+P8,cnn_elu,Matched pooled,Return,474,174,3235,42,15,64,GPU:0
+P8,eegnet_regression,Pooled,,5497,189,1891,42,15,64,GPU:0
+P8,eegnet_regression,Specialist,Preparation,224,155,1891,42,15,64,GPU:0
+P8,eegnet_regression,Matched pooled,Preparation,224,133,1891,42,15,64,GPU:0
+P8,eegnet_regression,Specialist,Reach,851,189,1891,42,15,64,GPU:0
+P8,eegnet_regression,Matched pooled,Reach,851,187,1891,42,15,64,GPU:0
+P8,eegnet_regression,Specialist,Loading,93,55,1891,42,15,64,GPU:0
+P8,eegnet_regression,Matched pooled,Loading,93,62,1891,42,15,64,GPU:0
+P8,eegnet_regression,Specialist,Lift/hold,3046,189,1891,42,15,64,GPU:0
+P8,eegnet_regression,Matched pooled,Lift/hold,3046,189,1891,42,15,64,GPU:0
+P8,eegnet_regression,Specialist,Lowering,758,188,1891,42,15,64,GPU:0
+P8,eegnet_regression,Matched pooled,Lowering,758,187,1891,42,15,64,GPU:0
+P8,eegnet_regression,Specialist,Release,51,41,1891,42,15,64,GPU:0
+P8,eegnet_regression,Specialist,Return,474,189,1891,42,15,64,GPU:0
+P8,eegnet_regression,Matched pooled,Return,474,174,1891,42,15,64,GPU:0
+P8,cnn_bilstm,Pooled,,5497,189,61347,42,15,64,GPU:0
+P8,cnn_bilstm,Specialist,Preparation,224,155,61347,42,15,64,GPU:0
+P8,cnn_bilstm,Matched pooled,Preparation,224,133,61347,42,15,64,GPU:0
+P8,cnn_bilstm,Specialist,Reach,851,189,61347,42,15,64,GPU:0
+P8,cnn_bilstm,Matched pooled,Reach,851,187,61347,42,15,64,GPU:0
+P8,cnn_bilstm,Specialist,Loading,93,55,61347,42,15,64,GPU:0
+P8,cnn_bilstm,Matched pooled,Loading,93,62,61347,42,15,64,GPU:0
+P8,cnn_bilstm,Specialist,Lift/hold,3046,189,61347,42,15,64,GPU:0
+P8,cnn_bilstm,Matched pooled,Lift/hold,3046,189,61347,42,15,64,GPU:0
+P8,cnn_bilstm,Specialist,Lowering,758,188,61347,42,15,64,GPU:0
+P8,cnn_bilstm,Matched pooled,Lowering,758,187,61347,42,15,64,GPU:0
+P8,cnn_bilstm,Specialist,Release,51,41,61347,42,15,64,GPU:0
+P8,cnn_bilstm,Specialist,Return,474,189,61347,42,15,64,GPU:0
+P8,cnn_bilstm,Matched pooled,Return,474,174,61347,42,15,64,GPU:0
+P9,cnn_elu,Pooled,,6544,184,3235,42,15,64,GPU:0
+P9,cnn_elu,Specialist,Preparation,321,163,3235,42,15,64,GPU:0
+P9,cnn_elu,Matched pooled,Preparation,321,147,3235,42,15,64,GPU:0
+P9,cnn_elu,Specialist,Reach,1299,184,3235,42,15,64,GPU:0
+P9,cnn_elu,Matched pooled,Reach,1299,184,3235,42,15,64,GPU:0
+P9,cnn_elu,Specialist,Loading,111,71,3235,42,15,64,GPU:0
+P9,cnn_elu,Matched pooled,Loading,111,65,3235,42,15,64,GPU:0
+P9,cnn_elu,Specialist,Lift/hold,2968,184,3235,42,15,64,GPU:0
+P9,cnn_elu,Matched pooled,Lift/hold,2968,184,3235,42,15,64,GPU:0
+P9,cnn_elu,Specialist,Lowering,918,184,3235,42,15,64,GPU:0
+P9,cnn_elu,Matched pooled,Lowering,918,182,3235,42,15,64,GPU:0
+P9,cnn_elu,Specialist,Release,92,74,3235,42,15,64,GPU:0
+P9,cnn_elu,Matched pooled,Release,92,67,3235,42,15,64,GPU:0
+P9,cnn_elu,Specialist,Return,834,184,3235,42,15,64,GPU:0
+P9,cnn_elu,Matched pooled,Return,834,184,3235,42,15,64,GPU:0
+P9,eegnet_regression,Pooled,,6544,184,1891,42,15,64,GPU:0
+P9,eegnet_regression,Specialist,Preparation,321,163,1891,42,15,64,GPU:0
+P9,eegnet_regression,Matched pooled,Preparation,321,147,1891,42,15,64,GPU:0
+P9,eegnet_regression,Specialist,Reach,1299,184,1891,42,15,64,GPU:0
+P9,eegnet_regression,Matched pooled,Reach,1299,184,1891,42,15,64,GPU:0
+P9,eegnet_regression,Specialist,Loading,111,71,1891,42,15,64,GPU:0
+P9,eegnet_regression,Matched pooled,Loading,111,65,1891,42,15,64,GPU:0
+P9,eegnet_regression,Specialist,Lift/hold,2968,184,1891,42,15,64,GPU:0
+P9,eegnet_regression,Matched pooled,Lift/hold,2968,184,1891,42,15,64,GPU:0
+P9,eegnet_regression,Specialist,Lowering,918,184,1891,42,15,64,GPU:0
+P9,eegnet_regression,Matched pooled,Lowering,918,182,1891,42,15,64,GPU:0
+P9,eegnet_regression,Specialist,Release,92,74,1891,42,15,64,GPU:0
+P9,eegnet_regression,Matched pooled,Release,92,67,1891,42,15,64,GPU:0
+P9,eegnet_regression,Specialist,Return,834,184,1891,42,15,64,GPU:0
+P9,eegnet_regression,Matched pooled,Return,834,184,1891,42,15,64,GPU:0
+P9,cnn_bilstm,Pooled,,6544,184,61347,42,15,64,GPU:0
+P9,cnn_bilstm,Specialist,Preparation,321,163,61347,42,15,64,GPU:0
+P9,cnn_bilstm,Matched pooled,Preparation,321,147,61347,42,15,64,GPU:0
+P9,cnn_bilstm,Specialist,Reach,1299,184,61347,42,15,64,GPU:0
+P9,cnn_bilstm,Matched pooled,Reach,1299,184,61347,42,15,64,GPU:0
+P9,cnn_bilstm,Specialist,Loading,111,71,61347,42,15,64,GPU:0
+P9,cnn_bilstm,Matched pooled,Loading,111,65,61347,42,15,64,GPU:0
+P9,cnn_bilstm,Specialist,Lift/hold,2968,184,61347,42,15,64,GPU:0
+P9,cnn_bilstm,Matched pooled,Lift/hold,2968,184,61347,42,15,64,GPU:0
+P9,cnn_bilstm,Specialist,Lowering,918,184,61347,42,15,64,GPU:0
+P9,cnn_bilstm,Matched pooled,Lowering,918,182,61347,42,15,64,GPU:0
+P9,cnn_bilstm,Specialist,Release,92,74,61347,42,15,64,GPU:0
+P9,cnn_bilstm,Matched pooled,Release,92,67,61347,42,15,64,GPU:0
+P9,cnn_bilstm,Specialist,Return,834,184,61347,42,15,64,GPU:0
+P9,cnn_bilstm,Matched pooled,Return,834,184,61347,42,15,64,GPU:0
+P10,cnn_elu,Pooled,,7239,191,3235,42,15,64,GPU:0
+P10,cnn_elu,Specialist,Preparation,429,181,3235,42,15,64,GPU:0
+P10,cnn_elu,Matched pooled,Preparation,429,169,3235,42,15,64,GPU:0
+P10,cnn_elu,Specialist,Reach,1282,191,3235,42,15,64,GPU:0
+P10,cnn_elu,Matched pooled,Reach,1282,191,3235,42,15,64,GPU:0
+P10,cnn_elu,Specialist,Loading,348,144,3235,42,15,64,GPU:0
+P10,cnn_elu,Matched pooled,Loading,348,138,3235,42,15,64,GPU:0
+P10,cnn_elu,Specialist,Lift/hold,3311,191,3235,42,15,64,GPU:0
+P10,cnn_elu,Matched pooled,Lift/hold,3311,191,3235,42,15,64,GPU:0
+P10,cnn_elu,Specialist,Lowering,1060,190,3235,42,15,64,GPU:0
+P10,cnn_elu,Matched pooled,Lowering,1060,191,3235,42,15,64,GPU:0
+P10,cnn_elu,Specialist,Release,201,121,3235,42,15,64,GPU:0
+P10,cnn_elu,Matched pooled,Release,201,113,3235,42,15,64,GPU:0
+P10,cnn_elu,Specialist,Return,606,191,3235,42,15,64,GPU:0
+P10,cnn_elu,Matched pooled,Return,606,183,3235,42,15,64,GPU:0
+P10,eegnet_regression,Pooled,,7239,191,1891,42,15,64,GPU:0
+P10,eegnet_regression,Specialist,Preparation,429,181,1891,42,15,64,GPU:0
+P10,eegnet_regression,Matched pooled,Preparation,429,169,1891,42,15,64,GPU:0
+P10,eegnet_regression,Specialist,Reach,1282,191,1891,42,15,64,GPU:0
+P10,eegnet_regression,Matched pooled,Reach,1282,191,1891,42,15,64,GPU:0
+P10,eegnet_regression,Specialist,Loading,348,144,1891,42,15,64,GPU:0
+P10,eegnet_regression,Matched pooled,Loading,348,138,1891,42,15,64,GPU:0
+P10,eegnet_regression,Specialist,Lift/hold,3311,191,1891,42,15,64,GPU:0
+P10,eegnet_regression,Matched pooled,Lift/hold,3311,191,1891,42,15,64,GPU:0
+P10,eegnet_regression,Specialist,Lowering,1060,190,1891,42,15,64,GPU:0
+P10,eegnet_regression,Matched pooled,Lowering,1060,191,1891,42,15,64,GPU:0
+P10,eegnet_regression,Specialist,Release,201,121,1891,42,15,64,GPU:0
+P10,eegnet_regression,Matched pooled,Release,201,113,1891,42,15,64,GPU:0
+P10,eegnet_regression,Specialist,Return,606,191,1891,42,15,64,GPU:0
+P10,eegnet_regression,Matched pooled,Return,606,183,1891,42,15,64,GPU:0
+P10,cnn_bilstm,Pooled,,7239,191,61347,42,15,64,GPU:0
+P10,cnn_bilstm,Specialist,Preparation,429,181,61347,42,15,64,GPU:0
+P10,cnn_bilstm,Matched pooled,Preparation,429,169,61347,42,15,64,GPU:0
+P10,cnn_bilstm,Specialist,Reach,1282,191,61347,42,15,64,GPU:0
+P10,cnn_bilstm,Matched pooled,Reach,1282,191,61347,42,15,64,GPU:0
+P10,cnn_bilstm,Specialist,Loading,348,144,61347,42,15,64,GPU:0
+P10,cnn_bilstm,Matched pooled,Loading,348,138,61347,42,15,64,GPU:0
+P10,cnn_bilstm,Specialist,Lift/hold,3311,191,61347,42,15,64,GPU:0
+P10,cnn_bilstm,Matched pooled,Lift/hold,3311,191,61347,42,15,64,GPU:0
+P10,cnn_bilstm,Specialist,Lowering,1060,190,61347,42,15,64,GPU:0
+P10,cnn_bilstm,Matched pooled,Lowering,1060,191,61347,42,15,64,GPU:0
+P10,cnn_bilstm,Specialist,Release,201,121,61347,42,15,64,GPU:0
+P10,cnn_bilstm,Matched pooled,Release,201,113,61347,42,15,64,GPU:0
+P10,cnn_bilstm,Specialist,Return,606,191,61347,42,15,64,GPU:0
+P10,cnn_bilstm,Matched pooled,Return,606,183,61347,42,15,64,GPU:0
+P11,cnn_elu,Pooled,,7259,186,3235,42,15,64,GPU:0
+P11,cnn_elu,Specialist,Preparation,509,175,3235,42,15,64,GPU:0
+P11,cnn_elu,Matched pooled,Preparation,509,169,3235,42,15,64,GPU:0
+P11,cnn_elu,Specialist,Reach,1488,186,3235,42,15,64,GPU:0
+P11,cnn_elu,Matched pooled,Reach,1488,186,3235,42,15,64,GPU:0
+P11,cnn_elu,Specialist,Loading,182,99,3235,42,15,64,GPU:0
+P11,cnn_elu,Matched pooled,Loading,182,87,3235,42,15,64,GPU:0
+P11,cnn_elu,Specialist,Lift/hold,3105,186,3235,42,15,64,GPU:0
+P11,cnn_elu,Matched pooled,Lift/hold,3105,186,3235,42,15,64,GPU:0
+P11,cnn_elu,Specialist,Lowering,1025,186,3235,42,15,64,GPU:0
+P11,cnn_elu,Matched pooled,Lowering,1025,185,3235,42,15,64,GPU:0
+P11,cnn_elu,Specialist,Release,66,55,3235,42,15,64,GPU:0
+P11,cnn_elu,Matched pooled,Release,66,52,3235,42,15,64,GPU:0
+P11,cnn_elu,Specialist,Return,883,186,3235,42,15,64,GPU:0
+P11,cnn_elu,Matched pooled,Return,883,185,3235,42,15,64,GPU:0
+P11,eegnet_regression,Pooled,,7259,186,1891,42,15,64,GPU:0
+P11,eegnet_regression,Specialist,Preparation,509,175,1891,42,15,64,GPU:0
+P11,eegnet_regression,Matched pooled,Preparation,509,169,1891,42,15,64,GPU:0
+P11,eegnet_regression,Specialist,Reach,1488,186,1891,42,15,64,GPU:0
+P11,eegnet_regression,Matched pooled,Reach,1488,186,1891,42,15,64,GPU:0
+P11,eegnet_regression,Specialist,Loading,182,99,1891,42,15,64,GPU:0
+P11,eegnet_regression,Matched pooled,Loading,182,87,1891,42,15,64,GPU:0
+P11,eegnet_regression,Specialist,Lift/hold,3105,186,1891,42,15,64,GPU:0
+P11,eegnet_regression,Matched pooled,Lift/hold,3105,186,1891,42,15,64,GPU:0
+P11,eegnet_regression,Specialist,Lowering,1025,186,1891,42,15,64,GPU:0
+P11,eegnet_regression,Matched pooled,Lowering,1025,185,1891,42,15,64,GPU:0
+P11,eegnet_regression,Specialist,Release,66,55,1891,42,15,64,GPU:0
+P11,eegnet_regression,Matched pooled,Release,66,52,1891,42,15,64,GPU:0
+P11,eegnet_regression,Specialist,Return,883,186,1891,42,15,64,GPU:0
+P11,eegnet_regression,Matched pooled,Return,883,185,1891,42,15,64,GPU:0
+P11,cnn_bilstm,Pooled,,7259,186,61347,42,15,64,GPU:0
+P11,cnn_bilstm,Specialist,Preparation,509,175,61347,42,15,64,GPU:0
+P11,cnn_bilstm,Matched pooled,Preparation,509,169,61347,42,15,64,GPU:0
+P11,cnn_bilstm,Specialist,Reach,1488,186,61347,42,15,64,GPU:0
+P11,cnn_bilstm,Matched pooled,Reach,1488,186,61347,42,15,64,GPU:0
+P11,cnn_bilstm,Specialist,Loading,182,99,61347,42,15,64,GPU:0
+P11,cnn_bilstm,Matched pooled,Loading,182,87,61347,42,15,64,GPU:0
+P11,cnn_bilstm,Specialist,Lift/hold,3105,186,61347,42,15,64,GPU:0
+P11,cnn_bilstm,Matched pooled,Lift/hold,3105,186,61347,42,15,64,GPU:0
+P11,cnn_bilstm,Specialist,Lowering,1025,186,61347,42,15,64,GPU:0
+P11,cnn_bilstm,Matched pooled,Lowering,1025,185,61347,42,15,64,GPU:0
+P11,cnn_bilstm,Specialist,Release,66,55,61347,42,15,64,GPU:0
+P11,cnn_bilstm,Matched pooled,Release,66,52,61347,42,15,64,GPU:0
+P11,cnn_bilstm,Specialist,Return,883,186,61347,42,15,64,GPU:0
+P11,cnn_bilstm,Matched pooled,Return,883,185,61347,42,15,64,GPU:0
+P12,cnn_elu,Pooled,,8001,192,3235,42,15,64,GPU:0
+P12,cnn_elu,Specialist,Preparation,484,189,3235,42,15,64,GPU:0
+P12,cnn_elu,Matched pooled,Preparation,484,173,3235,42,15,64,GPU:0
+P12,cnn_elu,Specialist,Reach,1407,192,3235,42,15,64,GPU:0
+P12,cnn_elu,Matched pooled,Reach,1407,192,3235,42,15,64,GPU:0
+P12,cnn_elu,Specialist,Loading,320,150,3235,42,15,64,GPU:0
+P12,cnn_elu,Matched pooled,Loading,320,142,3235,42,15,64,GPU:0
+P12,cnn_elu,Specialist,Lift/hold,3216,192,3235,42,15,64,GPU:0
+P12,cnn_elu,Matched pooled,Lift/hold,3216,192,3235,42,15,64,GPU:0
+P12,cnn_elu,Specialist,Lowering,1246,191,3235,42,15,64,GPU:0
+P12,cnn_elu,Matched pooled,Lowering,1246,192,3235,42,15,64,GPU:0
+P12,cnn_elu,Specialist,Release,107,81,3235,42,15,64,GPU:0
+P12,cnn_elu,Matched pooled,Release,107,81,3235,42,15,64,GPU:0
+P12,cnn_elu,Specialist,Return,1209,192,3235,42,15,64,GPU:0
+P12,cnn_elu,Matched pooled,Return,1209,192,3235,42,15,64,GPU:0
+P12,eegnet_regression,Pooled,,8001,192,1891,42,15,64,GPU:0
+P12,eegnet_regression,Specialist,Preparation,484,189,1891,42,15,64,GPU:0
+P12,eegnet_regression,Matched pooled,Preparation,484,173,1891,42,15,64,GPU:0
+P12,eegnet_regression,Specialist,Reach,1407,192,1891,42,15,64,GPU:0
+P12,eegnet_regression,Matched pooled,Reach,1407,192,1891,42,15,64,GPU:0
+P12,eegnet_regression,Specialist,Loading,320,150,1891,42,15,64,GPU:0
+P12,eegnet_regression,Matched pooled,Loading,320,142,1891,42,15,64,GPU:0
+P12,eegnet_regression,Specialist,Lift/hold,3216,192,1891,42,15,64,GPU:0
+P12,eegnet_regression,Matched pooled,Lift/hold,3216,192,1891,42,15,64,GPU:0
+P12,eegnet_regression,Specialist,Lowering,1246,191,1891,42,15,64,GPU:0
+P12,eegnet_regression,Matched pooled,Lowering,1246,192,1891,42,15,64,GPU:0
+P12,eegnet_regression,Specialist,Release,107,81,1891,42,15,64,GPU:0
+P12,eegnet_regression,Matched pooled,Release,107,81,1891,42,15,64,GPU:0
+P12,eegnet_regression,Specialist,Return,1209,192,1891,42,15,64,GPU:0
+P12,eegnet_regression,Matched pooled,Return,1209,192,1891,42,15,64,GPU:0
+P12,cnn_bilstm,Pooled,,8001,192,61347,42,15,64,GPU:0
+P12,cnn_bilstm,Specialist,Preparation,484,189,61347,42,15,64,GPU:0
+P12,cnn_bilstm,Matched pooled,Preparation,484,173,61347,42,15,64,GPU:0
+P12,cnn_bilstm,Specialist,Reach,1407,192,61347,42,15,64,GPU:0
+P12,cnn_bilstm,Matched pooled,Reach,1407,192,61347,42,15,64,GPU:0
+P12,cnn_bilstm,Specialist,Loading,320,150,61347,42,15,64,GPU:0
+P12,cnn_bilstm,Matched pooled,Loading,320,142,61347,42,15,64,GPU:0
+P12,cnn_bilstm,Specialist,Lift/hold,3216,192,61347,42,15,64,GPU:0
+P12,cnn_bilstm,Matched pooled,Lift/hold,3216,192,61347,42,15,64,GPU:0
+P12,cnn_bilstm,Specialist,Lowering,1246,191,61347,42,15,64,GPU:0
+P12,cnn_bilstm,Matched pooled,Lowering,1246,192,61347,42,15,64,GPU:0
+P12,cnn_bilstm,Specialist,Release,107,81,61347,42,15,64,GPU:0
+P12,cnn_bilstm,Matched pooled,Release,107,81,61347,42,15,64,GPU:0
+P12,cnn_bilstm,Specialist,Return,1209,192,61347,42,15,64,GPU:0
+P12,cnn_bilstm,Matched pooled,Return,1209,192,61347,42,15,64,GPU:0

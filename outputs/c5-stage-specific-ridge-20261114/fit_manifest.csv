@@ -1,0 +1,1105 @@
+participant,policy,model,seed,windows,trials,alpha,max_iter_used,train_stage_count
+P1,Pure stage,Pooled ridge,,5102,191,1.0,62,7
+P1,Pure stage,Preparation,,116,96,1.0,27,1
+P1,Pure stage,Preparation matched,42,116,81,1.0,44,6
+P1,Pure stage,Preparation matched,43,116,87,1.0,28,6
+P1,Pure stage,Preparation matched,44,116,93,1.0,26,6
+P1,Pure stage,Preparation matched,45,116,93,1.0,25,6
+P1,Pure stage,Preparation matched,46,116,91,1.0,44,6
+P1,Pure stage,Reach,,728,191,1.0,90,1
+P1,Pure stage,Reach matched,42,728,187,1.0,82,7
+P1,Pure stage,Reach matched,43,728,188,1.0,94,7
+P1,Pure stage,Reach matched,44,728,188,1.0,89,7
+P1,Pure stage,Reach matched,45,728,187,1.0,87,7
+P1,Pure stage,Reach matched,46,728,189,1.0,101,7
+P1,Pure stage,Loading,,38,23,1.0,21,1
+P1,Pure stage,Loading matched,42,38,24,1.0,18,5
+P1,Pure stage,Loading matched,43,38,25,1.0,19,6
+P1,Pure stage,Loading matched,44,38,23,1.0,19,6
+P1,Pure stage,Loading matched,45,38,22,1.0,20,7
+P1,Pure stage,Loading matched,46,38,24,1.0,19,6
+P1,Pure stage,Lift/hold,,3004,191,1.0,72,1
+P1,Pure stage,Lift/hold matched,42,3004,191,1.0,74,7
+P1,Pure stage,Lift/hold matched,43,3004,191,1.0,76,7
+P1,Pure stage,Lift/hold matched,44,3004,191,1.0,72,7
+P1,Pure stage,Lift/hold matched,45,3004,191,1.0,75,7
+P1,Pure stage,Lift/hold matched,46,3004,191,1.0,73,7
+P1,Pure stage,Lowering,,776,191,1.0,74,1
+P1,Pure stage,Lowering matched,42,776,190,1.0,92,7
+P1,Pure stage,Lowering matched,43,776,190,1.0,114,7
+P1,Pure stage,Lowering matched,44,776,187,1.0,91,7
+P1,Pure stage,Lowering matched,45,776,188,1.0,105,7
+P1,Pure stage,Lowering matched,46,776,186,1.0,92,7
+P1,Pure stage,Release,,34,31,1.0,17,1
+P1,Pure stage,Release matched,42,34,29,1.0,17,5
+P1,Pure stage,Release matched,43,34,30,1.0,16,5
+P1,Pure stage,Release matched,44,34,32,1.0,17,5
+P1,Pure stage,Release matched,45,34,27,1.0,18,5
+P1,Pure stage,Release matched,46,34,32,1.0,19,5
+P1,Pure stage,Return,,406,191,1.0,55,1
+P1,Pure stage,Return matched,42,406,171,1.0,62,7
+P1,Pure stage,Return matched,43,406,166,1.0,60,7
+P1,Pure stage,Return matched,44,406,167,1.0,66,6
+P1,Pure stage,Return matched,45,406,169,1.0,55,7
+P1,Pure stage,Return matched,46,406,172,1.0,61,7
+P1,Target stage,Pooled ridge,,7695,191,1.0,58,8
+P1,Target stage,Preparation,,498,191,1.0,67,1
+P1,Target stage,Preparation matched,42,498,179,1.0,65,8
+P1,Target stage,Preparation matched,43,498,179,1.0,71,8
+P1,Target stage,Preparation matched,44,498,184,1.0,74,8
+P1,Target stage,Preparation matched,45,498,181,1.0,62,8
+P1,Target stage,Preparation matched,46,498,177,1.0,74,8
+P1,Target stage,Reach,,1110,191,1.0,124,1
+P1,Target stage,Reach matched,42,1110,190,1.0,118,8
+P1,Target stage,Reach matched,43,1110,191,1.0,123,8
+P1,Target stage,Reach matched,44,1110,191,1.0,123,8
+P1,Target stage,Reach matched,45,1110,191,1.0,132,8
+P1,Target stage,Reach matched,46,1110,191,1.0,128,8
+P1,Target stage,Preload,,93,92,1.0,27,1
+P1,Target stage,Preload matched,42,93,74,1.0,37,8
+P1,Target stage,Preload matched,43,93,78,1.0,24,8
+P1,Target stage,Preload matched,44,93,77,1.0,33,7
+P1,Target stage,Preload matched,45,93,76,1.0,34,8
+P1,Target stage,Preload matched,46,93,75,1.0,36,8
+P1,Target stage,Loading,,320,186,1.0,54,1
+P1,Target stage,Loading matched,42,320,148,1.0,55,8
+P1,Target stage,Loading matched,43,320,148,1.0,52,8
+P1,Target stage,Loading matched,44,320,150,1.0,54,8
+P1,Target stage,Loading matched,45,320,151,1.0,50,8
+P1,Target stage,Loading matched,46,320,154,1.0,52,8
+P1,Target stage,Lift/hold,,3386,191,1.0,75,1
+P1,Target stage,Lift/hold matched,42,3386,191,1.0,77,8
+P1,Target stage,Lift/hold matched,43,3386,191,1.0,75,8
+P1,Target stage,Lift/hold matched,44,3386,191,1.0,73,8
+P1,Target stage,Lift/hold matched,45,3386,191,1.0,73,8
+P1,Target stage,Lift/hold matched,46,3386,191,1.0,69,8
+P1,Target stage,Lowering,,1158,191,1.0,101,1
+P1,Target stage,Lowering matched,42,1158,191,1.0,118,8
+P1,Target stage,Lowering matched,43,1158,191,1.0,118,8
+P1,Target stage,Lowering matched,44,1158,191,1.0,120,8
+P1,Target stage,Lowering matched,45,1158,190,1.0,121,8
+P1,Target stage,Lowering matched,46,1158,191,1.0,124,8
+P1,Target stage,Release,,342,186,1.0,54,1
+P1,Target stage,Release matched,42,342,167,1.0,56,8
+P1,Target stage,Release matched,43,342,147,1.0,45,8
+P1,Target stage,Release matched,44,342,160,1.0,56,8
+P1,Target stage,Release matched,45,342,156,1.0,47,8
+P1,Target stage,Release matched,46,342,167,1.0,55,8
+P1,Target stage,Return,,788,191,1.0,100,1
+P1,Target stage,Return matched,42,788,187,1.0,103,8
+P1,Target stage,Return matched,43,788,188,1.0,107,8
+P1,Target stage,Return matched,44,788,190,1.0,109,8
+P1,Target stage,Return matched,45,788,191,1.0,114,8
+P1,Target stage,Return matched,46,788,189,1.0,97,8
+P2,Pure stage,Pooled ridge,,8486,192,10000.0,20,8
+P2,Pure stage,Preparation,,1066,192,10000.0,12,1
+P2,Pure stage,Preparation matched,42,1066,190,10000.0,11,8
+P2,Pure stage,Preparation matched,43,1066,187,10000.0,12,8
+P2,Pure stage,Preparation matched,44,1066,188,10000.0,11,8
+P2,Pure stage,Preparation matched,45,1066,188,10000.0,11,8
+P2,Pure stage,Preparation matched,46,1066,185,10000.0,11,8
+P2,Pure stage,Reach,,1443,192,10000.0,12,1
+P2,Pure stage,Reach matched,42,1443,192,10000.0,14,8
+P2,Pure stage,Reach matched,43,1443,191,10000.0,12,8
+P2,Pure stage,Reach matched,44,1443,192,10000.0,14,8
+P2,Pure stage,Reach matched,45,1443,192,10000.0,13,8
+P2,Pure stage,Reach matched,46,1443,192,10000.0,12,8
+P2,Pure stage,Preload,,38,30,10000.0,5,1
+P2,Pure stage,Preload matched,42,38,34,10000.0,5,6
+P2,Pure stage,Preload matched,43,38,32,10000.0,5,6
+P2,Pure stage,Preload matched,44,38,32,10000.0,5,8
+P2,Pure stage,Preload matched,45,38,29,10000.0,5,7
+P2,Pure stage,Preload matched,46,38,33,10000.0,5,6
+P2,Pure stage,Loading,,492,161,10000.0,9,1
+P2,Pure stage,Loading matched,42,492,150,10000.0,10,8
+P2,Pure stage,Loading matched,43,492,145,10000.0,10,8
+P2,Pure stage,Loading matched,44,492,150,10000.0,10,8
+P2,Pure stage,Loading matched,45,492,150,10000.0,10,8
+P2,Pure stage,Loading matched,46,492,152,10000.0,10,8
+P2,Pure stage,Lift/hold,,3333,192,10000.0,16,1
+P2,Pure stage,Lift/hold matched,42,3333,192,10000.0,17,8
+P2,Pure stage,Lift/hold matched,43,3333,192,10000.0,16,8
+P2,Pure stage,Lift/hold matched,44,3333,192,10000.0,16,8
+P2,Pure stage,Lift/hold matched,45,3333,192,10000.0,16,8
+P2,Pure stage,Lift/hold matched,46,3333,192,10000.0,16,8
+P2,Pure stage,Lowering,,1101,192,10000.0,12,1
+P2,Pure stage,Lowering matched,42,1101,189,10000.0,11,8
+P2,Pure stage,Lowering matched,43,1101,192,10000.0,11,8
+P2,Pure stage,Lowering matched,44,1101,191,10000.0,11,8
+P2,Pure stage,Lowering matched,45,1101,191,10000.0,11,8
+P2,Pure stage,Lowering matched,46,1101,192,10000.0,12,8
+P2,Pure stage,Release,,119,73,10000.0,7,1
+P2,Pure stage,Release matched,42,119,77,10000.0,6,7
+P2,Pure stage,Release matched,43,119,79,10000.0,6,8
+P2,Pure stage,Release matched,44,119,75,10000.0,6,7
+P2,Pure stage,Release matched,45,119,84,10000.0,6,8
+P2,Pure stage,Release matched,46,119,74,10000.0,6,8
+P2,Pure stage,Return,,894,192,10000.0,12,1
+P2,Pure stage,Return matched,42,894,189,10000.0,11,8
+P2,Pure stage,Return matched,43,894,186,10000.0,11,8
+P2,Pure stage,Return matched,44,894,190,10000.0,11,8
+P2,Pure stage,Return matched,45,894,187,10000.0,11,8
+P2,Pure stage,Return matched,46,894,189,10000.0,11,8
+P2,Target stage,Pooled ridge,,11312,192,10000.0,21,8
+P2,Target stage,Preparation,,1450,192,10000.0,14,1
+P2,Target stage,Preparation matched,42,1450,191,10000.0,13,8
+P2,Target stage,Preparation matched,43,1450,192,10000.0,14,8
+P2,Target stage,Preparation matched,44,1450,192,10000.0,14,8
+P2,Target stage,Preparation matched,45,1450,192,10000.0,12,8
+P2,Target stage,Preparation matched,46,1450,192,10000.0,12,8
+P2,Target stage,Reach,,1827,192,10000.0,14,1
+P2,Target stage,Reach matched,42,1827,192,10000.0,14,8
+P2,Target stage,Reach matched,43,1827,192,10000.0,14,8
+P2,Target stage,Reach matched,44,1827,192,10000.0,14,8
+P2,Target stage,Reach matched,45,1827,192,10000.0,14,8
+P2,Target stage,Reach matched,46,1827,192,10000.0,14,8
+P2,Target stage,Preload,,305,179,10000.0,8,1
+P2,Target stage,Preload matched,42,305,155,10000.0,8,8
+P2,Target stage,Preload matched,43,305,154,10000.0,8,8
+P2,Target stage,Preload matched,44,305,153,10000.0,8,8
+P2,Target stage,Preload matched,45,305,149,10000.0,9,8
+P2,Target stage,Preload matched,46,305,152,10000.0,8,8
+P2,Target stage,Loading,,871,192,10000.0,12,1
+P2,Target stage,Loading matched,42,871,189,10000.0,11,8
+P2,Target stage,Loading matched,43,871,183,10000.0,11,8
+P2,Target stage,Loading matched,44,871,190,10000.0,11,8
+P2,Target stage,Loading matched,45,871,183,10000.0,11,8
+P2,Target stage,Loading matched,46,871,184,10000.0,11,8
+P2,Target stage,Lift/hold,,3717,192,10000.0,16,1
+P2,Target stage,Lift/hold matched,42,3717,192,10000.0,18,8
+P2,Target stage,Lift/hold matched,43,3717,192,10000.0,18,8
+P2,Target stage,Lift/hold matched,44,3717,192,10000.0,18,8
+P2,Target stage,Lift/hold matched,45,3717,192,10000.0,17,8
+P2,Target stage,Lift/hold matched,46,3717,192,10000.0,18,8
+P2,Target stage,Lowering,,1485,192,10000.0,12,1
+P2,Target stage,Lowering matched,42,1485,192,10000.0,13,8
+P2,Target stage,Lowering matched,43,1485,190,10000.0,12,8
+P2,Target stage,Lowering matched,44,1485,192,10000.0,13,8
+P2,Target stage,Lowering matched,45,1485,192,10000.0,14,8
+P2,Target stage,Lowering matched,46,1485,192,10000.0,14,8
+P2,Target stage,Release,,379,149,10000.0,9,1
+P2,Target stage,Release matched,42,379,155,10000.0,10,8
+P2,Target stage,Release matched,43,379,149,10000.0,8,8
+P2,Target stage,Release matched,44,379,153,10000.0,9,8
+P2,Target stage,Release matched,45,379,159,10000.0,9,8
+P2,Target stage,Release matched,46,379,154,10000.0,9,8
+P2,Target stage,Return,,1278,192,10000.0,12,1
+P2,Target stage,Return matched,42,1278,191,10000.0,12,8
+P2,Target stage,Return matched,43,1278,192,10000.0,12,8
+P2,Target stage,Return matched,44,1278,192,10000.0,12,8
+P2,Target stage,Return matched,45,1278,192,10000.0,12,8
+P2,Target stage,Return matched,46,1278,192,10000.0,12,8
+P3,Pure stage,Pooled ridge,,5031,191,10000.0,20,7
+P3,Pure stage,Preparation,,119,113,10000.0,7,1
+P3,Pure stage,Preparation matched,42,119,97,10000.0,7,4
+P3,Pure stage,Preparation matched,43,119,89,10000.0,8,6
+P3,Pure stage,Preparation matched,44,119,90,10000.0,7,5
+P3,Pure stage,Preparation matched,45,119,88,10000.0,7,5
+P3,Pure stage,Preparation matched,46,119,92,10000.0,7,5
+P3,Pure stage,Reach,,718,191,10000.0,12,1
+P3,Pure stage,Reach matched,42,718,189,10000.0,12,5
+P3,Pure stage,Reach matched,43,718,188,10000.0,12,6
+P3,Pure stage,Reach matched,44,718,187,10000.0,12,7
+P3,Pure stage,Reach matched,45,718,188,10000.0,12,7
+P3,Pure stage,Reach matched,46,718,189,10000.0,12,6
+P3,Pure stage,Lift/hold,,2991,191,10000.0,15,1
+P3,Pure stage,Lift/hold matched,42,2991,191,10000.0,17,7
+P3,Pure stage,Lift/hold matched,43,2991,191,10000.0,17,7
+P3,Pure stage,Lift/hold matched,44,2991,191,10000.0,16,7
+P3,Pure stage,Lift/hold matched,45,2991,191,10000.0,17,7
+P3,Pure stage,Lift/hold matched,46,2991,191,10000.0,16,7
+P3,Pure stage,Lowering,,633,191,10000.0,11,1
+P3,Pure stage,Lowering matched,42,633,186,10000.0,10,6
+P3,Pure stage,Lowering matched,43,633,184,10000.0,10,7
+P3,Pure stage,Lowering matched,44,633,189,10000.0,10,6
+P3,Pure stage,Lowering matched,45,633,185,10000.0,11,6
+P3,Pure stage,Lowering matched,46,633,187,10000.0,11,6
+P3,Pure stage,Return,,555,191,10000.0,11,1
+P3,Pure stage,Return matched,42,555,183,10000.0,11,6
+P3,Pure stage,Return matched,43,555,182,10000.0,11,6
+P3,Pure stage,Return matched,44,555,184,10000.0,12,5
+P3,Pure stage,Return matched,45,555,183,10000.0,11,7
+P3,Pure stage,Return matched,46,555,179,10000.0,11,6
+P3,Target stage,Pooled ridge,,7523,191,10000.0,21,8
+P3,Target stage,Preparation,,501,191,10000.0,11,1
+P3,Target stage,Preparation matched,42,501,183,10000.0,11,8
+P3,Target stage,Preparation matched,43,501,178,10000.0,11,8
+P3,Target stage,Preparation matched,44,501,170,10000.0,11,8
+P3,Target stage,Preparation matched,45,501,181,10000.0,10,8
+P3,Target stage,Preparation matched,46,501,181,10000.0,10,8
+P3,Target stage,Reach,,1100,191,10000.0,13,1
+P3,Target stage,Reach matched,42,1100,191,10000.0,13,8
+P3,Target stage,Reach matched,43,1100,191,10000.0,13,8
+P3,Target stage,Reach matched,44,1100,191,10000.0,13,8
+P3,Target stage,Reach matched,45,1100,191,10000.0,13,8
+P3,Target stage,Reach matched,46,1100,191,10000.0,13,8
+P3,Target stage,Preload,,120,115,10000.0,6,1
+P3,Target stage,Preload matched,42,120,94,10000.0,7,7
+P3,Target stage,Preload matched,43,120,90,10000.0,7,8
+P3,Target stage,Preload matched,44,120,93,10000.0,7,8
+P3,Target stage,Preload matched,45,120,92,10000.0,7,8
+P3,Target stage,Preload matched,46,120,95,10000.0,7,8
+P3,Target stage,Loading,,234,173,10000.0,8,1
+P3,Target stage,Loading matched,42,234,133,10000.0,8,8
+P3,Target stage,Loading matched,43,234,135,10000.0,9,8
+P3,Target stage,Loading matched,44,234,141,10000.0,8,8
+P3,Target stage,Loading matched,45,234,132,10000.0,8,8
+P3,Target stage,Loading matched,46,234,136,10000.0,8,8
+P3,Target stage,Lift/hold,,3373,191,10000.0,18,1
+P3,Target stage,Lift/hold matched,42,3373,191,10000.0,18,8
+P3,Target stage,Lift/hold matched,43,3373,191,10000.0,17,8
+P3,Target stage,Lift/hold matched,44,3373,191,10000.0,17,8
+P3,Target stage,Lift/hold matched,45,3373,191,10000.0,17,8
+P3,Target stage,Lift/hold matched,46,3373,191,10000.0,17,8
+P3,Target stage,Lowering,,1015,191,10000.0,13,1
+P3,Target stage,Lowering matched,42,1015,190,10000.0,14,8
+P3,Target stage,Lowering matched,43,1015,191,10000.0,13,8
+P3,Target stage,Lowering matched,44,1015,191,10000.0,13,8
+P3,Target stage,Lowering matched,45,1015,191,10000.0,12,8
+P3,Target stage,Lowering matched,46,1015,191,10000.0,14,8
+P3,Target stage,Release,,243,177,10000.0,8,1
+P3,Target stage,Release matched,42,243,138,10000.0,8,8
+P3,Target stage,Release matched,43,243,135,10000.0,8,8
+P3,Target stage,Release matched,44,243,142,10000.0,9,8
+P3,Target stage,Release matched,45,243,137,10000.0,8,8
+P3,Target stage,Release matched,46,243,140,10000.0,8,8
+P3,Target stage,Return,,937,191,10000.0,13,1
+P3,Target stage,Return matched,42,937,189,10000.0,12,8
+P3,Target stage,Return matched,43,937,188,10000.0,13,8
+P3,Target stage,Return matched,44,937,190,10000.0,13,8
+P3,Target stage,Return matched,45,937,190,10000.0,12,8
+P3,Target stage,Return matched,46,937,190,10000.0,12,8
+P4,Pure stage,Pooled ridge,,5838,191,10000.0,20,7
+P4,Pure stage,Preparation,,114,96,10000.0,6,1
+P4,Pure stage,Preparation matched,42,114,85,10000.0,6,7
+P4,Pure stage,Preparation matched,43,114,90,10000.0,6,7
+P4,Pure stage,Preparation matched,44,114,84,10000.0,7,6
+P4,Pure stage,Preparation matched,45,114,80,10000.0,7,7
+P4,Pure stage,Preparation matched,46,114,85,10000.0,6,6
+P4,Pure stage,Reach,,803,191,10000.0,11,1
+P4,Pure stage,Reach matched,42,803,190,10000.0,11,7
+P4,Pure stage,Reach matched,43,803,189,10000.0,13,7
+P4,Pure stage,Reach matched,44,803,187,10000.0,12,7
+P4,Pure stage,Reach matched,45,803,187,10000.0,12,7
+P4,Pure stage,Reach matched,46,803,188,10000.0,11,7
+P4,Pure stage,Loading,,48,31,10000.0,5,1
+P4,Pure stage,Loading matched,42,48,29,10000.0,5,7
+P4,Pure stage,Loading matched,43,48,29,10000.0,5,6
+P4,Pure stage,Loading matched,44,48,26,10000.0,5,6
+P4,Pure stage,Loading matched,45,48,25,10000.0,5,7
+P4,Pure stage,Loading matched,46,48,26,10000.0,5,6
+P4,Pure stage,Lift/hold,,3052,191,10000.0,15,1
+P4,Pure stage,Lift/hold matched,42,3052,191,10000.0,17,7
+P4,Pure stage,Lift/hold matched,43,3052,191,10000.0,17,7
+P4,Pure stage,Lift/hold matched,44,3052,191,10000.0,17,7
+P4,Pure stage,Lift/hold matched,45,3052,191,10000.0,17,7
+P4,Pure stage,Lift/hold matched,46,3052,191,10000.0,17,7
+P4,Pure stage,Lowering,,1063,191,10000.0,12,1
+P4,Pure stage,Lowering matched,42,1063,190,10000.0,13,7
+P4,Pure stage,Lowering matched,43,1063,191,10000.0,13,7
+P4,Pure stage,Lowering matched,44,1063,190,10000.0,13,7
+P4,Pure stage,Lowering matched,45,1063,191,10000.0,13,7
+P4,Pure stage,Lowering matched,46,1063,191,10000.0,12,7
+P4,Pure stage,Release,,78,63,10000.0,6,1
+P4,Pure stage,Release matched,42,78,64,10000.0,6,5
+P4,Pure stage,Release matched,43,78,64,10000.0,6,6
+P4,Pure stage,Release matched,44,78,60,10000.0,6,7
+P4,Pure stage,Release matched,45,78,56,10000.0,7,7
+P4,Pure stage,Release matched,46,78,61,10000.0,6,6
+P4,Pure stage,Return,,680,191,10000.0,11,1
+P4,Pure stage,Return matched,42,680,186,10000.0,11,7
+P4,Pure stage,Return matched,43,680,184,10000.0,11,7
+P4,Pure stage,Return matched,44,680,186,10000.0,10,7
+P4,Pure stage,Return matched,45,680,187,10000.0,10,7
+P4,Pure stage,Return matched,46,680,189,10000.0,10,7
+P4,Target stage,Pooled ridge,,8478,191,10000.0,22,8
+P4,Target stage,Preparation,,492,190,10000.0,10,1
+P4,Target stage,Preparation matched,42,492,181,10000.0,10,8
+P4,Target stage,Preparation matched,43,492,179,10000.0,9,8
+P4,Target stage,Preparation matched,44,492,179,10000.0,10,8
+P4,Target stage,Preparation matched,45,492,180,10000.0,10,8
+P4,Target stage,Preparation matched,46,492,182,10000.0,10,8
+P4,Target stage,Reach,,1185,191,10000.0,12,1
+P4,Target stage,Reach matched,42,1185,190,10000.0,13,8
+P4,Target stage,Reach matched,43,1185,190,10000.0,13,8
+P4,Target stage,Reach matched,44,1185,191,10000.0,13,8
+P4,Target stage,Reach matched,45,1185,191,10000.0,13,8
+P4,Target stage,Reach matched,46,1185,190,10000.0,13,8
+P4,Target stage,Preload,,146,129,10000.0,6,1
+P4,Target stage,Preload matched,42,146,100,10000.0,7,8
+P4,Target stage,Preload matched,43,146,96,10000.0,7,8
+P4,Target stage,Preload matched,44,146,105,10000.0,7,8
+P4,Target stage,Preload matched,45,146,106,10000.0,7,7
+P4,Target stage,Preload matched,46,146,106,10000.0,7,8
+P4,Target stage,Loading,,343,187,10000.0,8,1
+P4,Target stage,Loading matched,42,343,158,10000.0,9,8
+P4,Target stage,Loading matched,43,343,147,10000.0,8,8
+P4,Target stage,Loading matched,44,343,157,10000.0,9,8
+P4,Target stage,Loading matched,45,343,155,10000.0,8,8
+P4,Target stage,Loading matched,46,343,154,10000.0,9,8
+P4,Target stage,Lift/hold,,3434,191,10000.0,17,1
+P4,Target stage,Lift/hold matched,42,3434,191,10000.0,18,8
+P4,Target stage,Lift/hold matched,43,3434,191,10000.0,18,8
+P4,Target stage,Lift/hold matched,44,3434,191,10000.0,18,8
+P4,Target stage,Lift/hold matched,45,3434,191,10000.0,18,8
+P4,Target stage,Lift/hold matched,46,3434,191,10000.0,18,8
+P4,Target stage,Lowering,,1445,191,10000.0,13,1
+P4,Target stage,Lowering matched,42,1445,191,10000.0,13,8
+P4,Target stage,Lowering matched,43,1445,191,10000.0,13,8
+P4,Target stage,Lowering matched,44,1445,191,10000.0,15,8
+P4,Target stage,Lowering matched,45,1445,191,10000.0,13,8
+P4,Target stage,Lowering matched,46,1445,191,10000.0,13,8
+P4,Target stage,Release,,371,168,10000.0,9,1
+P4,Target stage,Release matched,42,371,156,10000.0,9,8
+P4,Target stage,Release matched,43,371,161,10000.0,9,8
+P4,Target stage,Release matched,44,371,158,10000.0,9,8
+P4,Target stage,Release matched,45,371,157,10000.0,9,8
+P4,Target stage,Release matched,46,371,155,10000.0,9,8
+P4,Target stage,Return,,1062,191,10000.0,12,1
+P4,Target stage,Return matched,42,1062,191,10000.0,13,8
+P4,Target stage,Return matched,43,1062,191,10000.0,13,8
+P4,Target stage,Return matched,44,1062,191,10000.0,12,8
+P4,Target stage,Return matched,45,1062,191,10000.0,13,8
+P4,Target stage,Return matched,46,1062,190,10000.0,13,8
+P5,Pure stage,Pooled ridge,,6749,192,1000.0,39,8
+P5,Pure stage,Preparation,,452,182,1000.0,22,1
+P5,Pure stage,Preparation matched,42,452,174,1000.0,22,7
+P5,Pure stage,Preparation matched,43,452,164,1000.0,21,7
+P5,Pure stage,Preparation matched,44,452,178,1000.0,21,7
+P5,Pure stage,Preparation matched,45,452,176,1000.0,24,6
+P5,Pure stage,Preparation matched,46,452,178,1000.0,23,6
+P5,Pure stage,Reach,,1314,192,1000.0,28,1
+P5,Pure stage,Reach matched,42,1314,192,1000.0,29,7
+P5,Pure stage,Reach matched,43,1314,192,1000.0,29,8
+P5,Pure stage,Reach matched,44,1314,192,1000.0,30,8
+P5,Pure stage,Reach matched,45,1314,192,1000.0,29,7
+P5,Pure stage,Reach matched,46,1314,192,1000.0,30,7
+P5,Pure stage,Loading,,173,102,1000.0,15,1
+P5,Pure stage,Loading matched,42,173,94,1000.0,18,7
+P5,Pure stage,Loading matched,43,173,90,1000.0,18,7
+P5,Pure stage,Loading matched,44,173,96,1000.0,20,7
+P5,Pure stage,Loading matched,45,173,95,1000.0,16,7
+P5,Pure stage,Loading matched,46,173,94,1000.0,17,7
+P5,Pure stage,Lift/hold,,3149,192,1000.0,35,1
+P5,Pure stage,Lift/hold matched,42,3149,192,1000.0,33,8
+P5,Pure stage,Lift/hold matched,43,3149,192,1000.0,35,8
+P5,Pure stage,Lift/hold matched,44,3149,192,1000.0,36,7
+P5,Pure stage,Lift/hold matched,45,3149,192,1000.0,34,8
+P5,Pure stage,Lift/hold matched,46,3149,192,1000.0,35,8
+P5,Pure stage,Lowering,,917,192,1000.0,27,1
+P5,Pure stage,Lowering matched,42,917,191,1000.0,29,7
+P5,Pure stage,Lowering matched,43,917,191,1000.0,28,7
+P5,Pure stage,Lowering matched,44,917,191,1000.0,27,7
+P5,Pure stage,Lowering matched,45,917,192,1000.0,27,7
+P5,Pure stage,Lowering matched,46,917,191,1000.0,28,7
+P5,Pure stage,Release,,33,29,1000.0,9,1
+P5,Pure stage,Release matched,42,33,27,1000.0,11,7
+P5,Pure stage,Release matched,43,33,27,1000.0,12,6
+P5,Pure stage,Release matched,44,33,30,1000.0,11,6
+P5,Pure stage,Release matched,45,33,27,1000.0,9,7
+P5,Pure stage,Release matched,46,33,28,1000.0,11,7
+P5,Pure stage,Return,,710,192,1000.0,24,1
+P5,Pure stage,Return matched,42,710,185,1000.0,24,7
+P5,Pure stage,Return matched,43,710,188,1000.0,25,7
+P5,Pure stage,Return matched,44,710,188,1000.0,27,7
+P5,Pure stage,Return matched,45,710,186,1000.0,25,7
+P5,Pure stage,Return matched,46,710,184,1000.0,24,7
+P5,Target stage,Pooled ridge,,9493,192,1000.0,40,8
+P5,Target stage,Preparation,,835,192,1000.0,26,1
+P5,Target stage,Preparation matched,42,835,189,1000.0,27,8
+P5,Target stage,Preparation matched,43,835,187,1000.0,26,8
+P5,Target stage,Preparation matched,44,835,189,1000.0,28,8
+P5,Target stage,Preparation matched,45,835,191,1000.0,27,8
+P5,Target stage,Preparation matched,46,835,191,1000.0,27,8
+P5,Target stage,Reach,,1698,192,1000.0,30,1
+P5,Target stage,Reach matched,42,1698,192,1000.0,34,8
+P5,Target stage,Reach matched,43,1698,192,1000.0,33,8
+P5,Target stage,Reach matched,44,1698,192,1000.0,31,8
+P5,Target stage,Reach matched,45,1698,192,1000.0,33,8
+P5,Target stage,Reach matched,46,1698,192,1000.0,33,8
+P5,Target stage,Preload,,170,137,1000.0,15,1
+P5,Target stage,Preload matched,42,170,120,1000.0,16,8
+P5,Target stage,Preload matched,43,170,115,1000.0,17,8
+P5,Target stage,Preload matched,44,170,114,1000.0,16,8
+P5,Target stage,Preload matched,45,170,120,1000.0,16,8
+P5,Target stage,Preload matched,46,170,111,1000.0,17,7
+P5,Target stage,Loading,,535,192,1000.0,22,1
+P5,Target stage,Loading matched,42,535,182,1000.0,25,8
+P5,Target stage,Loading matched,43,535,173,1000.0,25,8
+P5,Target stage,Loading matched,44,535,173,1000.0,24,8
+P5,Target stage,Loading matched,45,535,174,1000.0,23,8
+P5,Target stage,Loading matched,46,535,177,1000.0,24,8
+P5,Target stage,Lift/hold,,3533,192,1000.0,36,1
+P5,Target stage,Lift/hold matched,42,3533,192,1000.0,36,8
+P5,Target stage,Lift/hold matched,43,3533,192,1000.0,37,8
+P5,Target stage,Lift/hold matched,44,3533,192,1000.0,38,8
+P5,Target stage,Lift/hold matched,45,3533,192,1000.0,36,8
+P5,Target stage,Lift/hold matched,46,3533,192,1000.0,37,8
+P5,Target stage,Lowering,,1301,192,1000.0,29,1
+P5,Target stage,Lowering matched,42,1301,192,1000.0,30,8
+P5,Target stage,Lowering matched,43,1301,191,1000.0,30,8
+P5,Target stage,Lowering matched,44,1301,192,1000.0,30,8
+P5,Target stage,Lowering matched,45,1301,192,1000.0,33,8
+P5,Target stage,Lowering matched,46,1301,192,1000.0,30,8
+P5,Target stage,Release,,327,164,1000.0,19,1
+P5,Target stage,Release matched,42,327,168,1000.0,21,8
+P5,Target stage,Release matched,43,327,148,1000.0,19,8
+P5,Target stage,Release matched,44,327,154,1000.0,21,8
+P5,Target stage,Release matched,45,327,152,1000.0,22,8
+P5,Target stage,Release matched,46,327,156,1000.0,20,8
+P5,Target stage,Return,,1094,192,1000.0,27,1
+P5,Target stage,Return matched,42,1094,191,1000.0,30,8
+P5,Target stage,Return matched,43,1094,191,1000.0,29,8
+P5,Target stage,Return matched,44,1094,192,1000.0,31,8
+P5,Target stage,Return matched,45,1094,192,1000.0,29,8
+P5,Target stage,Return matched,46,1094,192,1000.0,28,8
+P6,Pure stage,Pooled ridge,,6857,191,10000.0,20,8
+P6,Pure stage,Preparation,,378,166,10000.0,10,1
+P6,Pure stage,Preparation matched,42,378,153,10000.0,10,6
+P6,Pure stage,Preparation matched,43,378,143,10000.0,9,8
+P6,Pure stage,Preparation matched,44,378,148,10000.0,9,7
+P6,Pure stage,Preparation matched,45,378,143,10000.0,10,7
+P6,Pure stage,Preparation matched,46,378,150,10000.0,10,7
+P6,Pure stage,Reach,,1188,191,10000.0,14,1
+P6,Pure stage,Reach matched,42,1188,191,10000.0,14,8
+P6,Pure stage,Reach matched,43,1188,191,10000.0,14,7
+P6,Pure stage,Reach matched,44,1188,191,10000.0,12,8
+P6,Pure stage,Reach matched,45,1188,191,10000.0,14,8
+P6,Pure stage,Reach matched,46,1188,191,10000.0,13,8
+P6,Pure stage,Loading,,246,135,10000.0,8,1
+P6,Pure stage,Loading matched,42,246,124,10000.0,9,7
+P6,Pure stage,Loading matched,43,246,120,10000.0,8,8
+P6,Pure stage,Loading matched,44,246,122,10000.0,9,7
+P6,Pure stage,Loading matched,45,246,122,10000.0,8,6
+P6,Pure stage,Loading matched,46,246,121,10000.0,9,7
+P6,Pure stage,Lift/hold,,3193,191,10000.0,16,1
+P6,Pure stage,Lift/hold matched,42,3193,191,10000.0,19,8
+P6,Pure stage,Lift/hold matched,43,3193,191,10000.0,16,8
+P6,Pure stage,Lift/hold matched,44,3193,191,10000.0,18,8
+P6,Pure stage,Lift/hold matched,45,3193,191,10000.0,17,8
+P6,Pure stage,Lift/hold matched,46,3193,191,10000.0,16,8
+P6,Pure stage,Lowering,,952,191,10000.0,12,1
+P6,Pure stage,Lowering matched,42,952,191,10000.0,13,7
+P6,Pure stage,Lowering matched,43,952,190,10000.0,12,8
+P6,Pure stage,Lowering matched,44,952,190,10000.0,14,7
+P6,Pure stage,Lowering matched,45,952,191,10000.0,13,8
+P6,Pure stage,Lowering matched,46,952,190,10000.0,13,7
+P6,Pure stage,Release,,65,55,10000.0,6,1
+P6,Pure stage,Release matched,42,65,56,10000.0,5,6
+P6,Pure stage,Release matched,43,65,54,10000.0,6,7
+P6,Pure stage,Release matched,44,65,54,10000.0,6,5
+P6,Pure stage,Release matched,45,65,53,10000.0,6,7
+P6,Pure stage,Release matched,46,65,54,10000.0,6,7
+P6,Pure stage,Return,,831,191,10000.0,12,1
+P6,Pure stage,Return matched,42,831,191,10000.0,12,8
+P6,Pure stage,Return matched,43,831,187,10000.0,12,7
+P6,Pure stage,Return matched,44,831,190,10000.0,12,7
+P6,Pure stage,Return matched,45,831,187,10000.0,12,7
+P6,Pure stage,Return matched,46,831,191,10000.0,12,8
+P6,Target stage,Pooled ridge,,9647,191,10000.0,24,8
+P6,Target stage,Preparation,,759,191,10000.0,12,1
+P6,Target stage,Preparation matched,42,759,184,10000.0,12,8
+P6,Target stage,Preparation matched,43,759,182,10000.0,12,8
+P6,Target stage,Preparation matched,44,759,187,10000.0,12,8
+P6,Target stage,Preparation matched,45,759,183,10000.0,11,8
+P6,Target stage,Preparation matched,46,759,185,10000.0,12,8
+P6,Target stage,Reach,,1570,191,10000.0,15,1
+P6,Target stage,Reach matched,42,1570,191,10000.0,14,8
+P6,Target stage,Reach matched,43,1570,191,10000.0,14,8
+P6,Target stage,Reach matched,44,1570,191,10000.0,14,8
+P6,Target stage,Reach matched,45,1570,191,10000.0,14,8
+P6,Target stage,Reach matched,46,1570,191,10000.0,14,8
+P6,Target stage,Preload,,224,170,10000.0,8,1
+P6,Target stage,Preload matched,42,224,134,10000.0,8,8
+P6,Target stage,Preload matched,43,224,129,10000.0,8,8
+P6,Target stage,Preload matched,44,224,138,10000.0,8,8
+P6,Target stage,Preload matched,45,224,134,10000.0,8,8
+P6,Target stage,Preload matched,46,224,127,10000.0,8,8
+P6,Target stage,Loading,,620,191,10000.0,10,1
+P6,Target stage,Loading matched,42,620,183,10000.0,10,8
+P6,Target stage,Loading matched,43,620,186,10000.0,12,8
+P6,Target stage,Loading matched,44,620,184,10000.0,11,8
+P6,Target stage,Loading matched,45,620,182,10000.0,11,8
+P6,Target stage,Loading matched,46,620,180,10000.0,12,8
+P6,Target stage,Lift/hold,,3575,191,10000.0,16,1
+P6,Target stage,Lift/hold matched,42,3575,191,10000.0,19,8
+P6,Target stage,Lift/hold matched,43,3575,191,10000.0,19,8
+P6,Target stage,Lift/hold matched,44,3575,191,10000.0,18,8
+P6,Target stage,Lift/hold matched,45,3575,191,10000.0,19,8
+P6,Target stage,Lift/hold matched,46,3575,191,10000.0,19,8
+P6,Target stage,Lowering,,1334,191,10000.0,14,1
+P6,Target stage,Lowering matched,42,1334,191,10000.0,14,8
+P6,Target stage,Lowering matched,43,1334,191,10000.0,14,8
+P6,Target stage,Lowering matched,44,1334,191,10000.0,14,8
+P6,Target stage,Lowering matched,45,1334,191,10000.0,14,8
+P6,Target stage,Lowering matched,46,1334,191,10000.0,14,8
+P6,Target stage,Release,,352,164,10000.0,9,1
+P6,Target stage,Release matched,42,352,163,10000.0,9,8
+P6,Target stage,Release matched,43,352,154,10000.0,9,8
+P6,Target stage,Release matched,44,352,163,10000.0,9,8
+P6,Target stage,Release matched,45,352,164,10000.0,10,8
+P6,Target stage,Release matched,46,352,165,10000.0,9,8
+P6,Target stage,Return,,1213,191,10000.0,13,1
+P6,Target stage,Return matched,42,1213,190,10000.0,14,8
+P6,Target stage,Return matched,43,1213,191,10000.0,14,8
+P6,Target stage,Return matched,44,1213,191,10000.0,14,8
+P6,Target stage,Return matched,45,1213,191,10000.0,13,8
+P6,Target stage,Return matched,46,1213,191,10000.0,14,8
+P7,Pure stage,Pooled ridge,,9245,187,10000.0,22,8
+P7,Pure stage,Preparation,,1414,185,10000.0,13,1
+P7,Pure stage,Preparation matched,42,1414,185,10000.0,14,8
+P7,Pure stage,Preparation matched,43,1414,182,10000.0,14,8
+P7,Pure stage,Preparation matched,44,1414,185,10000.0,14,8
+P7,Pure stage,Preparation matched,45,1414,181,10000.0,14,8
+P7,Pure stage,Preparation matched,46,1414,184,10000.0,14,8
+P7,Pure stage,Reach,,1386,187,10000.0,13,1
+P7,Pure stage,Reach matched,42,1386,187,10000.0,14,8
+P7,Pure stage,Reach matched,43,1386,187,10000.0,14,8
+P7,Pure stage,Reach matched,44,1386,186,10000.0,14,8
+P7,Pure stage,Reach matched,45,1386,187,10000.0,14,8
+P7,Pure stage,Reach matched,46,1386,187,10000.0,14,8
+P7,Pure stage,Preload,,72,46,10000.0,6,1
+P7,Pure stage,Preload matched,42,72,55,10000.0,6,6
+P7,Pure stage,Preload matched,43,72,50,10000.0,6,7
+P7,Pure stage,Preload matched,44,72,50,10000.0,6,7
+P7,Pure stage,Preload matched,45,72,52,10000.0,6,8
+P7,Pure stage,Preload matched,46,72,52,10000.0,6,8
+P7,Pure stage,Loading,,388,125,10000.0,8,1
+P7,Pure stage,Loading matched,42,388,130,10000.0,9,8
+P7,Pure stage,Loading matched,43,388,135,10000.0,9,8
+P7,Pure stage,Loading matched,44,388,131,10000.0,9,7
+P7,Pure stage,Loading matched,45,388,126,10000.0,9,8
+P7,Pure stage,Loading matched,46,388,124,10000.0,9,8
+P7,Pure stage,Lift/hold,,3253,187,10000.0,16,1
+P7,Pure stage,Lift/hold matched,42,3253,187,10000.0,18,8
+P7,Pure stage,Lift/hold matched,43,3253,187,10000.0,18,8
+P7,Pure stage,Lift/hold matched,44,3253,187,10000.0,18,8
+P7,Pure stage,Lift/hold matched,45,3253,187,10000.0,18,8
+P7,Pure stage,Lift/hold matched,46,3253,187,10000.0,19,8
+P7,Pure stage,Lowering,,1420,187,10000.0,13,1
+P7,Pure stage,Lowering matched,42,1420,187,10000.0,14,8
+P7,Pure stage,Lowering matched,43,1420,186,10000.0,14,8
+P7,Pure stage,Lowering matched,44,1420,187,10000.0,14,8
+P7,Pure stage,Lowering matched,45,1420,186,10000.0,14,8
+P7,Pure stage,Lowering matched,46,1420,187,10000.0,14,8
+P7,Pure stage,Release,,98,57,10000.0,6,1
+P7,Pure stage,Release matched,42,98,70,10000.0,6,6
+P7,Pure stage,Release matched,43,98,72,10000.0,6,8
+P7,Pure stage,Release matched,44,98,65,10000.0,6,6
+P7,Pure stage,Release matched,45,98,73,10000.0,6,8
+P7,Pure stage,Release matched,46,98,72,10000.0,6,7
+P7,Pure stage,Return,,1214,187,10000.0,13,1
+P7,Pure stage,Return matched,42,1214,182,10000.0,14,8
+P7,Pure stage,Return matched,43,1214,185,10000.0,12,8
+P7,Pure stage,Return matched,44,1214,185,10000.0,12,8
+P7,Pure stage,Return matched,45,1214,187,10000.0,14,8
+P7,Pure stage,Return matched,46,1214,185,10000.0,14,8
+P7,Target stage,Pooled ridge,,12027,187,10000.0,23,8
+P7,Target stage,Preparation,,1788,187,10000.0,13,1
+P7,Target stage,Preparation matched,42,1788,186,10000.0,15,8
+P7,Target stage,Preparation matched,43,1788,187,10000.0,14,8
+P7,Target stage,Preparation matched,44,1788,187,10000.0,15,8
+P7,Target stage,Preparation matched,45,1788,186,10000.0,14,8
+P7,Target stage,Preparation matched,46,1788,187,10000.0,14,8
+P7,Target stage,Reach,,1760,187,10000.0,15,1
+P7,Target stage,Reach matched,42,1760,187,10000.0,15,8
+P7,Target stage,Reach matched,43,1760,187,10000.0,14,8
+P7,Target stage,Reach matched,44,1760,187,10000.0,15,8
+P7,Target stage,Reach matched,45,1760,187,10000.0,14,8
+P7,Target stage,Reach matched,46,1760,187,10000.0,14,8
+P7,Target stage,Preload,,373,178,10000.0,8,1
+P7,Target stage,Preload matched,42,373,166,10000.0,10,8
+P7,Target stage,Preload matched,43,373,152,10000.0,10,8
+P7,Target stage,Preload matched,44,373,162,10000.0,9,8
+P7,Target stage,Preload matched,45,373,162,10000.0,9,8
+P7,Target stage,Preload matched,46,373,158,10000.0,10,8
+P7,Target stage,Loading,,742,185,10000.0,11,1
+P7,Target stage,Loading matched,42,742,179,10000.0,12,8
+P7,Target stage,Loading matched,43,742,174,10000.0,11,8
+P7,Target stage,Loading matched,44,742,179,10000.0,11,8
+P7,Target stage,Loading matched,45,742,178,10000.0,11,8
+P7,Target stage,Loading matched,46,742,174,10000.0,12,8
+P7,Target stage,Lift/hold,,3627,187,10000.0,16,1
+P7,Target stage,Lift/hold matched,42,3627,187,10000.0,18,8
+P7,Target stage,Lift/hold matched,43,3627,187,10000.0,19,8
+P7,Target stage,Lift/hold matched,44,3627,187,10000.0,19,8
+P7,Target stage,Lift/hold matched,45,3627,187,10000.0,17,8
+P7,Target stage,Lift/hold matched,46,3627,187,10000.0,19,8
+P7,Target stage,Lowering,,1794,187,10000.0,14,1
+P7,Target stage,Lowering matched,42,1794,187,10000.0,14,8
+P7,Target stage,Lowering matched,43,1794,187,10000.0,15,8
+P7,Target stage,Lowering matched,44,1794,187,10000.0,14,8
+P7,Target stage,Lowering matched,45,1794,187,10000.0,14,8
+P7,Target stage,Lowering matched,46,1794,187,10000.0,14,8
+P7,Target stage,Release,,355,148,10000.0,9,1
+P7,Target stage,Release matched,42,355,154,10000.0,10,8
+P7,Target stage,Release matched,43,355,146,10000.0,9,8
+P7,Target stage,Release matched,44,355,150,10000.0,9,8
+P7,Target stage,Release matched,45,355,148,10000.0,9,8
+P7,Target stage,Release matched,46,355,151,10000.0,9,8
+P7,Target stage,Return,,1588,187,10000.0,14,1
+P7,Target stage,Return matched,42,1588,186,10000.0,14,8
+P7,Target stage,Return matched,43,1588,187,10000.0,14,8
+P7,Target stage,Return matched,44,1588,187,10000.0,14,8
+P7,Target stage,Return matched,45,1588,186,10000.0,14,8
+P7,Target stage,Return matched,46,1588,187,10000.0,14,8
+P8,Pure stage,Pooled ridge,,5497,189,10000.0,21,7
+P8,Pure stage,Preparation,,224,155,10000.0,8,1
+P8,Pure stage,Preparation matched,42,224,141,10000.0,7,7
+P8,Pure stage,Preparation matched,43,224,121,10000.0,8,7
+P8,Pure stage,Preparation matched,44,224,138,10000.0,8,7
+P8,Pure stage,Preparation matched,45,224,130,10000.0,8,7
+P8,Pure stage,Preparation matched,46,224,131,10000.0,8,7
+P8,Pure stage,Reach,,851,189,10000.0,11,1
+P8,Pure stage,Reach matched,42,851,186,10000.0,12,7
+P8,Pure stage,Reach matched,43,851,186,10000.0,12,7
+P8,Pure stage,Reach matched,44,851,188,10000.0,12,7
+P8,Pure stage,Reach matched,45,851,189,10000.0,11,7
+P8,Pure stage,Reach matched,46,851,187,10000.0,12,7
+P8,Pure stage,Loading,,93,55,10000.0,6,1
+P8,Pure stage,Loading matched,42,93,59,10000.0,6,6
+P8,Pure stage,Loading matched,43,93,64,10000.0,6,7
+P8,Pure stage,Loading matched,44,93,60,10000.0,6,7
+P8,Pure stage,Loading matched,45,93,58,10000.0,6,6
+P8,Pure stage,Loading matched,46,93,57,10000.0,7,6
+P8,Pure stage,Lift/hold,,3046,189,10000.0,16,1
+P8,Pure stage,Lift/hold matched,42,3046,189,10000.0,16,7
+P8,Pure stage,Lift/hold matched,43,3046,189,10000.0,16,7
+P8,Pure stage,Lift/hold matched,44,3046,189,10000.0,16,7
+P8,Pure stage,Lift/hold matched,45,3046,189,10000.0,16,7
+P8,Pure stage,Lift/hold matched,46,3046,189,10000.0,16,7
+P8,Pure stage,Lowering,,758,188,10000.0,10,1
+P8,Pure stage,Lowering matched,42,758,187,10000.0,12,7
+P8,Pure stage,Lowering matched,43,758,185,10000.0,12,7
+P8,Pure stage,Lowering matched,44,758,188,10000.0,12,7
+P8,Pure stage,Lowering matched,45,758,186,10000.0,12,7
+P8,Pure stage,Lowering matched,46,758,188,10000.0,10,7
+P8,Pure stage,Release,,51,41,10000.0,5,1
+P8,Pure stage,Release matched,42,51,44,10000.0,5,5
+P8,Pure stage,Release matched,43,51,40,10000.0,5,7
+P8,Pure stage,Release matched,44,51,39,10000.0,5,7
+P8,Pure stage,Release matched,45,51,42,10000.0,5,7
+P8,Pure stage,Release matched,46,51,44,10000.0,5,5
+P8,Pure stage,Return,,474,189,10000.0,9,1
+P8,Pure stage,Return matched,42,474,174,10000.0,9,7
+P8,Pure stage,Return matched,43,474,172,10000.0,9,7
+P8,Pure stage,Return matched,44,474,181,10000.0,9,7
+P8,Pure stage,Return matched,45,474,172,10000.0,9,7
+P8,Pure stage,Return matched,46,474,172,10000.0,9,7
+P8,Target stage,Pooled ridge,,8159,189,10000.0,22,8
+P8,Target stage,Preparation,,600,188,10000.0,10,1
+P8,Target stage,Preparation matched,42,600,184,10000.0,10,8
+P8,Target stage,Preparation matched,43,600,180,10000.0,10,8
+P8,Target stage,Preparation matched,44,600,177,10000.0,11,8
+P8,Target stage,Preparation matched,45,600,180,10000.0,10,8
+P8,Target stage,Preparation matched,46,600,183,10000.0,10,8
+P8,Target stage,Reach,,1229,189,10000.0,13,1
+P8,Target stage,Reach matched,42,1229,189,10000.0,13,8
+P8,Target stage,Reach matched,43,1229,189,10000.0,13,8
+P8,Target stage,Reach matched,44,1229,188,10000.0,13,8
+P8,Target stage,Reach matched,45,1229,189,10000.0,13,8
+P8,Target stage,Reach matched,46,1229,189,10000.0,13,8
+P8,Target stage,Preload,,157,136,10000.0,7,1
+P8,Target stage,Preload matched,42,157,118,10000.0,7,8
+P8,Target stage,Preload matched,43,157,107,10000.0,7,8
+P8,Target stage,Preload matched,44,157,110,10000.0,7,8
+P8,Target stage,Preload matched,45,157,109,10000.0,7,8
+P8,Target stage,Preload matched,46,157,110,10000.0,7,8
+P8,Target stage,Loading,,426,187,10000.0,9,1
+P8,Target stage,Loading matched,42,426,166,10000.0,9,8
+P8,Target stage,Loading matched,43,426,160,10000.0,9,8
+P8,Target stage,Loading matched,44,426,169,10000.0,9,8
+P8,Target stage,Loading matched,45,426,159,10000.0,9,8
+P8,Target stage,Loading matched,46,426,164,10000.0,9,8
+P8,Target stage,Lift/hold,,3424,189,10000.0,17,1
+P8,Target stage,Lift/hold matched,42,3424,189,10000.0,17,8
+P8,Target stage,Lift/hold matched,43,3424,189,10000.0,16,8
+P8,Target stage,Lift/hold matched,44,3424,189,10000.0,16,8
+P8,Target stage,Lift/hold matched,45,3424,189,10000.0,17,8
+P8,Target stage,Lift/hold matched,46,3424,189,10000.0,16,8
+P8,Target stage,Lowering,,1135,189,10000.0,12,1
+P8,Target stage,Lowering matched,42,1135,187,10000.0,13,8
+P8,Target stage,Lowering matched,43,1135,189,10000.0,13,8
+P8,Target stage,Lowering matched,44,1135,189,10000.0,12,8
+P8,Target stage,Lowering matched,45,1135,189,10000.0,13,8
+P8,Target stage,Lowering matched,46,1135,188,10000.0,13,8
+P8,Target stage,Release,,336,173,10000.0,8,1
+P8,Target stage,Release matched,42,336,156,10000.0,8,8
+P8,Target stage,Release matched,43,336,150,10000.0,9,8
+P8,Target stage,Release matched,44,336,154,10000.0,9,8
+P8,Target stage,Release matched,45,336,151,10000.0,9,8
+P8,Target stage,Release matched,46,336,159,10000.0,9,8
+P8,Target stage,Return,,852,189,10000.0,10,1
+P8,Target stage,Return matched,42,852,189,10000.0,12,8
+P8,Target stage,Return matched,43,852,187,10000.0,12,8
+P8,Target stage,Return matched,44,852,188,10000.0,12,8
+P8,Target stage,Return matched,45,852,189,10000.0,12,8
+P8,Target stage,Return matched,46,852,187,10000.0,12,8
+P9,Pure stage,Pooled ridge,,6544,184,10000.0,21,8
+P9,Pure stage,Preparation,,321,163,10000.0,9,1
+P9,Pure stage,Preparation matched,42,321,158,10000.0,10,7
+P9,Pure stage,Preparation matched,43,321,145,10000.0,9,7
+P9,Pure stage,Preparation matched,44,321,156,10000.0,9,7
+P9,Pure stage,Preparation matched,45,321,152,10000.0,9,7
+P9,Pure stage,Preparation matched,46,321,151,10000.0,10,7
+P9,Pure stage,Reach,,1299,184,10000.0,13,1
+P9,Pure stage,Reach matched,42,1299,182,10000.0,13,7
+P9,Pure stage,Reach matched,43,1299,184,10000.0,13,7
+P9,Pure stage,Reach matched,44,1299,184,10000.0,13,7
+P9,Pure stage,Reach matched,45,1299,184,10000.0,13,7
+P9,Pure stage,Reach matched,46,1299,184,10000.0,12,7
+P9,Pure stage,Loading,,111,71,10000.0,6,1
+P9,Pure stage,Loading matched,42,111,63,10000.0,7,7
+P9,Pure stage,Loading matched,43,111,65,10000.0,6,7
+P9,Pure stage,Loading matched,44,111,69,10000.0,7,7
+P9,Pure stage,Loading matched,45,111,61,10000.0,6,6
+P9,Pure stage,Loading matched,46,111,61,10000.0,7,6
+P9,Pure stage,Lift/hold,,2968,184,10000.0,16,1
+P9,Pure stage,Lift/hold matched,42,2968,184,10000.0,17,7
+P9,Pure stage,Lift/hold matched,43,2968,184,10000.0,17,8
+P9,Pure stage,Lift/hold matched,44,2968,184,10000.0,18,8
+P9,Pure stage,Lift/hold matched,45,2968,184,10000.0,17,8
+P9,Pure stage,Lift/hold matched,46,2968,184,10000.0,17,8
+P9,Pure stage,Lowering,,918,184,10000.0,12,1
+P9,Pure stage,Lowering matched,42,918,183,10000.0,12,7
+P9,Pure stage,Lowering matched,43,918,183,10000.0,12,8
+P9,Pure stage,Lowering matched,44,918,184,10000.0,12,7
+P9,Pure stage,Lowering matched,45,918,183,10000.0,11,7
+P9,Pure stage,Lowering matched,46,918,183,10000.0,11,8
+P9,Pure stage,Release,,92,74,10000.0,6,1
+P9,Pure stage,Release matched,42,92,70,10000.0,6,7
+P9,Pure stage,Release matched,43,92,66,10000.0,6,7
+P9,Pure stage,Release matched,44,92,63,10000.0,6,7
+P9,Pure stage,Release matched,45,92,65,10000.0,6,7
+P9,Pure stage,Release matched,46,92,67,10000.0,6,7
+P9,Pure stage,Return,,834,184,10000.0,12,1
+P9,Pure stage,Return matched,42,834,183,10000.0,11,7
+P9,Pure stage,Return matched,43,834,181,10000.0,12,7
+P9,Pure stage,Return matched,44,834,181,10000.0,11,7
+P9,Pure stage,Return matched,45,834,184,10000.0,11,7
+P9,Pure stage,Return matched,46,834,182,10000.0,11,7
+P9,Target stage,Pooled ridge,,9183,184,10000.0,22,8
+P9,Target stage,Preparation,,688,184,10000.0,11,1
+P9,Target stage,Preparation matched,42,688,179,10000.0,11,8
+P9,Target stage,Preparation matched,43,688,176,10000.0,11,8
+P9,Target stage,Preparation matched,44,688,179,10000.0,11,8
+P9,Target stage,Preparation matched,45,688,181,10000.0,11,8
+P9,Target stage,Preparation matched,46,688,181,10000.0,11,8
+P9,Target stage,Reach,,1667,184,10000.0,14,1
+P9,Target stage,Reach matched,42,1667,184,10000.0,15,8
+P9,Target stage,Reach matched,43,1667,184,10000.0,16,8
+P9,Target stage,Reach matched,44,1667,184,10000.0,15,8
+P9,Target stage,Reach matched,45,1667,184,10000.0,15,8
+P9,Target stage,Reach matched,46,1667,184,10000.0,15,8
+P9,Target stage,Preload,,134,122,10000.0,7,1
+P9,Target stage,Preload matched,42,134,97,10000.0,7,8
+P9,Target stage,Preload matched,43,134,98,10000.0,7,8
+P9,Target stage,Preload matched,44,134,94,10000.0,7,7
+P9,Target stage,Preload matched,45,134,98,10000.0,7,8
+P9,Target stage,Preload matched,46,134,94,10000.0,7,8
+P9,Target stage,Loading,,445,182,10000.0,9,1
+P9,Target stage,Loading matched,42,445,167,10000.0,10,8
+P9,Target stage,Loading matched,43,445,163,10000.0,10,8
+P9,Target stage,Loading matched,44,445,169,10000.0,10,8
+P9,Target stage,Loading matched,45,445,168,10000.0,10,8
+P9,Target stage,Loading matched,46,445,165,10000.0,10,8
+P9,Target stage,Lift/hold,,3336,184,10000.0,17,1
+P9,Target stage,Lift/hold matched,42,3336,184,10000.0,18,8
+P9,Target stage,Lift/hold matched,43,3336,184,10000.0,18,8
+P9,Target stage,Lift/hold matched,44,3336,184,10000.0,18,8
+P9,Target stage,Lift/hold matched,45,3336,184,10000.0,18,8
+P9,Target stage,Lift/hold matched,46,3336,184,10000.0,18,8
+P9,Target stage,Lowering,,1286,184,10000.0,13,1
+P9,Target stage,Lowering matched,42,1286,184,10000.0,13,8
+P9,Target stage,Lowering matched,43,1286,184,10000.0,13,8
+P9,Target stage,Lowering matched,44,1286,184,10000.0,13,8
+P9,Target stage,Lowering matched,45,1286,184,10000.0,13,8
+P9,Target stage,Lowering matched,46,1286,183,10000.0,13,8
+P9,Target stage,Release,,425,172,10000.0,9,1
+P9,Target stage,Release matched,42,425,169,10000.0,10,8
+P9,Target stage,Release matched,43,425,169,10000.0,10,8
+P9,Target stage,Release matched,44,425,164,10000.0,10,8
+P9,Target stage,Release matched,45,425,169,10000.0,10,8
+P9,Target stage,Release matched,46,425,169,10000.0,10,8
+P9,Target stage,Return,,1202,184,10000.0,13,1
+P9,Target stage,Return matched,42,1202,184,10000.0,13,8
+P9,Target stage,Return matched,43,1202,183,10000.0,12,8
+P9,Target stage,Return matched,44,1202,184,10000.0,13,8
+P9,Target stage,Return matched,45,1202,184,10000.0,13,8
+P9,Target stage,Return matched,46,1202,184,10000.0,13,8
+P10,Pure stage,Pooled ridge,,7239,191,10000.0,22,8
+P10,Pure stage,Preparation,,429,181,10000.0,10,1
+P10,Pure stage,Preparation matched,42,429,167,10000.0,9,7
+P10,Pure stage,Preparation matched,43,429,164,10000.0,9,7
+P10,Pure stage,Preparation matched,44,429,162,10000.0,9,7
+P10,Pure stage,Preparation matched,45,429,162,10000.0,9,7
+P10,Pure stage,Preparation matched,46,429,161,10000.0,9,7
+P10,Pure stage,Reach,,1282,191,10000.0,12,1
+P10,Pure stage,Reach matched,42,1282,191,10000.0,13,7
+P10,Pure stage,Reach matched,43,1282,191,10000.0,13,8
+P10,Pure stage,Reach matched,44,1282,191,10000.0,13,7
+P10,Pure stage,Reach matched,45,1282,191,10000.0,13,7
+P10,Pure stage,Reach matched,46,1282,191,10000.0,13,8
+P10,Pure stage,Loading,,348,144,10000.0,9,1
+P10,Pure stage,Loading matched,42,348,139,10000.0,9,7
+P10,Pure stage,Loading matched,43,348,136,10000.0,9,7
+P10,Pure stage,Loading matched,44,348,136,10000.0,9,7
+P10,Pure stage,Loading matched,45,348,142,10000.0,9,7
+P10,Pure stage,Loading matched,46,348,139,10000.0,9,7
+P10,Pure stage,Lift/hold,,3311,191,10000.0,16,1
+P10,Pure stage,Lift/hold matched,42,3311,191,10000.0,16,8
+P10,Pure stage,Lift/hold matched,43,3311,191,10000.0,18,8
+P10,Pure stage,Lift/hold matched,44,3311,191,10000.0,17,7
+P10,Pure stage,Lift/hold matched,45,3311,191,10000.0,17,8
+P10,Pure stage,Lift/hold matched,46,3311,191,10000.0,18,7
+P10,Pure stage,Lowering,,1060,190,10000.0,12,1
+P10,Pure stage,Lowering matched,42,1060,191,10000.0,13,7
+P10,Pure stage,Lowering matched,43,1060,191,10000.0,12,7
+P10,Pure stage,Lowering matched,44,1060,190,10000.0,13,7
+P10,Pure stage,Lowering matched,45,1060,190,10000.0,13,7
+P10,Pure stage,Lowering matched,46,1060,191,10000.0,12,8
+P10,Pure stage,Release,,201,121,10000.0,7,1
+P10,Pure stage,Release matched,42,201,114,10000.0,8,7
+P10,Pure stage,Release matched,43,201,113,10000.0,7,7
+P10,Pure stage,Release matched,44,201,115,10000.0,7,7
+P10,Pure stage,Release matched,45,201,107,10000.0,8,7
+P10,Pure stage,Release matched,46,201,111,10000.0,7,7
+P10,Pure stage,Return,,606,191,10000.0,10,1
+P10,Pure stage,Return matched,42,606,185,10000.0,10,7
+P10,Pure stage,Return matched,43,606,182,10000.0,11,8
+P10,Pure stage,Return matched,44,606,185,10000.0,10,7
+P10,Pure stage,Return matched,45,606,183,10000.0,10,7
+P10,Pure stage,Return matched,46,606,181,10000.0,11,8
+P10,Target stage,Pooled ridge,,9969,191,10000.0,23,8
+P10,Target stage,Preparation,,810,191,10000.0,12,1
+P10,Target stage,Preparation matched,42,810,189,10000.0,12,8
+P10,Target stage,Preparation matched,43,810,184,10000.0,12,8
+P10,Target stage,Preparation matched,44,810,189,10000.0,12,8
+P10,Target stage,Preparation matched,45,810,188,10000.0,12,8
+P10,Target stage,Preparation matched,46,810,189,10000.0,12,8
+P10,Target stage,Reach,,1664,191,10000.0,14,1
+P10,Target stage,Reach matched,42,1664,191,10000.0,14,8
+P10,Target stage,Reach matched,43,1664,191,10000.0,13,8
+P10,Target stage,Reach matched,44,1664,191,10000.0,14,8
+P10,Target stage,Reach matched,45,1664,191,10000.0,15,8
+P10,Target stage,Reach matched,46,1664,191,10000.0,14,8
+P10,Target stage,Preload,,138,124,10000.0,7,1
+P10,Target stage,Preload matched,42,138,106,10000.0,7,8
+P10,Target stage,Preload matched,43,138,93,10000.0,7,8
+P10,Target stage,Preload matched,44,138,103,10000.0,7,8
+P10,Target stage,Preload matched,45,138,109,10000.0,7,8
+P10,Target stage,Preload matched,46,138,103,10000.0,7,8
+P10,Target stage,Loading,,717,191,10000.0,11,1
+P10,Target stage,Loading matched,42,717,184,10000.0,12,8
+P10,Target stage,Loading matched,43,717,181,10000.0,11,8
+P10,Target stage,Loading matched,44,717,186,10000.0,11,8
+P10,Target stage,Loading matched,45,717,183,10000.0,12,8
+P10,Target stage,Loading matched,46,717,185,10000.0,12,8
+P10,Target stage,Lift/hold,,3693,191,10000.0,18,1
+P10,Target stage,Lift/hold matched,42,3693,191,10000.0,18,8
+P10,Target stage,Lift/hold matched,43,3693,191,10000.0,18,8
+P10,Target stage,Lift/hold matched,44,3693,191,10000.0,18,8
+P10,Target stage,Lift/hold matched,45,3693,191,10000.0,18,8
+P10,Target stage,Lift/hold matched,46,3693,191,10000.0,18,8
+P10,Target stage,Lowering,,1442,191,10000.0,13,1
+P10,Target stage,Lowering matched,42,1442,191,10000.0,13,8
+P10,Target stage,Lowering matched,43,1442,191,10000.0,13,8
+P10,Target stage,Lowering matched,44,1442,191,10000.0,13,8
+P10,Target stage,Lowering matched,45,1442,191,10000.0,13,8
+P10,Target stage,Lowering matched,46,1442,191,10000.0,13,8
+P10,Target stage,Release,,517,167,10000.0,9,1
+P10,Target stage,Release matched,42,517,167,10000.0,10,8
+P10,Target stage,Release matched,43,517,175,10000.0,10,8
+P10,Target stage,Release matched,44,517,173,10000.0,10,8
+P10,Target stage,Release matched,45,517,170,10000.0,10,8
+P10,Target stage,Release matched,46,517,171,10000.0,10,8
+P10,Target stage,Return,,988,191,10000.0,12,1
+P10,Target stage,Return matched,42,988,188,10000.0,12,8
+P10,Target stage,Return matched,43,988,189,10000.0,13,8
+P10,Target stage,Return matched,44,988,189,10000.0,12,8
+P10,Target stage,Return matched,45,988,191,10000.0,12,8
+P10,Target stage,Return matched,46,988,189,10000.0,12,8
+P11,Pure stage,Pooled ridge,,7259,186,10000.0,21,8
+P11,Pure stage,Preparation,,509,175,10000.0,11,1
+P11,Pure stage,Preparation matched,42,509,166,10000.0,11,7
+P11,Pure stage,Preparation matched,43,509,166,10000.0,10,7
+P11,Pure stage,Preparation matched,44,509,164,10000.0,11,7
+P11,Pure stage,Preparation matched,45,509,166,10000.0,11,8
+P11,Pure stage,Preparation matched,46,509,165,10000.0,11,7
+P11,Pure stage,Reach,,1488,186,10000.0,14,1
+P11,Pure stage,Reach matched,42,1488,186,10000.0,15,7
+P11,Pure stage,Reach matched,43,1488,186,10000.0,15,7
+P11,Pure stage,Reach matched,44,1488,186,10000.0,14,7
+P11,Pure stage,Reach matched,45,1488,186,10000.0,15,8
+P11,Pure stage,Reach matched,46,1488,186,10000.0,15,8
+P11,Pure stage,Loading,,182,99,10000.0,8,1
+P11,Pure stage,Loading matched,42,182,88,10000.0,8,7
+P11,Pure stage,Loading matched,43,182,89,10000.0,8,7
+P11,Pure stage,Loading matched,44,182,91,10000.0,8,7
+P11,Pure stage,Loading matched,45,182,82,10000.0,8,6
+P11,Pure stage,Loading matched,46,182,85,10000.0,8,7
+P11,Pure stage,Lift/hold,,3105,186,10000.0,18,1
+P11,Pure stage,Lift/hold matched,42,3105,186,10000.0,18,7
+P11,Pure stage,Lift/hold matched,43,3105,186,10000.0,18,7
+P11,Pure stage,Lift/hold matched,44,3105,186,10000.0,18,7
+P11,Pure stage,Lift/hold matched,45,3105,186,10000.0,20,8
+P11,Pure stage,Lift/hold matched,46,3105,186,10000.0,18,8
+P11,Pure stage,Lowering,,1025,186,10000.0,13,1
+P11,Pure stage,Lowering matched,42,1025,183,10000.0,12,8
+P11,Pure stage,Lowering matched,43,1025,186,10000.0,13,8
+P11,Pure stage,Lowering matched,44,1025,186,10000.0,12,7
+P11,Pure stage,Lowering matched,45,1025,186,10000.0,12,7
+P11,Pure stage,Lowering matched,46,1025,186,10000.0,13,7
+P11,Pure stage,Release,,66,55,10000.0,5,1
+P11,Pure stage,Release matched,42,66,56,10000.0,6,7
+P11,Pure stage,Release matched,43,66,52,10000.0,6,7
+P11,Pure stage,Release matched,44,66,50,10000.0,5,7
+P11,Pure stage,Release matched,45,66,48,10000.0,6,6
+P11,Pure stage,Release matched,46,66,57,10000.0,6,7
+P11,Pure stage,Return,,883,186,10000.0,11,1
+P11,Pure stage,Return matched,42,883,184,10000.0,12,7
+P11,Pure stage,Return matched,43,883,185,10000.0,12,7
+P11,Pure stage,Return matched,44,883,185,10000.0,12,7
+P11,Pure stage,Return matched,45,883,185,10000.0,12,7
+P11,Pure stage,Return matched,46,883,184,10000.0,12,7
+P11,Target stage,Pooled ridge,,9983,186,10000.0,21,8
+P11,Target stage,Preparation,,879,185,10000.0,12,1
+P11,Target stage,Preparation matched,42,879,183,10000.0,12,8
+P11,Target stage,Preparation matched,43,879,183,10000.0,12,8
+P11,Target stage,Preparation matched,44,879,185,10000.0,12,8
+P11,Target stage,Preparation matched,45,879,183,10000.0,12,8
+P11,Target stage,Preparation matched,46,879,184,10000.0,12,8
+P11,Target stage,Reach,,1860,186,10000.0,16,1
+P11,Target stage,Reach matched,42,1860,186,10000.0,14,8
+P11,Target stage,Reach matched,43,1860,186,10000.0,15,8
+P11,Target stage,Reach matched,44,1860,186,10000.0,15,8
+P11,Target stage,Reach matched,45,1860,186,10000.0,16,8
+P11,Target stage,Reach matched,46,1860,186,10000.0,15,8
+P11,Target stage,Preload,,179,154,10000.0,7,1
+P11,Target stage,Preload matched,42,179,119,10000.0,8,8
+P11,Target stage,Preload matched,43,179,116,10000.0,7,8
+P11,Target stage,Preload matched,44,179,126,10000.0,7,8
+P11,Target stage,Preload matched,45,179,118,10000.0,8,8
+P11,Target stage,Preload matched,46,179,117,10000.0,8,8
+P11,Target stage,Loading,,530,185,10000.0,10,1
+P11,Target stage,Loading matched,42,530,171,10000.0,11,8
+P11,Target stage,Loading matched,43,530,171,10000.0,11,8
+P11,Target stage,Loading matched,44,530,171,10000.0,11,8
+P11,Target stage,Loading matched,45,530,169,10000.0,11,8
+P11,Target stage,Loading matched,46,530,169,10000.0,11,8
+P11,Target stage,Lift/hold,,3477,186,10000.0,18,1
+P11,Target stage,Lift/hold matched,42,3477,186,10000.0,20,8
+P11,Target stage,Lift/hold matched,43,3477,186,10000.0,19,8
+P11,Target stage,Lift/hold matched,44,3477,186,10000.0,20,8
+P11,Target stage,Lift/hold matched,45,3477,186,10000.0,20,8
+P11,Target stage,Lift/hold matched,46,3477,186,10000.0,20,8
+P11,Target stage,Lowering,,1397,186,10000.0,13,1
+P11,Target stage,Lowering matched,42,1397,184,10000.0,13,8
+P11,Target stage,Lowering matched,43,1397,185,10000.0,15,8
+P11,Target stage,Lowering matched,44,1397,186,10000.0,13,8
+P11,Target stage,Lowering matched,45,1397,186,10000.0,14,8
+P11,Target stage,Lowering matched,46,1397,186,10000.0,14,8
+P11,Target stage,Release,,406,185,10000.0,9,1
+P11,Target stage,Release matched,42,406,169,10000.0,9,8
+P11,Target stage,Release matched,43,406,162,10000.0,10,8
+P11,Target stage,Release matched,44,406,159,10000.0,10,8
+P11,Target stage,Release matched,45,406,170,10000.0,10,8
+P11,Target stage,Release matched,46,406,163,10000.0,11,8
+P11,Target stage,Return,,1255,186,10000.0,14,1
+P11,Target stage,Return matched,42,1255,186,10000.0,13,8
+P11,Target stage,Return matched,43,1255,186,10000.0,13,8
+P11,Target stage,Return matched,44,1255,186,10000.0,13,8
+P11,Target stage,Return matched,45,1255,186,10000.0,13,8
+P11,Target stage,Return matched,46,1255,186,10000.0,13,8
+P12,Pure stage,Pooled ridge,,8001,192,10000.0,20,8
+P12,Pure stage,Preparation,,484,189,10000.0,10,1
+P12,Pure stage,Preparation matched,42,484,170,10000.0,10,7
+P12,Pure stage,Preparation matched,43,484,176,10000.0,10,8
+P12,Pure stage,Preparation matched,44,484,175,10000.0,10,8
+P12,Pure stage,Preparation matched,45,484,170,10000.0,10,7
+P12,Pure stage,Preparation matched,46,484,175,10000.0,10,7
+P12,Pure stage,Reach,,1407,192,10000.0,13,1
+P12,Pure stage,Reach matched,42,1407,192,10000.0,14,8
+P12,Pure stage,Reach matched,43,1407,192,10000.0,14,8
+P12,Pure stage,Reach matched,44,1407,192,10000.0,14,8
+P12,Pure stage,Reach matched,45,1407,192,10000.0,13,8
+P12,Pure stage,Reach matched,46,1407,192,10000.0,14,8
+P12,Pure stage,Loading,,320,150,10000.0,8,1
+P12,Pure stage,Loading matched,42,320,145,10000.0,8,7
+P12,Pure stage,Loading matched,43,320,138,10000.0,8,7
+P12,Pure stage,Loading matched,44,320,145,10000.0,9,8
+P12,Pure stage,Loading matched,45,320,142,10000.0,8,7
+P12,Pure stage,Loading matched,46,320,146,10000.0,8,7
+P12,Pure stage,Lift/hold,,3216,192,10000.0,16,1
+P12,Pure stage,Lift/hold matched,42,3216,192,10000.0,18,8
+P12,Pure stage,Lift/hold matched,43,3216,192,10000.0,17,8
+P12,Pure stage,Lift/hold matched,44,3216,192,10000.0,17,8
+P12,Pure stage,Lift/hold matched,45,3216,192,10000.0,16,8
+P12,Pure stage,Lift/hold matched,46,3216,192,10000.0,16,8
+P12,Pure stage,Lowering,,1246,191,10000.0,12,1
+P12,Pure stage,Lowering matched,42,1246,192,10000.0,13,7
+P12,Pure stage,Lowering matched,43,1246,192,10000.0,13,8
+P12,Pure stage,Lowering matched,44,1246,192,10000.0,13,8
+P12,Pure stage,Lowering matched,45,1246,192,10000.0,13,8
+P12,Pure stage,Lowering matched,46,1246,192,10000.0,13,8
+P12,Pure stage,Release,,107,81,10000.0,6,1
+P12,Pure stage,Release matched,42,107,80,10000.0,6,8
+P12,Pure stage,Release matched,43,107,78,10000.0,6,7
+P12,Pure stage,Release matched,44,107,73,10000.0,6,7
+P12,Pure stage,Release matched,45,107,78,10000.0,6,7
+P12,Pure stage,Release matched,46,107,72,10000.0,6,7
+P12,Pure stage,Return,,1209,192,10000.0,12,1
+P12,Pure stage,Return matched,42,1209,192,10000.0,13,8
+P12,Pure stage,Return matched,43,1209,192,10000.0,12,7
+P12,Pure stage,Return matched,44,1209,192,10000.0,14,8
+P12,Pure stage,Return matched,45,1209,192,10000.0,13,8
+P12,Pure stage,Return matched,46,1209,192,10000.0,12,8
+P12,Target stage,Pooled ridge,,10806,192,10000.0,22,8
+P12,Target stage,Preparation,,868,192,10000.0,12,1
+P12,Target stage,Preparation matched,42,868,190,10000.0,11,8
+P12,Target stage,Preparation matched,43,868,192,10000.0,11,8
+P12,Target stage,Preparation matched,44,868,188,10000.0,12,8
+P12,Target stage,Preparation matched,45,868,191,10000.0,11,8
+P12,Target stage,Preparation matched,46,868,191,10000.0,12,8
+P12,Target stage,Reach,,1791,192,10000.0,15,1
+P12,Target stage,Reach matched,42,1791,192,10000.0,15,8
+P12,Target stage,Reach matched,43,1791,192,10000.0,15,8
+P12,Target stage,Reach matched,44,1791,192,10000.0,15,8
+P12,Target stage,Reach matched,45,1791,192,10000.0,15,8
+P12,Target stage,Reach matched,46,1791,192,10000.0,15,8
+P12,Target stage,Preload,,277,178,10000.0,8,1
+P12,Target stage,Preload matched,42,277,156,10000.0,8,8
+P12,Target stage,Preload matched,43,277,143,10000.0,8,8
+P12,Target stage,Preload matched,44,277,149,10000.0,8,8
+P12,Target stage,Preload matched,45,277,154,10000.0,8,8
+P12,Target stage,Preload matched,46,277,153,10000.0,8,8
+P12,Target stage,Loading,,695,192,10000.0,10,1
+P12,Target stage,Loading matched,42,695,184,10000.0,11,8
+P12,Target stage,Loading matched,43,695,187,10000.0,11,8
+P12,Target stage,Loading matched,44,695,186,10000.0,11,8
+P12,Target stage,Loading matched,45,695,182,10000.0,11,8
+P12,Target stage,Loading matched,46,695,183,10000.0,12,8
+P12,Target stage,Lift/hold,,3600,192,10000.0,17,1
+P12,Target stage,Lift/hold matched,42,3600,192,10000.0,17,8
+P12,Target stage,Lift/hold matched,43,3600,192,10000.0,17,8
+P12,Target stage,Lift/hold matched,44,3600,192,10000.0,19,8
+P12,Target stage,Lift/hold matched,45,3600,192,10000.0,18,8
+P12,Target stage,Lift/hold matched,46,3600,192,10000.0,17,8
+P12,Target stage,Lowering,,1630,192,10000.0,14,1
+P12,Target stage,Lowering matched,42,1630,192,10000.0,14,8
+P12,Target stage,Lowering matched,43,1630,192,10000.0,15,8
+P12,Target stage,Lowering matched,44,1630,192,10000.0,15,8
+P12,Target stage,Lowering matched,45,1630,192,10000.0,13,8
+P12,Target stage,Lowering matched,46,1630,192,10000.0,15,8
+P12,Target stage,Release,,352,136,10000.0,8,1
+P12,Target stage,Release matched,42,352,150,10000.0,8,8
+P12,Target stage,Release matched,43,352,150,10000.0,9,8
+P12,Target stage,Release matched,44,352,158,10000.0,8,8
+P12,Target stage,Release matched,45,352,152,10000.0,8,8
+P12,Target stage,Release matched,46,352,147,10000.0,8,8
+P12,Target stage,Return,,1593,192,10000.0,13,1
+P12,Target stage,Return matched,42,1593,192,10000.0,13,8
+P12,Target stage,Return matched,43,1593,191,10000.0,13,8
+P12,Target stage,Return matched,44,1593,192,10000.0,15,8
+P12,Target stage,Return matched,45,1593,192,10000.0,15,8
+P12,Target stage,Return matched,46,1593,192,10000.0,15,8

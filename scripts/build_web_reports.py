@@ -4,9 +4,11 @@ import base64
 import csv
 import html
 import json
+from collections import defaultdict
 from math import isclose
 from pathlib import Path
-from statistics import mean
+from random import Random
+from statistics import mean, quantiles
 
 ROOT = Path(__file__).resolve().parents[1]
 GITHUB = "https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/"
@@ -15,7 +17,7 @@ CAT = [
     ("continuous-decoding", "Continuous kinematics decoding", "Original and corrected P1 baselines."),
     ("model-comparison", "Model comparison", "Six P1 regressors on the corrected protocol."),
     ("participant-transfer", "Cross-participant decoding", "Frozen P1 fits evaluated across P2–P12."),
-    ("movement-stages", "Movement-stage errors", "Stage-resolved errors and retrospective dynamics."),
+    ("movement-stages", "Movement-stage errors", "Specialist and pooled decoders, plus retrospective error analysis."),
     ("condition-decoding", "Condition decoding", "Weight decoding across stages, repeats and switches."),
     ("inference-latency", "Inference benchmark", "Warmed CPU and GPU model-call latency."),
     ("timing-alignment", "Timing alignment", "Prediction leads and paired held-out results."),
@@ -45,12 +47,15 @@ def build_data(root):
                     for title, path in sources], views=views,
                     figures=[(caption, "data:image/png;base64," + base64.b64encode((outputs / path).read_bytes()).decode("ascii"))
                              for caption, path in figures], limits=limits, terms=terms)
-    def view(title, headers, records, filters=(), chart=None, reference=None, description="", order=None, initial=None, selectors=()):
+    def view(title, headers, records, filters=(), chart=None, reference=None, description="", order=None, initial=None, selectors=(), metrics=(), matrix_row=None, table_note=None):
         records = list(records)
         if not records or any(len(row) != len(headers) for row in records):
             raise ValueError(f"Missing data or mismatched columns: {title}")
         return dict(title=title, headers=headers, rows=records, filters=list(filters), chart=chart,
-                    reference=reference, description=description, order=order, initial=initial or {}, selectors=list(selectors))
+                    reference=reference, description=description, order=order, initial=initial or {},
+                    selectors=list(selectors), **({"metrics": metrics} if metrics else {}),
+                    **({"matrixRow": matrix_row} if matrix_row is not None else {}),
+                    **({"tableNote": table_note} if table_note else {}))
     def ci(values, mult=1):
         return tuple(float(x)*mult for x in values)
     def pct(value):
@@ -101,7 +106,8 @@ def build_data(root):
               "The displayed errors use training-standardized targets."),
     ]
     comparison = [study("Six corrected P1 reference models", "Compare the training mean, ridge, CNN, CNN + ELU, CNN–BiLSTM and EEGNet on the same P1 test split.",
-                        [source(six)], [model_view(six)], limits="These fits use P1 and a single seed for the neural models.")]
+                        [source(six), source(correct, caption="Corrected P1 baseline")], [model_view(six)],
+                        limits="These fits use P1 and a single seed for the neural models. The plain CNN has identical test scores in the corrected P1 baseline.")]
 
     frozen = "frozen-p1-cross-participant-gpu-20260930T125956Z"
     r_transfer = [(r["participant"],label(r["model"]),{"all_evaluated_runs":"All evaluated series","primary_runs_8_9":"Test series 8–9"}[r["scope"]],int(r["windows"]),
@@ -114,24 +120,29 @@ def build_data(root):
     saved = "saved-decoder-analysis-p1-20261013T172654Z"
     r6 = "r6-population-error-models-20261111"
     r6follow = "t1-r6-followup-20261110"
-    phase = [(label(r["model"]),label(r["stage"]),label(r["subset"]),int(r["n"]),float(r["mean_euclidean_error"]),
-              *(float(r[f"mae_{a}"]) for a in "xyz"))
-             for r in rows(saved,"phase_metrics.csv") if r["mean_euclidean_error"]]
     r6_errors = [(r["participant"],label(r["model"]),int(r["window_ms"]),label(r["features"]),int(r["trials"]),
                   float(r["mse"]),float(r["r2"]) if r["r2"] else None) for r in rows(r6,"participant_error_models.csv")]
     r6_corr = [(r["participant"],label(r["model"]),label(r["stage"]),int(r["trials"]),float(r["rho"]))
                for r in rows(r6,"participant_stage_correlations.csv")]
     stages = [
-        study("Saved P1 decoder errors", "Compare error by movement phase and by the retained sample subset.",
-              [source(saved)], [view("Phase error",["Model","Stage","Subset","Targets","Mean error norm","MAE X","MAE Y","MAE Z"],
-              phase,[0,1,2],default_chart(1,4,0),initial={"Subset":"All targets"})], [("Phase comparison",f"{saved}/phase_error_comparison.png")]),
         study("Population error explanation", "Compare the fit of retrospective error models and the within-stage association between speed and decoder error.",
-              [source(r6),source(r6follow,caption="Population streak follow-up")], [
+              [source(r6), source(r6follow, caption="Population streak follow-up"),
+               source(saved, caption="Archived P1 decoder errors and trial timing")], [
                   view("Error models",["Participant","Decoder","Smoothing (ms)","Features","Trials","Error-model MSE","Error-model R²"],r6_errors,[0,1,2,3]),
                   view("Speed–error correlation",["Participant","Decoder","Stage","Trials","Spearman ρ"],r6_corr,[0,1,2],default_chart(2,4,1),0,initial={"Participant":"P1"})],
               [("Population smoothing sensitivity",f"{r6}/smoothing_comparison.png")],
-              "These scores describe how well observed kinematics and stages explain saved decoder errors."),
+              "These scores describe how well observed kinematics and stages explain saved decoder errors.",
+              terms=(("Error norm", "The three-dimensional distance between the predicted and observed wrist position."),)),
     ]
+
+    c5 = "c5-stage-specific-ridge-20261114"
+    ridge_reference = c5 if (outputs / c5 / "population_summary.json").is_file() else None
+    c5_models = "c5-stage-specific-models-20261114"
+    if (outputs / c5_models / "summary.json").is_file():
+        stages[0:0] = stage_model_reports(c5_models, ridge_reference, data, rows, view, study, source)
+    elif ridge_reference:
+        caption, path = source(c5, caption="C_5 ridge results")
+        stages[0]["sources"].insert(0, (caption, GITHUB + "outputs/" + path))
 
     pilot = "weight-classification-p1-gpu-20261014T115817Z"
     c10 = "c10-stage-weight-20261114"
@@ -203,7 +214,7 @@ def build_data(root):
         (("R²", "Zero matches the constant held-out mean. Negative values score worse than that reference."),
          ("Mean XYZ", "The arithmetic mean of the three separately calculated wrist-axis scores.")),
         (("Frozen model", "The P1-trained model and scalers are reused as-is for each participant. P1 is the source reference."),),
-        (("Error norm", "The three-dimensional distance between the predicted and observed wrist position."),),
+        (),
         (),
         (("Batch", "The number of EEG windows processed in a single model call."), ("P95 latency", "The time that 95% of measured calls finished within.")),
         (("Prediction lead", "The time from the final sample in the EEG input window to the wrist-position target."),),
@@ -213,16 +224,17 @@ def build_data(root):
     categories = [audits, baseline, comparison, transfer, stages, condition, inference, timing_studies, histories, targets]
     for studies, terms in zip(categories, explanations):
         if terms:
-            studies[0]["terms"] = terms
+            next(s for s in studies if not s["terms"])["terms"] = terms
     return categories
 
 
 def condition_studies(crop, full, data, rows, view, study, source):
-    """Keep published cohort intervals and derive individual summaries from saved probabilities."""
+    """Keep published cohort intervals and use the published participant summaries."""
     stages = ("Preparation", "Reach", "Loading", "Lift/hold")
     cohort = "Cohort (P1–P12)"
     representations = (("Full stage", full), ("Centered 64 ms crop", crop))
     controls = ("Previous weight", "Schedule lookup")
+    probability_fields = ("p165", "p330", "p660")
     accuracy_rows, margin_rows = [], []
     individuals = {}
 
@@ -294,17 +306,228 @@ def condition_studies(crop, full, data, rows, view, study, source):
                     raise ValueError(f"Participant changes do not reproduce the cohort: {model}, {stage}, {group}")
     second = study("C_10 · Paired changes in accuracy",
         "Positive changes favour the full-stage EEG representation or the combined EEG and duration model.",
-        references, [view("Paired changes", ["Model or comparison","Stage","Trial group","Participant","Accuracy change (pp)","95% lower","95% upper"],
+        [*references, source(full, "full_stage_comparison.png", "Download the paired-comparison figure (PNG)")],
+        [view("Paired changes", ["Model or comparison","Stage","Trial group","Participant","Accuracy change (pp)","95% lower","95% upper"],
         comparison_rows, [3,0,1,2], default_chart(1,4,0,5,6), 0, scope, stages,
         initial={"Participant":cohort, "Trial group":"Switch"}, selectors=(3,2))],
-        [("Paired accuracy changes across all participants", f"{full}/full_stage_comparison.png")],
         terms=(("Paired change", "For each participant, subtract accuracy with the 64 ms crop from accuracy with the full stage on the same trials. The EEG + duration comparison subtracts accuracy with duration alone."),
                ("Percentage points (pp)", "An increase from 40% to 55% is a gain of 15 percentage points.")))
     return [first, second]
 
 
-def default_chart(category,value,series=None,low=None,high=None,context_only=()):
-    return dict(category=category,value=value,series=series,low=low,high=high,contextOnly=context_only)
+STAGE_ORDER = ("Preparation", "Reach", "Preload", "Loading", "Lift/hold", "Lowering", "Release", "Return")
+STAGE_METRICS = ["MSE", "Mean XYZ R²", "R² X", "R² Y", "R² Z"]
+STAGE_INITIAL = {"Window rule": "Pure stage", "Participant": "Cohort"}
+STAGE_R2_NOTE = (
+    "How to read within-stage R².",
+    "Each score compares the decoder with the mean wrist position for that participant, stage, and axis in the test set. "
+    "When the wrist barely moves, even a small absolute error can produce a strongly negative R². "
+    "Use MSE to compare error size on the same targets, and use R² to assess how well the decoder tracks variation within a stage.",
+)
+
+
+def stage_scores(row):
+    return tuple(float(row[key]) if row[key] else None for key in ("mse", "r2", "r2_x", "r2_y", "r2_z"))
+
+
+def stage_decoder(row):
+    return row["scope"] if row["architecture"] == "mean" else label(row["architecture"])
+
+
+def matched_ridge_effects(participant):
+    """Use the corrected, verified matched ridge scores for stage-level deltas."""
+    groups = defaultdict(list)
+    specialists = {(r["policy"], r["participant"], r["test_stage"]): float(r["mse"])
+                   for r in participant if r["architecture"] == "ridge" and r["scope"] == "Specialist"
+                   and r["train_stage"] == r["test_stage"]}
+    for row in participant:
+        if row["architecture"] == "ridge" and row["scope"] == "Matched pooled":
+            policy, person, stage = (row[key] for key in ("policy", "participant", "test_stage"))
+            groups[policy, stage].append((person, specialists[policy, person, stage] - float(row["mse"])))
+
+    for (policy, stage), effects in groups.items():
+        values = [delta for _, delta in effects]
+        rng = Random(42)
+        n = len(values)
+        draws = [mean(rng.choices(values, k=n)) for _ in range(10_000)]
+        percentiles = quantiles(draws, n=200, method="inclusive")
+        low, high = percentiles[4], percentiles[194]  # 2.5th and 97.5th percentiles.
+        yield (policy, "Matched pooled ridge", stage, "Cohort", mean(values), low, high, n)
+        for person, delta in effects:
+            yield (policy, "Matched pooled ridge", stage, person, delta, None, None, 1)
+
+
+def stage_specialist_views(run, ridge_run, data, rows, view, participant, balanced_effects, balanced_scores):
+    specialists = [r for r in participant if r["scope"] == "Specialist"]
+    cross = [(r["policy"], r["participant"], stage_decoder(r), r["train_stage"], r["test_stage"],
+              *stage_scores(r), 1) for r in specialists]
+    cross.extend(("Pure stage", "Cohort", stage_decoder(r), r["train_stage"], r["test_stage"],
+                  *stage_scores(r), int(r["n_participants"])) for r in rows(run, "cross_stage_scores.csv"))
+    target_stage = defaultdict(list)
+    for row in specialists:
+        if row["policy"] == "Target stage":
+            target_stage[row["train_stage"], row["test_stage"]].append(stage_scores(row))
+    for (train, test), scores in target_stage.items():
+        means = [mean(finite) if (finite := [x for x in col if x is not None]) else None for col in zip(*scores)]
+        cross.append(("Target stage", "Cohort", "Ridge", train, test, *means, len(scores)))
+
+    refs = ["MSE difference vs pooled", "95% lower", "95% upper"] if ridge_run else []
+    metric_options = []
+    description = "Rows are the specialist’s training stages. Columns are evaluation stages. A dash indicates unavailable scores."
+    paired_views = []
+    if ridge_run:
+        summary = data(ridge_run, "population_summary.json")
+        if data(ridge_run, "independent_verification.json")["status"] != "passed":
+            raise ValueError("C_5 ridge results must pass independent verification.")
+
+        pooled = {(r["policy"], r["participant"], r["test_stage"]): float(r["mse"])
+                  for r in participant if r["architecture"] == "ridge" and r["scope"] == "Pooled"}
+        differences = {(r["policy"], r["participant"], stage_decoder(r), r["train_stage"], r["test_stage"]):
+                       (float(r["mse"]) - pooled[r["policy"], r["participant"], r["test_stage"]], None, None)
+                       for r in specialists if r["architecture"] == "ridge"}
+        differences.update({
+            (policy, "Cohort", "Ridge", cell["train_stage"], cell["test_stage"]): (cell["mean"], cell["low"], cell["high"])
+            for policy, cells in summary["cross_stage"].items() for cell in cells
+        })
+        cross = [(*row, *differences.get(row[:5], (None, None, None))) for row in cross]
+        metric_options = [(5, None, None, None), (11, 0, 12, 13)]
+        description += " Select Ridge for specialist-minus-pooled MSE and its cohort intervals. Negative differences favour the specialist."
+
+        comparisons = list(matched_ridge_effects(participant))
+        for policy, stages in summary["diagonal"].items():
+            for stage, comparators in stages.items():
+                for comparator, effect in comparators.items():
+                    if comparator != "Matched pooled ridge":
+                        comparisons.append((policy, comparator, stage, "Cohort", effect["mean"],
+                                            effect["low"], effect["high"], effect["n"]))
+        comparisons.extend((r["policy"], r["comparator"], r["stage"], r["participant"], float(r["delta"]), None, None, 1)
+                           for r in rows(ridge_run, "paired_effects.csv") if r["comparator"] != "Matched pooled ridge")
+        paired_views.append(view("Ridge same-stage paired effects",
+            ["Window rule", "Reference", "Stage", "Participant", "Specialist minus reference MSE",
+             "95% lower", "95% upper", "Participants"], comparisons, [0, 3, 1, 2],
+            default_chart(2, 4, 1, 5, 6), 0,
+            "Each specialist and reference are scored on identical test targets. Negative differences favour the specialist. "
+            "The cohort intervals resample participants. Matched effects use the corrected sample-matched fits.",
+            STAGE_ORDER, initial=STAGE_INITIAL, selectors=(0, 3)))
+
+    cohort_effects = defaultdict(dict)
+    for row in balanced_effects:
+        cohort_effects[row["architecture"], row["reference"]][row["metric"]] = row
+
+    paired = []
+    for (architecture, reference), effects in cohort_effects.items():
+        decoder = label(architecture)
+        paired.append(("Cohort", decoder, reference,
+                       *(effects[m][k] for m in ("mse", "r2") for k in ("delta", "lower", "upper")),
+                       effects["mse"]["n"]))
+        reference_arch = "mean" if reference == "Stage mean" else architecture
+        for person, scope, arch in balanced_scores:
+            if scope != "Specialist" or arch != architecture or person == "Cohort":
+                continue
+            specialist = balanced_scores[person, scope, arch]
+            control = balanced_scores[person, reference, reference_arch]
+            mse = specialist[0] - control[0]
+            r2 = specialist[1] - control[1] if specialist[1] is not None and control[1] is not None else None
+            paired.append((person, decoder, reference, mse, None, None, r2, None, None, 1))
+    return [
+        view("Train stage × evaluation stage",
+             ["Window rule", "Participant", "Decoder", "Train stage", "Evaluation stage",
+              *STAGE_METRICS, "Participants", *refs], cross, [0, 1, 2, 3, 4],
+             default_chart(4, 5), description=description, order=STAGE_ORDER,
+             initial={**STAGE_INITIAL, "Decoder": "Ridge"}, selectors=(0, 1, 2),
+             metrics=metric_options, matrix_row=3, table_note=STAGE_R2_NOTE),
+        view("Balanced paired effects", ["Participant", "Decoder", "Reference", "MSE difference",
+             "MSE 95% lower", "MSE 95% upper", "Mean XYZ R² difference", "R² 95% lower",
+             "R² 95% upper", "Participants"], paired, [0, 1, 2],
+             default_chart(1, 3, 2, 4, 5, connect=False), 0,
+             "Pure-stage specialist minus reference on the common stages. Negative MSE differences favour the specialist. "
+             "The 95% bootstrap intervals apply to the cohort.",
+             initial={"Participant": "Cohort"}, selectors=(0,), table_note=STAGE_R2_NOTE),
+        *paired_views,
+    ]
+
+
+def stage_model_reports(run, ridge_run, data, rows, view, study, source):
+    result = data(run, "summary.json")
+    if result["status"] != "verified":
+        raise ValueError("C_5 architecture results must pass verification.")
+    stages = ", ".join(result["common_stages"])
+    participant = rows(run, "participant_scores.csv")
+    cohort = rows(run, "stage_scores.csv")
+    # Each individual score averages the same pure-stage test stages as the cohort.
+    balanced_scores = {("Cohort", r["scope"], r["architecture"]): stage_scores(r)
+                       for r in rows(run, "balanced_scores.csv")}
+    by_person = defaultdict(list)
+    for r in participant:
+        if (r["policy"] == "Pure stage" and r["test_stage"] in result["common_stages"]
+                and (r["scope"] in ("Pooled", "Pooled mean") or r["train_stage"] == r["test_stage"])):
+            by_person[r["participant"], r["scope"], r["architecture"]].append(stage_scores(r))
+    for key, scores in by_person.items():
+        if len(scores) != len(result["common_stages"]):
+            raise ValueError(f"C_5 balanced stage coverage differs for {key}.")
+        balanced_scores[key] = tuple(mean(column) if None not in column else None for column in zip(*scores))
+
+    comparisons = []
+    scope_labels = {"Specialist": "Specialist", "Pooled": "Full pooled", "Stage mean": "Training-stage mean"}
+    for person, scope, architecture in balanced_scores:
+        if scope == "Specialist":
+            for compared_scope, fit in scope_labels.items():
+                compared_arch = "mean" if compared_scope == "Stage mean" else architecture
+                comparisons.append((person, label(architecture), fit, balanced_scores[person, compared_scope, compared_arch][0]))
+
+    summary = view("Held-out MSE comparison", ["Participant", "Decoder", "Fit", "Held-out MSE"],
+                   comparisons, [0, 1], default_chart(1, 3, 2, connect=False),
+                   description=f"Compare the specialist, the same decoder trained across stages, and the training-stage mean "
+                               f"on identical held-out targets. The balanced comparison uses pure-stage windows in {stages}.",
+                   initial={"Participant": "Cohort"}, selectors=(0,))
+    studies = []
+    for scope, title, baseline in (("Specialist", "Stage-specific decoders", "Stage mean"),
+                                   ("Pooled", "Full pooled decoders", "Pooled mean"),
+                                   ("Matched pooled", "Sample-matched pooled controls", None)):
+        scopes = {scope, baseline}
+        balanced = [(person, fit if arch == "mean" else label(arch), *scores)
+                    for (person, fit, arch), scores in balanced_scores.items() if fit in scopes]
+        by_stage = [(r["policy"], "Cohort", stage_decoder(r), r["stage"], *stage_scores(r), int(r["n_participants"]))
+                    for r in cohort if r["scope"] in scopes]
+        by_stage.extend((r["policy"], r["participant"], stage_decoder(r), r["test_stage"], *stage_scores(r), 1)
+                        for r in participant if r["scope"] in scopes and
+                        (r["scope"] in ("Pooled", "Pooled mean") or r["train_stage"] == r["test_stage"]))
+        views = [
+            view("Balanced model scores", ["Participant", "Decoder", *STAGE_METRICS], balanced, [0, 1],
+                 default_chart(1, 2), description=f"Pure-stage scores on the common stages: {stages}.",
+                 initial={"Participant": "Cohort"}, selectors=(0,), table_note=STAGE_R2_NOTE),
+            view("Scores by evaluation stage", ["Window rule", "Participant", "Decoder", "Stage", *STAGE_METRICS, "Participants"],
+                 by_stage, [0, 1, 2, 3], default_chart(3, 4, 2),
+                 description="Cohort scores use the available participants for each stage.",
+                 order=STAGE_ORDER, initial=STAGE_INITIAL, selectors=(0, 1), table_note=STAGE_R2_NOTE),
+        ]
+        links = [source(run), source(run, "PROTOCOL.md", "Protocol")]
+        terms = ()
+        if scope == "Specialist":
+            views.insert(0, summary)
+            views.extend(stage_specialist_views(run, ridge_run, data, rows, view, participant, result["paired"], balanced_scores))
+            if ridge_run:
+                links.append(source(ridge_run, caption="Original ridge sensitivity report"))
+            terms = (
+                ("Window timing", "Every prediction uses a 256 ms EEG window. Its final sample is 2 ms before the wrist-position target."),
+                ("Pure stage", "The whole EEG window and the target must fall within the same event-defined stage. All four decoders use this rule for the main comparison."),
+                ("Target stage", "The target time determines the stage. For example, a target 100 ms into loading qualifies as loading even though part of its EEG window precedes loading. Pure stage excludes this window. The Target stage sensitivity analysis uses Ridge."),
+                ("Balanced score", "Within each participant and stage, trials get equal weight, and windows within a trial share that trial’s weight. The cohort score averages the common stages within each participant, then averages P1–P12 equally."),
+                ("MSE", "Mean squared position error in training-standardized coordinates. Lower values are better."),
+                ("Stage mean", "A constant prediction equal to the average training wrist position for that stage."),
+            )
+        descriptions = {
+            "Specialist": "Each specialist is trained on one movement stage.",
+            "Pooled": "Each pooled decoder is trained across all eligible stages and scored separately on each evaluation stage.",
+            "Matched pooled": "Each control is trained across stages and matches the specialist’s training-window counts within each recording series, weight and surface combination.",
+        }
+        studies.append(study(f"C_5 · {title}", descriptions[scope], links, views, terms=terms))
+    return studies
+
+
+def default_chart(category,value,series=None,low=None,high=None,context_only=(),connect=True):
+    return dict(category=category,value=value,series=series,low=low,high=high,contextOnly=context_only,
+                **({} if connect else {"connect": False}))
 
 
 def main():
@@ -319,7 +542,7 @@ def main():
     def emit(path, text, payload):
         encoded = json.dumps(payload,ensure_ascii=False,allow_nan=False,separators=(",",":")).replace("<",r"\u003c")
         path.parent.mkdir(parents=True,exist_ok=True)
-        rendered = template.replace("<!--TITLE-->",html.escape(text)).replace("<!--DATA-->",html.escape(encoded, quote=False))
+        rendered = template.replace("<!--TITLE-->",html.escape(text)).replace("<!--DATA-->",encoded)
         path.write_text(rendered,encoding="utf-8")
     reports = build_data(args.source)
     for cat, studies in zip(categories,reports):

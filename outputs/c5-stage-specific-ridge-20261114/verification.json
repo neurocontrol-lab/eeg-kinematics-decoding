@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "participants": 12,
+  "series_clocks": 96,
+  "trial_clocks": 3120,
+  "invalid_event_trials": 39,
+  "fit_count": 1104,
+  "metric_rows": 9713,
+  "matched_control_fits": 900
+}

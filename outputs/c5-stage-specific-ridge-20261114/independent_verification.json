@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "participant_policy_test_groups": 177,
+  "metric_rows": 9713,
+  "independently_recomputed_aggregates": 171,
+  "cross_stage_vs_same_stage": {
+    "Pure stage": {
+      "participants": 12,
+      "comparison_cells": 484,
+      "cross_minus_same_mse": 1.2305928311668262
+    },
+    "Target stage": {
+      "participants": 12,
+      "comparison_cells": 672,
+      "cross_minus_same_mse": 1.047645197334647
+    }
+  }
+}

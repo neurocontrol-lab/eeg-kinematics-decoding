@@ -23,6 +23,7 @@ th,td{text-align:left;padding:8px 11px;white-space:nowrap;border-bottom:1px soli
 thead button{font-size:inherit;font-weight:600;border:0;background:transparent;padding:0;text-align:left}
 tbody tr:nth-child(even){background:#f7f9fa}.count{margin:7px 0;color:var(--muted);font-size:13px}
 .chart{overflow:auto;margin:12px 0}.chart svg{width:100%;min-width:535px;height:auto;display:block}
+.matrix td{text-align:right}.matrix th[scope=row]{background:#eaf0f3}.matrix .same-stage{font-weight:700;outline:1px solid #899fac;outline-offset:-1px}
 .axis-label{fill:var(--muted);font-size:12px}.chart-note{font-size:13px;color:var(--muted)}
 .legend{display:flex;gap:6px 17px;flex-wrap:wrap;font-size:13px;margin:7px 0}.legend span{display:inline-flex;align-items:center;gap:5px}
 .swatch{width:9px;height:9px;display:inline-block;border-radius:50%}
@@ -31,6 +32,7 @@ details{margin-top:15px}summary{cursor:pointer;font-weight:600}figure{margin:12p
 .definitions h3{margin:0 0 6px}.definitions dl{display:grid;grid-template-columns:minmax(125px,auto) 1fr;column-gap:12px;row-gap:6px;margin:0;font-size:14px}
 .definitions dt{font-weight:600}.definitions dd{margin:0;color:var(--muted)}
 @media(max-width:600px){.definitions dl{display:block}.definitions dd{margin-bottom:9px}}
+article .table-note{margin:12px 0 8px;padding:9px 12px;border-left:3px solid #9bbdc3;background:#f1f6f7;font-size:14px}
 .sources{display:flex;gap:9px 20px;flex-wrap:wrap;margin-top:15px}
 @media(max-width:600px){.wrap{width:calc(100% - 24px)}article,.card{padding:15px}header{padding:23px 0 30px}}
 </style>
@@ -42,10 +44,10 @@ details{margin-top:15px}summary{cursor:pointer;font-weight:600}figure{margin:12p
 <p id="intro"></p>
 </div></header>
 <main class="wrap" id="content"><noscript>Enable JavaScript to explore the saved report data.</noscript></main>
-<template id="report-data">{"categories":[{"slug":"dataset-audits","title":"Dataset audits","summary":"Trial conditions, split coverage and coordinate checks."},{"slug":"continuous-decoding","title":"Continuous kinematics decoding","summary":"Original and corrected P1 baselines."},{"slug":"model-comparison","title":"Model comparison","summary":"Six P1 regressors on the corrected protocol."},{"slug":"participant-transfer","title":"Cross-participant decoding","summary":"Frozen P1 fits evaluated across P2–P12."},{"slug":"movement-stages","title":"Movement-stage errors","summary":"Stage-resolved errors and retrospective dynamics."},{"slug":"condition-decoding","title":"Condition decoding","summary":"Weight decoding across stages, repeats and switches."},{"slug":"inference-latency","title":"Inference benchmark","summary":"Warmed CPU and GPU model-call latency."},{"slug":"timing-alignment","title":"Timing alignment","summary":"Prediction leads and paired held-out results."},{"slug":"history-duration","title":"EEG history duration","summary":"Matched 256, 512 and 1,024 ms EEG histories."},{"slug":"movement-targets","title":"Movement targets","summary":"Wrist position compared with signed velocity."}]}</template>
+<script id="report-data" type="application/json">{"categories":[{"slug":"dataset-audits","title":"Dataset audits","summary":"Trial conditions, split coverage and coordinate checks."},{"slug":"continuous-decoding","title":"Continuous kinematics decoding","summary":"Original and corrected P1 baselines."},{"slug":"model-comparison","title":"Model comparison","summary":"Six P1 regressors on the corrected protocol."},{"slug":"participant-transfer","title":"Cross-participant decoding","summary":"Frozen P1 fits evaluated across P2–P12."},{"slug":"movement-stages","title":"Movement-stage errors","summary":"Specialist and pooled decoders, plus retrospective error analysis."},{"slug":"condition-decoding","title":"Condition decoding","summary":"Weight decoding across stages, repeats and switches."},{"slug":"inference-latency","title":"Inference benchmark","summary":"Warmed CPU and GPU model-call latency."},{"slug":"timing-alignment","title":"Timing alignment","summary":"Prediction leads and paired held-out results."},{"slug":"history-duration","title":"EEG history duration","summary":"Matched 256, 512 and 1,024 ms EEG histories."},{"slug":"movement-targets","title":"Movement targets","summary":"Wrist position compared with signed velocity."}]}</script>
 <script>
 "use strict";
-const data = JSON.parse(document.querySelector("#report-data").content.textContent);
+const data = JSON.parse(document.querySelector("#report-data").textContent);
 const isPreview = location.hostname === "htmlpreview.github.io";
 const base = "https://github.com/neurocontrol-lab/eeg-kinematics-decoding/blob/main/outputs/reports/";
 const nav = document.querySelector("#nav");
@@ -89,6 +91,36 @@ function svgNode(tag, props, parent, title=null) {
   parent.append(node);
   return node;
 }
+function stageMatrix(parent, view, rows, points) {
+  const {category,value,low,high}=view.chart;
+  const train=view.matrixRow;
+  const scores=points.map(r=>r[value]);
+  const magnitude=Math.max(0,...scores.map(Math.abs)) || 1;
+  const minimum=Math.min(...scores), span=(Math.max(...scores)-minimum) || 1;
+  const byStage=new Map(rows.map(r=>[JSON.stringify([r[train],r[category]]),r]));
+  const table=element("table",null,parent,{class:"matrix","aria-label":view.headers[value]+" by training and evaluation stage"});
+  const header=element("tr",null,element("thead",null,table));
+  element("th","Train / evaluation",header,{scope:"col"});
+  for(const stage of view.order) element("th",stage,header,{scope:"col"});
+  const body=element("tbody",null,table);
+  for(const training of view.order){
+    const tr=element("tr",null,body);
+    element("th",training,tr,{scope:"row"});
+    for(const evaluation of view.order){
+      const row=byStage.get(JSON.stringify([training,evaluation]));
+      const score=row?.[value] ?? null;
+      const cell=element("td",format(score),tr,{class:training===evaluation?"same-stage":""});
+      if(score===null) continue;
+      const shade=view.reference===null ? (score-minimum)/span : Math.abs(score)/magnitude;
+      const rgb=view.reference===null ? "36,113,135" : score<0 ? "36,113,135" : "189,83,42";
+      cell.style.backgroundColor="rgba("+rgb+","+(shade*.32)+")";
+      const interval=low!==null && Number.isFinite(row[low]) && Number.isFinite(row[high]);
+      const count=row[view.headers.indexOf("Participants")];
+      cell.title=[format(score,true),count+" participant"+(count===1?"":"s"),
+                  interval?"95% interval ["+format(row[low])+", "+format(row[high])+"]":null].filter(Boolean).join(" · ");
+    }
+  }
+}
 function chart(parent, view, rows) {
   parent.replaceChildren();
   if (!view.chart || !rows.length) return;
@@ -96,8 +128,16 @@ function chart(parent, view, rows) {
   const withValues=rows.filter(r=>Number.isFinite(r[value]));
   const showControls=series===null || withValues.every(r=>view.chart.contextOnly.includes(r[series]));
   const points=showControls ? withValues : withValues.filter(r=>!view.chart.contextOnly.includes(r[series]));
+  if (!points.length) {
+    element("p","No scores for this selection.",parent,{class:"chart-note"});
+    return;
+  }
+  if(view.matrixRow!==undefined){
+    element("h3",view.headers[value],parent);
+    stageMatrix(parent,view,rows,points);
+    return;
+  }
   const uniqueKeys=new Set(points.map(r=>JSON.stringify([r[category],series===null?null:r[series]])));
-  if (!points.length) return;
   if (uniqueKeys.size!==points.length) {
     element("p","Choose filters to show one value per chart group.",parent,{class:"chart-note"});
     return;
@@ -133,7 +173,7 @@ function chart(parent, view, rows) {
       segment.push([x(i)+offset,y(r[value])]);
     }
     if(segment.length)lineSegments.push(segment);
-    if(groups.length>1 && categories.length>1) for(const segment of lineSegments) if(segment.length>1) {
+    if(view.chart.connect!==false && groups.length>1 && categories.length>1) for(const segment of lineSegments) if(segment.length>1) {
       svgNode("polyline",{points:segment.map(p=>p.join(",")).join(" "),fill:"none",stroke:color,"stroke-width":1.45,opacity:.64},svg);
     }
     for(const [i,r] of seriesRows.entries()){
@@ -181,9 +221,17 @@ function explore(parent, views) {
       }
       return {column,name,values,input,defaultValue};
     });
+    const metric=view.metrics?.length ? selector(filters,"Chart metric",[],false) : null;
     const reset=element("button","Reset filters",filters,{type:"button"});
+    const selectedRows=()=>view.rows.filter(r=>filterList.every(f=>f.input.value===""||r[f.column]===f.values[Number(f.input.value)]));
     const fig=element("div",null,panel,{class:"chart"});
     const count=element("div",null,panel,{class:"count","aria-live":"polite"});
+    if(view.tableNote){
+      const [heading,text]=view.tableNote;
+      const note=element("p",null,panel,{class:"table-note"});
+      element("strong",heading,note);
+      note.append(document.createTextNode(" "+text));
+    }
     const box=element("div",null,panel,{class:"table",tabindex:"0","aria-label":view.title});
     const table=element("table",null,box);
     const header=element("tr",null,element("thead",null,table));
@@ -196,7 +244,16 @@ function explore(parent, views) {
       return th;
     });
     function draw(){
-      const rows=view.rows.filter(r=>filterList.every(f=>f.input.value===""||r[f.column]===f.values[Number(f.input.value)]));
+      if(view.matrixRow!==undefined){
+        const rule=filterList.find(f=>f.name==="Window rule");
+        const decoder=filterList.find(f=>f.name==="Decoder");
+        const available=new Set(view.rows.filter(r=>r[rule.column]===rule.values[Number(rule.input.value)])
+                                      .map(r=>r[decoder.column]));
+        Array.from(decoder.input.options).forEach((option,i)=>{option.disabled=!available.has(decoder.values[i]);});
+        if(decoder.input.selectedOptions[0]?.disabled)
+          decoder.input.selectedIndex=decoder.values.findIndex(value=>available.has(value));
+      }
+      const rows=selectedRows();
       if(sort!==-1) rows.sort((a,b)=>{
         const x=a[sort],y=b[sort];
         if(x===null||y===null) return x===y?0:x===null?1:-1;
@@ -210,20 +267,39 @@ function explore(parent, views) {
         const tr=element("tr",null,body);
         for(const value of row)element("td",format(value),tr,typeof value==="number"?{title:format(value,true)}:{});
       }
-      chart(fig,view,rows);
+      if(metric){
+        const previous=metric.value;
+        const choices=view.metrics.filter(([value])=>rows.some(r=>Number.isFinite(r[value])));
+        metric.replaceChildren();
+        choices.forEach(([value])=>element("option",view.headers[value],metric,{value}));
+        if(choices.some(([value])=>String(value)===previous)) metric.value=previous;
+        metric.disabled=!choices.length;
+        const picked=choices.find(([value])=>String(value)===metric.value);
+        if(picked){
+          const [value,reference,low,high]=picked;
+          chart(fig,{...view,reference,chart:{...view.chart,value,low,high}},rows);
+        }else{
+          fig.replaceChildren();
+        }
+      }else{
+        chart(fig,view,rows);
+      }
     }
     filterList.forEach(f=>f.input.addEventListener("change",()=>{
       selections.set(f.name,f.input.value===""?"":f.values[Number(f.input.value)]);
       draw();
     }));
+    metric?.addEventListener("change",draw);
     reset.addEventListener("click",()=>{
       selections.clear();
+      if(metric) metric.value="";
       filterList.forEach(f=>{f.input.value=f.defaultValue;});
       draw();
     });
     draw();
   }
-  select.addEventListener("change",show);show();
+  select.addEventListener("change",show);
+  show();
 }
 if(data.category) link("All experiment reports",reportLink(""),nav);
 link("Experiment registry","https://docs.google.com/spreadsheets/d/1Q2nJqr66ftuz7CP9dMiYRdE2RGwavmGbMGDkOS7yiWg/edit",nav);

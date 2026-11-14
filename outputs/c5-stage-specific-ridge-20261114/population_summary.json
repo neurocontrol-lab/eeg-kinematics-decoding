@@ -1,0 +1,1487 @@
+{
+  "diagonal": {
+    "Pure stage": {
+      "Preparation": {
+        "Pooled ridge": {
+          "n": 12,
+          "mean": -1.540633012565819,
+          "low": -1.9004454893893974,
+          "high": -1.2463757237676014,
+          "better": 12
+        },
+        "Matched pooled ridge": {
+          "n": 12,
+          "mean": -1.9166998072819423,
+          "low": -2.3988403249647727,
+          "high": -1.4835239996308065,
+          "better": 12
+        },
+        "Stage mean": {
+          "n": 12,
+          "mean": 0.008546470432524074,
+          "low": -0.015984450390442564,
+          "high": 0.02705874619928699,
+          "better": 1
+        }
+      },
+      "Reach": {
+        "Pooled ridge": {
+          "n": 12,
+          "mean": -0.07504946057206517,
+          "low": -0.0962709748841664,
+          "high": -0.053183394231862836,
+          "better": 12
+        },
+        "Matched pooled ridge": {
+          "n": 12,
+          "mean": -0.10136865029032117,
+          "low": -0.1469140066464273,
+          "high": -0.06897936075850357,
+          "better": 12
+        },
+        "Stage mean": {
+          "n": 12,
+          "mean": -0.01925654324808353,
+          "low": -0.037201524519133555,
+          "high": -0.0017667986392907455,
+          "better": 9
+        }
+      },
+      "Loading": {
+        "Pooled ridge": {
+          "n": 11,
+          "mean": -0.3581736059648504,
+          "low": -0.4116616524869471,
+          "high": -0.3028810092802559,
+          "better": 11
+        },
+        "Matched pooled ridge": {
+          "n": 11,
+          "mean": -0.34782085976721716,
+          "low": -0.42336808237365664,
+          "high": -0.2816355390871182,
+          "better": 11
+        },
+        "Stage mean": {
+          "n": 11,
+          "mean": 0.0008363059712077612,
+          "low": -0.00013355905512407417,
+          "high": 0.0018055721049701743,
+          "better": 3
+        }
+      },
+      "Lift/hold": {
+        "Pooled ridge": {
+          "n": 12,
+          "mean": -0.1795320436459901,
+          "low": -0.24713329463450007,
+          "high": -0.12728595656041147,
+          "better": 12
+        },
+        "Matched pooled ridge": {
+          "n": 12,
+          "mean": -0.17785519472351582,
+          "low": -0.24405896711949107,
+          "high": -0.12682442143273262,
+          "better": 12
+        },
+        "Stage mean": {
+          "n": 12,
+          "mean": -0.002004380310830563,
+          "low": -0.005885846462190612,
+          "high": 0.0009164337557324828,
+          "better": 7
+        }
+      },
+      "Lowering": {
+        "Pooled ridge": {
+          "n": 12,
+          "mean": -0.1424639428598417,
+          "low": -0.17923931193678375,
+          "high": -0.10723955471655094,
+          "better": 12
+        },
+        "Matched pooled ridge": {
+          "n": 12,
+          "mean": -0.16508267068210977,
+          "low": -0.2033630607609477,
+          "high": -0.1311339583778813,
+          "better": 12
+        },
+        "Stage mean": {
+          "n": 12,
+          "mean": -0.015576950116373786,
+          "low": -0.026877402367262163,
+          "high": -0.000471405637461339,
+          "better": 11
+        }
+      },
+      "Release": {
+        "Pooled ridge": {
+          "n": 9,
+          "mean": -0.37331716668519876,
+          "low": -0.46039691506806846,
+          "high": -0.2911216247554691,
+          "better": 9
+        },
+        "Matched pooled ridge": {
+          "n": 9,
+          "mean": -0.35840590731718713,
+          "low": -0.443926008391639,
+          "high": -0.2776819236670112,
+          "better": 9
+        },
+        "Stage mean": {
+          "n": 9,
+          "mean": 0.0006040777939007653,
+          "low": -0.0002332424684728876,
+          "high": 0.0014665577549379204,
+          "better": 3
+        }
+      },
+      "Return": {
+        "Pooled ridge": {
+          "n": 12,
+          "mean": -0.37082494813972394,
+          "low": -0.5272591385543839,
+          "high": -0.23546509289295908,
+          "better": 12
+        },
+        "Matched pooled ridge": {
+          "n": 12,
+          "mean": -0.43914172963835135,
+          "low": -0.6130862823713864,
+          "high": -0.30117565849677747,
+          "better": 12
+        },
+        "Stage mean": {
+          "n": 12,
+          "mean": 0.0052768555837544905,
+          "low": -0.04207276605478399,
+          "high": 0.06713647126321615,
+          "better": 8
+        }
+      }
+    },
+    "Target stage": {
+      "Preparation": {
+        "Pooled ridge": {
+          "n": 12,
+          "mean": -1.335599536917959,
+          "low": -1.6522238520325025,
+          "high": -1.0654030404178123,
+          "better": 12
+        },
+        "Matched pooled ridge": {
+          "n": 12,
+          "mean": -1.5168807750683804,
+          "low": -1.840375220804012,
+          "high": -1.228027637487675,
+          "better": 12
+        },
+        "Stage mean": {
+          "n": 12,
+          "mean": 0.01583152830115572,
+          "low": 0.003763807037264927,
+          "high": 0.029614486842818255,
+          "better": 1
+        }
+      },
+      "Reach": {
+        "Pooled ridge": {
+          "n": 12,
+          "mean": -0.07055585677700175,
+          "low": -0.09992128663137301,
+          "high": -0.043458237326577,
+          "better": 12
+        },
+        "Matched pooled ridge": {
+          "n": 12,
+          "mean": -0.11456623514393134,
+          "low": -0.1676662575138741,
+          "high": -0.07013492974836419,
+          "better": 12
+        },
+        "Stage mean": {
+          "n": 12,
+          "mean": -0.1266840068301304,
+          "low": -0.15892925453862589,
+          "high": -0.09618976216466572,
+          "better": 12
+        }
+      },
+      "Preload": {
+        "Pooled ridge": {
+          "n": 12,
+          "mean": -0.3019329462108109,
+          "low": -0.34239364829177116,
+          "high": -0.2611034260597972,
+          "better": 12
+        },
+        "Matched pooled ridge": {
+          "n": 12,
+          "mean": -0.33293007143791514,
+          "low": -0.3889470611024608,
+          "high": -0.27672075328066126,
+          "better": 12
+        },
+        "Stage mean": {
+          "n": 12,
+          "mean": -0.00043999663395872954,
+          "low": -0.0019253990766619185,
+          "high": 0.000937409672894798,
+          "better": 7
+        }
+      },
+      "Loading": {
+        "Pooled ridge": {
+          "n": 12,
+          "mean": -0.3119662719459742,
+          "low": -0.3638768313544882,
+          "high": -0.26555425913569425,
+          "better": 12
+        },
+        "Matched pooled ridge": {
+          "n": 12,
+          "mean": -0.33619005244322536,
+          "low": -0.41896733611692466,
+          "high": -0.2721571331601795,
+          "better": 12
+        },
+        "Stage mean": {
+          "n": 12,
+          "mean": 0.0007160870835848849,
+          "low": 1.3464518207099878e-05,
+          "high": 0.0014373437492435186,
+          "better": 4
+        }
+      },
+      "Lift/hold": {
+        "Pooled ridge": {
+          "n": 12,
+          "mean": -0.23152963050578731,
+          "low": -0.2982394366280321,
+          "high": -0.17490928104516354,
+          "better": 12
+        },
+        "Matched pooled ridge": {
+          "n": 12,
+          "mean": -0.2349382010865766,
+          "low": -0.3001217065401106,
+          "high": -0.17949290262372705,
+          "better": 12
+        },
+        "Stage mean": {
+          "n": 12,
+          "mean": -0.015010600764241253,
+          "low": -0.025416207761955197,
+          "high": -0.007577382908934667,
+          "better": 12
+        }
+      },
+      "Lowering": {
+        "Pooled ridge": {
+          "n": 12,
+          "mean": -0.1782946509400002,
+          "low": -0.22420047503681295,
+          "high": -0.13988621240689766,
+          "better": 12
+        },
+        "Matched pooled ridge": {
+          "n": 12,
+          "mean": -0.19874592720611176,
+          "low": -0.24519594072171655,
+          "high": -0.15657417619185035,
+          "better": 12
+        },
+        "Stage mean": {
+          "n": 12,
+          "mean": -0.025790617372665633,
+          "low": -0.03709745101633762,
+          "high": -0.014000109324413841,
+          "better": 11
+        }
+      },
+      "Release": {
+        "Pooled ridge": {
+          "n": 12,
+          "mean": -0.3199406852505842,
+          "low": -0.3705684224041419,
+          "high": -0.2740153232293399,
+          "better": 12
+        },
+        "Matched pooled ridge": {
+          "n": 12,
+          "mean": -0.3481533776091506,
+          "low": -0.42627671858714217,
+          "high": -0.28208758977136145,
+          "better": 12
+        },
+        "Stage mean": {
+          "n": 12,
+          "mean": 0.001222379419240497,
+          "low": 0.00018356358956348641,
+          "high": 0.0025933242405852546,
+          "better": 3
+        }
+      },
+      "Return": {
+        "Pooled ridge": {
+          "n": 12,
+          "mean": -0.1261632796273526,
+          "low": -0.20980602190236952,
+          "high": -0.030182015467494893,
+          "better": 11
+        },
+        "Matched pooled ridge": {
+          "n": 12,
+          "mean": -0.17722778368869382,
+          "low": -0.23707253750594864,
+          "high": -0.1275205594760396,
+          "better": 12
+        },
+        "Stage mean": {
+          "n": 12,
+          "mean": -0.03768122669509965,
+          "low": -0.0799603964551577,
+          "high": 0.017677224909716998,
+          "better": 10
+        }
+      }
+    }
+  },
+  "cross_stage": {
+    "Pure stage": [
+      {
+        "train_stage": "Preparation",
+        "test_stage": "Preparation",
+        "n": 12,
+        "mean": -1.540633012565819,
+        "low": -1.9004454893893974,
+        "high": -1.2463757237676014,
+        "better": 12
+      },
+      {
+        "train_stage": "Preparation",
+        "test_stage": "Reach",
+        "n": 12,
+        "mean": 1.584532565067043,
+        "low": 1.259959412600439,
+        "high": 1.905559089951741,
+        "better": 0
+      },
+      {
+        "train_stage": "Preparation",
+        "test_stage": "Loading",
+        "n": 12,
+        "mean": 2.0559386591338815,
+        "low": 1.5994052054829895,
+        "high": 2.4998087086604532,
+        "better": 0
+      },
+      {
+        "train_stage": "Preparation",
+        "test_stage": "Lift/hold",
+        "n": 12,
+        "mean": 3.7670193036822455,
+        "low": 3.188404891900181,
+        "high": 4.29643034953195,
+        "better": 0
+      },
+      {
+        "train_stage": "Preparation",
+        "test_stage": "Lowering",
+        "n": 12,
+        "mean": 3.056745503931784,
+        "low": 2.631791148206688,
+        "high": 3.455910474928406,
+        "better": 0
+      },
+      {
+        "train_stage": "Preparation",
+        "test_stage": "Release",
+        "n": 9,
+        "mean": 1.9371600364289456,
+        "low": 1.5724733961621262,
+        "high": 2.302505794830821,
+        "better": 0
+      },
+      {
+        "train_stage": "Preparation",
+        "test_stage": "Return",
+        "n": 12,
+        "mean": 0.20675553958115636,
+        "low": -0.0403952400569252,
+        "high": 0.4501630646978177,
+        "better": 3
+      },
+      {
+        "train_stage": "Reach",
+        "test_stage": "Preparation",
+        "n": 12,
+        "mean": 0.48988476421636706,
+        "low": 0.26157771534300217,
+        "high": 0.7375642943897925,
+        "better": 1
+      },
+      {
+        "train_stage": "Reach",
+        "test_stage": "Reach",
+        "n": 12,
+        "mean": -0.07504946057206517,
+        "low": -0.0962709748841664,
+        "high": -0.053183394231862836,
+        "better": 12
+      },
+      {
+        "train_stage": "Reach",
+        "test_stage": "Loading",
+        "n": 12,
+        "mean": -0.17164196669596046,
+        "low": -0.2239216092835184,
+        "high": -0.12092574461414611,
+        "better": 12
+      },
+      {
+        "train_stage": "Reach",
+        "test_stage": "Lift/hold",
+        "n": 12,
+        "mean": 0.509064083905182,
+        "low": 0.4372184212376606,
+        "high": 0.5774231521264556,
+        "better": 0
+      },
+      {
+        "train_stage": "Reach",
+        "test_stage": "Lowering",
+        "n": 12,
+        "mean": 0.13299885323633884,
+        "low": 0.09662685378974022,
+        "high": 0.16563505951961494,
+        "better": 0
+      },
+      {
+        "train_stage": "Reach",
+        "test_stage": "Release",
+        "n": 9,
+        "mean": -0.1796412897858406,
+        "low": -0.2450941942844278,
+        "high": -0.1095716669374246,
+        "better": 8
+      },
+      {
+        "train_stage": "Reach",
+        "test_stage": "Return",
+        "n": 12,
+        "mean": 0.17693935030613725,
+        "low": 0.05514581352050712,
+        "high": 0.3194713709749275,
+        "better": 2
+      },
+      {
+        "train_stage": "Preload",
+        "test_stage": "Preparation",
+        "n": 2,
+        "mean": 1.7773624313367373,
+        "low": 1.7548977322622077,
+        "high": 1.799827130411267,
+        "better": 0
+      },
+      {
+        "train_stage": "Preload",
+        "test_stage": "Reach",
+        "n": 2,
+        "mean": 0.21354335095030064,
+        "low": 0.1320269486223798,
+        "high": 0.2950597532782215,
+        "better": 0
+      },
+      {
+        "train_stage": "Preload",
+        "test_stage": "Loading",
+        "n": 2,
+        "mean": -0.44130418665071536,
+        "low": -0.4959376350113762,
+        "high": -0.38667073829005455,
+        "better": 2
+      },
+      {
+        "train_stage": "Preload",
+        "test_stage": "Lift/hold",
+        "n": 2,
+        "mean": 0.8667332041165919,
+        "low": 0.7577953807724853,
+        "high": 0.9756710274606986,
+        "better": 0
+      },
+      {
+        "train_stage": "Preload",
+        "test_stage": "Lowering",
+        "n": 2,
+        "mean": 0.2432986002753066,
+        "low": 0.16615643262352348,
+        "high": 0.3204407679270897,
+        "better": 0
+      },
+      {
+        "train_stage": "Preload",
+        "test_stage": "Release",
+        "n": 2,
+        "mean": -0.3911382850034022,
+        "low": -0.4324271638863539,
+        "high": -0.34984940612045057,
+        "better": 2
+      },
+      {
+        "train_stage": "Preload",
+        "test_stage": "Return",
+        "n": 2,
+        "mean": 1.02865961719348,
+        "low": 0.7832704393384903,
+        "high": 1.27404879504847,
+        "better": 0
+      },
+      {
+        "train_stage": "Loading",
+        "test_stage": "Preparation",
+        "n": 11,
+        "mean": 1.5899143639504778,
+        "low": 1.3874474946140913,
+        "high": 1.7924507639956984,
+        "better": 0
+      },
+      {
+        "train_stage": "Loading",
+        "test_stage": "Reach",
+        "n": 11,
+        "mean": 0.11732907196749259,
+        "low": 0.06507027259386236,
+        "high": 0.1740181137036888,
+        "better": 1
+      },
+      {
+        "train_stage": "Loading",
+        "test_stage": "Loading",
+        "n": 11,
+        "mean": -0.3581736059648504,
+        "low": -0.4116616524869471,
+        "high": -0.3028810092802559,
+        "better": 11
+      },
+      {
+        "train_stage": "Loading",
+        "test_stage": "Lift/hold",
+        "n": 11,
+        "mean": 0.548384642751482,
+        "low": 0.46960423562862574,
+        "high": 0.6212363854624948,
+        "better": 0
+      },
+      {
+        "train_stage": "Loading",
+        "test_stage": "Lowering",
+        "n": 11,
+        "mean": 0.07477657828529105,
+        "low": 0.03781827062148556,
+        "high": 0.11452689881171027,
+        "better": 1
+      },
+      {
+        "train_stage": "Loading",
+        "test_stage": "Release",
+        "n": 9,
+        "mean": -0.3742680125311024,
+        "low": -0.4627795453333474,
+        "high": -0.2906560138898077,
+        "better": 9
+      },
+      {
+        "train_stage": "Loading",
+        "test_stage": "Return",
+        "n": 11,
+        "mean": 0.862081587401552,
+        "low": 0.7052013003462075,
+        "high": 1.0323310733407216,
+        "better": 0
+      },
+      {
+        "train_stage": "Lift/hold",
+        "test_stage": "Preparation",
+        "n": 12,
+        "mean": 3.3138421649284164,
+        "low": 3.102313133528934,
+        "high": 3.5237330645953753,
+        "better": 0
+      },
+      {
+        "train_stage": "Lift/hold",
+        "test_stage": "Reach",
+        "n": 12,
+        "mean": 0.4724642630836286,
+        "low": 0.39452706003247756,
+        "high": 0.5515502344336372,
+        "better": 0
+      },
+      {
+        "train_stage": "Lift/hold",
+        "test_stage": "Loading",
+        "n": 12,
+        "mean": 0.2268210810646404,
+        "low": 0.1721740952695529,
+        "high": 0.29262871534092505,
+        "better": 0
+      },
+      {
+        "train_stage": "Lift/hold",
+        "test_stage": "Lift/hold",
+        "n": 12,
+        "mean": -0.1795320436459901,
+        "low": -0.24713329463450007,
+        "high": -0.12728595656041147,
+        "better": 12
+      },
+      {
+        "train_stage": "Lift/hold",
+        "test_stage": "Lowering",
+        "n": 12,
+        "mean": 0.028751400619790052,
+        "low": -0.013961933697881374,
+        "high": 0.06472822628016063,
+        "better": 3
+      },
+      {
+        "train_stage": "Lift/hold",
+        "test_stage": "Release",
+        "n": 9,
+        "mean": 0.34671409299642675,
+        "low": 0.26115265665722304,
+        "high": 0.4297301622619645,
+        "better": 0
+      },
+      {
+        "train_stage": "Lift/hold",
+        "test_stage": "Return",
+        "n": 12,
+        "mean": 1.3376105514485088,
+        "low": 1.1932365611373559,
+        "high": 1.4919121606042975,
+        "better": 0
+      },
+      {
+        "train_stage": "Lowering",
+        "test_stage": "Preparation",
+        "n": 12,
+        "mean": 2.6467141999408708,
+        "low": 2.355750321612508,
+        "high": 2.934179556699183,
+        "better": 0
+      },
+      {
+        "train_stage": "Lowering",
+        "test_stage": "Reach",
+        "n": 12,
+        "mean": 0.17217315827971724,
+        "low": 0.12253344892725633,
+        "high": 0.22467356340255662,
+        "better": 0
+      },
+      {
+        "train_stage": "Lowering",
+        "test_stage": "Loading",
+        "n": 12,
+        "mean": -0.07591811890779314,
+        "low": -0.14040312632477644,
+        "high": -0.00155482479754162,
+        "better": 9
+      },
+      {
+        "train_stage": "Lowering",
+        "test_stage": "Lift/hold",
+        "n": 12,
+        "mean": -0.06810327384406767,
+        "low": -0.14154346233758902,
+        "high": -0.0038186450520846515,
+        "better": 10
+      },
+      {
+        "train_stage": "Lowering",
+        "test_stage": "Lowering",
+        "n": 12,
+        "mean": -0.1424639428598417,
+        "low": -0.17923931193678375,
+        "high": -0.10723955471655094,
+        "better": 12
+      },
+      {
+        "train_stage": "Lowering",
+        "test_stage": "Release",
+        "n": 9,
+        "mean": -0.1820782854076347,
+        "low": -0.271502688729774,
+        "high": -0.11599618406840712,
+        "better": 9
+      },
+      {
+        "train_stage": "Lowering",
+        "test_stage": "Return",
+        "n": 12,
+        "mean": 0.9512744705744457,
+        "low": 0.8014016998795581,
+        "high": 1.10365606946869,
+        "better": 0
+      },
+      {
+        "train_stage": "Release",
+        "test_stage": "Preparation",
+        "n": 11,
+        "mean": 1.7100755233471752,
+        "low": 1.5138314373564432,
+        "high": 1.910322438754592,
+        "better": 0
+      },
+      {
+        "train_stage": "Release",
+        "test_stage": "Reach",
+        "n": 11,
+        "mean": 0.10467109456660216,
+        "low": 0.05539477676571504,
+        "high": 0.1568933338360088,
+        "better": 2
+      },
+      {
+        "train_stage": "Release",
+        "test_stage": "Loading",
+        "n": 11,
+        "mean": -0.347337923780176,
+        "low": -0.3947686719095776,
+        "high": -0.2980843275473065,
+        "better": 11
+      },
+      {
+        "train_stage": "Release",
+        "test_stage": "Lift/hold",
+        "n": 11,
+        "mean": 0.49479011210470497,
+        "low": 0.4275615839587768,
+        "high": 0.5543622851410923,
+        "better": 0
+      },
+      {
+        "train_stage": "Release",
+        "test_stage": "Lowering",
+        "n": 11,
+        "mean": 0.05245161854520688,
+        "low": 0.013463886219478248,
+        "high": 0.0897075548415052,
+        "better": 4
+      },
+      {
+        "train_stage": "Release",
+        "test_stage": "Release",
+        "n": 9,
+        "mean": -0.37331716668519876,
+        "low": -0.46039691506806846,
+        "high": -0.2911216247554691,
+        "better": 9
+      },
+      {
+        "train_stage": "Release",
+        "test_stage": "Return",
+        "n": 11,
+        "mean": 0.8662791364376218,
+        "low": 0.6999965420133475,
+        "high": 1.0482869525074823,
+        "better": 0
+      },
+      {
+        "train_stage": "Return",
+        "test_stage": "Preparation",
+        "n": 12,
+        "mean": -0.40420726021014536,
+        "low": -0.8472243590869887,
+        "high": 0.011271998362266738,
+        "better": 8
+      },
+      {
+        "train_stage": "Return",
+        "test_stage": "Reach",
+        "n": 12,
+        "mean": 0.445596803312947,
+        "low": 0.2663799806861035,
+        "high": 0.6675860049380853,
+        "better": 0
+      },
+      {
+        "train_stage": "Return",
+        "test_stage": "Loading",
+        "n": 12,
+        "mean": 0.671761580180602,
+        "low": 0.44752680871056616,
+        "high": 0.9006457402203194,
+        "better": 0
+      },
+      {
+        "train_stage": "Return",
+        "test_stage": "Lift/hold",
+        "n": 12,
+        "mean": 1.204104232657065,
+        "low": 0.9907418001105293,
+        "high": 1.415716309022472,
+        "better": 0
+      },
+      {
+        "train_stage": "Return",
+        "test_stage": "Lowering",
+        "n": 12,
+        "mean": 0.8037725145619606,
+        "low": 0.6199037689021892,
+        "high": 0.9992592767328972,
+        "better": 0
+      },
+      {
+        "train_stage": "Return",
+        "test_stage": "Release",
+        "n": 9,
+        "mean": 0.2948280721825718,
+        "low": 0.19349503537010745,
+        "high": 0.4034770235009614,
+        "better": 0
+      },
+      {
+        "train_stage": "Return",
+        "test_stage": "Return",
+        "n": 12,
+        "mean": -0.37082494813972394,
+        "low": -0.5272591385543839,
+        "high": -0.23546509289295908,
+        "better": 12
+      }
+    ],
+    "Target stage": [
+      {
+        "train_stage": "Preparation",
+        "test_stage": "Preparation",
+        "n": 12,
+        "mean": -1.335599536917959,
+        "low": -1.6522238520325025,
+        "high": -1.0654030404178123,
+        "better": 12
+      },
+      {
+        "train_stage": "Preparation",
+        "test_stage": "Reach",
+        "n": 12,
+        "mean": 1.0812762441266075,
+        "low": 0.888771938156085,
+        "high": 1.2521054499338875,
+        "better": 0
+      },
+      {
+        "train_stage": "Preparation",
+        "test_stage": "Preload",
+        "n": 12,
+        "mean": 2.2992084300563644,
+        "low": 1.9519077241044527,
+        "high": 2.6069151239387995,
+        "better": 0
+      },
+      {
+        "train_stage": "Preparation",
+        "test_stage": "Loading",
+        "n": 12,
+        "mean": 2.3611551363804364,
+        "low": 1.9968123780382607,
+        "high": 2.6779637176810738,
+        "better": 0
+      },
+      {
+        "train_stage": "Preparation",
+        "test_stage": "Lift/hold",
+        "n": 12,
+        "mean": 3.8754957022293506,
+        "low": 3.4441776149577685,
+        "high": 4.254674050477221,
+        "better": 0
+      },
+      {
+        "train_stage": "Preparation",
+        "test_stage": "Lowering",
+        "n": 12,
+        "mean": 3.584859712298813,
+        "low": 3.2445888903711615,
+        "high": 3.8963391977892337,
+        "better": 0
+      },
+      {
+        "train_stage": "Preparation",
+        "test_stage": "Release",
+        "n": 12,
+        "mean": 2.386289033943704,
+        "low": 2.034040529829981,
+        "high": 2.6967094518914454,
+        "better": 0
+      },
+      {
+        "train_stage": "Preparation",
+        "test_stage": "Return",
+        "n": 12,
+        "mean": 1.0372079759912303,
+        "low": 0.8275836431668294,
+        "high": 1.2510980564044405,
+        "better": 0
+      },
+      {
+        "train_stage": "Reach",
+        "test_stage": "Preparation",
+        "n": 12,
+        "mean": -0.18823462178052353,
+        "low": -0.37191653579166417,
+        "high": -0.014232994072687008,
+        "better": 8
+      },
+      {
+        "train_stage": "Reach",
+        "test_stage": "Reach",
+        "n": 12,
+        "mean": -0.07055585677700175,
+        "low": -0.09992128663137301,
+        "high": -0.043458237326577,
+        "better": 12
+      },
+      {
+        "train_stage": "Reach",
+        "test_stage": "Preload",
+        "n": 12,
+        "mean": 0.035988613630064684,
+        "low": -0.04362476259615821,
+        "high": 0.1338166243934716,
+        "better": 8
+      },
+      {
+        "train_stage": "Reach",
+        "test_stage": "Loading",
+        "n": 12,
+        "mean": 0.09430369988070286,
+        "low": 0.008099157961644895,
+        "high": 0.2030748506126271,
+        "better": 4
+      },
+      {
+        "train_stage": "Reach",
+        "test_stage": "Lift/hold",
+        "n": 12,
+        "mean": 0.7239245528832693,
+        "low": 0.5629660224865302,
+        "high": 0.886024447786588,
+        "better": 0
+      },
+      {
+        "train_stage": "Reach",
+        "test_stage": "Lowering",
+        "n": 12,
+        "mean": 0.6180060948062148,
+        "low": 0.4887399328208509,
+        "high": 0.7471992464088325,
+        "better": 0
+      },
+      {
+        "train_stage": "Reach",
+        "test_stage": "Release",
+        "n": 12,
+        "mean": 0.12516930719003358,
+        "low": 0.021433838895309528,
+        "high": 0.2501387888971169,
+        "better": 2
+      },
+      {
+        "train_stage": "Reach",
+        "test_stage": "Return",
+        "n": 12,
+        "mean": 0.01902329474898445,
+        "low": -0.05153027422801893,
+        "high": 0.09511943011382185,
+        "better": 6
+      },
+      {
+        "train_stage": "Preload",
+        "test_stage": "Preparation",
+        "n": 12,
+        "mean": 1.8467391742593071,
+        "low": 1.6175859864816935,
+        "high": 2.086086807134466,
+        "better": 0
+      },
+      {
+        "train_stage": "Preload",
+        "test_stage": "Reach",
+        "n": 12,
+        "mean": 0.5889428799073191,
+        "low": 0.5168486884334172,
+        "high": 0.675907296256514,
+        "better": 0
+      },
+      {
+        "train_stage": "Preload",
+        "test_stage": "Preload",
+        "n": 12,
+        "mean": -0.3019329462108109,
+        "low": -0.34239364829177116,
+        "high": -0.2611034260597972,
+        "better": 12
+      },
+      {
+        "train_stage": "Preload",
+        "test_stage": "Loading",
+        "n": 12,
+        "mean": -0.309702958971428,
+        "low": -0.3619585017143164,
+        "high": -0.2631263283677479,
+        "better": 12
+      },
+      {
+        "train_stage": "Preload",
+        "test_stage": "Lift/hold",
+        "n": 12,
+        "mean": 0.4319176713508734,
+        "low": 0.34172509830922426,
+        "high": 0.5245122158310703,
+        "better": 0
+      },
+      {
+        "train_stage": "Preload",
+        "test_stage": "Lowering",
+        "n": 12,
+        "mean": 0.2414891386760375,
+        "low": 0.17361598240596804,
+        "high": 0.3218254492600822,
+        "better": 0
+      },
+      {
+        "train_stage": "Preload",
+        "test_stage": "Release",
+        "n": 12,
+        "mean": -0.3101817214410321,
+        "low": -0.360485154501485,
+        "high": -0.2654056409068782,
+        "better": 12
+      },
+      {
+        "train_stage": "Preload",
+        "test_stage": "Return",
+        "n": 12,
+        "mean": 0.5622349156764607,
+        "low": 0.45362297737390506,
+        "high": 0.6781291423922071,
+        "better": 0
+      },
+      {
+        "train_stage": "Loading",
+        "test_stage": "Preparation",
+        "n": 12,
+        "mean": 1.8225431114205914,
+        "low": 1.5820440279570454,
+        "high": 2.071648461403573,
+        "better": 0
+      },
+      {
+        "train_stage": "Loading",
+        "test_stage": "Reach",
+        "n": 12,
+        "mean": 0.5797026807268922,
+        "low": 0.507676339649424,
+        "high": 0.6684684578564426,
+        "better": 0
+      },
+      {
+        "train_stage": "Loading",
+        "test_stage": "Preload",
+        "n": 12,
+        "mean": -0.30310062124425496,
+        "low": -0.34332770647216326,
+        "high": -0.26229832106458373,
+        "better": 12
+      },
+      {
+        "train_stage": "Loading",
+        "test_stage": "Loading",
+        "n": 12,
+        "mean": -0.3119662719459742,
+        "low": -0.3638768313544882,
+        "high": -0.26555425913569425,
+        "better": 12
+      },
+      {
+        "train_stage": "Loading",
+        "test_stage": "Lift/hold",
+        "n": 12,
+        "mean": 0.39931643841900577,
+        "low": 0.32772940359042424,
+        "high": 0.46804813143429724,
+        "better": 0
+      },
+      {
+        "train_stage": "Loading",
+        "test_stage": "Lowering",
+        "n": 12,
+        "mean": 0.21610275639888457,
+        "low": 0.1676683232183368,
+        "high": 0.2751408350922947,
+        "better": 0
+      },
+      {
+        "train_stage": "Loading",
+        "test_stage": "Release",
+        "n": 12,
+        "mean": -0.3141042158680188,
+        "low": -0.3646146649642591,
+        "high": -0.2683478790246457,
+        "better": 12
+      },
+      {
+        "train_stage": "Loading",
+        "test_stage": "Return",
+        "n": 12,
+        "mean": 0.5451377755200996,
+        "low": 0.44152404961817776,
+        "high": 0.6566831299973775,
+        "better": 0
+      },
+      {
+        "train_stage": "Lift/hold",
+        "test_stage": "Preparation",
+        "n": 12,
+        "mean": 3.296310342150513,
+        "low": 3.076448047032566,
+        "high": 3.519752147688545,
+        "better": 0
+      },
+      {
+        "train_stage": "Lift/hold",
+        "test_stage": "Reach",
+        "n": 12,
+        "mean": 0.9104097888570318,
+        "low": 0.8320363381890227,
+        "high": 1.004022877030069,
+        "better": 0
+      },
+      {
+        "train_stage": "Lift/hold",
+        "test_stage": "Preload",
+        "n": 12,
+        "mean": 0.13917479086772785,
+        "low": 0.04560616283215154,
+        "high": 0.2540153565390732,
+        "better": 2
+      },
+      {
+        "train_stage": "Lift/hold",
+        "test_stage": "Loading",
+        "n": 12,
+        "mean": 0.06656218309023705,
+        "low": -0.02806266805889841,
+        "high": 0.16951614921809915,
+        "better": 4
+      },
+      {
+        "train_stage": "Lift/hold",
+        "test_stage": "Lift/hold",
+        "n": 12,
+        "mean": -0.23152963050578731,
+        "low": -0.2982394366280321,
+        "high": -0.17490928104516354,
+        "better": 12
+      },
+      {
+        "train_stage": "Lift/hold",
+        "test_stage": "Lowering",
+        "n": 12,
+        "mean": -0.12010663944789203,
+        "low": -0.1691596241402861,
+        "high": -0.07901648200847107,
+        "better": 12
+      },
+      {
+        "train_stage": "Lift/hold",
+        "test_stage": "Release",
+        "n": 12,
+        "mean": 0.22222913291745894,
+        "low": 0.15100299494255684,
+        "high": 0.2885468788678489,
+        "better": 0
+      },
+      {
+        "train_stage": "Lift/hold",
+        "test_stage": "Return",
+        "n": 12,
+        "mean": 0.8092476952972482,
+        "low": 0.7376271602171462,
+        "high": 0.8849475727963364,
+        "better": 0
+      },
+      {
+        "train_stage": "Lowering",
+        "test_stage": "Preparation",
+        "n": 12,
+        "mean": 3.0233592363062294,
+        "low": 2.7482457574547716,
+        "high": 3.3116312975217284,
+        "better": 0
+      },
+      {
+        "train_stage": "Lowering",
+        "test_stage": "Reach",
+        "n": 12,
+        "mean": 0.7717063289589357,
+        "low": 0.7057491885114759,
+        "high": 0.8596894357561876,
+        "better": 0
+      },
+      {
+        "train_stage": "Lowering",
+        "test_stage": "Preload",
+        "n": 12,
+        "mean": 0.033445302545462186,
+        "low": -0.06073117747232604,
+        "high": 0.12744607060814314,
+        "better": 6
+      },
+      {
+        "train_stage": "Lowering",
+        "test_stage": "Loading",
+        "n": 12,
+        "mean": 0.05312241548622957,
+        "low": -0.05697528021327539,
+        "high": 0.1521329365415054,
+        "better": 4
+      },
+      {
+        "train_stage": "Lowering",
+        "test_stage": "Lift/hold",
+        "n": 12,
+        "mean": -0.18893898266399486,
+        "low": -0.25498063660243087,
+        "high": -0.1329165008688721,
+        "better": 12
+      },
+      {
+        "train_stage": "Lowering",
+        "test_stage": "Lowering",
+        "n": 12,
+        "mean": -0.1782946509400002,
+        "low": -0.22420047503681295,
+        "high": -0.13988621240689766,
+        "better": 12
+      },
+      {
+        "train_stage": "Lowering",
+        "test_stage": "Release",
+        "n": 12,
+        "mean": -0.07765991288642142,
+        "low": -0.13662332566300614,
+        "high": -0.02260234931092314,
+        "better": 8
+      },
+      {
+        "train_stage": "Lowering",
+        "test_stage": "Return",
+        "n": 12,
+        "mean": 0.61588824494246,
+        "low": 0.5319671225847891,
+        "high": 0.6998362348971079,
+        "better": 0
+      },
+      {
+        "train_stage": "Release",
+        "test_stage": "Preparation",
+        "n": 12,
+        "mean": 1.8974786478143268,
+        "low": 1.687423879934206,
+        "high": 2.1138531860111005,
+        "better": 0
+      },
+      {
+        "train_stage": "Release",
+        "test_stage": "Reach",
+        "n": 12,
+        "mean": 0.5733606852160974,
+        "low": 0.5069173677952605,
+        "high": 0.6509409312834923,
+        "better": 0
+      },
+      {
+        "train_stage": "Release",
+        "test_stage": "Preload",
+        "n": 12,
+        "mean": -0.2952669085531462,
+        "low": -0.33629947247881775,
+        "high": -0.25537813451977437,
+        "better": 12
+      },
+      {
+        "train_stage": "Release",
+        "test_stage": "Loading",
+        "n": 12,
+        "mean": -0.3044885811283308,
+        "low": -0.35544232675935905,
+        "high": -0.2595208619410183,
+        "better": 12
+      },
+      {
+        "train_stage": "Release",
+        "test_stage": "Lift/hold",
+        "n": 12,
+        "mean": 0.34547423121690546,
+        "low": 0.2779651615928428,
+        "high": 0.40774359502348806,
+        "better": 0
+      },
+      {
+        "train_stage": "Release",
+        "test_stage": "Lowering",
+        "n": 12,
+        "mean": 0.17646945361904862,
+        "low": 0.13290856995837574,
+        "high": 0.21979881324487402,
+        "better": 0
+      },
+      {
+        "train_stage": "Release",
+        "test_stage": "Release",
+        "n": 12,
+        "mean": -0.3199406852505842,
+        "low": -0.3705684224041419,
+        "high": -0.2740153232293399,
+        "better": 12
+      },
+      {
+        "train_stage": "Release",
+        "test_stage": "Return",
+        "n": 12,
+        "mean": 0.5107544377737391,
+        "low": 0.41195109023400767,
+        "high": 0.6176762842615969,
+        "better": 0
+      },
+      {
+        "train_stage": "Return",
+        "test_stage": "Preparation",
+        "n": 12,
+        "mean": 0.08797791510586428,
+        "low": -0.21819061765620576,
+        "high": 0.43260442092053514,
+        "better": 7
+      },
+      {
+        "train_stage": "Return",
+        "test_stage": "Reach",
+        "n": 12,
+        "mean": 0.1532065966134981,
+        "low": 0.06142988322491756,
+        "high": 0.2673378660146495,
+        "better": 2
+      },
+      {
+        "train_stage": "Return",
+        "test_stage": "Preload",
+        "n": 12,
+        "mean": 0.3184709463554189,
+        "low": 0.21251430908925364,
+        "high": 0.43288995532508506,
+        "better": 0
+      },
+      {
+        "train_stage": "Return",
+        "test_stage": "Loading",
+        "n": 12,
+        "mean": 0.27511965302532276,
+        "low": 0.17223027806587235,
+        "high": 0.38237096944668597,
+        "better": 0
+      },
+      {
+        "train_stage": "Return",
+        "test_stage": "Lift/hold",
+        "n": 12,
+        "mean": 0.6276213673462744,
+        "low": 0.5208265295503647,
+        "high": 0.7559871165784279,
+        "better": 0
+      },
+      {
+        "train_stage": "Return",
+        "test_stage": "Lowering",
+        "n": 12,
+        "mean": 0.4549291288073549,
+        "low": 0.3738726591615336,
+        "high": 0.5424364914722153,
+        "better": 0
+      },
+      {
+        "train_stage": "Return",
+        "test_stage": "Release",
+        "n": 12,
+        "mean": 0.10968334266235957,
+        "low": 0.026365532013019208,
+        "high": 0.20117947975143666,
+        "better": 2
+      },
+      {
+        "train_stage": "Return",
+        "test_stage": "Return",
+        "n": 12,
+        "mean": -0.1261632796273526,
+        "low": -0.20980602190236952,
+        "high": -0.030182015467494893,
+        "better": 11
+      }
+    ]
+  },
+  "overall": {
+    "Pure stage": {
+      "Pooled ridge": {
+        "n": 12,
+        "mean": -0.44795344622025457,
+        "low": -0.5339237532003046,
+        "high": -0.3785981939259746,
+        "better": 12
+      },
+      "Matched pooled ridge": {
+        "n": 12,
+        "mean": -0.5251141004649348,
+        "low": -0.6434797087271058,
+        "high": -0.4273073386950012,
+        "better": 12
+      },
+      "Stage mean": {
+        "n": 12,
+        "mean": -0.002462896860319566,
+        "low": -0.0129144983346702,
+        "high": 0.01206765086112621,
+        "better": 9
+      }
+    },
+    "Target stage": {
+      "Pooled ridge": {
+        "n": 12,
+        "mean": -0.3594978572719338,
+        "low": -0.4112752717742884,
+        "high": -0.3063094846669884,
+        "better": 12
+      },
+      "Matched pooled ridge": {
+        "n": 12,
+        "mean": -0.40745405296049814,
+        "low": -0.45741907119762343,
+        "high": -0.35721656639742755,
+        "better": 12
+      },
+      "Stage mean": {
+        "n": 12,
+        "mean": -0.023479556686514316,
+        "low": -0.03287687206296813,
+        "high": -0.013924590921433583,
+        "better": 11
+      }
+    }
+  }
+}
